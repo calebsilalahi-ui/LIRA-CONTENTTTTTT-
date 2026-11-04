@@ -15,28 +15,28 @@
     "post": ""
   },
   "audioMaster": "assets/generated_reels/fw_signature_milk_tea_pattern_interrupt_1793830421729_master.mp3",
-  "totalFrames": 936,
-  "totalDurationSec": 31.2,
+  "totalFrames": 917,
+  "totalDurationSec": 30.56,
   "beatFrames": {
     "b1_hook": 0,
-    "b2_agitation": 159,
-    "b3_proof": 362,
-    "b4_craft": 516,
-    "b5_coldchain": 678,
-    "b6_cta": 796
+    "b2_agitation": 156,
+    "b3_proof": 350,
+    "b4_craft": 503,
+    "b5_coldchain": 658,
+    "b6_cta": 779
   },
   "listFrames": {
-    "item_1": 184,
-    "item_2": 264,
-    "item_3": 333
+    "item_1": 182,
+    "item_2": 260,
+    "item_3": 325
   },
   "captions": [
     {
       "text": "KEBIASAAN INI",
       "highlight": false,
-      "startSec": 1.92,
+      "startSec": 1.84,
       "endSec": 2.88,
-      "fromFrame": 57,
+      "fromFrame": 55,
       "toFrame": 86
     },
     {
@@ -51,289 +51,289 @@
       "text": "TIGA SELALU",
       "highlight": false,
       "startSec": 3.28,
-      "endSec": 4.24,
+      "endSec": 4.16,
       "fromFrame": 98,
-      "toFrame": 127
+      "toFrame": 124
     },
     {
       "text": "LO LAKUIN",
       "highlight": false,
-      "startSec": 4.24,
-      "endSec": 5.3,
-      "fromFrame": 127,
-      "toFrame": 159
+      "startSec": 4.16,
+      "endSec": 5.22,
+      "fromFrame": 124,
+      "toFrame": 156
     },
     {
       "text": "PERTAMA CUP",
       "highlight": false,
-      "startSec": 5.3,
-      "endSec": 6.16,
-      "fromFrame": 159,
-      "toFrame": 184
+      "startSec": 5.22,
+      "endSec": 6.08,
+      "fromFrame": 156,
+      "toFrame": 182
     },
     {
       "text": "TUMPAH DI",
       "highlight": false,
-      "startSec": 6.16,
-      "endSec": 6.64,
-      "fromFrame": 184,
-      "toFrame": 199
+      "startSec": 6.08,
+      "endSec": 6.48,
+      "fromFrame": 182,
+      "toFrame": 194
     },
     {
       "text": "TOTEBAG KEDUA",
       "highlight": false,
-      "startSec": 6.64,
-      "endSec": 8.16,
-      "fromFrame": 199,
-      "toFrame": 244
+      "startSec": 6.48,
+      "endSec": 8,
+      "fromFrame": 194,
+      "toFrame": 240
     },
     {
       "text": "GULA BIKIN",
       "highlight": false,
-      "startSec": 8.16,
-      "endSec": 8.8,
-      "fromFrame": 244,
-      "toFrame": 264
+      "startSec": 8,
+      "endSec": 8.68,
+      "fromFrame": 240,
+      "toFrame": 260
     },
     {
       "text": "LEMES KETIGA",
       "highlight": false,
-      "startSec": 8.8,
-      "endSec": 10.32,
-      "fromFrame": 264,
-      "toFrame": 309
+      "startSec": 8.68,
+      "endSec": 10.08,
+      "fromFrame": 260,
+      "toFrame": 302
     },
     {
       "text": "ES MELT",
       "highlight": false,
-      "startSec": 10.32,
-      "endSec": 10.827,
-      "fromFrame": 309,
-      "toFrame": 324
+      "startSec": 10.08,
+      "endSec": 10.52,
+      "fromFrame": 302,
+      "toFrame": 315
     },
     {
       "text": "BIKIN HAMBAR",
       "highlight": false,
-      "startSec": 10.827,
-      "endSec": 12.067,
-      "fromFrame": 324,
-      "toFrame": 362
+      "startSec": 10.52,
+      "endSec": 11.667,
+      "fromFrame": 315,
+      "toFrame": 350
     },
     {
       "text": "LIRA MILK",
       "highlight": false,
-      "startSec": 12.067,
-      "endSec": 12.48,
-      "fromFrame": 362,
-      "toFrame": 374
+      "startSec": 11.667,
+      "endSec": 12.12,
+      "fromFrame": 350,
+      "toFrame": 363
     },
     {
       "text": "TEA PAKAI",
       "highlight": false,
-      "startSec": 12.48,
-      "endSec": 12.96,
-      "fromFrame": 374,
-      "toFrame": 388
+      "startSec": 12.12,
+      "endSec": 12.56,
+      "fromFrame": 363,
+      "toFrame": 376
     },
     {
       "text": "BOTOL SEALED",
       "highlight": true,
-      "startSec": 12.96,
-      "endSec": 13.96,
-      "fromFrame": 388,
-      "toFrame": 418
+      "startSec": 12.56,
+      "endSec": 13.56,
+      "fromFrame": 376,
+      "toFrame": 406
     },
     {
       "text": "DIBALIK SERATUS",
       "highlight": false,
-      "startSec": 13.96,
-      "endSec": 14.56,
-      "fromFrame": 418,
-      "toFrame": 436
+      "startSec": 13.56,
+      "endSec": 14.16,
+      "fromFrame": 406,
+      "toFrame": 424
     },
     {
       "text": "DELAPAN PULUH",
       "highlight": false,
-      "startSec": 14.56,
-      "endSec": 14.96,
-      "fromFrame": 436,
-      "toFrame": 448
+      "startSec": 14.16,
+      "endSec": 14.56,
+      "fromFrame": 424,
+      "toFrame": 436
     },
     {
       "text": "DERAJAT DI",
       "highlight": false,
-      "startSec": 14.96,
-      "endSec": 15.44,
-      "fromFrame": 448,
-      "toFrame": 463
+      "startSec": 14.56,
+      "endSec": 15.08,
+      "fromFrame": 436,
+      "toFrame": 452
     },
     {
       "text": "ATAS LAPTOP",
       "highlight": false,
-      "startSec": 15.44,
-      "endSec": 16,
-      "fromFrame": 463,
-      "toFrame": 480
+      "startSec": 15.08,
+      "endSec": 15.68,
+      "fromFrame": 452,
+      "toFrame": 470
     },
     {
       "text": "PUN AMAN",
       "highlight": false,
-      "startSec": 16,
-      "endSec": 17.2,
-      "fromFrame": 480,
-      "toFrame": 516
+      "startSec": 15.68,
+      "endSec": 16.777,
+      "fromFrame": 470,
+      "toFrame": 503
     },
     {
       "text": "DAUN TEH",
       "highlight": false,
-      "startSec": 17.2,
-      "endSec": 17.68,
-      "fromFrame": 516,
-      "toFrame": 530
+      "startSec": 16.777,
+      "endSec": 17.12,
+      "fromFrame": 503,
+      "toFrame": 513
     },
     {
       "text": "DISEDUH DINGIN",
       "highlight": true,
-      "startSec": 17.68,
-      "endSec": 18.32,
-      "fromFrame": 530,
-      "toFrame": 549
+      "startSec": 17.12,
+      "endSec": 17.76,
+      "fromFrame": 513,
+      "toFrame": 532
     },
     {
       "text": "SEMALAMAN PLUS",
       "highlight": false,
-      "startSec": 18.32,
-      "endSec": 19.2,
-      "fromFrame": 549,
-      "toFrame": 576
+      "startSec": 17.76,
+      "endSec": 18.64,
+      "fromFrame": 532,
+      "toFrame": 559
     },
     {
       "text": "STEVIA MURNI",
       "highlight": true,
-      "startSec": 19.2,
-      "endSec": 20.32,
-      "fromFrame": 576,
-      "toFrame": 609
+      "startSec": 18.64,
+      "endSec": 19.76,
+      "fromFrame": 559,
+      "toFrame": 592
     },
     {
       "text": "NOL GULA",
       "highlight": false,
-      "startSec": 20.32,
-      "endSec": 20.92,
-      "fromFrame": 609,
-      "toFrame": 627
+      "startSec": 19.76,
+      "endSec": 20.28,
+      "fromFrame": 592,
+      "toFrame": 608
     },
     {
       "text": "PASIR BEBAS",
       "highlight": false,
-      "startSec": 20.92,
-      "endSec": 21.76,
-      "fromFrame": 627,
-      "toFrame": 652
+      "startSec": 20.28,
+      "endSec": 21.12,
+      "fromFrame": 608,
+      "toFrame": 633
     },
     {
       "text": "BRAIN FOG",
       "highlight": false,
-      "startSec": 21.76,
-      "endSec": 22.604,
-      "fromFrame": 652,
-      "toFrame": 678
+      "startSec": 21.12,
+      "endSec": 21.964,
+      "fromFrame": 633,
+      "toFrame": 658
     },
     {
       "text": "TERKUNCI DINGIN",
       "highlight": false,
-      "startSec": 22.604,
-      "endSec": 23.16,
-      "fromFrame": 678,
-      "toFrame": 694
+      "startSec": 21.964,
+      "endSec": 22.52,
+      "fromFrame": 658,
+      "toFrame": 675
     },
     {
       "text": "DI COOLER",
       "highlight": false,
-      "startSec": 23.16,
-      "endSec": 23.52,
-      "fromFrame": 694,
-      "toFrame": 705
+      "startSec": 22.52,
+      "endSec": 22.88,
+      "fromFrame": 675,
+      "toFrame": 686
     },
     {
       "text": "BAG FOIL",
       "highlight": false,
-      "startSec": 23.52,
-      "endSec": 24.24,
-      "fromFrame": 705,
-      "toFrame": 727
+      "startSec": 22.88,
+      "endSec": 23.6,
+      "fromFrame": 686,
+      "toFrame": 708
     },
     {
       "text": "SIAP MELUNCUR",
       "highlight": false,
-      "startSec": 24.24,
-      "endSec": 24.96,
-      "fromFrame": 727,
-      "toFrame": 748
+      "startSec": 23.6,
+      "endSec": 24.24,
+      "fromFrame": 708,
+      "toFrame": 727
     },
     {
       "text": "VIA GOJEK",
       "highlight": false,
-      "startSec": 24.96,
-      "endSec": 25.44,
-      "fromFrame": 748,
-      "toFrame": 763
+      "startSec": 24.24,
+      "endSec": 24.8,
+      "fromFrame": 727,
+      "toFrame": 744
     },
     {
       "text": "COD SABTU",
       "highlight": false,
-      "startSec": 25.44,
-      "endSec": 26.537,
-      "fromFrame": 763,
-      "toFrame": 796
+      "startSec": 24.8,
+      "endSec": 25.977,
+      "fromFrame": 744,
+      "toFrame": 779
     },
     {
       "text": "AMANKAN BOTOL",
       "highlight": false,
-      "startSec": 26.537,
-      "endSec": 27.16,
-      "fromFrame": 796,
-      "toFrame": 814
+      "startSec": 25.977,
+      "endSec": 26.56,
+      "fromFrame": 779,
+      "toFrame": 796
     },
     {
       "text": "LO LEWAT",
       "highlight": false,
-      "startSec": 27.16,
-      "endSec": 27.6,
-      "fromFrame": 814,
-      "toFrame": 828
+      "startSec": 26.56,
+      "endSec": 26.96,
+      "fromFrame": 796,
+      "toFrame": 808
     },
     {
       "text": "LINK DI",
       "highlight": false,
-      "startSec": 27.6,
-      "endSec": 28,
-      "fromFrame": 828,
-      "toFrame": 840
+      "startSec": 26.96,
+      "endSec": 27.28,
+      "fromFrame": 808,
+      "toFrame": 818
     },
     {
       "text": "BIO SEBELUM",
       "highlight": false,
-      "startSec": 28,
-      "endSec": 28.6,
-      "fromFrame": 840,
-      "toFrame": 858
+      "startSec": 27.28,
+      "endSec": 27.88,
+      "fromFrame": 818,
+      "toFrame": 836
     },
     {
       "text": "KEHABISAN BATCH",
       "highlight": false,
-      "startSec": 28.6,
-      "endSec": 29.36,
-      "fromFrame": 858,
-      "toFrame": 880
+      "startSec": 27.88,
+      "endSec": 28.64,
+      "fromFrame": 836,
+      "toFrame": 859
     },
     {
       "text": "MINGGU INI",
       "highlight": false,
-      "startSec": 29.36,
-      "endSec": 30,
-      "fromFrame": 880,
-      "toFrame": 900
+      "startSec": 28.64,
+      "endSec": 29.36,
+      "fromFrame": 859,
+      "toFrame": 881
     }
   ],
   "beats": [
@@ -409,40 +409,40 @@
     },
     {
       "file": "scratch.mp3",
-      "delayMs": 720,
+      "delayMs": 880,
       "volume": 0.5
     },
     {
       "file": "thud.mp3",
-      "delayMs": 6160,
+      "delayMs": 6080,
       "volume": 0.6
     },
     {
       "file": "eightbit_1star_buzz.wav",
-      "delayMs": 11120,
+      "delayMs": 10840,
       "volume": 0.5
     },
     {
       "file": "snap.mp3",
-      "delayMs": 12067,
+      "delayMs": 11667,
       "volume": 0.6
     },
     {
       "file": "whoosh.mp3",
-      "delayMs": 17680,
+      "delayMs": 17120,
       "volume": 0.5
     },
     {
       "file": "eightbit_portal_shimmer.wav",
-      "delayMs": 22604,
+      "delayMs": 21964,
       "volume": 0.5
     },
     {
       "file": "eightbit_5star_fanfare.wav",
-      "delayMs": 26537,
+      "delayMs": 25977,
       "volume": 0.7
     }
   ],
   "caption": "Sering banget ketendang cup milk tea kafe pas lagi fokus nugas di meja perpustakaan? Selain bikin totebag dan laptop lo dalam bahaya, gula berlebihannya juga bikin lemes jam dua siang.\n\nLira Signature Milk Tea dibuat seratus persen khusus buat nemenin aktivitas produktif lo. Menggunakan 250ml botol Almond sealed anti bocor, lo bebas lempar botol ini ke dalam tas tanpa rasa khawatir.\n\nDaun teh hitam pilihan diseduh dingin semalaman untuk mengekstrak rasa pekat yang murni, dipadukan susu segar dan 100% liquid stevia tanpa gula pasir. Hasilnya? Rasa creamy yang bikin fokus tanpa afternoon brain fog.\n\nDikirim dingin menggunakan Forest Green Thermal Cooler Bag via Gojek COD setiap hari Sabtu.\n\nCrafted solo by @caleb766h1\n\n#drinklira #milktea #stevia #zerosugar #studentlife #artisanbeverage #jakartadrink #coldcraft",
-  "createdAt": "2026-11-04T22:30:47.283Z"
+  "createdAt": "2026-11-04T22:35:40.179Z"
 }
