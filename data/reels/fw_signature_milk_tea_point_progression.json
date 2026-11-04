@@ -1,0 +1,140 @@
+{
+  "topic": "Signature Milk Tea Distributed 3-Point Retention Progression",
+  "threeP": {
+    "promise": "STOP TARUH CUP DI TOTEBAG",
+    "proof": "Botol 180° hermetic sealed anti bocor & 16 jam cold-steep stevia murni.",
+    "path": "Order Signature Milk Tea via link di bio sekarang."
+  },
+  "written_hook": {
+    "pre": "STOP TARUH CUP DI",
+    "accent": "TOTEBAG",
+    "post": ""
+  },
+  "script": "[dramatic] Stop taruh cup kopi atau teh di totebag samping laptop lo! [frustrated] Poin pertama: cup plastik kafe gampang tumpah dan berembun. Tutup tipisnya gampang kebuka pas jalan, dan rembesan air es langsung bikin basah dokumen tugas dan keyboard laptop lo. [confident] Poin kedua: botol Lira didesain seratus delapan puluh derajat hermetic sealed! Tutup ulir gold dengan segel rapat kedap udara. Lo balik di atas MacBook sekalipun, dijamin nol tetes rembes masuk ransel. [proud] Poin ketiga: seduhan cold-steep enam belas jam dengan nol gula pasir. Manisnya murni dari ekstrak daun stevia alami, jadi lo dapet fokus belajar empat jam tanpa ngantuk atau energi crash. [urgent] Biar punya minuman yang gak bakal tumpah di laptop lo, klik link di bio sekarang!",
+  "list_items": [
+    {
+      "label": "POIN 1: CUP PLASTIK GAMPANG TUMPAH",
+      "anchor": "pertama"
+    },
+    {
+      "label": "POIN 2: BOTOL 180° SEALED ANTI BOCOR",
+      "anchor": "kedua"
+    },
+    {
+      "label": "POIN 3: COLD-STEEP & ZERO SUGAR CRASH",
+      "anchor": "ketiga"
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1_hook",
+      "scene": "totebag_cup_tilt",
+      "card": "STOP TARUH CUP DI TOTEBAG",
+      "anchor": null
+    },
+    {
+      "id": "b2_point1",
+      "scene": "wet_notes_cup",
+      "card": "POIN 1: CUP PLASTIK GAMPANG TUMPAH",
+      "anchor": "pertama"
+    },
+    {
+      "id": "b3_point2",
+      "scene": "inverted_bottle_laptop",
+      "card": "POIN 2: BOTOL 180° SEALED ANTI BOCOR",
+      "anchor": "kedua"
+    },
+    {
+      "id": "b4_point3",
+      "scene": "cold_steep_tea",
+      "card": "POIN 3: COLD-STEEP & ZERO SUGAR CRASH",
+      "anchor": "ketiga"
+    },
+    {
+      "id": "b5_cta",
+      "scene": "caleb_point_hero",
+      "card": "KLIK LINK DI BIO SEKARANG",
+      "anchor": "biar"
+    }
+  ],
+  "highlight_keywords": [
+    "totebag",
+    "laptop",
+    "poin pertama",
+    "gampang tumpah",
+    "keyboard",
+    "poin kedua",
+    "hermetic sealed",
+    "nol tetes",
+    "poin ketiga",
+    "cold-steep",
+    "stevia alami",
+    "nol gula",
+    "klik link di bio"
+  ],
+  "sfx": [
+    {
+      "file": "sub_hit.mp3",
+      "vol": 0.8,
+      "anchor": null,
+      "at": 0
+    },
+    {
+      "file": "eightbit_clock_spin.wav",
+      "vol": 0.4,
+      "anchor": null,
+      "at": 0.05
+    },
+    {
+      "file": "scratch.mp3",
+      "vol": 0.5,
+      "anchor": "laptop",
+      "at": null
+    },
+    {
+      "file": "thud.mp3",
+      "vol": 0.6,
+      "anchor": "pertama",
+      "at": null
+    },
+    {
+      "file": "eightbit_1star_buzz.wav",
+      "vol": 0.5,
+      "anchor": "rembesan",
+      "at": null
+    },
+    {
+      "file": "snap.mp3",
+      "vol": 0.6,
+      "anchor": "kedua",
+      "at": null
+    },
+    {
+      "file": "whoosh.mp3",
+      "vol": 0.5,
+      "anchor": "balik",
+      "at": null
+    },
+    {
+      "file": "eightbit_portal_shimmer.wav",
+      "vol": 0.5,
+      "anchor": "ketiga",
+      "at": null
+    },
+    {
+      "file": "eightbit_5star_fanfare.wav",
+      "vol": 0.7,
+      "anchor": "biar",
+      "at": null
+    }
+  ],
+  "caption": "Stop bahayain laptop lo cuma demi cup plastik kafe yang gampang tumpah dan berembun di totebag.\n\nLira Signature Milk Tea hadir dengan 3 keunggulan mutlak buat nemenin produktivitas lo:\n1. 100% Hermetic Sealed: Botol Almond 250ml dengan tutup ulir gold rapat kedap udara, aman dibalik 180 derajat di atas MacBook sekalipun tanpa tetes bocor.\n2. 16-Hour Cold-Steep: Daun teh hitam pilihan diseduh dingin semalaman menghasilkan rasa pekat alami tanpa rasa pahit sepat.\n3. Zero Sugar Crash: Nol gula pasir, murni ekstrak daun stevia alami. Manis segar creamy tanpa bikin ngantuk jam 2 siang.\n\nDikirim dingin menggunakan Forest Green Thermal Cooler Bag via Gojek COD setiap hari Sabtu.\n\nBiar punya minuman yang gak bakal tumpah di laptop lo, klik link di bio sekarang!\n\nCrafted solo by @caleb766h1\n\n#drinklira #milktea #stevia #zerosugar #studentlife #artisanbeverage #jakartadrink #coldcraft",
+  "new_asset": null,
+  "sku": "Signature Milk Tea",
+  "pillar": "Student Lifestyle & Portability",
+  "hook_category": "Pattern Interrupt",
+  "format": "reel",
+  "writer_model": "gemini-3.5-flash",
+  "id": "fw_signature_milk_tea_point_progression",
+  "createdAt": "2026-11-05T06:13:00.000Z"
+}

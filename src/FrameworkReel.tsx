@@ -65,28 +65,18 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
   const poseToggleMed = Math.floor(frame / 10) % 2 === 0;
   const poseToggleFast = Math.floor(frame / 6) % 2 === 0;
 
-  // Determine active beat from manifest.beatFrames
-  const bf = manifest.beatFrames || {
-    b1_hook: 0,
-    b2_agitation: 145,
-    b3_proof: 320,
-    b4_craft: 490,
-    b5_coldchain: 670,
-    b6_cta: 810,
-  };
-
-  const currentBeat =
-    frame >= (bf.b6_cta || 810)
-      ? 'b6_cta'
-      : frame >= (bf.b5_coldchain || 670)
-      ? 'b5_coldchain'
-      : frame >= (bf.b4_craft || 490)
-      ? 'b4_craft'
-      : frame >= (bf.b3_proof || 320)
-      ? 'b3_proof'
-      : frame >= (bf.b2_agitation || 145)
-      ? 'b2_agitation'
-      : 'b1_hook';
+  // Determine active beat dynamically from manifest.beatFrames and manifest.beats
+  let currentBeat = manifest.beats?.[0]?.id || 'b1_hook';
+  if (manifest.beatFrames && Array.isArray(manifest.beats)) {
+    for (let i = manifest.beats.length - 1; i >= 0; i--) {
+      const bId = manifest.beats[i].id;
+      const startF = manifest.beatFrames[bId] ?? 0;
+      if (frame >= startF) {
+        currentBeat = bId;
+        break;
+      }
+    }
+  }
 
   const beatConfig = manifest.beats?.find((b: any) => b.id === currentBeat) || manifest.beats?.[0];
 
@@ -292,7 +282,10 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
         {/* ================================================================== */}
         {/* BEAT 2 (05s - 10s): CONTEXT AGITATION & OPEN LOOP 3-ITEM HUD       */}
         {/* ================================================================== */}
-        {currentBeat === 'b2_agitation' && (
+        {/* ================================================================== */}
+        {/* POINT 1 / BEAT 2                                                   */}
+        {/* ================================================================== */}
+        {(currentBeat === 'b2_point1' || currentBeat === 'b2_agitation') && (
           <div
             style={{
               position: 'absolute',
@@ -302,140 +295,157 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
               width: 660,
               display: 'flex',
               flexDirection: 'column',
-              gap: 16,
-              zIndex: 70,
-            }}
-          >
-            {/* 3 Open-Loop List Items popping sequentially */}
-            {(manifest.list_items || []).map((item: any, idx: number) => {
-              const itemFrame = manifest.listFrames?.[`item_${idx + 1}`] || (bf.b2_agitation + idx * 40);
-              const isVisible = frame >= itemFrame;
-              const pop = spring({
-                frame: Math.max(0, frame - itemFrame),
-                fps,
-                config: { damping: 10, stiffness: 220 },
-              });
-
-              return (
-                <div
-                  key={idx}
-                  style={{
-                    opacity: isVisible ? 1 : 0,
-                    transform: `scale(${isVisible ? pop : 0.6})`,
-                    backgroundColor: 'rgba(11, 15, 25, 0.95)',
-                    border: `2px solid ${idx === 2 ? '#FF2E63' : '#FFE566'}`,
-                    borderRadius: 14,
-                    padding: '14px 20px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: 16,
-                    boxShadow:
-                      idx === 2
-                        ? '0 12px 30px rgba(0,0,0,0.9), 0 0 20px rgba(255, 46, 99, 0.4)'
-                        : '0 12px 30px rgba(0,0,0,0.9)',
-                  }}
-                >
-                  <div
-                    style={{
-                      fontFamily: PIXEL_HEADER_FONT,
-                      fontSize: 16,
-                      color: idx === 2 ? '#FF2E63' : '#FFE566',
-                    }}
-                  >
-                    #{idx + 1}
-                  </div>
-                  <div
-                    style={{
-                      fontFamily: PIXEL_SUB_FONT,
-                      fontSize: 16,
-                      color: '#FFFFFF',
-                      letterSpacing: '0.05em',
-                      fontWeight: 700,
-                    }}
-                  >
-                    {item.label}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        )}
-
-        {/* ================================================================== */}
-        {/* BEAT 3 (10s - 16s): PHYSICAL PROOF / CONTRAST                      */}
-        {/* ================================================================== */}
-        {currentBeat === 'b3_proof' && (
-          <div
-            style={{
-              position: 'absolute',
-              left: 540,
-              top: 720,
-              transform: 'translate(-50%, -50%)',
-              width: 660,
-              display: 'flex',
-              flexDirection: 'column',
               alignItems: 'center',
+              gap: 12,
               zIndex: 70,
             }}
           >
             <div
               style={{
-                backgroundColor: 'rgba(7, 10, 15, 0.94)',
-                border: `3px solid ${COLORS.emeraldNeon}`,
+                backgroundColor: 'rgba(11, 15, 25, 0.95)',
+                border: '2px solid #FF2E63',
                 borderRadius: 16,
-                padding: '12px 24px',
-                fontFamily: PIXEL_SUB_FONT,
-                fontSize: 16,
-                color: COLORS.emeraldNeon,
-                letterSpacing: '0.08em',
-                boxShadow: '0 12px 28px rgba(0,0,0,0.9), 0 0 20px rgba(57,255,136,0.4)',
-                textAlign: 'center',
-                whiteSpace: 'nowrap',
+                padding: '16px 28px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 16,
+                boxShadow: '0 16px 36px rgba(0,0,0,0.95), 0 0 25px rgba(255,46,99,0.4)',
               }}
             >
-              ✓ 180° HERMETIC SEAL • ZERO LEAK
+              <div
+                style={{
+                  fontFamily: PIXEL_HEADER_FONT,
+                  fontSize: 18,
+                  color: '#FF2E63',
+                }}
+              >
+                #1
+              </div>
+              <div
+                style={{
+                  fontFamily: PIXEL_SUB_FONT,
+                  fontSize: 18,
+                  color: '#FFFFFF',
+                  letterSpacing: '0.05em',
+                  fontWeight: 800,
+                }}
+              >
+                {manifest.list_items?.[0]?.label || beatConfig?.card || 'CUP PLASTIK GAMPANG TUMPAH'}
+              </div>
             </div>
           </div>
         )}
 
         {/* ================================================================== */}
-        {/* BEAT 4 (16s - 22s): FOUNDER CRAFT & INGREDIENT SCIENCE              */}
+        {/* POINT 2 / BEAT 3                                                   */}
         {/* ================================================================== */}
-        {currentBeat === 'b4_craft' && (
+        {(currentBeat === 'b3_point2' || currentBeat === 'b3_proof') && (
           <div
             style={{
               position: 'absolute',
               left: 540,
-              top: 720,
+              top: 680,
               transform: 'translate(-50%, -50%)',
               width: 660,
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
+              gap: 12,
               zIndex: 70,
             }}
           >
             <div
               style={{
-                backgroundColor: 'rgba(7, 10, 15, 0.94)',
-                border: `3px solid ${COLORS.goldBright}`,
+                backgroundColor: 'rgba(11, 15, 25, 0.95)',
+                border: `2px solid ${COLORS.emeraldNeon}`,
                 borderRadius: 16,
-                padding: '12px 26px',
-                fontFamily: PIXEL_SUB_FONT,
-                fontSize: 16,
-                color: COLORS.goldBright,
-                letterSpacing: '0.08em',
-                boxShadow: '0 12px 28px rgba(0,0,0,0.9), 0 0 20px rgba(255,229,102,0.4)',
-                textAlign: 'center',
+                padding: '16px 28px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 16,
+                boxShadow: '0 16px 36px rgba(0,0,0,0.95), 0 0 25px rgba(57,255,136,0.4)',
               }}
             >
-              ★ 100% ARTISAN CRAFT • STEVIA ALAMI
+              <div
+                style={{
+                  fontFamily: PIXEL_HEADER_FONT,
+                  fontSize: 18,
+                  color: COLORS.emeraldNeon,
+                }}
+              >
+                #2
+              </div>
+              <div
+                style={{
+                  fontFamily: PIXEL_SUB_FONT,
+                  fontSize: 18,
+                  color: '#FFFFFF',
+                  letterSpacing: '0.05em',
+                  fontWeight: 800,
+                }}
+              >
+                {manifest.list_items?.[1]?.label || beatConfig?.card || 'BOTOL 180° SEALED ANTI BOCOR'}
+              </div>
             </div>
           </div>
         )}
 
         {/* ================================================================== */}
-        {/* BEAT 5 (22s - 27s): COLD CHAIN DELIVERY REALITY                   */}
+        {/* POINT 3 / BEAT 4                                                   */}
+        {/* ================================================================== */}
+        {(currentBeat === 'b4_point3' || currentBeat === 'b4_craft') && (
+          <div
+            style={{
+              position: 'absolute',
+              left: 540,
+              top: 680,
+              transform: 'translate(-50%, -50%)',
+              width: 660,
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: 12,
+              zIndex: 70,
+            }}
+          >
+            <div
+              style={{
+                backgroundColor: 'rgba(11, 15, 25, 0.95)',
+                border: `2px solid ${COLORS.goldBright}`,
+                borderRadius: 16,
+                padding: '16px 28px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 16,
+                boxShadow: '0 16px 36px rgba(0,0,0,0.95), 0 0 25px rgba(255,229,102,0.4)',
+              }}
+            >
+              <div
+                style={{
+                  fontFamily: PIXEL_HEADER_FONT,
+                  fontSize: 18,
+                  color: COLORS.goldBright,
+                }}
+              >
+                #3
+              </div>
+              <div
+                style={{
+                  fontFamily: PIXEL_SUB_FONT,
+                  fontSize: 18,
+                  color: '#FFFFFF',
+                  letterSpacing: '0.05em',
+                  fontWeight: 800,
+                }}
+              >
+                {manifest.list_items?.[2]?.label || beatConfig?.card || 'COLD-STEEP & ZERO SUGAR CRASH'}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ================================================================== */}
+        {/* COLD CHAIN BEAT (if present in 6-beat legacy structure)             */}
         {/* ================================================================== */}
         {currentBeat === 'b5_coldchain' && (
           <div
@@ -471,9 +481,9 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
         )}
 
         {/* ================================================================== */}
-        {/* BEAT 6 (27s - 31s): FANFARE CTA & FLANKING REAL BOTTLES            */}
+        {/* CTA (FINAL BEAT): FANFARE & FLANKING REAL BOTTLES                  */}
         {/* ================================================================== */}
-        {currentBeat === 'b6_cta' && (
+        {(currentBeat === 'b5_cta' || currentBeat === 'b6_cta') && (
           <AbsoluteFill style={{ zIndex: 75 }}>
             {/* Flanking real bottles inside Red Box bounds (x:[192, 896], y:[202, 1236]) */}
             <div
@@ -533,7 +543,7 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
                   textShadow: antiArtifactShadow,
                 }}
               >
-                LIMITED BATCH RILIS SABTU INI
+                {beatConfig?.card || 'MINUMAN ANTI TUMPAH DI LAPTOP'}
               </div>
               <div
                 style={{
@@ -544,7 +554,7 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
                   letterSpacing: '0.06em',
                 }}
               >
-                KLIK LINK DI BIO SEBELUM KEHABISAN
+                KLIK LINK DI BIO SEKARANG
               </div>
             </div>
           </AbsoluteFill>

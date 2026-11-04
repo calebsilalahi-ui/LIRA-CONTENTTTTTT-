@@ -1,0 +1,592 @@
+{
+  "id": "fw_signature_milk_tea_point_progression",
+  "sku": "Signature Milk Tea",
+  "pillar": "Student Lifestyle & Portability",
+  "hook_category": "Pattern Interrupt",
+  "topic": "Signature Milk Tea Distributed 3-Point Retention Progression",
+  "threeP": {
+    "promise": "STOP TARUH CUP DI TOTEBAG",
+    "proof": "Botol 180° hermetic sealed anti bocor & 16 jam cold-steep stevia murni.",
+    "path": "Order Signature Milk Tea via link di bio sekarang."
+  },
+  "written_hook": {
+    "pre": "STOP TARUH CUP DI",
+    "accent": "TOTEBAG",
+    "post": ""
+  },
+  "audioMaster": "assets/generated_reels/fw_signature_milk_tea_point_progression_master.mp3",
+  "totalFrames": 1287,
+  "totalDurationSec": 42.88,
+  "beatFrames": {
+    "b1_hook": 0,
+    "b2_point1": 121,
+    "b3_point2": 435,
+    "b4_point3": 794,
+    "b5_cta": 1130
+  },
+  "listFrames": {
+    "item_1": 121,
+    "item_2": 435,
+    "item_3": 794
+  },
+  "captions": [
+    {
+      "text": "ATAU TEH",
+      "highlight": false,
+      "startSec": 1.28,
+      "endSec": 1.76,
+      "fromFrame": 38,
+      "toFrame": 52
+    },
+    {
+      "text": "DI TOTEBAG",
+      "highlight": true,
+      "startSec": 1.76,
+      "endSec": 2.48,
+      "fromFrame": 52,
+      "toFrame": 74
+    },
+    {
+      "text": "SAMPING LAPTOP",
+      "highlight": true,
+      "startSec": 2.48,
+      "endSec": 3.16,
+      "fromFrame": 74,
+      "toFrame": 94
+    },
+    {
+      "text": "LO POIN",
+      "highlight": false,
+      "startSec": 3.16,
+      "endSec": 4.04,
+      "fromFrame": 94,
+      "toFrame": 121
+    },
+    {
+      "text": "PERTAMA CUP",
+      "highlight": false,
+      "startSec": 4.04,
+      "endSec": 4.92,
+      "fromFrame": 121,
+      "toFrame": 147
+    },
+    {
+      "text": "PLASTIK KAFE",
+      "highlight": false,
+      "startSec": 4.92,
+      "endSec": 5.68,
+      "fromFrame": 147,
+      "toFrame": 170
+    },
+    {
+      "text": "GAMPANG TUMPAH",
+      "highlight": true,
+      "startSec": 5.68,
+      "endSec": 6.56,
+      "fromFrame": 170,
+      "toFrame": 196
+    },
+    {
+      "text": "DAN BEREMBUN",
+      "highlight": false,
+      "startSec": 6.56,
+      "endSec": 7.573,
+      "fromFrame": 196,
+      "toFrame": 227
+    },
+    {
+      "text": "TUTUP TIPISNYA",
+      "highlight": false,
+      "startSec": 7.573,
+      "endSec": 8.28,
+      "fromFrame": 227,
+      "toFrame": 248
+    },
+    {
+      "text": "GAMPANG KEBUKA",
+      "highlight": false,
+      "startSec": 8.28,
+      "endSec": 9.16,
+      "fromFrame": 248,
+      "toFrame": 274
+    },
+    {
+      "text": "PAS JALAN",
+      "highlight": false,
+      "startSec": 9.16,
+      "endSec": 9.88,
+      "fromFrame": 274,
+      "toFrame": 296
+    },
+    {
+      "text": "DAN REMBESAN",
+      "highlight": false,
+      "startSec": 9.88,
+      "endSec": 10.4,
+      "fromFrame": 296,
+      "toFrame": 312
+    },
+    {
+      "text": "AIR ES",
+      "highlight": false,
+      "startSec": 10.4,
+      "endSec": 10.96,
+      "fromFrame": 312,
+      "toFrame": 328
+    },
+    {
+      "text": "LANGSUNG BIKIN",
+      "highlight": false,
+      "startSec": 10.96,
+      "endSec": 11.76,
+      "fromFrame": 328,
+      "toFrame": 352
+    },
+    {
+      "text": "BASAH DOKUMEN",
+      "highlight": false,
+      "startSec": 11.76,
+      "endSec": 12.32,
+      "fromFrame": 352,
+      "toFrame": 369
+    },
+    {
+      "text": "TUGAS DAN",
+      "highlight": false,
+      "startSec": 12.32,
+      "endSec": 12.96,
+      "fromFrame": 369,
+      "toFrame": 388
+    },
+    {
+      "text": "KEYBOARD LAPTOP",
+      "highlight": true,
+      "startSec": 12.96,
+      "endSec": 13.68,
+      "fromFrame": 388,
+      "toFrame": 410
+    },
+    {
+      "text": "LO POIN",
+      "highlight": false,
+      "startSec": 13.68,
+      "endSec": 14.52,
+      "fromFrame": 410,
+      "toFrame": 435
+    },
+    {
+      "text": "KEDUA BOTOL",
+      "highlight": false,
+      "startSec": 14.52,
+      "endSec": 15.4,
+      "fromFrame": 435,
+      "toFrame": 462
+    },
+    {
+      "text": "LIRA DIDESAIN",
+      "highlight": false,
+      "startSec": 15.4,
+      "endSec": 16.24,
+      "fromFrame": 462,
+      "toFrame": 487
+    },
+    {
+      "text": "SERATUS DELAPAN",
+      "highlight": false,
+      "startSec": 16.24,
+      "endSec": 17,
+      "fromFrame": 487,
+      "toFrame": 510
+    },
+    {
+      "text": "PULUH DERAJAT",
+      "highlight": false,
+      "startSec": 17,
+      "endSec": 17.6,
+      "fromFrame": 510,
+      "toFrame": 528
+    },
+    {
+      "text": "HERMETIC SEALED",
+      "highlight": true,
+      "startSec": 17.6,
+      "endSec": 18.853,
+      "fromFrame": 528,
+      "toFrame": 565
+    },
+    {
+      "text": "TUTUP ULIR",
+      "highlight": false,
+      "startSec": 18.853,
+      "endSec": 19.44,
+      "fromFrame": 565,
+      "toFrame": 583
+    },
+    {
+      "text": "GOLD DENGAN",
+      "highlight": false,
+      "startSec": 19.44,
+      "endSec": 20,
+      "fromFrame": 583,
+      "toFrame": 600
+    },
+    {
+      "text": "SEGEL RAPAT",
+      "highlight": false,
+      "startSec": 20,
+      "endSec": 20.64,
+      "fromFrame": 600,
+      "toFrame": 619
+    },
+    {
+      "text": "KEDAP UDARA",
+      "highlight": false,
+      "startSec": 20.64,
+      "endSec": 21.6,
+      "fromFrame": 619,
+      "toFrame": 648
+    },
+    {
+      "text": "LO BALIK",
+      "highlight": false,
+      "startSec": 21.6,
+      "endSec": 21.96,
+      "fromFrame": 648,
+      "toFrame": 658
+    },
+    {
+      "text": "DI ATAS",
+      "highlight": false,
+      "startSec": 21.96,
+      "endSec": 22.36,
+      "fromFrame": 658,
+      "toFrame": 670
+    },
+    {
+      "text": "MACBOOK SEKALIPUN",
+      "highlight": false,
+      "startSec": 22.36,
+      "endSec": 23.32,
+      "fromFrame": 670,
+      "toFrame": 699
+    },
+    {
+      "text": "DIJAMIN NOL",
+      "highlight": false,
+      "startSec": 23.32,
+      "endSec": 24.48,
+      "fromFrame": 699,
+      "toFrame": 734
+    },
+    {
+      "text": "TETES REMBES",
+      "highlight": false,
+      "startSec": 24.48,
+      "endSec": 25.2,
+      "fromFrame": 734,
+      "toFrame": 756
+    },
+    {
+      "text": "MASUK RANSEL",
+      "highlight": false,
+      "startSec": 25.2,
+      "endSec": 26.227,
+      "fromFrame": 756,
+      "toFrame": 786
+    },
+    {
+      "text": "POIN KETIGA",
+      "highlight": true,
+      "startSec": 26.227,
+      "endSec": 27.2,
+      "fromFrame": 786,
+      "toFrame": 816
+    },
+    {
+      "text": "SEDUHAN COLD-STEEP",
+      "highlight": true,
+      "startSec": 27.2,
+      "endSec": 28.12,
+      "fromFrame": 816,
+      "toFrame": 843
+    },
+    {
+      "text": "ENAM BELAS",
+      "highlight": false,
+      "startSec": 28.12,
+      "endSec": 28.64,
+      "fromFrame": 843,
+      "toFrame": 859
+    },
+    {
+      "text": "JAM DENGAN",
+      "highlight": false,
+      "startSec": 28.64,
+      "endSec": 29.36,
+      "fromFrame": 859,
+      "toFrame": 880
+    },
+    {
+      "text": "NOL GULA",
+      "highlight": true,
+      "startSec": 29.36,
+      "endSec": 29.96,
+      "fromFrame": 880,
+      "toFrame": 898
+    },
+    {
+      "text": "PASIR MANISNYA",
+      "highlight": false,
+      "startSec": 29.96,
+      "endSec": 31.12,
+      "fromFrame": 898,
+      "toFrame": 933
+    },
+    {
+      "text": "MURNI DARI",
+      "highlight": false,
+      "startSec": 31.12,
+      "endSec": 31.84,
+      "fromFrame": 933,
+      "toFrame": 955
+    },
+    {
+      "text": "EKSTRAK DAUN",
+      "highlight": false,
+      "startSec": 31.84,
+      "endSec": 32.36,
+      "fromFrame": 955,
+      "toFrame": 970
+    },
+    {
+      "text": "STEVIA ALAMI",
+      "highlight": true,
+      "startSec": 32.36,
+      "endSec": 33.44,
+      "fromFrame": 970,
+      "toFrame": 1003
+    },
+    {
+      "text": "JADI LO",
+      "highlight": false,
+      "startSec": 33.44,
+      "endSec": 33.92,
+      "fromFrame": 1003,
+      "toFrame": 1017
+    },
+    {
+      "text": "DAPET FOKUS",
+      "highlight": false,
+      "startSec": 33.92,
+      "endSec": 34.4,
+      "fromFrame": 1017,
+      "toFrame": 1032
+    },
+    {
+      "text": "BELAJAR EMPAT",
+      "highlight": false,
+      "startSec": 34.4,
+      "endSec": 35.12,
+      "fromFrame": 1032,
+      "toFrame": 1053
+    },
+    {
+      "text": "JAM TANPA",
+      "highlight": false,
+      "startSec": 35.12,
+      "endSec": 35.8,
+      "fromFrame": 1053,
+      "toFrame": 1074
+    },
+    {
+      "text": "NGANTUK ATAU",
+      "highlight": false,
+      "startSec": 35.8,
+      "endSec": 36.64,
+      "fromFrame": 1074,
+      "toFrame": 1099
+    },
+    {
+      "text": "ENERGI CRASH",
+      "highlight": false,
+      "startSec": 36.64,
+      "endSec": 37.68,
+      "fromFrame": 1099,
+      "toFrame": 1130
+    },
+    {
+      "text": "BIAR PUNYA",
+      "highlight": false,
+      "startSec": 37.68,
+      "endSec": 38.16,
+      "fromFrame": 1130,
+      "toFrame": 1144
+    },
+    {
+      "text": "MINUMAN YANG",
+      "highlight": false,
+      "startSec": 38.16,
+      "endSec": 38.52,
+      "fromFrame": 1144,
+      "toFrame": 1155
+    },
+    {
+      "text": "GAK BAKAL",
+      "highlight": false,
+      "startSec": 38.52,
+      "endSec": 39.04,
+      "fromFrame": 1155,
+      "toFrame": 1171
+    },
+    {
+      "text": "TUMPAH DI",
+      "highlight": false,
+      "startSec": 39.04,
+      "endSec": 39.52,
+      "fromFrame": 1171,
+      "toFrame": 1185
+    },
+    {
+      "text": "LAPTOP LO",
+      "highlight": true,
+      "startSec": 39.52,
+      "endSec": 40.32,
+      "fromFrame": 1185,
+      "toFrame": 1209
+    },
+    {
+      "text": "KLIK LINK",
+      "highlight": true,
+      "startSec": 40.32,
+      "endSec": 40.72,
+      "fromFrame": 1209,
+      "toFrame": 1221
+    },
+    {
+      "text": "DI BIO",
+      "highlight": true,
+      "startSec": 40.72,
+      "endSec": 41.08,
+      "fromFrame": 1221,
+      "toFrame": 1232
+    },
+    {
+      "text": "SEKARANG",
+      "highlight": false,
+      "startSec": 41.08,
+      "endSec": 41.68,
+      "fromFrame": 1232,
+      "toFrame": 1251
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1_hook",
+      "scene": "totebag_cup_tilt",
+      "card": "STOP TARUH CUP DI TOTEBAG",
+      "anchor": null
+    },
+    {
+      "id": "b2_point1",
+      "scene": "wet_notes_cup",
+      "card": "POIN 1: CUP PLASTIK GAMPANG TUMPAH",
+      "anchor": "pertama"
+    },
+    {
+      "id": "b3_point2",
+      "scene": "inverted_bottle_laptop",
+      "card": "POIN 2: BOTOL 180° SEALED ANTI BOCOR",
+      "anchor": "kedua"
+    },
+    {
+      "id": "b4_point3",
+      "scene": "cold_steep_tea",
+      "card": "POIN 3: COLD-STEEP & ZERO SUGAR CRASH",
+      "anchor": "ketiga"
+    },
+    {
+      "id": "b5_cta",
+      "scene": "caleb_point_hero",
+      "card": "KLIK LINK DI BIO SEKARANG",
+      "anchor": "biar"
+    }
+  ],
+  "list_items": [
+    {
+      "label": "POIN 1: CUP PLASTIK GAMPANG TUMPAH",
+      "anchor": "pertama"
+    },
+    {
+      "label": "POIN 2: BOTOL 180° SEALED ANTI BOCOR",
+      "anchor": "kedua"
+    },
+    {
+      "label": "POIN 3: COLD-STEEP & ZERO SUGAR CRASH",
+      "anchor": "ketiga"
+    }
+  ],
+  "highlight_keywords": [
+    "totebag",
+    "laptop",
+    "poin pertama",
+    "gampang tumpah",
+    "keyboard",
+    "poin kedua",
+    "hermetic sealed",
+    "nol tetes",
+    "poin ketiga",
+    "cold-steep",
+    "stevia alami",
+    "nol gula",
+    "klik link di bio"
+  ],
+  "resolvedSFX": [
+    {
+      "file": "sub_hit.mp3",
+      "delayMs": 0,
+      "volume": 0.8
+    },
+    {
+      "file": "eightbit_clock_spin.wav",
+      "delayMs": 50,
+      "volume": 0.4
+    },
+    {
+      "file": "scratch.mp3",
+      "delayMs": 2680,
+      "volume": 0.5
+    },
+    {
+      "file": "thud.mp3",
+      "delayMs": 4040,
+      "volume": 0.6
+    },
+    {
+      "file": "eightbit_1star_buzz.wav",
+      "delayMs": 10000,
+      "volume": 0.5
+    },
+    {
+      "file": "snap.mp3",
+      "delayMs": 14520,
+      "volume": 0.6
+    },
+    {
+      "file": "whoosh.mp3",
+      "delayMs": 21760,
+      "volume": 0.5
+    },
+    {
+      "file": "eightbit_portal_shimmer.wav",
+      "delayMs": 26480,
+      "volume": 0.5
+    },
+    {
+      "file": "eightbit_5star_fanfare.wav",
+      "delayMs": 37680,
+      "volume": 0.7
+    }
+  ],
+  "caption": "Stop bahayain laptop lo cuma demi cup plastik kafe yang gampang tumpah dan berembun di totebag.\n\nLira Signature Milk Tea hadir dengan 3 keunggulan mutlak buat nemenin produktivitas lo:\n1. 100% Hermetic Sealed: Botol Almond 250ml dengan tutup ulir gold rapat kedap udara, aman dibalik 180 derajat di atas MacBook sekalipun tanpa tetes bocor.\n2. 16-Hour Cold-Steep: Daun teh hitam pilihan diseduh dingin semalaman menghasilkan rasa pekat alami tanpa rasa pahit sepat.\n3. Zero Sugar Crash: Nol gula pasir, murni ekstrak daun stevia alami. Manis segar creamy tanpa bikin ngantuk jam 2 siang.\n\nDikirim dingin menggunakan Forest Green Thermal Cooler Bag via Gojek COD setiap hari Sabtu.\n\nBiar punya minuman yang gak bakal tumpah di laptop lo, klik link di bio sekarang!\n\nCrafted solo by @caleb766h1\n\n#drinklira #milktea #stevia #zerosugar #studentlife #artisanbeverage #jakartadrink #coldcraft",
+  "createdAt": "2026-11-04T23:13:37.971Z"
+}

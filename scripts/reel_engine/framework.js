@@ -73,13 +73,16 @@ AUTHORITATIVE BRAND & OPERATIONAL GROUND TRUTH (from official Gemini Notebook & 
 
 FRAMEWORK (concept, not a template - never reuse example sentences):
 1. 3P in the first 3 seconds: PROMISE (clear value/transformation), PROOF (visceral reason to trust: science, physical test, raw experience), PATH (the roadmap).
-2. Open-loop multiplier: open with a counted list of dangers/lies/signs/rules (e.g. 3), and state up-front that item #3 is the one the viewer does daily / didn't expect. Item #3 is only paid off late (beat 2 end or later). Phrase it freshly every time.
+2. SPREAD THE 3 POINTS EQUALLY (RETENTION ENGINE): NEVER dump all 3 points together right after the hook! Spread them out sequentially across the video to retain viewers from beginning to end:
+   - b1_hook (0-3s): Pattern interrupt / visceral hook stopping the scroll.
+   - b2_point1 (3-10s): State Point 1 clearly, then explain why the usual takeaway cup/habit fails.
+   - b3_point2 (10-18s): State Point 2 clearly, then explain the physical proof (180° hermetic seal, leakproof bottle).
+   - b4_point3 (18-25s): State Point 3 clearly, then explain the formulation/science (fresh cold-steep 16h, 100% pure stevia, zero sugar crash).
+   - b5_cta (25-30s): Call to action delivering: "Biar punya minuman yang gak bakal tumpah di laptop lo, klik link di bio sekarang!" (or SKU variant ensuring drinks won't spill on laptop).
 3. Zero throat-clearing: first word is the hook. No "Halo", no brand intro, the word "Lira" must not appear in the first sentence.
-4. Six beats, ~25-32s total (~70-85 spoken words):
-   b1_hook (0-5s) super hook + open loop | b2_agitation (5-10s) why the usual option fails, list items | b3_proof (10-16s) physical proof with the real bottle | b4_craft (16-22s) founder craft / ingredient science "aha" | b5_coldchain (22-27s) how it arrives cold (Forest Green foil cooler bag, Saturday Gojek COD) | b6_cta (27-31s) non-numeric scarcity CTA.
-5. Loop & Ending: The final sentence (b6_cta) MUST be a complete, punchy sentence that delivers the call-to-action (e.g. "Klik link di bio sekarang sebelum kehabisan batch minggu ini" or "Amankan botol lo lewat link di bio biar lo bisa buktiin sendiri"). NEVER end on an incomplete fragment or trailing conjunction like "kalau", "karena", "supaya", or "tapi" that makes the audio sound like it got cut off!
-6. ElevenLabs v4 emotion tags in square brackets before sentences, from: ${EMOTION_TAGS.map((t) => `[${t}]`).join(' ')}. NEVER use [whisper] or any whisper/breathy tag. Delivery is fast, bold, punchy. Vary emotions for tension.
-7. Write numbers that are spoken as words where natural; keep sentences short.
+4. Loop & Ending: The final sentence (b5_cta) MUST be a complete, punchy sentence that delivers the call-to-action ("Biar punya minuman yang gak bakal tumpah di laptop lo, klik link di bio sekarang!"). NEVER end on an incomplete fragment or trailing conjunction.
+5. ElevenLabs v4 emotion tags in square brackets before sentences, from: ${EMOTION_TAGS.map((t) => `[${t}]`).join(' ')}. NEVER use [whisper] or any whisper/breathy tag. Delivery is fast, bold, punchy. Vary emotions for tension.
+6. Write numbers that are spoken as words where natural; keep sentences short.
 
 BRAND GUARDRAILS (hard fail):
 - Scarcity is strictly non-numeric: "limited batch", "stok terbatas", "batch minggu ini". NEVER an exact bottle count.
@@ -112,15 +115,15 @@ const RESPONSE_SCHEMA = {
       properties: { pre: { type: 'string' }, accent: { type: 'string' }, post: { type: 'string' } },
       required: ['pre', 'accent', 'post'],
     },
-    script: { type: 'string', description: 'Full voiceover with [emotion] tags, 70-85 spoken words, last sentence loops into the first.' },
+    script: { type: 'string', description: 'Full voiceover with [emotion] tags, ~90-115 spoken words following the 3-point progression, ending with CTA.' },
     list_items: {
       type: 'array',
-      description: 'The 3 counted items of the open loop, each <= 4 words uppercase, shown as HUD chips',
+      description: 'The 3 distinct points, each <= 5 words uppercase, corresponding to Point 1, Point 2, Point 3.',
       items: { type: 'object', properties: { label: { type: 'string' }, anchor: { type: 'string' } }, required: ['label', 'anchor'] },
     },
     beats: {
       type: 'array',
-      description: 'Exactly 6 beats in order b1_hook..b6_cta. anchor = first spoken word of that beat (null for b1). card = short on-screen top-card text (<= 5 words).',
+      description: '5 beats in order: b1_hook (0-3s), b2_point1 (3-10s), b3_point2 (10-18s), b4_point3 (18-25s), b5_cta (25-30s). anchor = first spoken word of that beat (null for b1). card = short on-screen card text (<= 5 words, e.g. "POIN 1: CUP PLASTIK GAMPANG TUMPAH").',
       items: {
         type: 'object',
         properties: {

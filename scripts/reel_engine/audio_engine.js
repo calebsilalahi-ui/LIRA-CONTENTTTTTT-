@@ -245,7 +245,7 @@ async function buildReelAudio(cfg, opts = {}) {
       currentWordIdx = idx + 1;
     } else {
       // Proportional fallback based on beat target
-      const fbSec = fw.BEATS[b].target[0];
+      const fbSec = fw.BEATS[b]?.target?.[0] || b * 6;
       beatFrames[beat.id] = Math.floor(fbSec * 30);
     }
   }
