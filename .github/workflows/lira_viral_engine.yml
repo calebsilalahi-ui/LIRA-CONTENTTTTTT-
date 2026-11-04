@@ -89,8 +89,14 @@ jobs:
           BUFFER_CHANNEL_ID: ${{ secrets.BUFFER_CHANNEL_ID || '6ad933a2778b240e2f81b45d' }}
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY || secrets.ELEVENLABS }}
           CALEB_VOICE_ID: ${{ secrets.CALEB_VOICE_ID || secrets.CALEB || 'WVwVlhKdnZoCuTIoxjYr' }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
+          # Sanitize environment variables against unwanted newlines/carriage returns
+          export BUFFER_TOKEN="$(printf '%s' "$BUFFER_TOKEN" | tr -d '\r\n')"
+          export BUFFER_CHANNEL_ID="$(printf '%s' "$BUFFER_CHANNEL_ID" | tr -d '\r\n')"
+          export ELEVENLABS_API_KEY="$(printf '%s' "$ELEVENLABS_API_KEY" | tr -d '\r\n')"
+          export CALEB_VOICE_ID="$(printf '%s' "$CALEB_VOICE_ID" | tr -d '\r\n')"
+          export GEMINI_API_KEY="$(printf '%s' "$GEMINI_API_KEY" | tr -d '\r\n')"
+
           ARGS=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             ARGS="--dry-run"

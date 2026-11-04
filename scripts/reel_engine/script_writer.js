@@ -23,7 +23,9 @@ function loadEnv() {
     const t = line.trim();
     if (!t || t.startsWith('#') || !t.includes('=')) continue;
     const [k, ...v] = t.split('=');
-    if (!process.env[k.trim()]) process.env[k.trim()] = v.join('=').trim();
+    const key = k.trim();
+    const val = v.join('=').trim().replace(/[\r\n\t]/g, '');
+    if (!process.env[key]) process.env[key] = val;
   }
 }
 
@@ -76,7 +78,8 @@ function guardrailCheck(cfg) {
 
 async function callGemini(systemPrompt, userPrompt) {
   const { GoogleGenAI } = require('@google/genai');
-  const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+  const apiKey = (process.env.GEMINI_API_KEY || '').trim().replace(/[\r\n\t]/g, '');
+  const ai = new GoogleGenAI({ apiKey });
   const models = (process.env.LIRA_WRITER_MODELS || 'gemini-3.5-flash,gemini-3-flash-preview,gemini-2.5-flash,gemini-flash-latest').split(',');
   let lastErr;
   for (let round = 0; round < 3; round++) {

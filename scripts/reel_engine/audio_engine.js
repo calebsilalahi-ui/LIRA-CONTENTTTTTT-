@@ -24,11 +24,15 @@ function loadEnv() {
     const t = line.trim();
     if (!t || t.startsWith('#') || !t.includes('=')) continue;
     const [k, ...v] = t.split('=');
-    if (!process.env[k.trim()]) process.env[k.trim()] = v.join('=').trim();
+    const key = k.trim();
+    const val = v.join('=').trim().replace(/[\r\n\t]/g, '');
+    if (!process.env[key]) process.env[key] = val;
   }
 }
 
 async function callElevenLabsTTS(text, voiceId, apiKey) {
+  const cleanVoiceId = encodeURIComponent(String(voiceId || '').trim().replace(/[\r\n\t]/g, ''));
+  const cleanApiKey = String(apiKey || '').trim().replace(/[\r\n\t]/g, '');
   const payload = JSON.stringify({
     text,
     model_id: 'eleven_v4',
@@ -42,10 +46,10 @@ async function callElevenLabsTTS(text, voiceId, apiKey) {
     const req = https.request(
       {
         hostname: 'api.elevenlabs.io',
-        path: `/v1/text-to-speech/${voiceId}/with-timestamps`,
+        path: `/v1/text-to-speech/${cleanVoiceId}/with-timestamps`,
         method: 'POST',
         headers: {
-          'xi-api-key': apiKey,
+          'xi-api-key': cleanApiKey,
           'Content-Type': 'application/json',
           'Content-Length': Buffer.byteLength(payload),
         },
@@ -177,11 +181,11 @@ function buildCaptions(words, highlightKeywords = []) {
 
 async function buildReelAudio(cfg, opts = {}) {
   loadEnv();
-  const apiKey = process.env.ELEVENLABS_API_KEY || process.env.ELEVENLABS || process.env.XI_API_KEY;
+  const apiKey = (process.env.ELEVENLABS_API_KEY || process.env.ELEVENLABS || process.env.XI_API_KEY || '').trim().replace(/[\r\n\t]/g, '');
   if (!apiKey) {
     throw new Error('❌ ELEVENLABS_API_KEY is missing from environment.');
   }
-  const voiceId = process.env.CALEB_VOICE_ID || 'WVwVlhKdnZoCuTIoxjYr';
+  const voiceId = (process.env.CALEB_VOICE_ID || process.env.CALEB || 'WVwVlhKdnZoCuTIoxjYr').trim().replace(/[\r\n\t]/g, '');
 
   if (/\[\s*whisper/i.test(cfg.script) || /whisper/i.test(cfg.script)) {
     throw new Error('❌ Banned tag: [whisper] is strictly prohibited by plan §3.1');

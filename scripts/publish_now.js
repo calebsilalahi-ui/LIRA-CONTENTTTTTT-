@@ -42,7 +42,7 @@ function loadEnv() {
       if (trimmed && !trimmed.startsWith('#') && trimmed.includes('=')) {
         const [k, ...v] = trimmed.split('=');
         const key = k.trim();
-        const val = v.join('=').trim();
+        const val = v.join('=').trim().replace(/[\r\n\t]/g, '');
         if (!process.env[key]) {
           process.env[key] = val;
         }
@@ -55,11 +55,11 @@ function loadEnv() {
 loadEnv();
 
 function getBufferToken() {
-  return process.env.BUFFER_TOKEN || process.env.BUFFERTOKEN || process.env.BUFFER_ACCESS_TOKEN || '';
+  return (process.env.BUFFER_TOKEN || process.env.BUFFERTOKEN || process.env.BUFFER_ACCESS_TOKEN || '').trim().replace(/[\r\n\t]/g, '');
 }
 
 const BUFFER_API = 'https://api.buffer.com';
-const TARGET_CHANNEL_ID = process.env.BUFFER_CHANNEL_ID || '6ad933a2778b240e2f81b45d';
+const TARGET_CHANNEL_ID = (process.env.BUFFER_CHANNEL_ID || '6ad933a2778b240e2f81b45d').trim().replace(/[\r\n\t]/g, '');
 const TUNNEL_TIMEOUT_SEC = 300;
 
 // Resolve cloudflared binary

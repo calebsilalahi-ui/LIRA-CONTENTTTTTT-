@@ -37,16 +37,20 @@ if (fs.existsSync(envPath)) {
     const trimmed = line.trim();
     if (trimmed && !trimmed.startsWith('#') && trimmed.includes('=')) {
       const [k, ...v] = trimmed.split('=');
-      process.env[k.trim()] = v.join('=').trim();
+      const key = k.trim();
+      const val = v.join('=').trim().replace(/[\r\n\t]/g, '');
+      if (!process.env[key]) {
+        process.env[key] = val;
+      }
     }
   }
 }
 
 // Credentials loaded cleanly from process.env (strictly zero hardcoded fallbacks)
-const BUFFER_TOKEN = process.env.BUFFER_TOKEN || process.env.BUFFERTOKEN || process.env.BUFFER_ACCESS_TOKEN || '';
-const BUFFER_CHANNEL_ID = process.env.BUFFER_CHANNEL_ID || '6ad933a2778b240e2f81b45d'; // @drinklira
-const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY || process.env.ELEVENLABS || process.env.XI_API_KEY || '';
-const CALEB_VOICE_ID = process.env.CALEB_VOICE_ID || process.env.CALEB || 'WVwVlhKdnZoCuTIoxjYr';
+const BUFFER_TOKEN = (process.env.BUFFER_TOKEN || process.env.BUFFERTOKEN || process.env.BUFFER_ACCESS_TOKEN || '').trim().replace(/[\r\n\t]/g, '');
+const BUFFER_CHANNEL_ID = (process.env.BUFFER_CHANNEL_ID || '6ad933a2778b240e2f81b45d').trim().replace(/[\r\n\t]/g, ''); // @drinklira
+const ELEVENLABS_API_KEY = (process.env.ELEVENLABS_API_KEY || process.env.ELEVENLABS || process.env.XI_API_KEY || '').trim().replace(/[\r\n\t]/g, '');
+const CALEB_VOICE_ID = (process.env.CALEB_VOICE_ID || process.env.CALEB || 'WVwVlhKdnZoCuTIoxjYr').trim().replace(/[\r\n\t]/g, '');
 
 // Import Guardrail Validator
 const { validateContent, GuardrailError } = require('./validate_guardrails');
@@ -460,16 +464,17 @@ async function synthesizeReelAudio(template) {
     },
   });
 
-  const voiceId = process.env.CALEB_VOICE_ID || 'WVwVlhKdnZoCuTIoxjYr';
+  const voiceId = (process.env.CALEB_VOICE_ID || process.env.CALEB || 'WVwVlhKdnZoCuTIoxjYr').trim().replace(/[\r\n\t]/g, '');
+  const cleanApiKey = String(apiKey || '').trim().replace(/[\r\n\t]/g, '');
   const https = require('https');
   const resData = await new Promise((resolve, reject) => {
     const req = https.request(
       {
         hostname: 'api.elevenlabs.io',
-        path: `/v1/text-to-speech/${voiceId}/with-timestamps`,
+        path: `/v1/text-to-speech/${encodeURIComponent(voiceId)}/with-timestamps`,
         method: 'POST',
         headers: {
-          'xi-api-key': apiKey,
+          'xi-api-key': cleanApiKey,
           'Content-Type': 'application/json',
           'Content-Length': Buffer.byteLength(payload),
         },
