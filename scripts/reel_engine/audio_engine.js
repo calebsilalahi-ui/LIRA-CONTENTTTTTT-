@@ -272,10 +272,10 @@ async function buildReelAudio(cfg, opts = {}) {
     : 'ffmpeg';
 
   // Build SFX inputs and filters
-  const inputs = ['-y', '-i', rawPath, '-i', bgmPath];
+  const inputs = ['-y', '-i', rawPath, '-stream_loop', '-1', '-i', bgmPath];
   let filterParts = [
     `[0:a]volume=1.25,loudnorm=I=-14:TP=-1.5:LRA=11[vo];`,
-    `[1:a]aloop=loop=-1:size=2e+09,volume=0.42[bgm];`,
+    `[1:a]volume=0.42[bgm];`,
   ];
   const mixLabels = ['[vo]', '[bgm]'];
 
@@ -324,7 +324,8 @@ async function buildReelAudio(cfg, opts = {}) {
   console.log(`[AudioEngine] Mixing ${mixCount} audio tracks with FFmpeg...`);
   const mixRes = spawnSync(ffmpegBin, ffmpegArgs, { stdio: 'inherit' });
   if (mixRes.status !== 0 || !fs.existsSync(masterPath)) {
-    throw new Error(`FFmpeg audio mix failed (status: ${mixRes.status})`);
+    const errDetail = mixRes.error ? mixRes.error.message : (mixRes.signal ? `signal: ${mixRes.signal}` : `status: ${mixRes.status}`);
+    throw new Error(`FFmpeg audio mix failed (${errDetail})`);
   }
   console.log(`[AudioEngine] ✓ Master audio saved: ${masterPath}`);
 
