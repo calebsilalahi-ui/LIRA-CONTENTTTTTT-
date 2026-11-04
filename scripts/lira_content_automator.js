@@ -301,7 +301,7 @@ function parseCliArgs() {
       opts.render = true;
     } else if (arg === '--type' && args[i + 1]) {
       opts.type = args[++i];
-    } else if (arg === '--publish' && args[i + 1]) {
+    } else if ((arg === '--publish' || arg === '--publish-mode') && args[i + 1]) {
       opts.publishMode = args[++i];
     } else if (arg === '--template' && args[i + 1]) {
       opts.templateIndex = parseInt(args[++i], 10);
@@ -428,7 +428,17 @@ async function main() {
 
   // Single Slot Mode
   console.log(`[Single Slot] Target format: ${opts.type}, publishMode: ${opts.publishMode}`);
-  const template = PRODUCTION_SLOT_BLUEPRINTS[opts.templateIndex % PRODUCTION_SLOT_BLUEPRINTS.length];
+  let templateIdx = opts.templateIndex;
+  if (!process.argv.includes('--template')) {
+    if (fs.existsSync(LEDGER_PATH)) {
+      try {
+        const ledger = JSON.parse(fs.readFileSync(LEDGER_PATH, 'utf-8'));
+        templateIdx = (ledger.entries || []).length % PRODUCTION_SLOT_BLUEPRINTS.length;
+      } catch (e) {}
+    }
+  }
+  const template = PRODUCTION_SLOT_BLUEPRINTS[templateIdx % PRODUCTION_SLOT_BLUEPRINTS.length];
+  console.log(`[Slot Selector] Selected Blueprint #${templateIdx + 1} (${template.format.toUpperCase()} - ${template.hook_category}): "${template.written_hook}"`);
   
   // Guardrail check
   validateContent(template);
@@ -488,6 +498,32 @@ async function main() {
         throw new Error(`Buffer publisher failed with exit code ${pubRes.status}`);
       }
       console.log(`[Buffer] ✓ Post published/queued successfully to @drinklira.`);
+
+      // Update and persist ledger state
+      let ledger = { schemaVersion: '1.0', lastUpdated: new Date().toISOString(), entries: [] };
+      if (fs.existsSync(LEDGER_PATH)) {
+        try {
+          ledger = JSON.parse(fs.readFileSync(LEDGER_PATH, 'utf-8'));
+        } catch (e) {}
+      }
+      ledger.entries.push({
+        id: `${template.id}_${Date.now()}`,
+        timestamp: new Date().toISOString(),
+        createdAt: new Date().toISOString(),
+        format: isCarousel ? 'carousel' : 'reel',
+        sku: template.sku,
+        pillar: template.pillar,
+        hook_category: template.hook_category,
+        topic: template.topic,
+        verbal_hook: template.verbal_hook,
+        written_hook: template.written_hook,
+        caption: template.caption,
+        status: 'published_live',
+      });
+      ledger.lastUpdated = new Date().toISOString();
+      fs.mkdirSync(path.dirname(LEDGER_PATH), { recursive: true });
+      fs.writeFileSync(LEDGER_PATH, JSON.stringify(ledger, null, 2), 'utf-8');
+      console.log(`[Ledger Persistence] ✓ Appended live entry to ${LEDGER_PATH}. Total entries: ${ledger.entries.length}`);
     }
   }
 
