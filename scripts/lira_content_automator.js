@@ -102,6 +102,7 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
   {
     id: 'slot_01_reel_matcha_crash',
     format: 'reel',
+    compositionId: 'Reel17-Dynamic3PSomatic',
     sku: 'Matcha Oatside',
     pillar: 'Sugar Crash & Stevia Science',
     hook_category: 'Comparison',
@@ -114,6 +115,8 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
   {
     id: 'slot_02_carousel_dark_cocoa',
     format: 'carousel',
+    slidePrefix: 'Carousel-Anatomi',
+    slideCount: 4,
     sku: 'Choco Hazelnut',
     pillar: 'Craftsmanship & Student Lifestyle',
     hook_category: 'Educational',
@@ -126,13 +129,12 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
       { slideNumber: 2, headline: 'KENAPA COKLAT KAFE BIKIN TENGGOROKAN GATAL DAN LENGKET', type: 'reserve_hook' },
       { slideNumber: 3, headline: 'PERBANDINGAN BAHAN BAKU: RAW COCOA VS KENTAL MANIS', type: 'body' },
       { slideNumber: 4, headline: 'KANDUNGAN THEOBROMINE UNTUK CLEAN ENERGY 4 JAM', type: 'body' },
-      { slideNumber: 5, headline: 'CHEATSHEET: CARA BACA LABEL MINUMAN COKELAT', type: 'high_save' },
-      { slideNumber: 6, headline: 'LIMITED BATCH SABTU: CARA AMANKAN BOTTLE DINGIN LO', type: 'cta' },
     ],
   },
   {
     id: 'slot_03_reel_forest_bag',
     format: 'reel',
+    compositionId: 'LiraSaturdayCodLoop',
     sku: 'Signature Milk Tea',
     pillar: 'Cold Chain & Saturday COD Loop',
     hook_category: 'Storytelling',
@@ -145,6 +147,8 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
   {
     id: 'slot_04_carousel_matcha_myth',
     format: 'carousel',
+    slidePrefix: 'Carousel-Stevia',
+    slideCount: 4,
     sku: 'Matcha Classic',
     pillar: 'Indie Game & Pixel Culture',
     hook_category: 'Myth Busting',
@@ -157,13 +161,12 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
       { slideNumber: 2, headline: 'DAUN PERTAMA JEPANG PUNYA RASA UMAMI MANIS ALAMI', type: 'reserve_hook' },
       { slideNumber: 3, headline: 'KENAPA BANYAK KAFE BUTUH 4 PUMP GULA CAIR', type: 'body' },
       { slideNumber: 4, headline: 'METODE MICRO-WHISK 10 DETIK TANPA AMPAS KASAR', type: 'body' },
-      { slideNumber: 5, headline: 'PANDUAN TASTING NOTES MATCHA UNTUK PEMULA', type: 'high_save' },
-      { slideNumber: 6, headline: 'AMANKAN JATAH BOTOL SABTU INI DI LINK BIO', type: 'cta' },
     ],
   },
   {
     id: 'slot_05_reel_founder_routine',
     format: 'reel',
+    compositionId: 'Reel10-FridayNightBrewing',
     sku: 'Matcha Oatside',
     pillar: 'Craftsmanship & Student Lifestyle',
     hook_category: 'Day in the Life',
@@ -176,6 +179,8 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
   {
     id: 'slot_06_carousel_ceylon_steep',
     format: 'carousel',
+    slidePrefix: 'Carousel-DeepWork',
+    slideCount: 4,
     sku: 'Signature Milk Tea',
     pillar: 'Sugar Crash & Stevia Science',
     hook_category: 'Authority',
@@ -188,13 +193,12 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
       { slideNumber: 2, headline: 'SUHU DINGIN MENAHAN TANNIN AGAR TIDAK SEPAT DI LIDAH', type: 'reserve_hook' },
       { slideNumber: 3, headline: 'KOMBINASI SUSU EVAPORASI TANPA PENGAWET SINTETIS', type: 'body' },
       { slideNumber: 4, headline: 'GRAFIK PELEPASAN KAFEIN ALAMI VS ENERGI CRASH', type: 'body' },
-      { slideNumber: 5, headline: 'TABEL PERBANDINGAN MILK TEA KAFE VS LIRA COLD STEEP', type: 'high_save' },
-      { slideNumber: 6, headline: 'SLOT PENGIRIMAN WEEKEND INI SUDAH DIBUKA VIA BIO', type: 'cta' },
     ],
   },
   {
     id: 'slot_07_reel_shake_test',
     format: 'reel',
+    compositionId: 'Video5-CupVsBottle',
     sku: 'Choco Hazelnut',
     pillar: 'Cold Chain & Saturday COD Loop',
     hook_category: 'Random',
@@ -207,6 +211,8 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
   {
     id: 'slot_08_carousel_library_guide',
     format: 'carousel',
+    slidePrefix: 'Carousel-Rutinitas',
+    slideCount: 4,
     sku: 'Matcha Classic',
     pillar: 'Craftsmanship & Student Lifestyle',
     hook_category: 'Storytelling',
@@ -219,13 +225,12 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
       { slideNumber: 2, headline: 'EMBUN CUP PLASTIK BIASA MERUSAK CATATAN KERTAS LAPTOP', type: 'reserve_hook' },
       { slideNumber: 3, headline: 'DESAIN BOTOL RAMBING PAS MASUK SLEEVE TAS RANSEL', type: 'body' },
       { slideNumber: 4, headline: 'L-THEANINE MEMBANTU GELOMBANG OTAK ALPHA FOKUS', type: 'body' },
-      { slideNumber: 5, headline: 'CHECKLIST PERSIAPAN EXAM SPRINT 4 JAM', type: 'high_save' },
-      { slideNumber: 6, headline: 'PESAN BOTOL ARTISAN WEEKEND INI LEWAT LINK DI BIO', type: 'cta' },
     ],
   },
   {
     id: 'slot_09_reel_sapa_restock',
     format: 'reel',
+    compositionId: 'LiraSapaMartComeback8Bit',
     sku: 'Matcha Oatside',
     pillar: 'Cold Chain & Saturday COD Loop',
     hook_category: 'Educational',
@@ -238,6 +243,8 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
   {
     id: 'slot_10_carousel_milk_tea_calories',
     format: 'carousel',
+    slidePrefix: 'Carousel-Finance',
+    slideCount: 4,
     sku: 'Signature Milk Tea',
     pillar: 'Sugar Crash & Stevia Science',
     hook_category: 'Comparison',
@@ -250,8 +257,6 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
       { slideNumber: 2, headline: 'SIRUP FRUKTOSA KAFE MENYUMBANG 80 PERSEN BEBAN KALORI', type: 'reserve_hook' },
       { slideNumber: 3, headline: 'RESEP STEVIA ALAMI MEMBERIKAN RASA SWEET TANPA BEBAN', type: 'body' },
       { slideNumber: 4, headline: 'NUTRISI LENGKAP: PROTEIN SUSU DENGAN ANTIOKSIDAN TEH', type: 'body' },
-      { slideNumber: 5, headline: 'INFOGRAFIS: PERBANDINGAN GULA PADA 5 MINUMAN POPULER', type: 'high_save' },
-      { slideNumber: 6, headline: 'SLOT DROP SABTU TERBATAS AMANKAN SEKARANG DI BIO', type: 'cta' },
     ],
   },
 ];
@@ -433,8 +438,49 @@ async function main() {
     if (fs.existsSync(LEDGER_PATH)) {
       try {
         const ledger = JSON.parse(fs.readFileSync(LEDGER_PATH, 'utf-8'));
-        templateIdx = (ledger.entries || []).length % PRODUCTION_SLOT_BLUEPRINTS.length;
-      } catch (e) {}
+        const entries = ledger.entries || [];
+        // Find the last published_live entry
+        let lastBlueprintIdx = -1;
+        for (let i = entries.length - 1; i >= 0; i--) {
+          const entry = entries[i];
+          if (entry.status === 'published_live') {
+            const bpIdx = PRODUCTION_SLOT_BLUEPRINTS.findIndex(bp => entry.id.startsWith(bp.id));
+            if (bpIdx !== -1) {
+              lastBlueprintIdx = bpIdx;
+              break;
+            }
+          }
+        }
+
+        if (lastBlueprintIdx !== -1) {
+          if (opts.type === 'reel') {
+            // Find next reel blueprint
+            for (let offset = 1; offset <= PRODUCTION_SLOT_BLUEPRINTS.length; offset++) {
+              const candidateIdx = (lastBlueprintIdx + offset) % PRODUCTION_SLOT_BLUEPRINTS.length;
+              if (PRODUCTION_SLOT_BLUEPRINTS[candidateIdx].format === 'reel') {
+                templateIdx = candidateIdx;
+                break;
+              }
+            }
+          } else if (opts.type === 'carousel') {
+            // Find next carousel blueprint
+            for (let offset = 1; offset <= PRODUCTION_SLOT_BLUEPRINTS.length; offset++) {
+              const candidateIdx = (lastBlueprintIdx + offset) % PRODUCTION_SLOT_BLUEPRINTS.length;
+              if (PRODUCTION_SLOT_BLUEPRINTS[candidateIdx].format === 'carousel') {
+                templateIdx = candidateIdx;
+                break;
+              }
+            }
+          } else {
+            // Auto: advance to the very next blueprint in order
+            templateIdx = (lastBlueprintIdx + 1) % PRODUCTION_SLOT_BLUEPRINTS.length;
+          }
+        } else {
+          templateIdx = entries.length % PRODUCTION_SLOT_BLUEPRINTS.length;
+        }
+      } catch (e) {
+        console.warn(`[Ledger] Warning: Error analyzing ledger entries for next slot:`, e.message);
+      }
     }
   }
   const template = PRODUCTION_SLOT_BLUEPRINTS[templateIdx % PRODUCTION_SLOT_BLUEPRINTS.length];
@@ -447,56 +493,65 @@ async function main() {
 
   // Render & Audio Synthesis Step
   let renderedFiles = [];
-  const isCarousel = template.format === 'carousel' || opts.type === 'carousel';
+  const isCarousel = template.format === 'carousel';
+  const remotionBin = path.join(PROJECT_ROOT, 'node_modules/.bin/remotion');
 
   if (opts.render || opts.publishMode === 'postNow') {
     if (isCarousel) {
-      console.log(`[Renderer] Triggering locked-in canonical carousel render (CarouselRevisedLightStudio)...`);
-      const renderScript = path.join(__dirname, 'render_revised_carousel.js');
-      const res = spawnSync(NODE_BIN, [renderScript], { stdio: 'inherit', env: process.env });
-      if (res.status !== 0) {
-        throw new Error(`Carousel rendering failed with exit code ${res.status}`);
+      const slidePrefix = template.slidePrefix || 'Carousel-Anatomi';
+      const count = template.slideCount || 4;
+      console.log(`[Renderer] Compiling fresh Carousel slides for "${template.id}" using Remotion CLI (${slidePrefix}-1..${count})...`);
+      const outDir = path.join(PROJECT_ROOT, 'out/current_carousel');
+      fs.mkdirSync(outDir, { recursive: true });
+      renderedFiles = [];
+
+      for (let s = 1; s <= count; s++) {
+        const compId = `${slidePrefix}-${s}`;
+        const slidePath = path.join(outDir, `slide_${s}.jpg`);
+        if (fs.existsSync(slidePath)) {
+          fs.unlinkSync(slidePath);
+        }
+        console.log(`  -> [Remotion Still] Rendering ${compId} -> ${slidePath}...`);
+        const res = spawnSync(NODE_BIN, [remotionBin, 'still', 'src/index.ts', compId, slidePath], {
+          stdio: 'inherit',
+          env: process.env,
+        });
+        if (res.status !== 0 || !fs.existsSync(slidePath)) {
+          throw new Error(`Remotion still render failed for ${compId} (exit code: ${res.status})`);
+        }
+        renderedFiles.push(slidePath);
       }
-      const outDir = process.env.LIRA_CAROUSEL_DIR || (
-        fs.existsSync('/Users/caleb/Desktop/lira reels/carousel_revised_light_studio')
-          ? '/Users/caleb/Desktop/lira reels/carousel_revised_light_studio'
-          : path.join(PROJECT_ROOT, 'public/carousel_revised_light_studio')
-      );
-      renderedFiles = [1, 2, 3, 4, 5, 6, 7, 8].map(i => path.join(outDir, `slide_${i}.jpg`));
-      console.log(`[Renderer] ✓ All 8 slides rendered to ${outDir}`);
+      console.log(`[Renderer] ✓ Successfully rendered ${renderedFiles.length} fresh distinct carousel slides!`);
     } else {
-      console.log(`[Renderer] Checking ElevenLabs audio and Reel assets for template ${template.id}...`);
-      const audioScript = path.join(__dirname, 'generate_sample_3p_reel_audio.js');
-      if (!ELEVENLABS_API_KEY) {
-        throw new Error('❌ ELEVENLABS_API_KEY is missing! In GitHub Actions, please add it in: Repo Settings -> Secrets and variables -> Actions -> Repository secrets -> ELEVENLABS_API_KEY.');
+      const compId = template.compositionId || 'Reel17-Dynamic3PSomatic';
+      console.log(`[Renderer] Compiling fresh Reel video for "${template.id}" using Remotion CLI (composition: ${compId})...`);
+      const outDir = path.join(PROJECT_ROOT, 'out/current_reel');
+      fs.mkdirSync(outDir, { recursive: true });
+      const outMp4 = path.join(outDir, `${template.id}.mp4`);
+
+      if (fs.existsSync(outMp4)) {
+        fs.unlinkSync(outMp4);
       }
-      if (fs.existsSync(audioScript)) {
-        console.log(`[ElevenLabs] Synthesizing Caleb founder voice clone (${CALEB_VOICE_ID})...`);
-        const res = spawnSync(NODE_BIN, [audioScript], { stdio: 'inherit', env: process.env });
-        if (res.status !== 0) {
-          throw new Error(`ElevenLabs synthesis failed with exit code ${res.status}`);
-        }
+
+      console.log(`  -> [Remotion Render] Rendering ${compId} -> ${outMp4}...`);
+      const renderRes = spawnSync(NODE_BIN, [
+        remotionBin,
+        'render',
+        'src/index.ts',
+        compId,
+        outMp4,
+        '--codec=h264',
+        '--crf=22'
+      ], {
+        stdio: 'inherit',
+        env: process.env,
+      });
+
+      if (renderRes.status !== 0 || !fs.existsSync(outMp4)) {
+        throw new Error(`Remotion render failed for composition ${compId} (exit code: ${renderRes.status})`);
       }
-      let outMp4 = path.join(PROJECT_ROOT, 'public/assets/Sample_3P_Somatic_Reel.mp4');
-      if (!fs.existsSync(outMp4) && fs.existsSync('/Users/caleb/Desktop/lira reels/Sample_3P_Somatic_Reel.mp4')) {
-        outMp4 = '/Users/caleb/Desktop/lira reels/Sample_3P_Somatic_Reel.mp4';
-      }
-      if (!fs.existsSync(outMp4)) {
-        console.log('[Remotion] Rendering dynamic 3P Somatic Reel MP4 via Remotion CLI...');
-        const remotionBin = path.join(PROJECT_ROOT, 'node_modules/.bin/remotion');
-        const renderRes = spawnSync(NODE_BIN, [
-          remotionBin,
-          'render',
-          'src/index.ts',
-          'Reel17-Dynamic3PSomatic',
-          outMp4,
-          '--codec=h264',
-          '--crf=22'
-        ], { stdio: 'inherit', env: process.env });
-        if (renderRes.status !== 0) {
-          throw new Error(`Remotion render failed with exit code ${renderRes.status}`);
-        }
-      }
+      const stats = fs.statSync(outMp4);
+      console.log(`[Renderer] ✓ Successfully compiled distinct Reel MP4: ${outMp4} (${(stats.size / 1024 / 1024).toFixed(2)} MB)!`);
       renderedFiles = [outMp4];
     }
   }
