@@ -1,0 +1,93 @@
+{
+  "_authoritative_source": "Gemini Notebook: Copy of Lira F&B Operations & Strategy (id: f945f20c-94a0-41e9-9aa4-011f996a57fa)",
+  "_verified_at": "2026-11-04T17:40:00Z",
+  "brand": {
+    "name": "Lira",
+    "etymology": "Derived from 'Libra' (equilibrium and balance). The 'b' was removed because 'Libra' sounded too legalistic. Lira symbolizes balanced drinks: flavor vs. health, sweetness vs. richness, price vs. artisan quality.",
+    "genesis": "Started in Grade 10 while studying Culinary Arts at a Hospitality Vocational School. Launched from literal zero with Rp34,000 out-of-pocket bootstrap capital, borrowing kitchen equipment from parents and operating without a laptop.",
+    "persona": {
+      "type": "100% Faceless founder-led",
+      "visual": "Pixelated Caleb avatar, 16/32-bit indie game aesthetic, POV brewing shots, stop-motion assets",
+      "voice": "ElevenLabs Instant Voice Clone (Caleb, voice_id: WVwVlhKdnZoCuTIoxjYr), casual Jakarta Indonesian (lo/gue)"
+    }
+  },
+  "physical_bottle_spec": {
+    "bottle_type": "250ml Almond Bottle",
+    "material": "Clear cylindrical food-grade PET",
+    "cap": "Ribbed Gold Screw Cap (tight seal, 100% leakproof)",
+    "sticker": {
+      "type": "Official Two-Part Die-Cut Sticker",
+      "top_section": "Circular cream badge (#FAF7F0) with double dark green concentric ring (#1C4D25), cursive 'Lira' script, 2 green tea leaves on upper right, 3 green accent dots",
+      "bottom_section": "Seamlessly connected rounded rectangular cream tab (#FAF7F0) with green outline containing the flavor name ('Matcha Latte Oatside', 'Milk Tea', 'Choco Hazelnut', 'Matcha Latte Classic') and order info ('DM to Secure your order at 0818 766 279 / And please follow @drinklira')",
+      "rule": "NEVER use a flat artificial white circle or generic labels. Must preserve the full official uncut sticker with flavor pill tab."
+    },
+    "leakproof_proof": "180-degree inverted bottle test suspended over an open laptop keyboard with zero leakage, bone-dry keys"
+  },
+  "cold_chain_and_logistics": {
+    "packaging": "Bagmart Size S Forest Green Thermal Cooler Bag with screen-printed white Lira logo ('Cold Crafted Fuel' / '@drinklira') and Aluminum Foil thermal inner lining",
+    "temperature": "2–4°C chilled lock",
+    "shelf_life": {
+      "chiller_2_to_4_c": "14 to 21 days (2-3 weeks) fresh; up to 30 days if deep-frozen",
+      "room_temp": "24 hours (1 day)"
+    },
+    "dispatch_sop": {
+      "day": "Saturday Gojek / GoSend COD Loop",
+      "mechanism": "Customer pays strictly for product via BCA transfer; recipient pays shipping (Ongkir Bayar di Tujuan); flat Rp 1.000 Garansi (Insurance) fee covers in-transit damage. Zero offline meetups to protect operator time."
+    }
+  },
+  "kitchen_and_ingredients": {
+    "workflow": "Hybrid 2L commercial blender (whipping matcha concentrate and powders without clumps) + 14L Royalstar Dispenser with nozzle tap for rapid, clean bottling",
+    "sweetener": "100% pure liquid stevia, 0g refined sugar, zero glycemic spike, zero insulin crash, zero brain fog",
+    "water": "Clean gallon water (Aqua)",
+    "skus": {
+      "Matcha Latte Oatside": {
+        "price_public": "Rp 28.000",
+        "description": "Rich Uji matcha whipped smooth and paired with creamy Oatside oat milk, sweetened only with pure stevia",
+        "bottle_ssot": "assets/bottles_ssot/matcha_ssot.png",
+        "sticker_label": "Matcha Latte Oatside"
+      },
+      "Signature Milk Tea": {
+        "price_public": "Rp 22.000",
+        "description": "Loose dark black tea leaves cold-steeped overnight, blended with real milk and pure stevia, zero non-dairy creamer",
+        "bottle_ssot": "assets/bottles_ssot/milktea_ssot.png",
+        "sticker_label": "Milk Tea"
+      },
+      "Choco Hazelnut": {
+        "price_public": "Rp 25.000",
+        "description": "Bold roasted hazelnut chocolate drink, rich cocoa without heavy refined sugar syrup",
+        "bottle_ssot": "assets/bottles_ssot/choco_ssot.png",
+        "sticker_label": "Choco Hazelnut"
+      },
+      "Matcha Classic": {
+        "price_public": "Rp 24.000",
+        "description": "Pure Japanese matcha with light fresh milk, earthy and invigorating",
+        "bottle_ssot": "assets/bottles_ssot/matcha_ssot.png",
+        "sticker_label": "Matcha Classic"
+      }
+    }
+  },
+  "finder_verified_assets": {
+    "photos": {
+      "matcha_uncut": "/Users/caleb/Desktop/lira reels/references/product_bottle_matcha_oatside.jpeg",
+      "milktea_uncut": "/Users/caleb/Desktop/lira reels/references/product_bottle_milk_tea.jpg",
+      "choco_uncut": "/Users/caleb/Desktop/lira reels/references/product_bottle_choco_hazelnut.jpeg",
+      "lineup_graphic": "/Users/caleb/Desktop/lira reels/references/four_bottles_lineup_graphic.jpg",
+      "logo_official": "/Users/caleb/Desktop/lira reels/references/lira_logo_official_circle.jpeg",
+      "cooler_bag_photo": "/Users/caleb/Desktop/lira reels/Cooler bag.jpeg"
+    },
+    "project_ssot_cutouts": {
+      "matcha": "assets/bottles_ssot/matcha_ssot.png",
+      "milktea": "assets/bottles_ssot/milktea_ssot.png",
+      "choco": "assets/bottles_ssot/choco_ssot.png"
+    }
+  },
+  "confidentiality_red_lines": [
+    "NEVER mention exact school names (e.g. UPH College, SMK Baranangsiang)",
+    "NEVER mention teacher names or family details",
+    "NEVER mention secondary clients or freelance work ('WithUs')",
+    "NEVER mention internal financials (HPP, COGS, 66%, 74%, 20% fee, liquid war chest, bank balance numbers)",
+    "Scarcity is strictly non-numeric: 'limited batch', 'stok terbatas', 'batch minggu ini'. NEVER exact bottle counts like '42 botol' or '50 botol'",
+    "NEVER use the word 'ceremonial' (use 'premium matcha' or 'matcha Jepang murni')",
+    "NEVER include emojis in scripts or captions"
+  ]
+}

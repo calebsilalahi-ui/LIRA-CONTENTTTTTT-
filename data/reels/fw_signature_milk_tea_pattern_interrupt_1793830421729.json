@@ -1,0 +1,139 @@
+{
+  "topic": "Signature Milk Tea Student Portability and Zero Sugar Crash",
+  "threeP": {
+    "promise": "Minum milk tea pekat dan creamy tanpa takut tumpah di totebag atau ngantuk pas belajar.",
+    "proof": "Botol sealed 100% leakproof aman dibalik di atas laptop serta racikan daun teh dingin semalaman dengan stevia murni.",
+    "path": "Order Lira Signature Milk Tea via link bio untuk pengiriman Gojek COD Sabtu."
+  },
+  "written_hook": {
+    "pre": "STOP TARUH CUP DI",
+    "accent": "TOTEBAG",
+    "post": ""
+  },
+  "script": "[urgent] Laptop lo bisa rusak gara-gara tiga kebiasaan ini, dan nomor tiga selalu lo lakuin! [frustrated] Pertama, cup tumpah di totebag. Kedua, gula bikin lemes. Ketiga, es melt bikin hambar. [confident] Lira Milk Tea pakai botol sealed. Dibalik seratus delapan puluh derajat di atas laptop pun aman. [intrigued] Daun teh diseduh dingin semalaman plus stevia murni. Nol gula pasir, bebas brain fog. [excited] Terkunci dingin di cooler bag foil, siap meluncur via Gojek COD Sabtu. [determined] Amankan botol lo lewat link di bio sebelum kehabisan batch minggu ini!",
+  "list_items": [
+    {
+      "label": "1. CUP PLASTIK TUMPAH",
+      "anchor": "tumpah"
+    },
+    {
+      "label": "2. SUGAR CRASH SIANG",
+      "anchor": "lemes"
+    },
+    {
+      "label": "3. ES MELT HAMBAR",
+      "anchor": "hambar"
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1_hook",
+      "scene": "totebag_cup_tilt",
+      "card": "STOP RISK LAPTOP LO",
+      "anchor": null
+    },
+    {
+      "id": "b2_agitation",
+      "scene": "wet_notes_cup",
+      "card": "3 BAHAYA CUP PLASTIK",
+      "anchor": "pertama"
+    },
+    {
+      "id": "b3_proof",
+      "scene": "inverted_bottle_laptop",
+      "card": "BOTOL SEALED 100% AMAN",
+      "anchor": "lira"
+    },
+    {
+      "id": "b4_craft",
+      "scene": "cold_steep_tea",
+      "card": "DENGAN STEVIA MURNI",
+      "anchor": "daun"
+    },
+    {
+      "id": "b5_coldchain",
+      "scene": "cooler_bag_pack",
+      "card": "GOJEK COD SABTU",
+      "anchor": "terkunci"
+    },
+    {
+      "id": "b6_cta",
+      "scene": "caleb_sip_smirk",
+      "card": "ORDER LINK DI BIO",
+      "anchor": "amankan"
+    }
+  ],
+  "highlight_keywords": [
+    "tiga kebiasaan",
+    "cup tumpah",
+    "botol sealed",
+    "diseduh dingin",
+    "stevia murni",
+    "cooler bag"
+  ],
+  "sfx": [
+    {
+      "file": "sub_hit.mp3",
+      "vol": 0.8,
+      "anchor": null,
+      "at": 0
+    },
+    {
+      "file": "eightbit_clock_spin.wav",
+      "vol": 0.4,
+      "anchor": null,
+      "at": 0.05
+    },
+    {
+      "file": "scratch.mp3",
+      "vol": 0.5,
+      "anchor": "rusak",
+      "at": null
+    },
+    {
+      "file": "thud.mp3",
+      "vol": 0.6,
+      "anchor": "tumpah",
+      "at": null
+    },
+    {
+      "file": "eightbit_1star_buzz.wav",
+      "vol": 0.5,
+      "anchor": "hambar",
+      "at": null
+    },
+    {
+      "file": "snap.mp3",
+      "vol": 0.6,
+      "anchor": "lira",
+      "at": null
+    },
+    {
+      "file": "whoosh.mp3",
+      "vol": 0.5,
+      "anchor": "diseduh",
+      "at": null
+    },
+    {
+      "file": "eightbit_portal_shimmer.wav",
+      "vol": 0.5,
+      "anchor": "terkunci",
+      "at": null
+    },
+    {
+      "file": "eightbit_5star_fanfare.wav",
+      "vol": 0.7,
+      "anchor": "amankan",
+      "at": null
+    }
+  ],
+  "caption": "Sering banget ketendang cup milk tea kafe pas lagi fokus nugas di meja perpustakaan? Selain bikin totebag dan laptop lo dalam bahaya, gula berlebihannya juga bikin lemes jam dua siang.\n\nLira Signature Milk Tea dibuat seratus persen khusus buat nemenin aktivitas produktif lo. Menggunakan 250ml botol Almond sealed anti bocor, lo bebas lempar botol ini ke dalam tas tanpa rasa khawatir.\n\nDaun teh hitam pilihan diseduh dingin semalaman untuk mengekstrak rasa pekat yang murni, dipadukan susu segar dan 100% liquid stevia tanpa gula pasir. Hasilnya? Rasa creamy yang bikin fokus tanpa afternoon brain fog.\n\nDikirim dingin menggunakan Forest Green Thermal Cooler Bag via Gojek COD setiap hari Sabtu.\n\nCrafted solo by @caleb766h1\n\n#drinklira #milktea #stevia #zerosugar #studentlife #artisanbeverage #jakartadrink #coldcraft",
+  "new_asset": null,
+  "sku": "Signature Milk Tea",
+  "pillar": "Student Lifestyle & Portability",
+  "hook_category": "Pattern Interrupt",
+  "format": "reel",
+  "writer_model": "gemini-3.5-flash",
+  "id": "fw_signature_milk_tea_pattern_interrupt_1793830421729",
+  "createdAt": "2026-11-04T22:13:41.729Z"
+}

@@ -116,10 +116,10 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
   // Bottle image based on SKU
   const skuBottle =
     manifest.sku === 'Choco Hazelnut'
-      ? 'assets/choco.png'
+      ? 'assets/bottles_ssot/choco_ssot.png'
       : manifest.sku === 'Signature Milk Tea'
-      ? 'assets/milktea.png'
-      : 'assets/matcha.png';
+      ? 'assets/bottles_ssot/milktea_ssot.png'
+      : 'assets/bottles_ssot/matcha_ssot.png';
 
   // 16-point anti-artifact shadow barrier for crisp legibility
   const antiArtifactShadow = [
@@ -487,7 +487,7 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
                 filter: 'drop-shadow(0 16px 28px rgba(0,0,0,0.95)) drop-shadow(0 0 18px rgba(255,229,102,0.45))',
               }}
             >
-              <Img src={staticFile('assets/bottles_ssot/choco_ssot.png')} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+              <Img src={staticFile(manifest.sku === 'Signature Milk Tea' ? 'assets/bottles_ssot/milktea_ssot.png' : 'assets/bottles_ssot/choco_ssot.png')} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
             </div>
 
             <div
@@ -501,7 +501,7 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
                 filter: 'drop-shadow(0 16px 28px rgba(0,0,0,0.95)) drop-shadow(0 0 18px rgba(57,255,136,0.45))',
               }}
             >
-              <Img src={staticFile('assets/bottles_ssot/matcha_ssot.png')} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+              <Img src={staticFile(manifest.sku === 'Choco Hazelnut' ? 'assets/bottles_ssot/choco_ssot.png' : 'assets/bottles_ssot/matcha_ssot.png')} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
             </div>
 
             {/* Center Scarcity CTA Badge */}

@@ -258,11 +258,16 @@ async function buildReelAudio(cfg, opts = {}) {
 
   // Build captions
   const captions = buildCaptions(words, cfg.highlight_keywords || []);
-  const voiceDurationSec = captions[captions.length - 1].endSec + 0.8;
-  const totalFrames = Math.ceil(voiceDurationSec * 30);
+  const lastSpokenSec = Math.max(
+    words.length > 0 ? words[words.length - 1].end : 0,
+    captions.length > 0 ? captions[captions.length - 1].endSec : 0
+  );
+  // Add 1.2s tail buffer so room reverb, trailing speech, and BGM fade smoothly without cutting off
+  const finalDurationSec = Number((lastSpokenSec + 1.2).toFixed(2));
+  const totalFrames = Math.ceil(finalDurationSec * 30);
 
   console.log(`[AudioEngine] Beat Frames:`, beatFrames);
-  console.log(`[AudioEngine] Total frames: ${totalFrames} (${voiceDurationSec.toFixed(2)}s)`);
+  console.log(`[AudioEngine] Last Spoken: ${lastSpokenSec.toFixed(2)}s | Final Total: ${totalFrames} frames (${finalDurationSec.toFixed(2)}s)`);
 
   // Build multi-track audio mix with FFmpeg
   const bgmPath = path.join(PROJECT_ROOT, 'public/assets/bg_music.mp3');
@@ -272,10 +277,11 @@ async function buildReelAudio(cfg, opts = {}) {
     : (fs.existsSync('/usr/bin/ffmpeg') ? '/usr/bin/ffmpeg' : (fs.existsSync('/usr/local/bin/ffmpeg') ? '/usr/local/bin/ffmpeg' : 'ffmpeg'));
 
   // Build SFX inputs and filters
+  // We pad voice with apad and trim to finalDurationSec, so it NEVER cuts off mid-sentence
   const inputs = ['-y', '-i', rawPath, '-stream_loop', '-1', '-i', bgmPath];
   let filterParts = [
-    `[0:a]volume=1.25,loudnorm=I=-14:TP=-1.5:LRA=11[vo];`,
-    `[1:a]volume=0.42[bgm];`,
+    `[0:a]volume=1.25,apad=pad_dur=3.0,atrim=0:${finalDurationSec},loudnorm=I=-14:TP=-1.5:LRA=11[vo];`,
+    `[1:a]volume=0.38,atrim=0:${finalDurationSec},afade=t=out:st=${(finalDurationSec - 0.6).toFixed(3)}:d=0.6[bgm];`,
   ];
   const mixLabels = ['[vo]', '[bgm]'];
 
@@ -310,7 +316,7 @@ async function buildReelAudio(cfg, opts = {}) {
   }
 
   const mixCount = mixLabels.length;
-  filterParts.push(`${mixLabels.join('')}amix=inputs=${mixCount}:duration=first:dropout_transition=2:normalize=0[mixed];[mixed]loudnorm=I=-14:TP=-1.5:LRA=11[out]`);
+  filterParts.push(`${mixLabels.join('')}amix=inputs=${mixCount}:duration=first:dropout_transition=2:normalize=0[mixed];[mixed]loudnorm=I=-14:TP=-1.5:LRA=11,afade=t=out:st=${(finalDurationSec - 0.25).toFixed(3)}:d=0.25[out]`);
 
   const ffmpegArgs = [
     ...inputs,
@@ -340,7 +346,7 @@ async function buildReelAudio(cfg, opts = {}) {
     written_hook: cfg.written_hook,
     audioMaster: `assets/generated_reels/${cfg.id}_master.mp3`,
     totalFrames,
-    totalDurationSec: Number(voiceDurationSec.toFixed(2)),
+    totalDurationSec: Number(finalDurationSec.toFixed(2)),
     beatFrames,
     listFrames,
     captions,

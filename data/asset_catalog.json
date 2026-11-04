@@ -27,10 +27,22 @@
     { "id": "caleb_point_hero", "frames": ["assets/pixel/caleb_point_hero.jpg"], "beats": ["b6_cta"], "desc": "Caleb pointing confidently, hero CTA pose" }
   ],
   "bottles": {
-    "Matcha Oatside": "assets/matcha.png",
-    "Matcha Classic": "assets/matcha.png",
-    "Choco Hazelnut": "assets/choco.png",
-    "Signature Milk Tea": "assets/milktea.png"
+    "Matcha Oatside": "assets/bottles_ssot/matcha_ssot.png",
+    "Matcha Classic": "assets/bottles_ssot/matcha_ssot.png",
+    "Choco Hazelnut": "assets/bottles_ssot/choco_ssot.png",
+    "Signature Milk Tea": "assets/bottles_ssot/milktea_ssot.png"
+  },
+  "pixel_bottles": {
+    "Matcha Oatside": "assets/pixel/pixel_bottle_matcha.png",
+    "Matcha Classic": "assets/pixel/pixel_bottle_matcha.png",
+    "Choco Hazelnut": "assets/pixel/pixel_bottle_choco.png",
+    "Signature Milk Tea": "assets/pixel/pixel_bottle_milktea.png"
+  },
+  "stickers": {
+    "Matcha Oatside": "assets/lira_sticker_matcha.png",
+    "Matcha Classic": "assets/lira_sticker_matcha.png",
+    "Choco Hazelnut": "assets/lira_sticker_choco.png",
+    "Signature Milk Tea": "assets/lira_sticker_milktea.png"
   },
   "cooler_bag": "assets/pixel/tutorial/cooler_bag_cutout.png",
   "sfx": ["sub_hit.mp3", "eightbit_clock_spin.wav", "snap.mp3", "impact.mp3", "thud.mp3", "whoosh.mp3", "scratch.mp3", "shutter.mp3", "alarm.mp3", "eightbit_1star_buzz.wav", "eightbit_pop.wav", "eightbit_portal_shimmer.wav", "eightbit_5star_fanfare.wav"]

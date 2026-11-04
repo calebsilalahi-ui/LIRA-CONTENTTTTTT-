@@ -116,6 +116,25 @@ function verifyReelVideo(mp4Path, manifestPath) {
       passed: subSuppressionPass,
       detail: firstSub ? `First subtitle starts at frame ${firstSub.fromFrame} (${firstSub.startSec}s)` : 'No subtitles',
     });
+
+    // Check 5: Audio Continuity (Zero premature audio cut-off)
+    const endSilenceProbe = spawnSync(FFMPEG, [
+      '-sseof', '-1.5',
+      '-i', mp4Path,
+      '-af', 'silencedetect=noise=-30dB:d=0.5',
+      '-f', 'null',
+      '-',
+    ], { env: process.env });
+    const endSilenceOut = endSilenceProbe.stderr ? endSilenceProbe.stderr.toString() : '';
+    const silenceDurMatch = endSilenceOut.match(/silence_duration:\s*(\d+\.?\d*)/);
+    const tailSilence = silenceDurMatch ? parseFloat(silenceDurMatch[1]) : 0.0;
+    const audioTailPass = tailSilence <= 0.6;
+
+    checks.push({
+      name: 'Audio Continuity (Zero premature audio cut-off)',
+      passed: audioTailPass,
+      detail: `Tail silence: ${tailSilence.toFixed(2)}s (Must be <= 0.6s)`,
+    });
   }
 
   // Summary
