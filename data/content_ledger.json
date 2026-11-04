@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "lastUpdated": "2026-11-04T00:36:41.031Z",
+  "lastUpdated": "2026-11-04T00:46:23.494Z",
   "entries": [
     {
       "id": "reel_01_founder_story",
@@ -482,6 +482,20 @@
       "verbal_hook": "Kita tes botol Lira diguncang di jalanan rusak BSD selama tiga puluh menit.",
       "written_hook": "TES GONCANG 180 DERAJAT BOTOL",
       "caption": "Hasilnya: nol rembes, segel utuh, suhu tetap dingin berkat botol tebal dan cooler bag. Aman masuk tas lo. Limited batch Sabtu ini lewat bio.\n\nCrafted solo by @caleb766h1",
+      "status": "published_live"
+    },
+    {
+      "id": "slot_08_carousel_library_guide_1793753183494",
+      "timestamp": "2026-11-04T00:46:23.494Z",
+      "createdAt": "2026-11-04T00:46:23.494Z",
+      "format": "carousel",
+      "sku": "Matcha Classic",
+      "pillar": "Craftsmanship & Student Lifestyle",
+      "hook_category": "Storytelling",
+      "topic": "Cara bawa botol matcha dingin ke perpustakaan kampus",
+      "verbal_hook": "",
+      "written_hook": "PANDUAN MINUM DINGIN SAAT BELAJAR",
+      "caption": "Gak ada lagi drama es batu mencair basahin catatan tugas lo. Botol kedap Lira siap nemenin marathon skripsi tanpa noda meja. Limited batch order via link bio.\n\nCrafted solo by @caleb766h1",
       "status": "published_live"
     }
   ]
