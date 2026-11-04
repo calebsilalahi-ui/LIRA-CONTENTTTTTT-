@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "lastUpdated": "2026-11-04T08:09:57.983Z",
+  "lastUpdated": "2026-11-04T08:30:56.990Z",
   "entries": [
     {
       "id": "reel_01_founder_story",
@@ -342,8 +342,8 @@
     },
     {
       "id": "slot_01_reel_matcha_crash",
-      "timestamp": "2026-11-04T08:08:05.695Z",
-      "createdAt": "2026-11-04T08:08:05.695Z",
+      "timestamp": "2026-11-04T08:30:56.962Z",
+      "createdAt": "2026-11-04T08:30:56.963Z",
       "format": "reel",
       "pillar": "Sugar Crash & Stevia Science",
       "hook_category": "Comparison",
@@ -355,8 +355,8 @@
     },
     {
       "id": "slot_02_carousel_dark_cocoa",
-      "timestamp": "2026-11-04T13:08:05.697Z",
-      "createdAt": "2026-11-04T13:08:05.697Z",
+      "timestamp": "2026-11-04T13:30:56.965Z",
+      "createdAt": "2026-11-04T13:30:56.965Z",
       "format": "carousel",
       "pillar": "Craftsmanship & Student Lifestyle",
       "hook_category": "Educational",
@@ -368,8 +368,8 @@
     },
     {
       "id": "slot_03_reel_forest_bag",
-      "timestamp": "2026-11-04T18:08:05.697Z",
-      "createdAt": "2026-11-04T18:08:05.697Z",
+      "timestamp": "2026-11-04T18:30:56.965Z",
+      "createdAt": "2026-11-04T18:30:56.965Z",
       "format": "reel",
       "pillar": "Cold Chain & Saturday COD Loop",
       "hook_category": "Storytelling",
@@ -381,8 +381,8 @@
     },
     {
       "id": "slot_04_carousel_matcha_myth",
-      "timestamp": "2026-11-04T23:08:05.697Z",
-      "createdAt": "2026-11-04T23:08:05.697Z",
+      "timestamp": "2026-11-04T23:30:56.965Z",
+      "createdAt": "2026-11-04T23:30:56.965Z",
       "format": "carousel",
       "pillar": "Indie Game & Pixel Culture",
       "hook_category": "Myth Busting",
@@ -394,8 +394,8 @@
     },
     {
       "id": "slot_05_reel_founder_routine",
-      "timestamp": "2026-11-05T04:08:05.697Z",
-      "createdAt": "2026-11-05T04:08:05.697Z",
+      "timestamp": "2026-11-05T04:30:56.965Z",
+      "createdAt": "2026-11-05T04:30:56.965Z",
       "format": "reel",
       "pillar": "Craftsmanship & Student Lifestyle",
       "hook_category": "Day in the Life",
@@ -407,8 +407,8 @@
     },
     {
       "id": "slot_06_carousel_ceylon_steep",
-      "timestamp": "2026-11-05T09:08:05.697Z",
-      "createdAt": "2026-11-05T09:08:05.697Z",
+      "timestamp": "2026-11-05T09:30:56.965Z",
+      "createdAt": "2026-11-05T09:30:56.965Z",
       "format": "carousel",
       "pillar": "Sugar Crash & Stevia Science",
       "hook_category": "Authority",
@@ -420,8 +420,8 @@
     },
     {
       "id": "slot_07_reel_shake_test",
-      "timestamp": "2026-11-05T14:08:05.697Z",
-      "createdAt": "2026-11-05T14:08:05.697Z",
+      "timestamp": "2026-11-05T14:30:56.988Z",
+      "createdAt": "2026-11-05T14:30:56.988Z",
       "format": "reel",
       "pillar": "Cold Chain & Saturday COD Loop",
       "hook_category": "Random",
@@ -433,8 +433,8 @@
     },
     {
       "id": "slot_08_carousel_library_guide",
-      "timestamp": "2026-11-05T19:08:05.697Z",
-      "createdAt": "2026-11-05T19:08:05.697Z",
+      "timestamp": "2026-11-05T19:30:56.989Z",
+      "createdAt": "2026-11-05T19:30:56.989Z",
       "format": "carousel",
       "pillar": "Craftsmanship & Student Lifestyle",
       "hook_category": "Storytelling",
@@ -459,8 +459,8 @@
     },
     {
       "id": "slot_10_carousel_milk_tea_calories",
-      "timestamp": "2026-11-06T05:08:05.697Z",
-      "createdAt": "2026-11-06T05:08:05.697Z",
+      "timestamp": "2026-11-06T05:30:56.989Z",
+      "createdAt": "2026-11-06T05:30:56.989Z",
       "format": "carousel",
       "pillar": "Sugar Crash & Stevia Science",
       "hook_category": "Comparison",
@@ -528,15 +528,15 @@
     },
     {
       "id": "slot_09_reel_cup_struggle_fresh",
-      "timestamp": "2026-11-06T00:08:05.697Z",
-      "createdAt": "2026-11-06T00:08:05.697Z",
+      "timestamp": "2026-11-06T00:30:56.989Z",
+      "createdAt": "2026-11-06T00:30:56.989Z",
       "format": "reel",
       "pillar": "Cold Chain & Saturday COD Loop",
       "hook_category": "Educational",
-      "topic": "3 Alasan cup 50k buang duit vs botol Lira leakproof",
-      "verbal_hook": "Ini 3 alasan kenapa beli minuman cup plastik kafe lima puluh ribu itu buang-buang duit.",
-      "written_hook": "3 ALASAN CUP 50K BUANG DUIT",
-      "caption": "3 alasan cup 50k buang duit: es mencair bikin hambar, ga muat tas, dan risiko tumpah ke laptop. Botol Lira 180 derajat anti rembes dengan pemanis alami stevia. Limited batch ready Sabtu via bio.\n\nCrafted solo by @caleb766h1",
+      "topic": "3 Tanda gula kafe bikin otak crash vs Lira matcha murni",
+      "verbal_hook": "Ini 3 tanda tubuh lo udah kecanduan gula tersembunyi dari matcha kafe 50k.",
+      "written_hook": "3 TANDA OTAK CRASH JAM 2 SIANG",
+      "caption": "Ini 3 tanda tubuh lo kecanduan gula tersembunyi dari matcha kafe: jam 2 siang mendadak lemes dan insulin drop ke titik nol. Bandingin sama Lira: pure matcha Jepang dan barista oat milk tanpa gula pasir. Segel 180 derajat anti rembes. Limited batch ready Sabtu via bio.\n\nCrafted solo by @caleb766h1",
       "status": "simulated_dry_run"
     },
     {
@@ -553,6 +553,23 @@
       "caption": "3 alasan cup 50k buang duit: es mencair bikin hambar, ga muat tas, dan risiko tumpah ke laptop. Botol Lira 180 derajat anti rembes dengan pemanis alami stevia. Limited batch ready Sabtu via bio.\n\nCrafted solo by @caleb766h1",
       "status": "published_live",
       "bufferPostId": "6aeae8132b43f8ba7d7b5ef3"
+    },
+    {
+      "id": "reel_science8bit_somatic_1793781042636",
+      "timestamp": "2026-11-04T08:30:42.636Z",
+      "createdAt": "2026-11-04T08:30:42.644Z",
+      "format": "reel",
+      "sku": "Matcha Oatside",
+      "pillar": "Sugar Crash & Stevia Science",
+      "hook_category": "Comparison",
+      "topic": "3 Tanda gula kafe bikin otak crash vs Lira matcha murni",
+      "verbal_hook": "Ini 3 tanda tubuh lo udah kecanduan gula tersembunyi dari matcha kafe 50k.",
+      "written_hook": "3 TANDA OTAK CRASH JAM 2 SIANG",
+      "caption": "Ini 3 tanda tubuh lo kecanduan gula tersembunyi dari matcha kafe: jam 2 siang mendadak lemes dan insulin drop ke titik nol. Bandingin sama Lira: pure matcha Jepang dan barista oat milk tanpa gula pasir. Segel 180 derajat anti rembes. Limited batch ready Sabtu via bio.\n\nCrafted solo by @caleb766h1",
+      "status": "published_live",
+      "bufferPostId": "6aeaecd9dc38f4d7bae2f1fe",
+      "aspectRatio": "9:16",
+      "resolution": "1080x1920"
     }
   ]
 }

@@ -77,6 +77,7 @@ import { Reel15_RevisedSample, REEL_15_DURATION } from './Reel15_RevisedSample';
 import { Reel16_WorkingStyleRevamp, REEL_16_DURATION } from './Reel16_WorkingStyleRevamp';
 import { Reel17_Dynamic3PSomatic, REEL_17_DURATION } from './Reel17_Dynamic3PSomatic';
 import { FreshReel_Cup50k, FRESH_CUP50K_DURATION } from './FreshReel_Cup50k';
+import { Reel_Science8Bit_Somatic, SCIENCE8BIT_DURATION } from './Reel_Science8Bit_Somatic';
 
 
 export const RemotionRoot: React.FC = () => {
@@ -593,6 +594,15 @@ export const RemotionRoot: React.FC = () => {
         fps={30}
         width={1080}
         height={1440}
+      />
+      {/* 100% Authentic @science_in_8bit Somatic Reel: 1080x1920 (9:16 Fullscreen @ 30fps) */}
+      <Composition
+        id="Reel-Science8Bit-Somatic"
+        component={Reel_Science8Bit_Somatic}
+        durationInFrames={SCIENCE8BIT_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
       />
     </>
   );

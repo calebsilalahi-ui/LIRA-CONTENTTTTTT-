@@ -102,7 +102,7 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
   {
     id: 'slot_01_reel_matcha_crash',
     format: 'reel',
-    compositionId: 'Reel17-Dynamic3PSomatic',
+    compositionId: 'Reel-Science8Bit-Somatic',
     sku: 'Matcha Oatside',
     pillar: 'Sugar Crash & Stevia Science',
     hook_category: 'Comparison',
@@ -134,7 +134,7 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
   {
     id: 'slot_03_reel_forest_bag',
     format: 'reel',
-    compositionId: 'Reel15-RevisedSample',
+    compositionId: 'Reel-Science8Bit-Somatic',
     sku: 'Signature Milk Tea',
     pillar: 'Cold Chain & Saturday COD Loop',
     hook_category: 'Storytelling',
@@ -166,7 +166,7 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
   {
     id: 'slot_05_reel_founder_routine',
     format: 'reel',
-    compositionId: 'Reel16-WorkingStyleRevamp',
+    compositionId: 'Reel-Science8Bit-Somatic',
     sku: 'Matcha Oatside',
     pillar: 'Craftsmanship & Student Lifestyle',
     hook_category: 'Day in the Life',
@@ -198,7 +198,7 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
   {
     id: 'slot_07_reel_shake_test',
     format: 'reel',
-    compositionId: 'FreshReel-Cup50k',
+    compositionId: 'Reel-Science8Bit-Somatic',
     sku: 'Choco Hazelnut',
     pillar: 'Cold Chain & Saturday COD Loop',
     hook_category: 'Random',
@@ -230,15 +230,15 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
   {
     id: 'slot_09_reel_cup_struggle_fresh',
     format: 'reel',
-    compositionId: 'FreshReel-Cup50k',
+    compositionId: 'Reel-Science8Bit-Somatic',
     sku: 'Matcha Oatside',
     pillar: 'Cold Chain & Saturday COD Loop',
     hook_category: 'Educational',
-    topic: '3 Alasan cup 50k buang duit vs botol Lira leakproof',
-    verbal_hook: 'Ini 3 alasan kenapa beli minuman cup plastik kafe lima puluh ribu itu buang-buang duit.',
-    written_hook: '3 ALASAN CUP 50K BUANG DUIT',
-    caption: '3 alasan cup 50k buang duit: es mencair bikin hambar, ga muat tas, dan risiko tumpah ke laptop. Botol Lira 180 derajat anti rembes dengan pemanis alami stevia. Limited batch ready Sabtu via bio.\n\nCrafted solo by @caleb766h1',
-    overlays: [{ text: '3 ALASAN CUP 50K BUANG DUIT', x: 120, y: 350 }],
+    topic: '3 Tanda gula kafe bikin otak crash vs Lira matcha murni',
+    verbal_hook: 'Ini 3 tanda tubuh lo udah kecanduan gula tersembunyi dari matcha kafe 50k.',
+    written_hook: '3 TANDA OTAK CRASH JAM 2 SIANG',
+    caption: 'Ini 3 tanda tubuh lo kecanduan gula tersembunyi dari matcha kafe: jam 2 siang mendadak lemes dan insulin drop ke titik nol. Bandingin sama Lira: pure matcha Jepang dan barista oat milk tanpa gula pasir. Segel 180 derajat anti rembes. Limited batch ready Sabtu via bio.\n\nCrafted solo by @caleb766h1',
+    overlays: [{ text: '3 TANDA OTAK CRASH JAM 2 SIANG', x: 120, y: 350 }],
   },
   {
     id: 'slot_10_carousel_milk_tea_calories',
@@ -523,7 +523,7 @@ async function main() {
       }
       console.log(`[Renderer] ✓ Successfully rendered ${renderedFiles.length} fresh distinct carousel slides!`);
     } else {
-      const compId = template.compositionId || 'Reel17-Dynamic3PSomatic';
+      const compId = template.compositionId || 'Reel-Science8Bit-Somatic';
       console.log(`[Renderer] Compiling fresh Reel video for "${template.id}" using Remotion CLI (composition: ${compId})...`);
       const outDir = path.join(PROJECT_ROOT, 'out/current_reel');
       fs.mkdirSync(outDir, { recursive: true });
