@@ -216,14 +216,22 @@ async function buildReelAudio(cfg, opts = {}) {
   const rawPath = path.join(outDir, `${cfg.id}_raw.mp3`);
   const masterPath = path.join(outDir, `${cfg.id}_master.mp3`);
   const manifestPath = path.join(outDir, `${cfg.id}_manifest.json`);
+  const alignPath = path.join(outDir, `${cfg.id}_alignment.json`);
 
-  console.log(`[AudioEngine] Synthesizing speech with ElevenLabs v4 (${voiceId})...`);
-  const result = await callElevenLabsTTS(cfg.script, voiceId, apiKey);
-  const audioBuf = Buffer.from(result.audio_base64, 'base64');
-  fs.writeFileSync(rawPath, audioBuf);
-  console.log(`[AudioEngine] ✓ Raw audio saved: ${rawPath} (${(audioBuf.length / 1024).toFixed(1)} KB)`);
-
-  const words = parseWordAlignment(result.alignment);
+  let words;
+  if ((opts.reuseSpeech || process.env.REUSE_AUDIO === '1') && fs.existsSync(rawPath) && fs.existsSync(alignPath)) {
+    console.log(`[AudioEngine] Reusing cached speech & alignment: ${rawPath}`);
+    const alignment = JSON.parse(fs.readFileSync(alignPath, 'utf-8'));
+    words = parseWordAlignment(alignment);
+  } else {
+    console.log(`[AudioEngine] Synthesizing speech with ElevenLabs v4 (${voiceId})...`);
+    const result = await callElevenLabsTTS(cfg.script, voiceId, apiKey);
+    const audioBuf = Buffer.from(result.audio_base64, 'base64');
+    fs.writeFileSync(rawPath, audioBuf);
+    fs.writeFileSync(alignPath, JSON.stringify(result.alignment), 'utf-8');
+    console.log(`[AudioEngine] ✓ Raw audio saved: ${rawPath} (${(audioBuf.length / 1024).toFixed(1)} KB)`);
+    words = parseWordAlignment(result.alignment);
+  }
   console.log(`[AudioEngine] ✓ Parsed ${words.length} spoken words with exact timestamps.`);
 
   // Map beat transition frames
@@ -277,11 +285,11 @@ async function buildReelAudio(cfg, opts = {}) {
     : (fs.existsSync('/usr/bin/ffmpeg') ? '/usr/bin/ffmpeg' : (fs.existsSync('/usr/local/bin/ffmpeg') ? '/usr/local/bin/ffmpeg' : 'ffmpeg'));
 
   // Build SFX inputs and filters
-  // We pad voice with apad and trim to finalDurationSec, so it NEVER cuts off mid-sentence
+  // We pad voice with apad so trailing reverb decays naturally, and run BGM continuously until finalDurationSec
   const inputs = ['-y', '-i', rawPath, '-stream_loop', '-1', '-i', bgmPath];
   let filterParts = [
-    `[0:a]volume=1.25,apad=pad_dur=3.0,atrim=0:${finalDurationSec},loudnorm=I=-14:TP=-1.5:LRA=11[vo];`,
-    `[1:a]volume=0.38,atrim=0:${finalDurationSec},afade=t=out:st=${(finalDurationSec - 0.6).toFixed(3)}:d=0.6[bgm];`,
+    `[0:a]volume=1.25,apad=pad_dur=4.0[vo];`,
+    `[1:a]volume=0.38[bgm];`,
   ];
   const mixLabels = ['[vo]', '[bgm]'];
 
@@ -316,7 +324,7 @@ async function buildReelAudio(cfg, opts = {}) {
   }
 
   const mixCount = mixLabels.length;
-  filterParts.push(`${mixLabels.join('')}amix=inputs=${mixCount}:duration=first:dropout_transition=2:normalize=0[mixed];[mixed]loudnorm=I=-14:TP=-1.5:LRA=11,afade=t=out:st=${(finalDurationSec - 0.25).toFixed(3)}:d=0.25[out]`);
+  filterParts.push(`${mixLabels.join('')}amix=inputs=${mixCount}:duration=longest:dropout_transition=0:normalize=0[mixed];[mixed]loudnorm=I=-14:TP=-1.5:LRA=11,afade=t=out:st=${(finalDurationSec - 0.45).toFixed(3)}:d=0.45[out]`);
 
   const ffmpegArgs = [
     ...inputs,
@@ -324,6 +332,7 @@ async function buildReelAudio(cfg, opts = {}) {
     '-map', '[out]',
     '-c:a', 'libmp3lame',
     '-b:a', '192k',
+    '-t', String(finalDurationSec),
     masterPath,
   ];
 
