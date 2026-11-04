@@ -476,9 +476,26 @@ async function main() {
           throw new Error(`ElevenLabs synthesis failed with exit code ${res.status}`);
         }
       }
-      const outMp4 = fs.existsSync('/Users/caleb/Desktop/lira reels/Sample_3P_Somatic_Reel.mp4')
-        ? '/Users/caleb/Desktop/lira reels/Sample_3P_Somatic_Reel.mp4'
-        : path.join(PROJECT_ROOT, 'public/assets/Sample_3P_Somatic_Reel.mp4');
+      let outMp4 = path.join(PROJECT_ROOT, 'public/assets/Sample_3P_Somatic_Reel.mp4');
+      if (!fs.existsSync(outMp4) && fs.existsSync('/Users/caleb/Desktop/lira reels/Sample_3P_Somatic_Reel.mp4')) {
+        outMp4 = '/Users/caleb/Desktop/lira reels/Sample_3P_Somatic_Reel.mp4';
+      }
+      if (!fs.existsSync(outMp4)) {
+        console.log('[Remotion] Rendering dynamic 3P Somatic Reel MP4 via Remotion CLI...');
+        const remotionBin = path.join(PROJECT_ROOT, 'node_modules/.bin/remotion');
+        const renderRes = spawnSync(NODE_BIN, [
+          remotionBin,
+          'render',
+          'src/index.ts',
+          'Reel17-Dynamic3PSomatic',
+          outMp4,
+          '--codec=h264',
+          '--crf=22'
+        ], { stdio: 'inherit', env: process.env });
+        if (renderRes.status !== 0) {
+          throw new Error(`Remotion render failed with exit code ${renderRes.status}`);
+        }
+      }
       renderedFiles = [outMp4];
     }
   }
