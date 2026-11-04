@@ -1,0 +1,466 @@
+[
+  {
+    "text": "INI 3",
+    "highlight": false,
+    "startSec": 0.08,
+    "endSec": 0.8,
+    "fromFrame": 2,
+    "toFrame": 24
+  },
+  {
+    "text": "TANDA TUBUH",
+    "highlight": false,
+    "startSec": 0.8,
+    "endSec": 1.52,
+    "fromFrame": 24,
+    "toFrame": 45
+  },
+  {
+    "text": "LO UDAH",
+    "highlight": false,
+    "startSec": 1.52,
+    "endSec": 1.947,
+    "fromFrame": 45,
+    "toFrame": 58
+  },
+  {
+    "text": "KECANDUAN GULA",
+    "highlight": false,
+    "startSec": 1.947,
+    "endSec": 2.72,
+    "fromFrame": 58,
+    "toFrame": 81
+  },
+  {
+    "text": "TERSEMBUNYI DARI",
+    "highlight": false,
+    "startSec": 2.72,
+    "endSec": 3.72,
+    "fromFrame": 81,
+    "toFrame": 111
+  },
+  {
+    "text": "MATCHA KAFE",
+    "highlight": false,
+    "startSec": 3.72,
+    "endSec": 4.768,
+    "fromFrame": 111,
+    "toFrame": 143
+  },
+  {
+    "text": "DAN YANG",
+    "highlight": false,
+    "startSec": 4.768,
+    "endSec": 5.04,
+    "fromFrame": 143,
+    "toFrame": 151
+  },
+  {
+    "text": "NOMOR TIGA",
+    "highlight": true,
+    "startSec": 5.04,
+    "endSec": 6.08,
+    "fromFrame": 151,
+    "toFrame": 182
+  },
+  {
+    "text": "LO MINUM",
+    "highlight": false,
+    "startSec": 6.08,
+    "endSec": 6.68,
+    "fromFrame": 182,
+    "toFrame": 200
+  },
+  {
+    "text": "TIAP JAM",
+    "highlight": false,
+    "startSec": 6.68,
+    "endSec": 7.08,
+    "fromFrame": 200,
+    "toFrame": 212
+  },
+  {
+    "text": "DUA SIANG",
+    "highlight": false,
+    "startSec": 7.08,
+    "endSec": 7.68,
+    "fromFrame": 212,
+    "toFrame": 230
+  },
+  {
+    "text": "TANPA SADAR",
+    "highlight": false,
+    "startSec": 7.68,
+    "endSec": 8.789,
+    "fromFrame": 230,
+    "toFrame": 263
+  },
+  {
+    "text": "TANDA SATU",
+    "highlight": true,
+    "startSec": 8.789,
+    "endSec": 9.68,
+    "fromFrame": 263,
+    "toFrame": 290
+  },
+  {
+    "text": "DUA JAM",
+    "highlight": false,
+    "startSec": 9.68,
+    "endSec": 10.08,
+    "fromFrame": 290,
+    "toFrame": 302
+  },
+  {
+    "text": "SETELAH MINUM",
+    "highlight": false,
+    "startSec": 10.08,
+    "endSec": 10.88,
+    "fromFrame": 302,
+    "toFrame": 326
+  },
+  {
+    "text": "KEPALA LO",
+    "highlight": false,
+    "startSec": 10.88,
+    "endSec": 11.333,
+    "fromFrame": 326,
+    "toFrame": 339
+  },
+  {
+    "text": "MENDADAK LEMES",
+    "highlight": true,
+    "startSec": 11.333,
+    "endSec": 12.16,
+    "fromFrame": 339,
+    "toFrame": 364
+  },
+  {
+    "text": "DAN SUSAH",
+    "highlight": false,
+    "startSec": 12.16,
+    "endSec": 12.64,
+    "fromFrame": 364,
+    "toFrame": 379
+  },
+  {
+    "text": "FOKUS TANDA",
+    "highlight": false,
+    "startSec": 12.64,
+    "endSec": 13.84,
+    "fromFrame": 379,
+    "toFrame": 415
+  },
+  {
+    "text": "DUA LO",
+    "highlight": false,
+    "startSec": 13.84,
+    "endSec": 14.64,
+    "fromFrame": 415,
+    "toFrame": 439
+  },
+  {
+    "text": "BAYAR LIMA",
+    "highlight": false,
+    "startSec": 14.64,
+    "endSec": 15.2,
+    "fromFrame": 439,
+    "toFrame": 456
+  },
+  {
+    "text": "PULUH RIBU",
+    "highlight": false,
+    "startSec": 15.2,
+    "endSec": 15.84,
+    "fromFrame": 456,
+    "toFrame": 475
+  },
+  {
+    "text": "BUAT ES",
+    "highlight": false,
+    "startSec": 15.84,
+    "endSec": 16.24,
+    "fromFrame": 475,
+    "toFrame": 487
+  },
+  {
+    "text": "BATU YANG",
+    "highlight": false,
+    "startSec": 16.24,
+    "endSec": 16.76,
+    "fromFrame": 487,
+    "toFrame": 502
+  },
+  {
+    "text": "MENCAIR JADI",
+    "highlight": false,
+    "startSec": 16.76,
+    "endSec": 17.52,
+    "fromFrame": 502,
+    "toFrame": 525
+  },
+  {
+    "text": "AIR TAWAR",
+    "highlight": true,
+    "startSec": 17.52,
+    "endSec": 18.533,
+    "fromFrame": 525,
+    "toFrame": 555
+  },
+  {
+    "text": "DAN TANDA",
+    "highlight": false,
+    "startSec": 18.533,
+    "endSec": 19.04,
+    "fromFrame": 555,
+    "toFrame": 571
+  },
+  {
+    "text": "NOMOR TIGA",
+    "highlight": true,
+    "startSec": 19.04,
+    "endSec": 19.96,
+    "fromFrame": 571,
+    "toFrame": 598
+  },
+  {
+    "text": "GULA CAIR",
+    "highlight": false,
+    "startSec": 19.96,
+    "endSec": 20.48,
+    "fromFrame": 598,
+    "toFrame": 614
+  },
+  {
+    "text": "MURAH BIKIN",
+    "highlight": false,
+    "startSec": 20.48,
+    "endSec": 21.12,
+    "fromFrame": 614,
+    "toFrame": 633
+  },
+  {
+    "text": "INSULIN LO",
+    "highlight": false,
+    "startSec": 21.12,
+    "endSec": 21.8,
+    "fromFrame": 633,
+    "toFrame": 654
+  },
+  {
+    "text": "MELONJAK TAJAM",
+    "highlight": false,
+    "startSec": 21.8,
+    "endSec": 22.8,
+    "fromFrame": 654,
+    "toFrame": 684
+  },
+  {
+    "text": "TERUS NGE-DROP",
+    "highlight": false,
+    "startSec": 22.8,
+    "endSec": 23.52,
+    "fromFrame": 684,
+    "toFrame": 705
+  },
+  {
+    "text": "DRASTIS KE",
+    "highlight": false,
+    "startSec": 23.52,
+    "endSec": 24.24,
+    "fromFrame": 705,
+    "toFrame": 727
+  },
+  {
+    "text": "TITIK NOL",
+    "highlight": true,
+    "startSec": 24.24,
+    "endSec": 25.027,
+    "fromFrame": 727,
+    "toFrame": 750
+  },
+  {
+    "text": "BANDINGIN SAMA",
+    "highlight": false,
+    "startSec": 25.027,
+    "endSec": 25.68,
+    "fromFrame": 750,
+    "toFrame": 770
+  },
+  {
+    "text": "BOTOL LIRA",
+    "highlight": true,
+    "startSec": 25.68,
+    "endSec": 26.24,
+    "fromFrame": 770,
+    "toFrame": 787
+  },
+  {
+    "text": "INI PURE",
+    "highlight": false,
+    "startSec": 26.24,
+    "endSec": 27.04,
+    "fromFrame": 787,
+    "toFrame": 811
+  },
+  {
+    "text": "MATCHA JEPANG",
+    "highlight": false,
+    "startSec": 27.04,
+    "endSec": 27.6,
+    "fromFrame": 811,
+    "toFrame": 828
+  },
+  {
+    "text": "MURNI BARISTA",
+    "highlight": false,
+    "startSec": 27.6,
+    "endSec": 28.64,
+    "fromFrame": 828,
+    "toFrame": 859
+  },
+  {
+    "text": "OAT MILK",
+    "highlight": false,
+    "startSec": 28.64,
+    "endSec": 29.28,
+    "fromFrame": 859,
+    "toFrame": 878
+  },
+  {
+    "text": "DAN PEMANIS",
+    "highlight": false,
+    "startSec": 29.28,
+    "endSec": 29.84,
+    "fromFrame": 878,
+    "toFrame": 895
+  },
+  {
+    "text": "ALAMI STEVIA",
+    "highlight": true,
+    "startSec": 29.84,
+    "endSec": 31.04,
+    "fromFrame": 895,
+    "toFrame": 931
+  },
+  {
+    "text": "NOL GULA",
+    "highlight": false,
+    "startSec": 31.04,
+    "endSec": 31.52,
+    "fromFrame": 931,
+    "toFrame": 945
+  },
+  {
+    "text": "PASIR NOL",
+    "highlight": false,
+    "startSec": 31.52,
+    "endSec": 32.48,
+    "fromFrame": 945,
+    "toFrame": 974
+  },
+  {
+    "text": "CRASH ENERGI",
+    "highlight": false,
+    "startSec": 32.48,
+    "endSec": 33.36,
+    "fromFrame": 974,
+    "toFrame": 1000
+  },
+  {
+    "text": "FOKUS EMPAT",
+    "highlight": false,
+    "startSec": 33.36,
+    "endSec": 34.24,
+    "fromFrame": 1000,
+    "toFrame": 1027
+  },
+  {
+    "text": "JAM PENUH",
+    "highlight": false,
+    "startSec": 34.24,
+    "endSec": 35.232,
+    "fromFrame": 1027,
+    "toFrame": 1056
+  },
+  {
+    "text": "SEGEL RAPAT",
+    "highlight": false,
+    "startSec": 35.232,
+    "endSec": 35.76,
+    "fromFrame": 1056,
+    "toFrame": 1072
+  },
+  {
+    "text": "SERATUS DELAPAN",
+    "highlight": false,
+    "startSec": 35.76,
+    "endSec": 36.48,
+    "fromFrame": 1072,
+    "toFrame": 1094
+  },
+  {
+    "text": "PULUH DERAJAT",
+    "highlight": false,
+    "startSec": 36.48,
+    "endSec": 37.12,
+    "fromFrame": 1094,
+    "toFrame": 1113
+  },
+  {
+    "text": "ANTI BOCOR",
+    "highlight": true,
+    "startSec": 37.12,
+    "endSec": 38.336,
+    "fromFrame": 1113,
+    "toFrame": 1150
+  },
+  {
+    "text": "LIMITED BATCH",
+    "highlight": true,
+    "startSec": 38.336,
+    "endSec": 38.8,
+    "fromFrame": 1150,
+    "toFrame": 1164
+  },
+  {
+    "text": "DISEDUH FRESH",
+    "highlight": false,
+    "startSec": 38.8,
+    "endSec": 39.52,
+    "fromFrame": 1164,
+    "toFrame": 1185
+  },
+  {
+    "text": "WEEKEND INI",
+    "highlight": false,
+    "startSec": 39.52,
+    "endSec": 40.08,
+    "fromFrame": 1185,
+    "toFrame": 1202
+  },
+  {
+    "text": "LEWAT LINK",
+    "highlight": false,
+    "startSec": 40.08,
+    "endSec": 40.64,
+    "fromFrame": 1202,
+    "toFrame": 1219
+  },
+  {
+    "text": "DI BIO",
+    "highlight": false,
+    "startSec": 40.64,
+    "endSec": 41.04,
+    "fromFrame": 1219,
+    "toFrame": 1231
+  },
+  {
+    "text": "SEBELUM KEHABISAN",
+    "highlight": false,
+    "startSec": 41.04,
+    "endSec": 42.32,
+    "fromFrame": 1231,
+    "toFrame": 1270
+  }
+]

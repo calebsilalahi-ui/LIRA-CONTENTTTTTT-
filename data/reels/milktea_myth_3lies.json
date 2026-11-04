@@ -1,0 +1,38 @@
+{
+  "id": "milktea_myth_3lies",
+  "format": "reel",
+  "sku": "Signature Milk Tea",
+  "pillar": "Craftsmanship & Ingredient Truth",
+  "hook_category": "Myth Busting",
+  "topic": "Cafe milk tea flavor powder + creamer + liquid sugar vs real cold-steeped tea leaves",
+  "threeP": {
+    "promise": "Know what is actually inside cafe milk tea and stop the afternoon drowsiness",
+    "proof": "Three concrete ingredient lies + real cold-steeped leaves shown on screen",
+    "path": "Real tea leaves, real milk, natural stevia, sealed bottle"
+  },
+  "written_hook": { "pre": "MILK TEA LO", "accent": "BUKAN", "post": "TEH", "accentColor": "#FFE566" },
+  "script": "[dramatic] Milk tea yang lo beli tiap pulang sekolah itu, rasa tehnya sering bukan dari teh. [curious] Ada tiga kebohongan di gelasnya, dan yang ketiga bikin lo ngantuk tiap sore. [frustrated] Satu: rasa tehnya dari bubuk perisa. [intrigued] Dua: krimnya dari creamer, bukan susu. [dramatic] Tiga: sirup gula cair, yang bikin lo lemes dua jam kemudian! [excited] Makanya gue seduh beda. [proud] Daun teh asli, diseduh dingin semalaman, campur susu beneran dan pemanis alami stevia. [confident] Nol gula pasir, rasa teh yang jujur. [urgent] Limited batch Sabtu ini, cek link di bio sebelum lo beli lagi milk tea yang",
+  "highlight_keywords": ["BUKAN DARI TEH", "TIGA KEBOHONGAN", "YANG KETIGA", "NGANTUK", "BUBUK PERISA", "CREAMER", "BUKAN SUSU", "SIRUP GULA", "LEMES", "SEDUH BEDA", "DAUN TEH ASLI", "SEMALAMAN", "SUSU BENERAN", "STEVIA", "NOL GULA PASIR", "JUJUR", "LIMITED BATCH", "LINK DI BIO"],
+  "beats": [
+    { "id": "b1_hook", "anchor": null },
+    { "id": "b2_agitation", "anchor": "satu" },
+    { "id": "b3_proof", "anchor": "makanya" },
+    { "id": "b4_craft", "anchor": "daun" },
+    { "id": "b5_coldchain", "anchor": "nol" },
+    { "id": "b6_cta", "anchor": "limited" }
+  ],
+  "lie_anchors": { "lie1": "satu", "lie2": "dua", "lie3": "tiga:" },
+  "sfx": [
+    { "file": "sub_hit.mp3", "at": 0, "vol": 0.9 },
+    { "file": "eightbit_clock_spin.wav", "at": 0.08, "vol": 0.7 },
+    { "file": "eightbit_1star_buzz.wav", "anchor": "satu", "vol": 0.75 },
+    { "file": "eightbit_1star_buzz.wav", "anchor": "dua", "vol": 0.75 },
+    { "file": "impact.mp3", "anchor": "sirup", "vol": 0.8 },
+    { "file": "whoosh.mp3", "anchor": "makanya", "vol": 0.8 },
+    { "file": "eightbit_portal_shimmer.wav", "anchor": "daun", "vol": 0.8 },
+    { "file": "eightbit_portal_shimmer.wav", "anchor": "stevia", "vol": 0.7 },
+    { "file": "scratch.mp3", "anchor": "nol", "vol": 0.6 },
+    { "file": "eightbit_5star_fanfare.wav", "anchor": "limited", "vol": 0.85 }
+  ],
+  "caption": "Rasa teh di milk tea lo sering bukan dari teh.\n\nTiga hal yang jarang dibilang: bubuk perisa, creamer, dan sirup gula cair yang bikin lemes sore-sore.\n\nLira Signature Milk Tea: daun teh asli diseduh dingin semalaman, susu beneran, pemanis alami stevia. Nol gula pasir.\n\nLimited batch rilis Sabtu ini. Order lewat link di bio.\n\nCrafted solo by @caleb766h1\n\n#milktea #milkteaindonesia #tehsusu #minumansehat #tanpagula #stevia #coldbrew #drinklira #jajanansehat #bogor"
+}

@@ -113,14 +113,26 @@ jobs:
           echo "Running automator with args: $ARGS"
           node scripts/lira_content_automator.js $ARGS
 
-      - name: Commit & Push Updated Content Ledger
+      - name: Upload Rendered Media Artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lira-rendered-content-${{ github.run_id }}
+          path: |
+            out/current_reel/*.mp4
+            out/current_carousel/*.jpg
+            data/reels/*.json
+            public/assets/generated_reels/*.json
+          if-no-files-found: ignore
+
+      - name: Commit & Push Updated Content Ledger & Generated Configs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/content_ledger.json src/emotional_somatic_captions.json
+          git add data/content_ledger.json data/reels/ src/active_reel_manifest.json public/assets/generated_reels/
           if git diff --staged --quiet; then
             echo "No ledger changes to commit."
           else
-            git commit -m "chore(ledger): update content ledger after scheduled rush-hour post [skip ci]"
+            git commit -m "chore(engine): update content ledger and generated reel configs [skip ci]"
             git push
           fi

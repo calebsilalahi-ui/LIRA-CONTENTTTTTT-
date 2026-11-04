@@ -78,6 +78,7 @@ import { Reel16_WorkingStyleRevamp, REEL_16_DURATION } from './Reel16_WorkingSty
 import { Reel17_Dynamic3PSomatic, REEL_17_DURATION } from './Reel17_Dynamic3PSomatic';
 import { FreshReel_Cup50k, FRESH_CUP50K_DURATION } from './FreshReel_Cup50k';
 import { Reel_Science8Bit_Somatic, SCIENCE8BIT_DURATION } from './Reel_Science8Bit_Somatic';
+import { FrameworkReel, FRAMEWORK_REEL_DURATION } from './FrameworkReel';
 
 
 export const RemotionRoot: React.FC = () => {
@@ -603,6 +604,15 @@ export const RemotionRoot: React.FC = () => {
         fps={30}
         width={1080}
         height={1920}
+      />
+      {/* Autonomous Framework Reel: Dynamic 3P + Open Loop Engine (1080x1440 @ 30fps) */}
+      <Composition
+        id="FrameworkReel"
+        component={FrameworkReel}
+        durationInFrames={FRAMEWORK_REEL_DURATION}
+        fps={30}
+        width={1080}
+        height={1440}
       />
     </>
   );

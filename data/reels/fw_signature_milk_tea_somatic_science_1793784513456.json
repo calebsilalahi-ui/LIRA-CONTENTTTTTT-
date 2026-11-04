@@ -1,0 +1,124 @@
+{
+  "topic": "Milk tea sugar crash vs craft milk tea somatic experience",
+  "threeP": {
+    "promise": "Milk tea that maintains focus without the afternoon brain fog",
+    "proof": "Overnight cold-steeped leaves and zero leak bottle test",
+    "path": "Fresh batch delivery this Saturday in insulated cooler bags"
+  },
+  "written_hook": {
+    "pre": "JANTUNG",
+    "accent": "BERDEGUP",
+    "post": "OTAK KOSONG?"
+  },
+  "script": "[serious] Jantung lo berdegup kencang tapi otak malah kerasa kosong setelah minum milk tea kafe? [frustrated] Itu bukan kafein tapi lonjakan insulin karena boba kemanisan krimer nabati dan yang ketiga es mencair yang bikin teh lo cuma sisa air. [confident] Gue ganti itu semua dengan daun teh asli yang gue rendam semalaman. [proud] Botol ini nggak bakal bocor biarpun dikocok di atas laptop. [intrigued] Teknik cold-steep dan susu asli bikin rasanya jujur tanpa pahit dengan manis murni stevia. [urgent] Batch minggu ini dikirim dingin hari Sabtu. [playful] Klik link di bio kalau",
+  "list_items": [
+    {
+      "label": "BOBA KEMANISAN",
+      "anchor": "boba"
+    },
+    {
+      "label": "KRIMER NABATI",
+      "anchor": "krimer"
+    },
+    {
+      "label": "ES BATU MENCAIR",
+      "anchor": "es"
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1_hook",
+      "scene": "desk_cup_typing",
+      "card": "JANTUNG BERDEGUP OTAK KOSONG?",
+      "anchor": null
+    },
+    {
+      "id": "b2_agitation",
+      "scene": "melted_ice_cup",
+      "card": "3 PENYEBAB BRAIN FOG",
+      "anchor": "Itu"
+    },
+    {
+      "id": "b3_proof",
+      "scene": "inverted_bottle_laptop",
+      "card": "ANTI BOCOR DI LAPTOP",
+      "anchor": "Gue"
+    },
+    {
+      "id": "b4_craft",
+      "scene": "cold_steep_tea",
+      "card": "TEH ASLI COLD STEEP",
+      "anchor": "Teknik"
+    },
+    {
+      "id": "b5_coldchain",
+      "scene": "cooler_bag_pack",
+      "card": "PENGIRIMAN DINGIN SABTU",
+      "anchor": "Batch"
+    },
+    {
+      "id": "b6_cta",
+      "scene": "phone_order",
+      "card": "AMANKAN BATCH MINGGU INI",
+      "anchor": "Klik"
+    }
+  ],
+  "highlight_keywords": [
+    "berdegup kencang",
+    "lonjakan insulin",
+    "cold-steep",
+    "stevia",
+    "susu asli"
+  ],
+  "sfx": [
+    {
+      "file": "sub_hit.mp3",
+      "vol": 1,
+      "at": 0
+    },
+    {
+      "file": "eightbit_clock_spin.wav",
+      "vol": 0.8,
+      "at": 0.1
+    },
+    {
+      "file": "snap.mp3",
+      "vol": 0.7,
+      "anchor": "insulin"
+    },
+    {
+      "file": "impact.mp3",
+      "vol": 0.8,
+      "anchor": "ketiga"
+    },
+    {
+      "file": "thud.mp3",
+      "vol": 0.6,
+      "anchor": "rendam"
+    },
+    {
+      "file": "whoosh.mp3",
+      "vol": 0.7,
+      "anchor": "dikocok"
+    },
+    {
+      "file": "eightbit_pop.wav",
+      "vol": 0.6,
+      "anchor": "stevia"
+    },
+    {
+      "file": "scratch.mp3",
+      "vol": 0.5,
+      "anchor": "kalau"
+    }
+  ],
+  "caption": "Lemes dan kosong setelah minum milk tea itu tanda tubuh lo kaget sama lonjakan gula. Gue bikin Signature Milk Tea pakai daun teh asli yang direndam semalaman biar rasanya jujur tanpa tambahan krimer nabati atau gula pasir. Manisnya murni dari stevia dan diantar dingin sampai depan gerbang lo dalam Forest Green cooler bag. Amankan porsi lo buat batch minggu ini lewat link di bio.\nCrafted solo by @caleb766h1\n#milktea #craftmilktea #drinklira #jakarta #coldsteep #beverages #milktealover #healthylifestyle",
+  "new_asset": null,
+  "sku": "Signature Milk Tea",
+  "pillar": "Craftsmanship & Ingredient Truth",
+  "hook_category": "Somatic Science",
+  "format": "reel",
+  "writer_model": "gemini-3-flash-preview",
+  "id": "fw_signature_milk_tea_somatic_science_1793784513456",
+  "createdAt": "2026-11-04T09:28:33.456Z"
+}

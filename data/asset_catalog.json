@@ -1,0 +1,37 @@
+{
+  "_doc": "Scene library for FrameworkReel. Each scene = 1-2 frames toggled for living pixel animation. 'beats' = which of the 6 framework beats the scene suits. The script writer may ONLY reference scene ids listed here (or request ONE new asset via new_asset).",
+  "scenes": [
+    { "id": "desk_cup_typing", "frames": ["assets/pixel/cup_struggle/s1_typing_cup.jpg", "assets/pixel/cup_struggle/s1_typing_cup_b.jpg"], "beats": ["b1_hook", "b2_agitation"], "desc": "Caleb typing on laptop, sweating plastic cafe cup leaking condensation onto notes, annoyed" },
+    { "id": "totebag_cup_tilt", "frames": ["assets/pixel/cup_struggle/s2_totebag_tilt.jpg", "assets/pixel/cup_struggle/s2_totebag_tilt_b.jpg"], "beats": ["b1_hook", "b2_agitation"], "desc": "Plastic cafe cup tilting dangerously in a tote bag next to a laptop, lid about to pop" },
+    { "id": "melted_ice_cup", "frames": ["assets/pixel/carousel_melted_ice.jpg"], "beats": ["b1_hook", "b2_agitation"], "desc": "Macro of a diluted, melted-ice plastic cafe drink with a puddle on the desk" },
+    { "id": "wet_notes_cup", "frames": ["assets/pixel/story_cup_water_damage.jpg"], "beats": ["b1_hook", "b2_agitation"], "desc": "POV desk, sweating cafe cup ring soaking and smearing assignment paper" },
+    { "id": "cafe_counter", "frames": ["assets/pixel/scene_4_cafe.jpg", "assets/pixel/scene_4_cafe_b.jpg"], "beats": ["b1_hook", "b2_agitation"], "desc": "Generic busy cafe counter scene (ordering an expensive cafe drink)" },
+    { "id": "stressed_tired", "frames": ["assets/pixel/scene_6_stressed.jpg", "assets/pixel/scene_6_stressed_a.jpg"], "beats": ["b1_hook", "b2_agitation"], "desc": "Caleb stressed / drained / sleepy at desk (afternoon crash, brain fog)" },
+    { "id": "sugar_vs_stevia_chart", "frames": ["assets/pixel/stevia_vs_sugar_science.jpg"], "beats": ["b2_agitation", "b4_craft"], "desc": "Retro HUD split: stevia leaf flat glucose line vs cafe cup + sugar spike-and-crash graph" },
+    { "id": "inverted_bottle_laptop", "frames": ["assets/pixel/cup_struggle/s3_inverted_a.jpg", "assets/pixel/cup_struggle/s3_inverted_b.jpg"], "beats": ["b1_hook", "b3_proof"], "desc": "Sealed Lira bottle held 180 degrees upside down over a laptop keyboard, zero leak" },
+    { "id": "caleb_shake_uncap", "frames": ["assets/pixel/caleb_action_seq/f1_inspect.jpg", "assets/pixel/caleb_action_seq/f2_shake.jpg"], "beats": ["b3_proof"], "desc": "Caleb at desk gripping and shaking a sealed cold Lira bottle" },
+    { "id": "caleb_sip_smirk", "frames": ["assets/pixel/caleb_action_seq/f4_sip.jpg", "assets/pixel/caleb_action_seq/f5_smirk.jpg"], "beats": ["b3_proof", "b6_cta"], "desc": "Caleb sips from the Lira bottle then smirks confidently at camera" },
+    { "id": "totebag_toss", "frames": ["assets/pixel/cup_struggle/s4_toss_1.jpg", "assets/pixel/cup_struggle/s4_toss_2.jpg"], "beats": ["b3_proof"], "desc": "Caleb tossing a sealed Lira bottle into his tote bag next to the laptop" },
+    { "id": "sapa_chiller", "frames": ["assets/pixel/sapa/s2_chiller_a.jpg", "assets/pixel/sapa/s2_chiller_b.jpg"], "beats": ["b3_proof", "b5_coldchain"], "desc": "Lira bottles lined up in a convenience-store chiller shelf" },
+    { "id": "chasen_whisk", "frames": ["assets/pixel/tools/chasen_whisk.png"], "beats": ["b4_craft"], "desc": "Bamboo chasen whisking vibrant green matcha in a dark ceramic bowl (MATCHA SKUs only)" },
+    { "id": "stevia_dropper", "frames": ["assets/pixel/stevia_dropper_macro.jpg"], "beats": ["b4_craft"], "desc": "Macro: amber dropper releasing a stevia droplet over a green matcha + oat milk swirl" },
+    { "id": "blender_kitchen", "frames": ["assets/pixel/caleb_blender_kitchen.jpg"], "beats": ["b4_craft"], "desc": "Caleb in a bright marble kitchen blending a green vortex, sealed bottles on counter" },
+    { "id": "pouring_matcha", "frames": ["assets/pixel/caleb_pouring_matcha.jpg"], "beats": ["b4_craft"], "desc": "Caleb pouring matcha in the kitchen (MATCHA SKUs only)" },
+    { "id": "batch_bottling", "frames": ["assets/pixel/s5_batch_a.jpg", "assets/pixel/s5_batch_b.jpg"], "beats": ["b4_craft", "b5_coldchain"], "desc": "Caleb at marble counter with a fresh batch of sealed Lira bottles (any SKU)" },
+    { "id": "early_ritual", "frames": ["assets/pixel/scene_7_ritual.jpg", "assets/pixel/scene_7_ritual_a.jpg"], "beats": ["b4_craft"], "desc": "Early-morning craft ritual scene (03:30 AM founder routine)" },
+    { "id": "cold_steep_tea", "frames": ["assets/pixel/tools/cold_steep_tea_a.jpg", "assets/pixel/tools/cold_steep_tea_b.jpg"], "beats": ["b4_craft"], "desc": "Caleb cold-steeping loose black tea leaves in a glass jar at pre-dawn (MILK TEA SKU)" },
+    { "id": "cooler_bag_pack", "frames": ["assets/pixel/tutorial/s3_cooler_bag_pack_a.jpg", "assets/pixel/tutorial/s3_cooler_bag_pack_b.jpg"], "beats": ["b5_coldchain"], "desc": "Caleb packing cold bottles into the Forest Green aluminum-foil cooler bag" },
+    { "id": "gojek_cooler_bag", "frames": ["assets/pixel/tutorial/s4_gojek_green_a.jpg", "assets/pixel/tutorial/s4_gojek_green_b.jpg"], "beats": ["b5_coldchain"], "desc": "Gojek driver at the gate holding the Forest Green Lira cooler bag, thumbs up" },
+    { "id": "running_delivery", "frames": ["assets/pixel/caleb_running_delivery.jpg"], "beats": ["b5_coldchain"], "desc": "Caleb running out for a Saturday delivery" },
+    { "id": "phone_order", "frames": ["assets/pixel/tutorial/s1_phone_a.jpg", "assets/pixel/tutorial/s1_phone_b.jpg"], "beats": ["b5_coldchain", "b6_cta"], "desc": "Hand holding a phone ordering via the bio link" },
+    { "id": "caleb_point_hero", "frames": ["assets/pixel/caleb_point_hero.jpg"], "beats": ["b6_cta"], "desc": "Caleb pointing confidently, hero CTA pose" }
+  ],
+  "bottles": {
+    "Matcha Oatside": "assets/matcha.png",
+    "Matcha Classic": "assets/matcha.png",
+    "Choco Hazelnut": "assets/choco.png",
+    "Signature Milk Tea": "assets/milktea.png"
+  },
+  "cooler_bag": "assets/pixel/tutorial/cooler_bag_cutout.png",
+  "sfx": ["sub_hit.mp3", "eightbit_clock_spin.wav", "snap.mp3", "impact.mp3", "thud.mp3", "whoosh.mp3", "scratch.mp3", "shutter.mp3", "alarm.mp3", "eightbit_1star_buzz.wav", "eightbit_pop.wav", "eightbit_portal_shimmer.wav", "eightbit_5star_fanfare.wav"]
+}

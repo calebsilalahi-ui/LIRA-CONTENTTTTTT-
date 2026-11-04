@@ -1,0 +1,466 @@
+{
+  "id": "fw_signature_milk_tea_somatic_science_1793784513456",
+  "sku": "Signature Milk Tea",
+  "pillar": "Craftsmanship & Ingredient Truth",
+  "hook_category": "Somatic Science",
+  "topic": "Milk tea sugar crash vs craft milk tea somatic experience",
+  "threeP": {
+    "promise": "Milk tea that maintains focus without the afternoon brain fog",
+    "proof": "Overnight cold-steeped leaves and zero leak bottle test",
+    "path": "Fresh batch delivery this Saturday in insulated cooler bags"
+  },
+  "written_hook": {
+    "pre": "JANTUNG",
+    "accent": "BERDEGUP",
+    "post": "OTAK KOSONG?"
+  },
+  "audioMaster": "assets/generated_reels/fw_signature_milk_tea_somatic_science_1793784513456_master.mp3",
+  "totalFrames": 913,
+  "totalDurationSec": 30.4,
+  "beatFrames": {
+    "b1_hook": 0,
+    "b2_agitation": 148,
+    "b3_proof": 401,
+    "b4_craft": 612,
+    "b5_coldchain": 775,
+    "b6_cta": 844
+  },
+  "listFrames": {
+    "item_1": 229,
+    "item_2": 259,
+    "item_3": 319
+  },
+  "captions": [
+    {
+      "text": "TAPI OTAK",
+      "highlight": false,
+      "startSec": 1.6,
+      "endSec": 2.24,
+      "fromFrame": 48,
+      "toFrame": 67
+    },
+    {
+      "text": "MALAH KERASA",
+      "highlight": false,
+      "startSec": 2.24,
+      "endSec": 2.8,
+      "fromFrame": 67,
+      "toFrame": 84
+    },
+    {
+      "text": "KOSONG SETELAH",
+      "highlight": false,
+      "startSec": 2.8,
+      "endSec": 3.6,
+      "fromFrame": 84,
+      "toFrame": 108
+    },
+    {
+      "text": "MINUM MILK",
+      "highlight": false,
+      "startSec": 3.6,
+      "endSec": 3.96,
+      "fromFrame": 108,
+      "toFrame": 118
+    },
+    {
+      "text": "TEA KAFE",
+      "highlight": false,
+      "startSec": 3.96,
+      "endSec": 4.937,
+      "fromFrame": 118,
+      "toFrame": 148
+    },
+    {
+      "text": "ITU BUKAN",
+      "highlight": false,
+      "startSec": 4.937,
+      "endSec": 5.28,
+      "fromFrame": 148,
+      "toFrame": 158
+    },
+    {
+      "text": "KAFEIN TAPI",
+      "highlight": false,
+      "startSec": 5.28,
+      "endSec": 6.4,
+      "fromFrame": 158,
+      "toFrame": 192
+    },
+    {
+      "text": "LONJAKAN INSULIN",
+      "highlight": true,
+      "startSec": 6.4,
+      "endSec": 7.44,
+      "fromFrame": 192,
+      "toFrame": 223
+    },
+    {
+      "text": "KARENA BOBA",
+      "highlight": false,
+      "startSec": 7.44,
+      "endSec": 7.88,
+      "fromFrame": 223,
+      "toFrame": 236
+    },
+    {
+      "text": "KEMANISAN KRIMER",
+      "highlight": false,
+      "startSec": 7.88,
+      "endSec": 9.04,
+      "fromFrame": 236,
+      "toFrame": 271
+    },
+    {
+      "text": "NABATI DAN",
+      "highlight": false,
+      "startSec": 9.04,
+      "endSec": 9.92,
+      "fromFrame": 271,
+      "toFrame": 297
+    },
+    {
+      "text": "YANG KETIGA",
+      "highlight": false,
+      "startSec": 9.92,
+      "endSec": 10.64,
+      "fromFrame": 297,
+      "toFrame": 319
+    },
+    {
+      "text": "ES MENCAIR",
+      "highlight": false,
+      "startSec": 10.64,
+      "endSec": 11.44,
+      "fromFrame": 319,
+      "toFrame": 343
+    },
+    {
+      "text": "YANG BIKIN",
+      "highlight": false,
+      "startSec": 11.44,
+      "endSec": 11.8,
+      "fromFrame": 343,
+      "toFrame": 354
+    },
+    {
+      "text": "TEH LO",
+      "highlight": false,
+      "startSec": 11.8,
+      "endSec": 12.04,
+      "fromFrame": 354,
+      "toFrame": 361
+    },
+    {
+      "text": "CUMA SISA",
+      "highlight": false,
+      "startSec": 12.04,
+      "endSec": 12.56,
+      "fromFrame": 361,
+      "toFrame": 376
+    },
+    {
+      "text": "AIR GUE",
+      "highlight": false,
+      "startSec": 12.56,
+      "endSec": 13.52,
+      "fromFrame": 376,
+      "toFrame": 405
+    },
+    {
+      "text": "GANTI ITU",
+      "highlight": false,
+      "startSec": 13.52,
+      "endSec": 14.08,
+      "fromFrame": 405,
+      "toFrame": 422
+    },
+    {
+      "text": "SEMUA DENGAN",
+      "highlight": false,
+      "startSec": 14.08,
+      "endSec": 14.72,
+      "fromFrame": 422,
+      "toFrame": 441
+    },
+    {
+      "text": "DAUN TEH",
+      "highlight": false,
+      "startSec": 14.72,
+      "endSec": 15.12,
+      "fromFrame": 441,
+      "toFrame": 453
+    },
+    {
+      "text": "ASLI YANG",
+      "highlight": false,
+      "startSec": 15.12,
+      "endSec": 15.64,
+      "fromFrame": 453,
+      "toFrame": 469
+    },
+    {
+      "text": "GUE RENDAM",
+      "highlight": false,
+      "startSec": 15.64,
+      "endSec": 16.16,
+      "fromFrame": 469,
+      "toFrame": 484
+    },
+    {
+      "text": "SEMALAMAN BOTOL",
+      "highlight": false,
+      "startSec": 16.16,
+      "endSec": 17.36,
+      "fromFrame": 484,
+      "toFrame": 520
+    },
+    {
+      "text": "INI NGGAK",
+      "highlight": false,
+      "startSec": 17.36,
+      "endSec": 17.84,
+      "fromFrame": 520,
+      "toFrame": 535
+    },
+    {
+      "text": "BAKAL BOCOR",
+      "highlight": false,
+      "startSec": 17.84,
+      "endSec": 18.6,
+      "fromFrame": 535,
+      "toFrame": 558
+    },
+    {
+      "text": "BIARPUN DIKOCOK",
+      "highlight": false,
+      "startSec": 18.6,
+      "endSec": 19.4,
+      "fromFrame": 558,
+      "toFrame": 582
+    },
+    {
+      "text": "DI ATAS",
+      "highlight": false,
+      "startSec": 19.4,
+      "endSec": 19.68,
+      "fromFrame": 582,
+      "toFrame": 590
+    },
+    {
+      "text": "LAPTOP TEKNIK",
+      "highlight": false,
+      "startSec": 19.68,
+      "endSec": 20.72,
+      "fromFrame": 590,
+      "toFrame": 621
+    },
+    {
+      "text": "COLD-STEEP DAN",
+      "highlight": true,
+      "startSec": 20.72,
+      "endSec": 21.44,
+      "fromFrame": 621,
+      "toFrame": 643
+    },
+    {
+      "text": "SUSU ASLI",
+      "highlight": true,
+      "startSec": 21.44,
+      "endSec": 22.133,
+      "fromFrame": 643,
+      "toFrame": 663
+    },
+    {
+      "text": "BIKIN RASANYA",
+      "highlight": false,
+      "startSec": 22.133,
+      "endSec": 22.8,
+      "fromFrame": 663,
+      "toFrame": 684
+    },
+    {
+      "text": "JUJUR TANPA",
+      "highlight": false,
+      "startSec": 22.8,
+      "endSec": 23.72,
+      "fromFrame": 684,
+      "toFrame": 711
+    },
+    {
+      "text": "PAHIT DENGAN",
+      "highlight": false,
+      "startSec": 23.72,
+      "endSec": 24.4,
+      "fromFrame": 711,
+      "toFrame": 732
+    },
+    {
+      "text": "MANIS MURNI",
+      "highlight": false,
+      "startSec": 24.4,
+      "endSec": 25,
+      "fromFrame": 732,
+      "toFrame": 750
+    },
+    {
+      "text": "STEVIA BATCH",
+      "highlight": true,
+      "startSec": 25,
+      "endSec": 26.08,
+      "fromFrame": 750,
+      "toFrame": 782
+    },
+    {
+      "text": "MINGGU INI",
+      "highlight": false,
+      "startSec": 26.08,
+      "endSec": 26.64,
+      "fromFrame": 782,
+      "toFrame": 799
+    },
+    {
+      "text": "DIKIRIM DINGIN",
+      "highlight": false,
+      "startSec": 26.64,
+      "endSec": 27.36,
+      "fromFrame": 799,
+      "toFrame": 820
+    },
+    {
+      "text": "HARI SABTU",
+      "highlight": false,
+      "startSec": 27.36,
+      "endSec": 28.16,
+      "fromFrame": 820,
+      "toFrame": 844
+    },
+    {
+      "text": "KLIK LINK",
+      "highlight": false,
+      "startSec": 28.16,
+      "endSec": 28.52,
+      "fromFrame": 844,
+      "toFrame": 855
+    },
+    {
+      "text": "DI BIO",
+      "highlight": false,
+      "startSec": 28.52,
+      "endSec": 28.96,
+      "fromFrame": 855,
+      "toFrame": 868
+    },
+    {
+      "text": "KALAU",
+      "highlight": false,
+      "startSec": 28.96,
+      "endSec": 29.6,
+      "fromFrame": 868,
+      "toFrame": 888
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1_hook",
+      "scene": "desk_cup_typing",
+      "card": "JANTUNG BERDEGUP OTAK KOSONG?",
+      "anchor": null
+    },
+    {
+      "id": "b2_agitation",
+      "scene": "melted_ice_cup",
+      "card": "3 PENYEBAB BRAIN FOG",
+      "anchor": "Itu"
+    },
+    {
+      "id": "b3_proof",
+      "scene": "inverted_bottle_laptop",
+      "card": "ANTI BOCOR DI LAPTOP",
+      "anchor": "Gue"
+    },
+    {
+      "id": "b4_craft",
+      "scene": "cold_steep_tea",
+      "card": "TEH ASLI COLD STEEP",
+      "anchor": "Teknik"
+    },
+    {
+      "id": "b5_coldchain",
+      "scene": "cooler_bag_pack",
+      "card": "PENGIRIMAN DINGIN SABTU",
+      "anchor": "Batch"
+    },
+    {
+      "id": "b6_cta",
+      "scene": "phone_order",
+      "card": "AMANKAN BATCH MINGGU INI",
+      "anchor": "Klik"
+    }
+  ],
+  "list_items": [
+    {
+      "label": "BOBA KEMANISAN",
+      "anchor": "boba"
+    },
+    {
+      "label": "KRIMER NABATI",
+      "anchor": "krimer"
+    },
+    {
+      "label": "ES BATU MENCAIR",
+      "anchor": "es"
+    }
+  ],
+  "highlight_keywords": [
+    "berdegup kencang",
+    "lonjakan insulin",
+    "cold-steep",
+    "stevia",
+    "susu asli"
+  ],
+  "resolvedSFX": [
+    {
+      "file": "sub_hit.mp3",
+      "delayMs": 0,
+      "volume": 1
+    },
+    {
+      "file": "eightbit_clock_spin.wav",
+      "delayMs": 100,
+      "volume": 0.8
+    },
+    {
+      "file": "snap.mp3",
+      "delayMs": 6840,
+      "volume": 0.7
+    },
+    {
+      "file": "impact.mp3",
+      "delayMs": 10080,
+      "volume": 0.8
+    },
+    {
+      "file": "thud.mp3",
+      "delayMs": 15760,
+      "volume": 0.6
+    },
+    {
+      "file": "whoosh.mp3",
+      "delayMs": 18960,
+      "volume": 0.7
+    },
+    {
+      "file": "eightbit_pop.wav",
+      "delayMs": 25000,
+      "volume": 0.6
+    },
+    {
+      "file": "scratch.mp3",
+      "delayMs": 28960,
+      "volume": 0.5
+    }
+  ],
+  "caption": "Lemes dan kosong setelah minum milk tea itu tanda tubuh lo kaget sama lonjakan gula. Gue bikin Signature Milk Tea pakai daun teh asli yang direndam semalaman biar rasanya jujur tanpa tambahan krimer nabati atau gula pasir. Manisnya murni dari stevia dan diantar dingin sampai depan gerbang lo dalam Forest Green cooler bag. Amankan porsi lo buat batch minggu ini lewat link di bio.\nCrafted solo by @caleb766h1\n#milktea #craftmilktea #drinklira #jakarta #coldsteep #beverages #milktealover #healthylifestyle",
+  "createdAt": "2026-11-04T09:39:40.030Z"
+}

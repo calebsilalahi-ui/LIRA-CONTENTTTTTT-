@@ -51,6 +51,11 @@ const CALEB_VOICE_ID = process.env.CALEB_VOICE_ID || process.env.CALEB || 'WVwVl
 // Import Guardrail Validator
 const { validateContent, GuardrailError } = require('./validate_guardrails');
 
+// Import Autonomous Framework Reel Engine (plan §2, §3, §4, §5.3, §7, §8)
+const { writeReel } = require('./reel_engine/script_writer');
+const { buildReelAudio } = require('./reel_engine/audio_engine');
+const { verifyReelVideo } = require('./reel_engine/verify_reel');
+
 // Bigram Jaccard Similarity Helper
 function tokenize(text) {
   if (!text || typeof text !== 'string') return [];
@@ -321,6 +326,8 @@ function parseCliArgs() {
       opts.verbalHook = args[++i];
     } else if (arg === '--written-hook' && args[i + 1]) {
       opts.writtenHook = args[++i];
+    } else if (arg === '--config' && args[i + 1]) {
+      opts.config = args[++i];
     }
   }
 
@@ -729,12 +736,28 @@ async function main() {
       }
       console.log(`[Renderer] ✓ Successfully rendered ${renderedFiles.length} fresh distinct carousel slides!`);
     } else {
-      await synthesizeReelAudio(template);
-      const compId = template.compositionId || 'Reel-Science8Bit-Somatic';
-      console.log(`[Renderer] Compiling fresh Reel video for "${template.id}" using Remotion CLI (composition: ${compId})...`);
+      console.log(`[Framework Engine] Generating original Reel config using plan framework...`);
+      let reelConfig;
+      if (opts.config) {
+        reelConfig = JSON.parse(fs.readFileSync(path.resolve(opts.config), 'utf-8'));
+      } else {
+        const writerRes = await writeReel({
+          sku: template.sku,
+          category: template.hook_category,
+          pillar: template.pillar,
+        });
+        reelConfig = writerRes.cfg;
+      }
+
+      console.log(`[AudioEngine] Generating ElevenLabs v4 audio & multi-track tension SFX mix...`);
+      const manifest = await buildReelAudio(reelConfig);
+      const manifestPath = path.join(PROJECT_ROOT, 'public/assets/generated_reels', `${reelConfig.id}_manifest.json`);
+
+      const compId = 'FrameworkReel';
+      console.log(`[Renderer] Compiling fresh Framework Reel "${reelConfig.id}" via Remotion (composition: ${compId})...`);
       const outDir = path.join(PROJECT_ROOT, 'out/current_reel');
       fs.mkdirSync(outDir, { recursive: true });
-      const outMp4 = path.join(outDir, `${template.id}.mp4`);
+      const outMp4 = path.join(outDir, `${reelConfig.id}.mp4`);
 
       if (fs.existsSync(outMp4)) {
         fs.unlinkSync(outMp4);
@@ -757,9 +780,21 @@ async function main() {
       if (renderRes.status !== 0 || !fs.existsSync(outMp4)) {
         throw new Error(`Remotion render failed for composition ${compId} (exit code: ${renderRes.status})`);
       }
+
+      // Verification Step (plan §8)
+      console.log(`[Verifier] Verifying rendered Reel quality gates...`);
+      verifyReelVideo(outMp4, manifestPath);
+
       const stats = fs.statSync(outMp4);
-      console.log(`[Renderer] ✓ Successfully compiled distinct Reel MP4: ${outMp4} (${(stats.size / 1024 / 1024).toFixed(2)} MB)!`);
+      console.log(`[Renderer] ✓ Successfully compiled & verified distinct Reel MP4: ${outMp4} (${(stats.size / 1024 / 1024).toFixed(2)} MB)!`);
       renderedFiles = [outMp4];
+
+      // Update template object so publication and ledger use the fresh original reel's content
+      template.id = reelConfig.id;
+      template.caption = reelConfig.caption;
+      template.written_hook = `${reelConfig.written_hook.pre} ${reelConfig.written_hook.accent} ${reelConfig.written_hook.post}`;
+      template.verbal_hook = reelConfig.script.split(/[.!?]/)[0];
+      template.topic = reelConfig.topic;
     }
   }
 
