@@ -269,7 +269,7 @@ async function buildReelAudio(cfg, opts = {}) {
   const sfxDir = path.join(PROJECT_ROOT, 'public/assets/sfx');
   const ffmpegBin = fs.existsSync('/Users/caleb/.local/bin/ffmpeg')
     ? '/Users/caleb/.local/bin/ffmpeg'
-    : 'ffmpeg';
+    : (fs.existsSync('/usr/bin/ffmpeg') ? '/usr/bin/ffmpeg' : (fs.existsSync('/usr/local/bin/ffmpeg') ? '/usr/local/bin/ffmpeg' : 'ffmpeg'));
 
   // Build SFX inputs and filters
   const inputs = ['-y', '-i', rawPath, '-stream_loop', '-1', '-i', bgmPath];
@@ -321,8 +321,8 @@ async function buildReelAudio(cfg, opts = {}) {
     masterPath,
   ];
 
-  console.log(`[AudioEngine] Mixing ${mixCount} audio tracks with FFmpeg...`);
-  const mixRes = spawnSync(ffmpegBin, ffmpegArgs, { stdio: 'inherit' });
+  console.log(`[AudioEngine] Mixing ${mixCount} audio tracks with FFmpeg (${ffmpegBin})...`);
+  const mixRes = spawnSync(ffmpegBin, ffmpegArgs, { stdio: 'inherit', env: process.env });
   if (mixRes.status !== 0 || !fs.existsSync(masterPath)) {
     const errDetail = mixRes.error ? mixRes.error.message : (mixRes.signal ? `signal: ${mixRes.signal}` : `status: ${mixRes.status}`);
     throw new Error(`FFmpeg audio mix failed (${errDetail})`);

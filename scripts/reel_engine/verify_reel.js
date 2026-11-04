@@ -18,10 +18,10 @@ const PROJECT_ROOT = path.resolve(__dirname, '..', '..');
 
 const FFMPEG = fs.existsSync('/Users/caleb/.local/bin/ffmpeg')
   ? '/Users/caleb/.local/bin/ffmpeg'
-  : 'ffmpeg';
+  : (fs.existsSync('/usr/bin/ffmpeg') ? '/usr/bin/ffmpeg' : (fs.existsSync('/usr/local/bin/ffmpeg') ? '/usr/local/bin/ffmpeg' : 'ffmpeg'));
 const FFPROBE = fs.existsSync('/Users/caleb/.local/bin/ffprobe')
   ? '/Users/caleb/.local/bin/ffprobe'
-  : 'ffprobe';
+  : (fs.existsSync('/usr/bin/ffprobe') ? '/usr/bin/ffprobe' : (fs.existsSync('/usr/local/bin/ffprobe') ? '/usr/local/bin/ffprobe' : 'ffprobe'));
 
 function verifyReelVideo(mp4Path, manifestPath) {
   console.log(`[Verifier] Inspecting rendered Reel: ${mp4Path}`);
@@ -42,9 +42,10 @@ function verifyReelVideo(mp4Path, manifestPath) {
     '-show_entries', 'stream=width,height,r_frame_rate,codec_name,duration',
     '-of', 'json',
     mp4Path,
-  ]);
+  ], { env: process.env });
   if (probe.status !== 0) {
-    throw new Error(`ffprobe failed: ${probe.stderr.toString()}`);
+    const err = probe.error ? probe.error.message : probe.stderr.toString();
+    throw new Error(`ffprobe failed: ${err}`);
   }
   const probeData = JSON.parse(probe.stdout.toString()).streams[0];
   const w = Number(probeData.width);
@@ -64,7 +65,7 @@ function verifyReelVideo(mp4Path, manifestPath) {
     '-af', 'ebur128=framelog=verbose',
     '-f', 'null',
     '-',
-  ], { maxBuffer: 10 * 1024 * 1024 });
+  ], { maxBuffer: 10 * 1024 * 1024, env: process.env });
 
   const lufsOutput = (lufsProbe.stderr ? lufsProbe.stderr.toString() : '') + (lufsProbe.stdout ? lufsProbe.stdout.toString() : '');
   const lufsMatch = lufsOutput.match(/I:\s*(-?\d+\.?\d*)\s*LUFS/);
@@ -83,7 +84,7 @@ function verifyReelVideo(mp4Path, manifestPath) {
     '-af', 'silencedetect=noise=-30dB:d=0.03',
     '-f', 'null',
     '-',
-  ]);
+  ], { env: process.env });
   const silenceOut = silenceProbe.stderr ? silenceProbe.stderr.toString() : '';
   const firstSoundMatch = silenceOut.match(/silence_end:\s*(\d+\.?\d*)/);
   const soundOnset = firstSoundMatch ? parseFloat(firstSoundMatch[1]) : 0.0;
