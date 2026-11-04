@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "lastUpdated": "2026-11-03T23:51:31.840Z",
+  "lastUpdated": "2026-11-04T00:25:33.237Z",
   "entries": [
     {
       "id": "reel_01_founder_story",
@@ -342,8 +342,8 @@
     },
     {
       "id": "slot_01_reel_matcha_crash",
-      "timestamp": "2026-11-03T23:51:31.835Z",
-      "createdAt": "2026-11-03T23:51:31.835Z",
+      "timestamp": "2026-11-04T00:25:33.234Z",
+      "createdAt": "2026-11-04T00:25:33.234Z",
       "format": "reel",
       "pillar": "Sugar Crash & Stevia Science",
       "hook_category": "Comparison",
@@ -355,8 +355,8 @@
     },
     {
       "id": "slot_02_carousel_dark_cocoa",
-      "timestamp": "2026-11-04T04:51:31.838Z",
-      "createdAt": "2026-11-04T04:51:31.838Z",
+      "timestamp": "2026-11-04T05:25:33.236Z",
+      "createdAt": "2026-11-04T05:25:33.236Z",
       "format": "carousel",
       "pillar": "Craftsmanship & Student Lifestyle",
       "hook_category": "Educational",
@@ -368,8 +368,8 @@
     },
     {
       "id": "slot_03_reel_forest_bag",
-      "timestamp": "2026-11-04T09:51:31.838Z",
-      "createdAt": "2026-11-04T09:51:31.838Z",
+      "timestamp": "2026-11-04T10:25:33.236Z",
+      "createdAt": "2026-11-04T10:25:33.236Z",
       "format": "reel",
       "pillar": "Cold Chain & Saturday COD Loop",
       "hook_category": "Storytelling",
@@ -381,8 +381,8 @@
     },
     {
       "id": "slot_04_carousel_matcha_myth",
-      "timestamp": "2026-11-04T14:51:31.838Z",
-      "createdAt": "2026-11-04T14:51:31.838Z",
+      "timestamp": "2026-11-04T15:25:33.236Z",
+      "createdAt": "2026-11-04T15:25:33.236Z",
       "format": "carousel",
       "pillar": "Indie Game & Pixel Culture",
       "hook_category": "Myth Busting",
@@ -394,8 +394,8 @@
     },
     {
       "id": "slot_05_reel_founder_routine",
-      "timestamp": "2026-11-04T19:51:31.838Z",
-      "createdAt": "2026-11-04T19:51:31.838Z",
+      "timestamp": "2026-11-04T20:25:33.236Z",
+      "createdAt": "2026-11-04T20:25:33.236Z",
       "format": "reel",
       "pillar": "Craftsmanship & Student Lifestyle",
       "hook_category": "Day in the Life",
@@ -407,8 +407,8 @@
     },
     {
       "id": "slot_06_carousel_ceylon_steep",
-      "timestamp": "2026-11-05T00:51:31.838Z",
-      "createdAt": "2026-11-05T00:51:31.838Z",
+      "timestamp": "2026-11-05T01:25:33.236Z",
+      "createdAt": "2026-11-05T01:25:33.236Z",
       "format": "carousel",
       "pillar": "Sugar Crash & Stevia Science",
       "hook_category": "Authority",
@@ -420,8 +420,8 @@
     },
     {
       "id": "slot_07_reel_shake_test",
-      "timestamp": "2026-11-05T05:51:31.838Z",
-      "createdAt": "2026-11-05T05:51:31.838Z",
+      "timestamp": "2026-11-05T06:25:33.236Z",
+      "createdAt": "2026-11-05T06:25:33.236Z",
       "format": "reel",
       "pillar": "Cold Chain & Saturday COD Loop",
       "hook_category": "Random",
@@ -433,8 +433,8 @@
     },
     {
       "id": "slot_08_carousel_library_guide",
-      "timestamp": "2026-11-05T10:51:31.838Z",
-      "createdAt": "2026-11-05T10:51:31.838Z",
+      "timestamp": "2026-11-05T11:25:33.236Z",
+      "createdAt": "2026-11-05T11:25:33.236Z",
       "format": "carousel",
       "pillar": "Craftsmanship & Student Lifestyle",
       "hook_category": "Storytelling",
@@ -446,8 +446,8 @@
     },
     {
       "id": "slot_09_reel_sapa_restock",
-      "timestamp": "2026-11-05T15:51:31.838Z",
-      "createdAt": "2026-11-05T15:51:31.838Z",
+      "timestamp": "2026-11-05T16:25:33.236Z",
+      "createdAt": "2026-11-05T16:25:33.236Z",
       "format": "reel",
       "pillar": "Cold Chain & Saturday COD Loop",
       "hook_category": "Educational",
@@ -459,8 +459,8 @@
     },
     {
       "id": "slot_10_carousel_milk_tea_calories",
-      "timestamp": "2026-11-05T20:51:31.838Z",
-      "createdAt": "2026-11-05T20:51:31.838Z",
+      "timestamp": "2026-11-05T21:25:33.236Z",
+      "createdAt": "2026-11-05T21:25:33.236Z",
       "format": "carousel",
       "pillar": "Sugar Crash & Stevia Science",
       "hook_category": "Comparison",
