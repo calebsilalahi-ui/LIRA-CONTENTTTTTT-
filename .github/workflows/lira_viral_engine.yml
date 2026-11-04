@@ -20,6 +20,10 @@ on:
           - reel
           - carousel
         default: auto
+      template:
+        description: 'Slot Blueprint Index (1 to 10, or leave empty for automatic sequence)'
+        type: string
+        default: ''
 
 permissions:
   contents: write
@@ -98,6 +102,12 @@ jobs:
             ARGS="$ARGS --type reel"
           elif [ "${{ github.event.inputs.format }}" = "carousel" ]; then
             ARGS="$ARGS --type carousel"
+          fi
+
+          if [ -n "${{ github.event.inputs.template }}" ]; then
+            TEMPLATE_NUM="${{ github.event.inputs.template }}"
+            TEMPLATE_IDX=$((TEMPLATE_NUM - 1))
+            ARGS="$ARGS --template $TEMPLATE_IDX"
           fi
 
           echo "Running automator with args: $ARGS"
