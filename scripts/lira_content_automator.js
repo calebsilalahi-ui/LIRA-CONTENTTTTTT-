@@ -466,6 +466,7 @@ async function main() {
       console.log(`[Renderer] ✓ All 8 slides rendered to ${outDir}`);
     } else {
       console.log(`[Renderer] Checking ElevenLabs audio and Reel assets for template ${template.id}...`);
+      const audioScript = path.join(__dirname, 'generate_sample_3p_reel_audio.js');
       if (!ELEVENLABS_API_KEY) {
         throw new Error('❌ ELEVENLABS_API_KEY is missing! In GitHub Actions, please add it in: Repo Settings -> Secrets and variables -> Actions -> Repository secrets -> ELEVENLABS_API_KEY.');
       }
