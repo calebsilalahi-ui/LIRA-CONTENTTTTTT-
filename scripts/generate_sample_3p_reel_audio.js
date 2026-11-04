@@ -23,9 +23,9 @@ if (fs.existsSync(envPath)) {
   }
 }
 
-const API_KEY = process.env.ELEVENLABS_API_KEY;
+const API_KEY = process.env.ELEVENLABS_API_KEY || process.env.ELEVENLABS || process.env.XI_API_KEY;
 if (!API_KEY) {
-  console.error('❌ ELEVENLABS_API_KEY is required in .env or environment');
+  console.error('❌ ELEVENLABS_API_KEY (or ELEVENLABS) is required in .env or environment');
   process.exit(1);
 }
 

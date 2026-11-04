@@ -55,7 +55,7 @@ function loadEnv() {
 loadEnv();
 
 function getBufferToken() {
-  return process.env.BUFFER_TOKEN || process.env.BUFFER_ACCESS_TOKEN || '';
+  return process.env.BUFFER_TOKEN || process.env.BUFFERTOKEN || process.env.BUFFER_ACCESS_TOKEN || '';
 }
 
 const BUFFER_API = 'https://api.buffer.com';

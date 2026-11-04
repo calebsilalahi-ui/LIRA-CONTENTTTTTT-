@@ -43,10 +43,10 @@ if (fs.existsSync(envPath)) {
 }
 
 // Credentials loaded cleanly from process.env (strictly zero hardcoded fallbacks)
-const BUFFER_TOKEN = process.env.BUFFER_TOKEN || process.env.BUFFER_ACCESS_TOKEN || '';
+const BUFFER_TOKEN = process.env.BUFFER_TOKEN || process.env.BUFFERTOKEN || process.env.BUFFER_ACCESS_TOKEN || '';
 const BUFFER_CHANNEL_ID = process.env.BUFFER_CHANNEL_ID || '6ad933a2778b240e2f81b45d'; // @drinklira
-const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY || '';
-const CALEB_VOICE_ID = process.env.CALEB_VOICE_ID || 'WVwVlhKdnZoCuTIoxjYr';
+const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY || process.env.ELEVENLABS || process.env.XI_API_KEY || '';
+const CALEB_VOICE_ID = process.env.CALEB_VOICE_ID || process.env.CALEB || 'WVwVlhKdnZoCuTIoxjYr';
 
 // Import Guardrail Validator
 const { validateContent, GuardrailError } = require('./validate_guardrails');
