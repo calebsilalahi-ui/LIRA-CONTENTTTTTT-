@@ -76,6 +76,7 @@ import { Reel14_ViralEngine, REEL_14_DURATION } from './Reel14_ViralEngine';
 import { Reel15_RevisedSample, REEL_15_DURATION } from './Reel15_RevisedSample';
 import { Reel16_WorkingStyleRevamp, REEL_16_DURATION } from './Reel16_WorkingStyleRevamp';
 import { Reel17_Dynamic3PSomatic, REEL_17_DURATION } from './Reel17_Dynamic3PSomatic';
+import { FreshReel_Cup50k, FRESH_CUP50K_DURATION } from './FreshReel_Cup50k';
 
 
 export const RemotionRoot: React.FC = () => {
@@ -580,6 +581,15 @@ export const RemotionRoot: React.FC = () => {
         id="Reel17-Dynamic3PSomatic"
         component={Reel17_Dynamic3PSomatic}
         durationInFrames={REEL_17_DURATION}
+        fps={30}
+        width={1080}
+        height={1440}
+      />
+      {/* Brand New Fresh Reel: Cup 50k Struggle & 180° Inverted Bottle Proof (1080x1440 @ 30fps) */}
+      <Composition
+        id="FreshReel-Cup50k"
+        component={FreshReel_Cup50k}
+        durationInFrames={FRESH_CUP50K_DURATION}
         fps={30}
         width={1080}
         height={1440}

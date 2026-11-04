@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "lastUpdated": "2026-11-04T07:54:55.971Z",
+  "lastUpdated": "2026-11-04T08:09:57.983Z",
   "entries": [
     {
       "id": "reel_01_founder_story",
@@ -342,8 +342,8 @@
     },
     {
       "id": "slot_01_reel_matcha_crash",
-      "timestamp": "2026-11-04T00:25:33.234Z",
-      "createdAt": "2026-11-04T00:25:33.234Z",
+      "timestamp": "2026-11-04T08:08:05.695Z",
+      "createdAt": "2026-11-04T08:08:05.695Z",
       "format": "reel",
       "pillar": "Sugar Crash & Stevia Science",
       "hook_category": "Comparison",
@@ -355,8 +355,8 @@
     },
     {
       "id": "slot_02_carousel_dark_cocoa",
-      "timestamp": "2026-11-04T05:25:33.236Z",
-      "createdAt": "2026-11-04T05:25:33.236Z",
+      "timestamp": "2026-11-04T13:08:05.697Z",
+      "createdAt": "2026-11-04T13:08:05.697Z",
       "format": "carousel",
       "pillar": "Craftsmanship & Student Lifestyle",
       "hook_category": "Educational",
@@ -368,8 +368,8 @@
     },
     {
       "id": "slot_03_reel_forest_bag",
-      "timestamp": "2026-11-04T10:25:33.236Z",
-      "createdAt": "2026-11-04T10:25:33.236Z",
+      "timestamp": "2026-11-04T18:08:05.697Z",
+      "createdAt": "2026-11-04T18:08:05.697Z",
       "format": "reel",
       "pillar": "Cold Chain & Saturday COD Loop",
       "hook_category": "Storytelling",
@@ -381,8 +381,8 @@
     },
     {
       "id": "slot_04_carousel_matcha_myth",
-      "timestamp": "2026-11-04T15:25:33.236Z",
-      "createdAt": "2026-11-04T15:25:33.236Z",
+      "timestamp": "2026-11-04T23:08:05.697Z",
+      "createdAt": "2026-11-04T23:08:05.697Z",
       "format": "carousel",
       "pillar": "Indie Game & Pixel Culture",
       "hook_category": "Myth Busting",
@@ -394,8 +394,8 @@
     },
     {
       "id": "slot_05_reel_founder_routine",
-      "timestamp": "2026-11-04T20:25:33.236Z",
-      "createdAt": "2026-11-04T20:25:33.236Z",
+      "timestamp": "2026-11-05T04:08:05.697Z",
+      "createdAt": "2026-11-05T04:08:05.697Z",
       "format": "reel",
       "pillar": "Craftsmanship & Student Lifestyle",
       "hook_category": "Day in the Life",
@@ -407,8 +407,8 @@
     },
     {
       "id": "slot_06_carousel_ceylon_steep",
-      "timestamp": "2026-11-05T01:25:33.236Z",
-      "createdAt": "2026-11-05T01:25:33.236Z",
+      "timestamp": "2026-11-05T09:08:05.697Z",
+      "createdAt": "2026-11-05T09:08:05.697Z",
       "format": "carousel",
       "pillar": "Sugar Crash & Stevia Science",
       "hook_category": "Authority",
@@ -420,21 +420,21 @@
     },
     {
       "id": "slot_07_reel_shake_test",
-      "timestamp": "2026-11-05T06:25:33.236Z",
-      "createdAt": "2026-11-05T06:25:33.236Z",
+      "timestamp": "2026-11-05T14:08:05.697Z",
+      "createdAt": "2026-11-05T14:08:05.697Z",
       "format": "reel",
       "pillar": "Cold Chain & Saturday COD Loop",
       "hook_category": "Random",
-      "topic": "Tes goncang botol bersegel di dashboard motor gojek",
-      "verbal_hook": "Kita tes botol Lira diguncang di jalanan rusak BSD selama tiga puluh menit.",
-      "written_hook": "TES GONCANG 180 DERAJAT BOTOL",
-      "caption": "Hasilnya: nol rembes, segel utuh, suhu tetap dingin berkat botol tebal dan cooler bag. Aman masuk tas lo. Limited batch Sabtu ini lewat bio.\n\nCrafted solo by @caleb766h1",
+      "topic": "Tes goncang 180 derajat botol Lira di atas keyboard MacBook",
+      "verbal_hook": "Kita tes botol Lira dibalik 180 derajat dan diguncang tepat di atas laptop.",
+      "written_hook": "TES 180 DERAJAT ZERO REMBES",
+      "caption": "Hasilnya: nol rembes, segel utuh, suhu tetap dingin berkat botol tebal dan cooler bag. Aman masuk tas ransel lo. Limited batch Sabtu ini lewat bio.\n\nCrafted solo by @caleb766h1",
       "status": "simulated_dry_run"
     },
     {
       "id": "slot_08_carousel_library_guide",
-      "timestamp": "2026-11-05T11:25:33.236Z",
-      "createdAt": "2026-11-05T11:25:33.236Z",
+      "timestamp": "2026-11-05T19:08:05.697Z",
+      "createdAt": "2026-11-05T19:08:05.697Z",
       "format": "carousel",
       "pillar": "Craftsmanship & Student Lifestyle",
       "hook_category": "Storytelling",
@@ -459,8 +459,8 @@
     },
     {
       "id": "slot_10_carousel_milk_tea_calories",
-      "timestamp": "2026-11-05T21:25:33.236Z",
-      "createdAt": "2026-11-05T21:25:33.236Z",
+      "timestamp": "2026-11-06T05:08:05.697Z",
+      "createdAt": "2026-11-06T05:08:05.697Z",
       "format": "carousel",
       "pillar": "Sugar Crash & Stevia Science",
       "hook_category": "Comparison",
@@ -525,6 +525,34 @@
       "written_hook": "RESTOCK CHILLER SAPA MART",
       "caption": "Buat lo yang ada di area kampus, botol segar Lira selalu restock langsung dari chiller. Fresh cold and ready. Limited batch tersedia weekend ini via bio.\n\nCrafted solo by @caleb766h1",
       "status": "published_live"
+    },
+    {
+      "id": "slot_09_reel_cup_struggle_fresh",
+      "timestamp": "2026-11-06T00:08:05.697Z",
+      "createdAt": "2026-11-06T00:08:05.697Z",
+      "format": "reel",
+      "pillar": "Cold Chain & Saturday COD Loop",
+      "hook_category": "Educational",
+      "topic": "3 Alasan cup 50k buang duit vs botol Lira leakproof",
+      "verbal_hook": "Ini 3 alasan kenapa beli minuman cup plastik kafe lima puluh ribu itu buang-buang duit.",
+      "written_hook": "3 ALASAN CUP 50K BUANG DUIT",
+      "caption": "3 alasan cup 50k buang duit: es mencair bikin hambar, ga muat tas, dan risiko tumpah ke laptop. Botol Lira 180 derajat anti rembes dengan pemanis alami stevia. Limited batch ready Sabtu via bio.\n\nCrafted solo by @caleb766h1",
+      "status": "simulated_dry_run"
+    },
+    {
+      "id": "fresh_reel_cup50k_1793779797983",
+      "timestamp": "2026-11-04T08:09:57.983Z",
+      "createdAt": "2026-11-04T08:09:57.983Z",
+      "format": "reel",
+      "sku": "Matcha Oatside",
+      "pillar": "Craftsmanship & Student Lifestyle",
+      "hook_category": "Comparison",
+      "topic": "3 Alasan cup 50k buang duit vs botol Lira leakproof",
+      "verbal_hook": "Ini 3 alasan kenapa beli minuman cup plastik kafe lima puluh ribu itu buang-buang duit.",
+      "written_hook": "3 ALASAN CUP 50K BUANG DUIT",
+      "caption": "3 alasan cup 50k buang duit: es mencair bikin hambar, ga muat tas, dan risiko tumpah ke laptop. Botol Lira 180 derajat anti rembes dengan pemanis alami stevia. Limited batch ready Sabtu via bio.\n\nCrafted solo by @caleb766h1",
+      "status": "published_live",
+      "bufferPostId": "6aeae8132b43f8ba7d7b5ef3"
     }
   ]
 }

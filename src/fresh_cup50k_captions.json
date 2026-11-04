@@ -1,0 +1,290 @@
+[
+  {
+    "from": 2,
+    "to": 34,
+    "text": "INI 3 ALASAN",
+    "highlight": true,
+    "startSec": 0.08,
+    "endSec": 1.04
+  },
+  {
+    "from": 36,
+    "to": 64,
+    "text": "KENAPA BELI MINUMAN",
+    "highlight": false,
+    "startSec": 1.2,
+    "endSec": 2.08
+  },
+  {
+    "from": 64,
+    "to": 86,
+    "text": "CUP PLASTIK KAFE",
+    "highlight": false,
+    "startSec": 2.16,
+    "endSec": 2.8
+  },
+  {
+    "from": 86,
+    "to": 108,
+    "text": "LIMA PULUH RIBU",
+    "highlight": false,
+    "startSec": 2.88,
+    "endSec": 3.56
+  },
+  {
+    "from": 108,
+    "to": 160,
+    "text": "ITU BUANG-BUANG DUIT",
+    "highlight": true,
+    "startSec": 3.6,
+    "endSec": 5.24
+  },
+  {
+    "from": 169,
+    "to": 190,
+    "text": "DAN ALASAN NOMOR",
+    "highlight": false,
+    "startSec": 5.646,
+    "endSec": 6.32
+  },
+  {
+    "from": 190,
+    "to": 238,
+    "text": "TIGA BERISIKO BIKIN",
+    "highlight": false,
+    "startSec": 6.36,
+    "endSec": 7.92
+  },
+  {
+    "from": 238,
+    "to": 278,
+    "text": "LAPTOP LO KONSLET",
+    "highlight": true,
+    "startSec": 7.96,
+    "endSec": 9.2
+  },
+  {
+    "from": 284,
+    "to": 300,
+    "text": "BARU LIMA BELAS",
+    "highlight": false,
+    "startSec": 9.497,
+    "endSec": 9.92
+  },
+  {
+    "from": 302,
+    "to": 333,
+    "text": "MENIT DI MEJA",
+    "highlight": false,
+    "startSec": 10.08,
+    "endSec": 11.04
+  },
+  {
+    "from": 333,
+    "to": 355,
+    "text": "ES BATUNYA UDAH",
+    "highlight": false,
+    "startSec": 11.12,
+    "endSec": 11.76
+  },
+  {
+    "from": 355,
+    "to": 380,
+    "text": "MENCAIR JADI AIR",
+    "highlight": false,
+    "startSec": 11.84,
+    "endSec": 12.64
+  },
+  {
+    "from": 380,
+    "to": 424,
+    "text": "TAWAR DINGIN CATATAN",
+    "highlight": false,
+    "startSec": 12.667,
+    "endSec": 14.08
+  },
+  {
+    "from": 424,
+    "to": 465,
+    "text": "TUGAS BASAH KUYUP",
+    "highlight": false,
+    "startSec": 14.16,
+    "endSec": 15.44
+  },
+  {
+    "from": 465,
+    "to": 487,
+    "text": "DAN CUP-NYA GAK",
+    "highlight": false,
+    "startSec": 15.52,
+    "endSec": 16.16
+  },
+  {
+    "from": 487,
+    "to": 508,
+    "text": "BISA LO MASUKIN",
+    "highlight": false,
+    "startSec": 16.24,
+    "endSec": 16.88
+  },
+  {
+    "from": 508,
+    "to": 548,
+    "text": "TAS RANSEL BANDINGIN",
+    "highlight": false,
+    "startSec": 16.96,
+    "endSec": 18.24
+  },
+  {
+    "from": 548,
+    "to": 571,
+    "text": "SAMA BOTOL LIRA",
+    "highlight": true,
+    "startSec": 18.28,
+    "endSec": 18.96
+  },
+  {
+    "from": 572,
+    "to": 607,
+    "text": "INI SEGEL TUTUP",
+    "highlight": false,
+    "startSec": 19.08,
+    "endSec": 20.16
+  },
+  {
+    "from": 607,
+    "to": 645,
+    "text": "GANDA PRESISI MAU",
+    "highlight": false,
+    "startSec": 20.24,
+    "endSec": 21.48
+  },
+  {
+    "from": 645,
+    "to": 667,
+    "text": "LO BALIK SERATUS",
+    "highlight": false,
+    "startSec": 21.52,
+    "endSec": 22.16
+  },
+  {
+    "from": 667,
+    "to": 693,
+    "text": "DELAPAN PULUH DERAJAT",
+    "highlight": false,
+    "startSec": 22.24,
+    "endSec": 23.04
+  },
+  {
+    "from": 693,
+    "to": 715,
+    "text": "DI ATAS KEYBOARD",
+    "highlight": false,
+    "startSec": 23.12,
+    "endSec": 23.76
+  },
+  {
+    "from": 716,
+    "to": 741,
+    "text": "MACBOOK PUN GAK",
+    "highlight": false,
+    "startSec": 23.88,
+    "endSec": 24.64
+  },
+  {
+    "from": 741,
+    "to": 768,
+    "text": "BAKAL NETES SATU",
+    "highlight": false,
+    "startSec": 24.72,
+    "endSec": 25.52
+  },
+  {
+    "from": 768,
+    "to": 804,
+    "text": "TETES PUN DISEDUH",
+    "highlight": false,
+    "startSec": 25.6,
+    "endSec": 26.72
+  },
+  {
+    "from": 805,
+    "to": 837,
+    "text": "DINGIN TANPA SESENDOK",
+    "highlight": false,
+    "startSec": 26.84,
+    "endSec": 27.84
+  },
+  {
+    "from": 837,
+    "to": 871,
+    "text": "PUN GULA PASIR",
+    "highlight": false,
+    "startSec": 27.92,
+    "endSec": 28.96
+  },
+  {
+    "from": 871,
+    "to": 917,
+    "text": "NOL GLIKEMIK DINGIN",
+    "highlight": true,
+    "startSec": 29.04,
+    "endSec": 30.48
+  },
+  {
+    "from": 919,
+    "to": 952,
+    "text": "TAHAN TUJUH HARI",
+    "highlight": false,
+    "startSec": 30.64,
+    "endSec": 31.68
+  },
+  {
+    "from": 952,
+    "to": 984,
+    "text": "LIMITED BATCH DISEDUH",
+    "highlight": true,
+    "startSec": 31.76,
+    "endSec": 32.72
+  },
+  {
+    "from": 985,
+    "to": 1008,
+    "text": "FRESH WEEKEND INI",
+    "highlight": false,
+    "startSec": 32.84,
+    "endSec": 33.52
+  },
+  {
+    "from": 1008,
+    "to": 1030,
+    "text": "LEWAT LINK DI",
+    "highlight": false,
+    "startSec": 33.6,
+    "endSec": 34.24
+  },
+  {
+    "from": 1030,
+    "to": 1075,
+    "text": "BIO SEBELUM KEHABISAN",
+    "highlight": false,
+    "startSec": 34.36,
+    "endSec": 35.76
+  },
+  {
+    "from": 1076,
+    "to": 1089,
+    "text": "BIAR LO GAK",
+    "highlight": false,
+    "startSec": 35.884,
+    "endSec": 36.24
+  },
+  {
+    "from": 1089,
+    "to": 1135,
+    "text": "PERLU NGALAMIN LAGI",
+    "highlight": false,
+    "startSec": 36.32,
+    "endSec": 37.76
+  }
+]
