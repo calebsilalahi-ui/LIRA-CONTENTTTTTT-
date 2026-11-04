@@ -54,6 +54,30 @@ jobs:
       - name: Install Node Dependencies
         run: npm install
 
+      - name: Validate Cloud Secrets for Live Publish
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          MISSING=0
+          if [ -z "${{ secrets.BUFFER_TOKEN }}" ]; then
+            echo "::error::BUFFER_TOKEN secret is missing in GitHub repository settings!"
+            MISSING=1
+          fi
+          if [ -z "${{ secrets.ELEVENLABS_API_KEY }}" ]; then
+            echo "::error::ELEVENLABS_API_KEY secret is missing in GitHub repository settings!"
+            MISSING=1
+          fi
+          if [ "$MISSING" -eq 1 ]; then
+            echo "=========================================================================="
+            echo "To enable 24/7 autonomous publishing on GitHub Actions, you must add these"
+            echo "two secrets to your GitHub repository:"
+            echo "1. Go to: https://github.com/${{ github.repository }}/settings/secrets/actions"
+            echo "2. Click 'New repository secret'"
+            echo "3. Add BUFFER_TOKEN"
+            echo "4. Add ELEVENLABS_API_KEY"
+            echo "=========================================================================="
+            exit 1
+          fi
+
       - name: Execute Lira Content Automator
         env:
           BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}

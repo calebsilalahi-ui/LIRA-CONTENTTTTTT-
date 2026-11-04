@@ -466,10 +466,15 @@ async function main() {
       console.log(`[Renderer] ✓ All 8 slides rendered to ${outDir}`);
     } else {
       console.log(`[Renderer] Checking ElevenLabs audio and Reel assets for template ${template.id}...`);
-      const audioScript = path.join(__dirname, 'generate_sample_3p_reel_audio.js');
-      if (fs.existsSync(audioScript) && ELEVENLABS_API_KEY) {
+      if (!ELEVENLABS_API_KEY) {
+        throw new Error('❌ ELEVENLABS_API_KEY is missing! In GitHub Actions, please add it in: Repo Settings -> Secrets and variables -> Actions -> Repository secrets -> ELEVENLABS_API_KEY.');
+      }
+      if (fs.existsSync(audioScript)) {
         console.log(`[ElevenLabs] Synthesizing Caleb founder voice clone (${CALEB_VOICE_ID})...`);
-        spawnSync(NODE_BIN, [audioScript], { stdio: 'inherit', env: process.env });
+        const res = spawnSync(NODE_BIN, [audioScript], { stdio: 'inherit', env: process.env });
+        if (res.status !== 0) {
+          throw new Error(`ElevenLabs synthesis failed with exit code ${res.status}`);
+        }
       }
       const outMp4 = fs.existsSync('/Users/caleb/Desktop/lira reels/Sample_3P_Somatic_Reel.mp4')
         ? '/Users/caleb/Desktop/lira reels/Sample_3P_Somatic_Reel.mp4'
@@ -481,7 +486,7 @@ async function main() {
   // Live Buffer Dispatch
   if (opts.publishMode === 'postNow') {
     if (!BUFFER_TOKEN) {
-      console.warn('[Warning] BUFFER_TOKEN not configured in process.env. Skipping live mutation.');
+      throw new Error('❌ BUFFER_TOKEN is missing! In GitHub Actions, please add it in: Repo Settings -> Secrets and variables -> Actions -> Repository secrets -> BUFFER_TOKEN.');
     } else {
       console.log(`[Buffer] Dispatching live post to @drinklira channel ${BUFFER_CHANNEL_ID}...`);
       const publisherScript = path.join(__dirname, 'publish_now.js');

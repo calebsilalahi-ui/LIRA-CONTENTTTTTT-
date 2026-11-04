@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "lastUpdated": "2026-11-04T00:25:33.237Z",
+  "lastUpdated": "2026-11-04T00:36:41.031Z",
   "entries": [
     {
       "id": "reel_01_founder_story",
@@ -469,6 +469,20 @@
       "written_hook": "KALORI MILK TEA BOBA VS LIRA",
       "caption": "Satu cup boba kafe bisa tembus 450 kalori karena sirup fruktosa. Lira Signature Milk Tea cuma seperempatnya dengan rasa legit otentik. Limited batch via bio.\n\nCrafted solo by @caleb766h1",
       "status": "simulated_dry_run"
+    },
+    {
+      "id": "slot_07_reel_shake_test_1793752601031",
+      "timestamp": "2026-11-04T00:36:41.031Z",
+      "createdAt": "2026-11-04T00:36:41.031Z",
+      "format": "reel",
+      "sku": "Choco Hazelnut",
+      "pillar": "Cold Chain & Saturday COD Loop",
+      "hook_category": "Random",
+      "topic": "Tes goncang botol bersegel di dashboard motor gojek",
+      "verbal_hook": "Kita tes botol Lira diguncang di jalanan rusak BSD selama tiga puluh menit.",
+      "written_hook": "TES GONCANG 180 DERAJAT BOTOL",
+      "caption": "Hasilnya: nol rembes, segel utuh, suhu tetap dingin berkat botol tebal dan cooler bag. Aman masuk tas lo. Limited batch Sabtu ini lewat bio.\n\nCrafted solo by @caleb766h1",
+      "status": "published_live"
     }
   ]
 }

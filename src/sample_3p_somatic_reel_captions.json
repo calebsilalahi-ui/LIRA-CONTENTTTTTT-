@@ -1,242 +1,242 @@
 [
   {
     "from": 2,
-    "to": 26,
+    "to": 28,
     "text": "INI 3 TANDA",
     "highlight": true,
     "startSec": 0.08,
-    "endSec": 0.8
+    "endSec": 0.88
   },
   {
-    "from": 26,
-    "to": 52,
+    "from": 28,
+    "to": 55,
     "text": "TUBUH LO UDAH",
     "highlight": false,
-    "startSec": 0.88,
-    "endSec": 1.68
+    "startSec": 0.96,
+    "endSec": 1.76
   },
   {
-    "from": 52,
-    "to": 93,
+    "from": 55,
+    "to": 97,
     "text": "KECANDUAN GULA TERSEMBUNYI",
     "highlight": true,
-    "startSec": 1.76,
-    "endSec": 3.04
+    "startSec": 1.84,
+    "endSec": 3.2
   },
   {
-    "from": 93,
-    "to": 117,
+    "from": 97,
+    "to": 122,
     "text": "DARI MATCHA KAFE",
     "highlight": true,
-    "startSec": 3.12,
-    "endSec": 3.84
+    "startSec": 3.24,
+    "endSec": 4
   },
   {
-    "from": 117,
-    "to": 149,
+    "from": 122,
+    "to": 154,
     "text": "LIMA PULUH RIBU",
     "highlight": true,
-    "startSec": 3.92,
-    "endSec": 4.88
+    "startSec": 4.08,
+    "endSec": 5.04
   },
   {
-    "from": 153,
-    "to": 171,
+    "from": 158,
+    "to": 177,
     "text": "DAN YANG NOMOR",
     "highlight": false,
-    "startSec": 5.12,
-    "endSec": 5.68
+    "startSec": 5.28,
+    "endSec": 5.84
   },
   {
-    "from": 171,
-    "to": 212,
+    "from": 177,
+    "to": 223,
     "text": "TIGA LO MINUM",
     "highlight": false,
-    "startSec": 5.72,
-    "endSec": 7.04
+    "startSec": 5.92,
+    "endSec": 7.36
   },
   {
-    "from": 212,
-    "to": 232,
+    "from": 223,
+    "to": 242,
     "text": "TIAP JAM DUA",
     "highlight": false,
-    "startSec": 7.08,
-    "endSec": 7.68
+    "startSec": 7.44,
+    "endSec": 8
   },
   {
-    "from": 232,
-    "to": 275,
+    "from": 242,
+    "to": 284,
     "text": "SIANG TANPA SADAR",
     "highlight": true,
-    "startSec": 7.76,
-    "endSec": 9.08
+    "startSec": 8.08,
+    "endSec": 9.4
   },
   {
-    "from": 282,
-    "to": 295,
+    "from": 290,
+    "to": 304,
     "text": "PAS JAM DUA",
     "highlight": false,
-    "startSec": 9.417,
-    "endSec": 9.76
+    "startSec": 9.68,
+    "endSec": 10.12
   },
   {
-    "from": 295,
-    "to": 315,
+    "from": 304,
+    "to": 325,
     "text": "SIANG KEPALA LO",
     "highlight": false,
-    "startSec": 9.84,
-    "endSec": 10.48
+    "startSec": 10.16,
+    "endSec": 10.8
   },
   {
-    "from": 315,
-    "to": 348,
+    "from": 325,
+    "to": 358,
     "text": "MENDADAK LEMES DAN",
     "highlight": false,
-    "startSec": 10.52,
-    "endSec": 11.52
+    "startSec": 10.84,
+    "endSec": 11.84
   },
   {
-    "from": 348,
-    "to": 380,
+    "from": 358,
+    "to": 387,
     "text": "BERAT ITU BUKAN",
     "highlight": false,
-    "startSec": 11.6,
-    "endSec": 12.64
+    "startSec": 11.96,
+    "endSec": 12.88
   },
   {
-    "from": 380,
-    "to": 415,
+    "from": 387,
+    "to": 421,
     "text": "KARENA KURANG TIDUR",
     "highlight": false,
-    "startSec": 12.693,
-    "endSec": 13.8
+    "startSec": 12.933,
+    "endSec": 14.027
   },
   {
-    "from": 415,
-    "to": 436,
+    "from": 421,
+    "to": 444,
     "text": "TAPI INSULIN LO",
     "highlight": false,
-    "startSec": 13.84,
-    "endSec": 14.48
+    "startSec": 14.053,
+    "endSec": 14.72
   },
   {
-    "from": 436,
-    "to": 463,
+    "from": 444,
+    "to": 470,
     "text": "NGE-DROP KE TITIK",
     "highlight": false,
-    "startSec": 14.56,
-    "endSec": 15.36
+    "startSec": 14.8,
+    "endSec": 15.6
   },
   {
-    "from": 463,
-    "to": 504,
+    "from": 470,
+    "to": 508,
     "text": "NOL BANDINGIN SAMA",
     "highlight": false,
-    "startSec": 15.44,
-    "endSec": 16.72
+    "startSec": 15.68,
+    "endSec": 16.88
   },
   {
-    "from": 504,
-    "to": 535,
+    "from": 508,
+    "to": 540,
     "text": "BOTOL LIRA INI",
     "highlight": true,
-    "startSec": 16.8,
-    "endSec": 17.76
+    "startSec": 16.96,
+    "endSec": 17.92
   },
   {
-    "from": 536,
-    "to": 564,
+    "from": 541,
+    "to": 568,
     "text": "PURE MATCHA JEPANG",
     "highlight": true,
-    "startSec": 17.88,
-    "endSec": 18.72
+    "startSec": 18.04,
+    "endSec": 18.88
   },
   {
-    "from": 564,
-    "to": 584,
+    "from": 568,
+    "to": 591,
     "text": "DAN BARISTA OAT",
     "highlight": false,
-    "startSec": 18.8,
-    "endSec": 19.44
+    "startSec": 18.96,
+    "endSec": 19.68
   },
   {
-    "from": 584,
-    "to": 612,
+    "from": 591,
+    "to": 619,
     "text": "MILK TANPA GULA",
     "highlight": false,
-    "startSec": 19.48,
-    "endSec": 20.32
+    "startSec": 19.72,
+    "endSec": 20.56
   },
   {
-    "from": 612,
-    "to": 665,
+    "from": 619,
+    "to": 669,
     "text": "PASIR NOL GLIKEMIK",
     "highlight": true,
-    "startSec": 20.4,
-    "endSec": 22.08
+    "startSec": 20.64,
+    "endSec": 22.251
   },
   {
-    "from": 668,
-    "to": 698,
+    "from": 669,
+    "to": 700,
     "text": "SEGEL RAPAT SERATUS",
     "highlight": false,
-    "startSec": 22.293,
-    "endSec": 23.2
+    "startSec": 22.32,
+    "endSec": 23.28
   },
   {
-    "from": 698,
-    "to": 729,
+    "from": 700,
+    "to": 734,
     "text": "DELAPAN PULUH DERAJAT",
     "highlight": false,
-    "startSec": 23.28,
-    "endSec": 24.28
+    "startSec": 23.36,
+    "endSec": 24.44
   },
   {
-    "from": 729,
-    "to": 763,
+    "from": 734,
+    "to": 765,
     "text": "DINGIN TAHAN TUJUH",
     "highlight": false,
-    "startSec": 24.32,
-    "endSec": 25.4
+    "startSec": 24.48,
+    "endSec": 25.493
   },
   {
-    "from": 763,
-    "to": 796,
+    "from": 765,
+    "to": 801,
     "text": "HARI LIMITED BATCH",
     "highlight": true,
-    "startSec": 25.44,
-    "endSec": 26.48
+    "startSec": 25.52,
+    "endSec": 26.64
   },
   {
-    "from": 796,
-    "to": 823,
+    "from": 801,
+    "to": 830,
     "text": "DISEDUH FRESH WEEKEND",
     "highlight": false,
-    "startSec": 26.56,
-    "endSec": 27.36
+    "startSec": 26.72,
+    "endSec": 27.6
   },
   {
-    "from": 823,
-    "to": 848,
+    "from": 830,
+    "to": 852,
     "text": "INI LEWAT LINK",
     "highlight": false,
-    "startSec": 27.44,
-    "endSec": 28.24
+    "startSec": 27.68,
+    "endSec": 28.32
   },
   {
-    "from": 848,
-    "to": 861,
+    "from": 852,
+    "to": 866,
     "text": "DI BIO",
     "highlight": false,
-    "startSec": 28.28,
-    "endSec": 28.64
+    "startSec": 28.4,
+    "endSec": 28.8
   },
   {
-    "from": 861,
-    "to": 895,
+    "from": 866,
+    "to": 900,
     "text": "SEBELUM KEHABISAN",
     "highlight": false,
-    "startSec": 28.72,
-    "endSec": 29.76
+    "startSec": 28.88,
+    "endSec": 29.92
   }
 ]
