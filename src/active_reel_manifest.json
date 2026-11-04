@@ -15,349 +15,349 @@
     "post": "OTAK KOSONG?"
   },
   "audioMaster": "assets/generated_reels/fw_signature_milk_tea_somatic_science_1793784513456_master.mp3",
-  "totalFrames": 917,
-  "totalDurationSec": 30.56,
+  "totalFrames": 896,
+  "totalDurationSec": 29.84,
   "beatFrames": {
     "b1_hook": 0,
-    "b2_agitation": 145,
-    "b3_proof": 400,
-    "b4_craft": 613,
-    "b5_coldchain": 780,
-    "b6_cta": 851
+    "b2_agitation": 150,
+    "b3_proof": 394,
+    "b4_craft": 601,
+    "b5_coldchain": 764,
+    "b6_cta": 830
   },
   "listFrames": {
-    "item_1": 230,
-    "item_2": 259,
-    "item_3": 316
+    "item_1": 235,
+    "item_2": 261,
+    "item_3": 314
   },
   "captions": [
     {
       "text": "TAPI OTAK",
       "highlight": false,
-      "startSec": 1.52,
-      "endSec": 2.16,
-      "fromFrame": 45,
-      "toFrame": 64
+      "startSec": 1.44,
+      "endSec": 2.24,
+      "fromFrame": 43,
+      "toFrame": 67
     },
     {
       "text": "MALAH KERASA",
       "highlight": false,
-      "startSec": 2.16,
-      "endSec": 2.72,
-      "fromFrame": 64,
-      "toFrame": 81
+      "startSec": 2.24,
+      "endSec": 2.8,
+      "fromFrame": 67,
+      "toFrame": 84
     },
     {
       "text": "KOSONG SETELAH",
       "highlight": false,
-      "startSec": 2.72,
-      "endSec": 3.44,
-      "fromFrame": 81,
-      "toFrame": 103
+      "startSec": 2.8,
+      "endSec": 3.6,
+      "fromFrame": 84,
+      "toFrame": 108
     },
     {
       "text": "MINUM MILK",
       "highlight": false,
-      "startSec": 3.44,
-      "endSec": 3.84,
-      "fromFrame": 103,
-      "toFrame": 115
+      "startSec": 3.6,
+      "endSec": 4,
+      "fromFrame": 108,
+      "toFrame": 120
     },
     {
       "text": "TEA KAFE",
       "highlight": false,
-      "startSec": 3.84,
-      "endSec": 4.857,
-      "fromFrame": 115,
-      "toFrame": 145
+      "startSec": 4,
+      "endSec": 5.017,
+      "fromFrame": 120,
+      "toFrame": 150
     },
     {
       "text": "ITU BUKAN",
       "highlight": false,
-      "startSec": 4.857,
-      "endSec": 5.2,
-      "fromFrame": 145,
-      "toFrame": 156
+      "startSec": 5.017,
+      "endSec": 5.44,
+      "fromFrame": 150,
+      "toFrame": 163
     },
     {
       "text": "KAFEIN TAPI",
       "highlight": false,
-      "startSec": 5.2,
-      "endSec": 6.24,
-      "fromFrame": 156,
-      "toFrame": 187
+      "startSec": 5.44,
+      "endSec": 6.32,
+      "fromFrame": 163,
+      "toFrame": 189
     },
     {
       "text": "LONJAKAN INSULIN",
       "highlight": true,
-      "startSec": 6.24,
-      "endSec": 7.36,
-      "fromFrame": 187,
-      "toFrame": 220
+      "startSec": 6.32,
+      "endSec": 7.52,
+      "fromFrame": 189,
+      "toFrame": 225
     },
     {
       "text": "KARENA BOBA",
       "highlight": false,
-      "startSec": 7.36,
-      "endSec": 8,
-      "fromFrame": 220,
-      "toFrame": 240
+      "startSec": 7.52,
+      "endSec": 8.12,
+      "fromFrame": 225,
+      "toFrame": 243
     },
     {
       "text": "KEMANISAN KRIMER",
       "highlight": false,
-      "startSec": 8,
-      "endSec": 9,
-      "fromFrame": 240,
-      "toFrame": 270
+      "startSec": 8.12,
+      "endSec": 8.933,
+      "fromFrame": 243,
+      "toFrame": 267
     },
     {
       "text": "NABATI DAN",
       "highlight": false,
-      "startSec": 9,
-      "endSec": 9.76,
-      "fromFrame": 270,
-      "toFrame": 292
+      "startSec": 8.933,
+      "endSec": 9.68,
+      "fromFrame": 267,
+      "toFrame": 290
     },
     {
       "text": "YANG KETIGA",
       "highlight": false,
-      "startSec": 9.76,
-      "endSec": 10.56,
-      "fromFrame": 292,
-      "toFrame": 316
+      "startSec": 9.68,
+      "endSec": 10.48,
+      "fromFrame": 290,
+      "toFrame": 314
     },
     {
       "text": "ES MENCAIR",
       "highlight": false,
-      "startSec": 10.56,
-      "endSec": 11.36,
-      "fromFrame": 316,
-      "toFrame": 340
+      "startSec": 10.48,
+      "endSec": 11.2,
+      "fromFrame": 314,
+      "toFrame": 336
     },
     {
       "text": "YANG BIKIN",
       "highlight": false,
-      "startSec": 11.36,
-      "endSec": 11.72,
-      "fromFrame": 340,
-      "toFrame": 351
+      "startSec": 11.2,
+      "endSec": 11.56,
+      "fromFrame": 336,
+      "toFrame": 346
     },
     {
       "text": "TEH LO",
       "highlight": false,
-      "startSec": 11.72,
-      "endSec": 12.053,
-      "fromFrame": 351,
-      "toFrame": 361
+      "startSec": 11.56,
+      "endSec": 11.893,
+      "fromFrame": 346,
+      "toFrame": 356
     },
     {
       "text": "CUMA SISA",
       "highlight": false,
-      "startSec": 12.053,
-      "endSec": 12.56,
-      "fromFrame": 361,
-      "toFrame": 376
+      "startSec": 11.893,
+      "endSec": 12.4,
+      "fromFrame": 356,
+      "toFrame": 372
     },
     {
       "text": "AIR GUE",
       "highlight": false,
-      "startSec": 12.56,
-      "endSec": 13.52,
-      "fromFrame": 376,
-      "toFrame": 405
+      "startSec": 12.4,
+      "endSec": 13.28,
+      "fromFrame": 372,
+      "toFrame": 398
     },
     {
       "text": "GANTI ITU",
       "highlight": false,
-      "startSec": 13.52,
-      "endSec": 14,
-      "fromFrame": 405,
-      "toFrame": 420
+      "startSec": 13.28,
+      "endSec": 13.84,
+      "fromFrame": 398,
+      "toFrame": 415
     },
     {
       "text": "SEMUA DENGAN",
       "highlight": false,
-      "startSec": 14,
-      "endSec": 14.64,
-      "fromFrame": 420,
-      "toFrame": 439
+      "startSec": 13.84,
+      "endSec": 14.48,
+      "fromFrame": 415,
+      "toFrame": 434
     },
     {
       "text": "DAUN TEH",
       "highlight": false,
-      "startSec": 14.64,
-      "endSec": 15.12,
-      "fromFrame": 439,
-      "toFrame": 453
+      "startSec": 14.48,
+      "endSec": 14.88,
+      "fromFrame": 434,
+      "toFrame": 446
     },
     {
       "text": "ASLI YANG",
       "highlight": false,
-      "startSec": 15.12,
-      "endSec": 15.6,
-      "fromFrame": 453,
-      "toFrame": 468
+      "startSec": 14.88,
+      "endSec": 15.36,
+      "fromFrame": 446,
+      "toFrame": 460
     },
     {
       "text": "GUE RENDAM",
       "highlight": false,
-      "startSec": 15.6,
-      "endSec": 16.16,
-      "fromFrame": 468,
-      "toFrame": 484
+      "startSec": 15.36,
+      "endSec": 15.92,
+      "fromFrame": 460,
+      "toFrame": 477
     },
     {
       "text": "SEMALAMAN BOTOL",
       "highlight": false,
-      "startSec": 16.16,
-      "endSec": 17.28,
-      "fromFrame": 484,
-      "toFrame": 518
+      "startSec": 15.92,
+      "endSec": 16.96,
+      "fromFrame": 477,
+      "toFrame": 508
     },
     {
       "text": "INI NGGAK",
       "highlight": false,
-      "startSec": 17.28,
-      "endSec": 17.84,
-      "fromFrame": 518,
-      "toFrame": 535
+      "startSec": 16.96,
+      "endSec": 17.44,
+      "fromFrame": 508,
+      "toFrame": 523
     },
     {
       "text": "BAKAL BOCOR",
       "highlight": false,
-      "startSec": 17.84,
-      "endSec": 18.56,
-      "fromFrame": 535,
-      "toFrame": 556
+      "startSec": 17.44,
+      "endSec": 18.2,
+      "fromFrame": 523,
+      "toFrame": 546
     },
     {
       "text": "BIARPUN DIKOCOK",
       "highlight": false,
-      "startSec": 18.56,
-      "endSec": 19.32,
-      "fromFrame": 556,
-      "toFrame": 579
+      "startSec": 18.2,
+      "endSec": 19,
+      "fromFrame": 546,
+      "toFrame": 570
     },
     {
       "text": "DI ATAS",
       "highlight": false,
-      "startSec": 19.32,
-      "endSec": 19.76,
-      "fromFrame": 579,
-      "toFrame": 592
+      "startSec": 19,
+      "endSec": 19.413,
+      "fromFrame": 570,
+      "toFrame": 582
     },
     {
       "text": "LAPTOP TEKNIK",
       "highlight": false,
-      "startSec": 19.76,
-      "endSec": 20.64,
-      "fromFrame": 592,
-      "toFrame": 619
+      "startSec": 19.413,
+      "endSec": 20.36,
+      "fromFrame": 582,
+      "toFrame": 610
     },
     {
       "text": "COLD-STEEP DAN",
       "highlight": true,
-      "startSec": 20.64,
-      "endSec": 21.36,
-      "fromFrame": 619,
-      "toFrame": 640
+      "startSec": 20.36,
+      "endSec": 20.96,
+      "fromFrame": 610,
+      "toFrame": 628
     },
     {
       "text": "SUSU ASLI",
       "highlight": true,
-      "startSec": 21.36,
-      "endSec": 22.08,
-      "fromFrame": 640,
-      "toFrame": 662
+      "startSec": 20.96,
+      "endSec": 21.6,
+      "fromFrame": 628,
+      "toFrame": 648
     },
     {
       "text": "BIKIN RASANYA",
       "highlight": false,
-      "startSec": 22.08,
-      "endSec": 22.8,
-      "fromFrame": 662,
-      "toFrame": 684
+      "startSec": 21.6,
+      "endSec": 22.36,
+      "fromFrame": 648,
+      "toFrame": 670
     },
     {
       "text": "JUJUR TANPA",
       "highlight": false,
-      "startSec": 22.8,
-      "endSec": 23.76,
-      "fromFrame": 684,
-      "toFrame": 712
+      "startSec": 22.36,
+      "endSec": 23.2,
+      "fromFrame": 670,
+      "toFrame": 696
     },
     {
       "text": "PAHIT DENGAN",
       "highlight": false,
-      "startSec": 23.76,
-      "endSec": 24.48,
-      "fromFrame": 712,
-      "toFrame": 734
+      "startSec": 23.2,
+      "endSec": 23.92,
+      "fromFrame": 696,
+      "toFrame": 717
     },
     {
       "text": "MANIS MURNI",
       "highlight": false,
-      "startSec": 24.48,
-      "endSec": 25.2,
-      "fromFrame": 734,
-      "toFrame": 756
+      "startSec": 23.92,
+      "endSec": 24.56,
+      "fromFrame": 717,
+      "toFrame": 736
     },
     {
       "text": "STEVIA BATCH",
       "highlight": true,
-      "startSec": 25.2,
-      "endSec": 26.24,
-      "fromFrame": 756,
-      "toFrame": 787
+      "startSec": 24.56,
+      "endSec": 25.6,
+      "fromFrame": 736,
+      "toFrame": 768
     },
     {
       "text": "MINGGU INI",
       "highlight": false,
-      "startSec": 26.24,
-      "endSec": 26.76,
-      "fromFrame": 787,
-      "toFrame": 802
+      "startSec": 25.6,
+      "endSec": 26.12,
+      "fromFrame": 768,
+      "toFrame": 783
     },
     {
       "text": "DIKIRIM DINGIN",
       "highlight": false,
-      "startSec": 26.76,
-      "endSec": 27.52,
-      "fromFrame": 802,
-      "toFrame": 825
+      "startSec": 26.12,
+      "endSec": 26.88,
+      "fromFrame": 783,
+      "toFrame": 806
     },
     {
       "text": "HARI SABTU",
       "highlight": false,
-      "startSec": 27.52,
-      "endSec": 28.389,
-      "fromFrame": 825,
-      "toFrame": 851
+      "startSec": 26.88,
+      "endSec": 27.669,
+      "fromFrame": 806,
+      "toFrame": 830
     },
     {
       "text": "KLIK LINK",
       "highlight": false,
-      "startSec": 28.389,
-      "endSec": 28.72,
-      "fromFrame": 851,
-      "toFrame": 861
+      "startSec": 27.669,
+      "endSec": 28,
+      "fromFrame": 830,
+      "toFrame": 840
     },
     {
       "text": "DI BIO",
       "highlight": false,
-      "startSec": 28.72,
-      "endSec": 29.12,
-      "fromFrame": 861,
-      "toFrame": 873
+      "startSec": 28,
+      "endSec": 28.4,
+      "fromFrame": 840,
+      "toFrame": 852
     },
     {
       "text": "KALAU",
       "highlight": false,
-      "startSec": 29.12,
-      "endSec": 29.76,
-      "fromFrame": 873,
-      "toFrame": 893
+      "startSec": 28.4,
+      "endSec": 29.04,
+      "fromFrame": 852,
+      "toFrame": 872
     }
   ],
   "beats": [
@@ -432,35 +432,35 @@
     },
     {
       "file": "snap.mp3",
-      "delayMs": 6640,
+      "delayMs": 6800,
       "volume": 0.7
     },
     {
       "file": "impact.mp3",
-      "delayMs": 9960,
+      "delayMs": 9880,
       "volume": 0.8
     },
     {
       "file": "thud.mp3",
-      "delayMs": 15840,
+      "delayMs": 15600,
       "volume": 0.6
     },
     {
       "file": "whoosh.mp3",
-      "delayMs": 18880,
+      "delayMs": 18560,
       "volume": 0.7
     },
     {
       "file": "eightbit_pop.wav",
-      "delayMs": 25200,
+      "delayMs": 24560,
       "volume": 0.6
     },
     {
       "file": "scratch.mp3",
-      "delayMs": 29120,
+      "delayMs": 28400,
       "volume": 0.5
     }
   ],
   "caption": "Lemes dan kosong setelah minum milk tea itu tanda tubuh lo kaget sama lonjakan gula. Gue bikin Signature Milk Tea pakai daun teh asli yang direndam semalaman biar rasanya jujur tanpa tambahan krimer nabati atau gula pasir. Manisnya murni dari stevia dan diantar dingin sampai depan gerbang lo dalam Forest Green cooler bag. Amankan porsi lo buat batch minggu ini lewat link di bio.\nCrafted solo by @caleb766h1\n#milktea #craftmilktea #drinklira #jakarta #coldsteep #beverages #milktealover #healthylifestyle",
-  "createdAt": "2026-11-04T10:10:21.994Z"
+  "createdAt": "2026-11-04T18:47:54.757Z"
 }
