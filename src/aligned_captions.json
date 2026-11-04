@@ -1,0 +1,298 @@
+[
+  {
+    "from": 2,
+    "to": 21,
+    "text": "PERNAH NGGAK LO",
+    "highlight": false,
+    "startSec": 0.067,
+    "endSec": 0.64
+  },
+  {
+    "from": 21,
+    "to": 43,
+    "text": "BELI MATCHA LIMA",
+    "highlight": false,
+    "startSec": 0.72,
+    "endSec": 1.36
+  },
+  {
+    "from": 43,
+    "to": 65,
+    "text": "PULUH RIBUAN DI",
+    "highlight": false,
+    "startSec": 1.44,
+    "endSec": 2.08
+  },
+  {
+    "from": 66,
+    "to": 98,
+    "text": "KAFE TAPI DUA",
+    "highlight": false,
+    "startSec": 2.2,
+    "endSec": 3.24
+  },
+  {
+    "from": 98,
+    "to": 129,
+    "text": "JAM KEMUDIAN KEPALA",
+    "highlight": false,
+    "startSec": 3.28,
+    "endSec": 4.24
+  },
+  {
+    "from": 129,
+    "to": 156,
+    "text": "LO MALAH PUSING",
+    "highlight": false,
+    "startSec": 4.32,
+    "endSec": 5.12
+  },
+  {
+    "from": 156,
+    "to": 200,
+    "text": "DAN LEMES RAHASIA",
+    "highlight": false,
+    "startSec": 5.2,
+    "endSec": 6.64
+  },
+  {
+    "from": 200,
+    "to": 252,
+    "text": "KOTORNYA BANYAK KAFE",
+    "highlight": false,
+    "startSec": 6.68,
+    "endSec": 8.32
+  },
+  {
+    "from": 252,
+    "to": 276,
+    "text": "PAKAI BUBUK GREEN",
+    "highlight": false,
+    "startSec": 8.4,
+    "endSec": 9.12
+  },
+  {
+    "from": 276,
+    "to": 298,
+    "text": "TEA MURAH YANG",
+    "highlight": false,
+    "startSec": 9.2,
+    "endSec": 9.84
+  },
+  {
+    "from": 298,
+    "to": 324,
+    "text": "DICAMPUR SIRUP GULA",
+    "highlight": false,
+    "startSec": 9.96,
+    "endSec": 10.72
+  },
+  {
+    "from": 324,
+    "to": 357,
+    "text": "RAFINASI DAN KRIMER",
+    "highlight": false,
+    "startSec": 10.8,
+    "endSec": 11.84
+  },
+  {
+    "from": 357,
+    "to": 415,
+    "text": "SAWIT ITU BUKAN",
+    "highlight": false,
+    "startSec": 11.92,
+    "endSec": 13.76
+  },
+  {
+    "from": 415,
+    "to": 464,
+    "text": "ENERGI FOKUS ITU",
+    "highlight": false,
+    "startSec": 13.84,
+    "endSec": 15.44
+  },
+  {
+    "from": 464,
+    "to": 488,
+    "text": "SUGAR SPIKE YANG",
+    "highlight": true,
+    "startSec": 15.48,
+    "endSec": 16.24
+  },
+  {
+    "from": 488,
+    "to": 513,
+    "text": "BIKIN LO NGANTUK",
+    "highlight": false,
+    "startSec": 16.28,
+    "endSec": 17.04
+  },
+  {
+    "from": 513,
+    "to": 558,
+    "text": "PAS KERJA MAKANYA",
+    "highlight": false,
+    "startSec": 17.12,
+    "endSec": 18.56
+  },
+  {
+    "from": 558,
+    "to": 588,
+    "text": "DI LIRA KITA",
+    "highlight": false,
+    "startSec": 18.6,
+    "endSec": 19.52
+  },
+  {
+    "from": 588,
+    "to": 624,
+    "text": "WHISK PURE PREMIUM",
+    "highlight": false,
+    "startSec": 19.6,
+    "endSec": 20.72
+  },
+  {
+    "from": 624,
+    "to": 673,
+    "text": "JAPANESE MATCHA DI-EMULSI",
+    "highlight": false,
+    "startSec": 20.8,
+    "endSec": 22.4
+  },
+  {
+    "from": 673,
+    "to": 705,
+    "text": "MURNI BARENG BARISTA",
+    "highlight": false,
+    "startSec": 22.44,
+    "endSec": 23.44
+  },
+  {
+    "from": 705,
+    "to": 724,
+    "text": "OAT MILK DAN",
+    "highlight": false,
+    "startSec": 23.52,
+    "endSec": 24.08
+  },
+  {
+    "from": 724,
+    "to": 774,
+    "text": "PEMANIS ALAMI STEVIA",
+    "highlight": true,
+    "startSec": 24.16,
+    "endSec": 25.76
+  },
+  {
+    "from": 774,
+    "to": 807,
+    "text": "NOL GULA PASIR",
+    "highlight": true,
+    "startSec": 25.8,
+    "endSec": 26.88
+  },
+  {
+    "from": 807,
+    "to": 841,
+    "text": "NOL SUGAR CRASH",
+    "highlight": true,
+    "startSec": 26.92,
+    "endSec": 28
+  },
+  {
+    "from": 841,
+    "to": 890,
+    "text": "FOKUS CLEAN SEHARIAN",
+    "highlight": true,
+    "startSec": 28.04,
+    "endSec": 29.6
+  },
+  {
+    "from": 892,
+    "to": 924,
+    "text": "DISEGEL AIRTIGHT SERATUS",
+    "highlight": false,
+    "startSec": 29.737,
+    "endSec": 30.72
+  },
+  {
+    "from": 924,
+    "to": 950,
+    "text": "DELAPAN PULUH DERAJAT",
+    "highlight": false,
+    "startSec": 30.8,
+    "endSec": 31.6
+  },
+  {
+    "from": 950,
+    "to": 996,
+    "text": "ANTI-BOCOR DINGIN TAHAN",
+    "highlight": true,
+    "startSec": 31.68,
+    "endSec": 33.12
+  },
+  {
+    "from": 996,
+    "to": 1017,
+    "text": "TUJUH HARI DI",
+    "highlight": true,
+    "startSec": 33.2,
+    "endSec": 33.84
+  },
+  {
+    "from": 1017,
+    "to": 1051,
+    "text": "KULKAS LO LIMITED",
+    "highlight": false,
+    "startSec": 33.92,
+    "endSec": 34.96
+  },
+  {
+    "from": 1052,
+    "to": 1080,
+    "text": "BATCH AVAILABLE UNTUK",
+    "highlight": false,
+    "startSec": 35.08,
+    "endSec": 35.96
+  },
+  {
+    "from": 1080,
+    "to": 1118,
+    "text": "SABTU INI AMANKAN",
+    "highlight": true,
+    "startSec": 36,
+    "endSec": 37.2
+  },
+  {
+    "from": 1119,
+    "to": 1141,
+    "text": "SLOT LO SEKARANG",
+    "highlight": false,
+    "startSec": 37.32,
+    "endSec": 38
+  },
+  {
+    "from": 1141,
+    "to": 1162,
+    "text": "LEWAT LINK DI",
+    "highlight": false,
+    "startSec": 38.04,
+    "endSec": 38.64
+  },
+  {
+    "from": 1162,
+    "to": 1181,
+    "text": "BIO SEBELUM",
+    "highlight": false,
+    "startSec": 38.76,
+    "endSec": 39.28
+  },
+  {
+    "from": 1182,
+    "to": 1205,
+    "text": "SOLD OUT",
+    "highlight": true,
+    "startSec": 39.4,
+    "endSec": 40.08
+  }
+]

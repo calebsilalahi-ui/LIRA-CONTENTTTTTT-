@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "4310e15a-99c2-4b4e-ac94-b31180ceaf94",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/caleb/.gemini/antigravity/scratch/lira-remotion/.archify/lira-retention-system.archify.md",
+  "output": "/Users/caleb/.gemini/antigravity/scratch/lira-remotion/.archify/lira-retention-system.html",
+  "specification": {
+    "sha256": "a5f97528ab86fa3325757ba7bb9a3c66c25250fb7d6673f3f88790ca84c37311",
+    "bytes": 7423
+  },
+  "artifact": {
+    "sha256": "83ae330b725221b9ccabe8fa118d033ea40cfe8caae45e7cf77ac1db3bb27742",
+    "bytes": 954952
+  },
+  "explainer": {
+    "preparedSha256": "f6e208c11005151a75412ce1acac5dcb11887b1a41f24f54a855a814ce52ca2f",
+    "dependencies": [
+      {
+        "kind": "diagram-spec",
+        "id": "hook-stack-sequence",
+        "inline": true,
+        "sha256": "601da1e66abcab4a76a2d56304103afe808e40f2c1918c08857330625bf5f36a",
+        "bytes": 1001
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "content-engine-flow",
+        "inline": true,
+        "sha256": "c2dfb9bc40aebded0e93ab4e6d97a1d3ec342c829d191422580b97a2c839c1fc",
+        "bytes": 1368
+      }
+    ]
+  }
+}

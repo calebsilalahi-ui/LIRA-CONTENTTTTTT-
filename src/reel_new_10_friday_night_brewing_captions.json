@@ -1,0 +1,186 @@
+[
+  {
+    "from": 3,
+    "to": 30,
+    "text": "KENAPA LAMPU DAPUR",
+    "highlight": false,
+    "startSec": 0.133,
+    "endSec": 0.96
+  },
+  {
+    "from": 30,
+    "to": 55,
+    "text": "LIRA MASIH NYALA",
+    "highlight": false,
+    "startSec": 1,
+    "endSec": 1.76
+  },
+  {
+    "from": 56,
+    "to": 84,
+    "text": "TERANG SAMPAI LARUT",
+    "highlight": false,
+    "startSec": 1.88,
+    "endSec": 2.72
+  },
+  {
+    "from": 84,
+    "to": 110,
+    "text": "MALAM SEBELUM HARI",
+    "highlight": false,
+    "startSec": 2.8,
+    "endSec": 3.6
+  },
+  {
+    "from": 110,
+    "to": 154,
+    "text": "DROP KARENA KOMITMEN",
+    "highlight": false,
+    "startSec": 3.68,
+    "endSec": 5.04
+  },
+  {
+    "from": 160,
+    "to": 206,
+    "text": "ARTISAN SETIAP BOTOL",
+    "highlight": false,
+    "startSec": 5.36,
+    "endSec": 6.8
+  },
+  {
+    "from": 206,
+    "to": 247,
+    "text": "DISEDUH SEGAR LANGSUNG",
+    "highlight": true,
+    "startSec": 6.88,
+    "endSec": 8.16
+  },
+  {
+    "from": 247,
+    "to": 283,
+    "text": "DENGAN TANGAN CALEB",
+    "highlight": false,
+    "startSec": 8.24,
+    "endSec": 9.36
+  },
+  {
+    "from": 284,
+    "to": 316,
+    "text": "TIMBANGAN PRESISI PURE",
+    "highlight": false,
+    "startSec": 9.497,
+    "endSec": 10.48
+  },
+  {
+    "from": 316,
+    "to": 361,
+    "text": "JAPANESE PREMIUM MATCHA",
+    "highlight": false,
+    "startSec": 10.56,
+    "endSec": 12
+  },
+  {
+    "from": 361,
+    "to": 403,
+    "text": "KONSENTRAT DI-BLENDER KECEPATAN",
+    "highlight": false,
+    "startSec": 12.04,
+    "endSec": 13.36
+  },
+  {
+    "from": 403,
+    "to": 438,
+    "text": "TINGGI JADI EMULSI",
+    "highlight": false,
+    "startSec": 13.44,
+    "endSec": 14.56
+  },
+  {
+    "from": 438,
+    "to": 484,
+    "text": "MIKRO HALUS DIPADU",
+    "highlight": false,
+    "startSec": 14.6,
+    "endSec": 16.08
+  },
+  {
+    "from": 484,
+    "to": 529,
+    "text": "TETESAN STEVIA ALAMI",
+    "highlight": true,
+    "startSec": 16.16,
+    "endSec": 17.6
+  },
+  {
+    "from": 529,
+    "to": 563,
+    "text": "LALU DISEGEL RAPAT",
+    "highlight": true,
+    "startSec": 17.64,
+    "endSec": 18.72
+  },
+  {
+    "from": 563,
+    "to": 592,
+    "text": "DENGAN GOLD CAP",
+    "highlight": false,
+    "startSec": 18.773,
+    "endSec": 19.68
+  },
+  {
+    "from": 592,
+    "to": 619,
+    "text": "BUKAN PRODUK PABRIK",
+    "highlight": true,
+    "startSec": 19.747,
+    "endSec": 20.56
+  },
+  {
+    "from": 621,
+    "to": 664,
+    "text": "MASSAL INI SEDUHAN",
+    "highlight": false,
+    "startSec": 20.72,
+    "endSec": 22.08
+  },
+  {
+    "from": 664,
+    "to": 702,
+    "text": "JUJUR BUAT LO",
+    "highlight": false,
+    "startSec": 22.16,
+    "endSec": 23.36
+  },
+  {
+    "from": 702,
+    "to": 732,
+    "text": "KUOTA BATCH SANGAT",
+    "highlight": false,
+    "startSec": 23.417,
+    "endSec": 24.32
+  },
+  {
+    "from": 732,
+    "to": 775,
+    "text": "TERBATAS AMANKAN JATAH",
+    "highlight": false,
+    "startSec": 24.4,
+    "endSec": 25.8
+  },
+  {
+    "from": 775,
+    "to": 785,
+    "text": "LO DI",
+    "highlight": false,
+    "startSec": 25.84,
+    "endSec": 26.08
+  },
+  {
+    "from": 786,
+    "to": 816,
+    "text": "BIO SEKARANG",
+    "highlight": false,
+    "startSec": 26.2,
+    "endSec": 27.12
+  }
+]

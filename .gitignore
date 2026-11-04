@@ -1,0 +1,23 @@
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+
+# Internal agent logs and scratch
+.agents/
+.gemini/
+
+# Node modules & build
+node_modules/
+dist/
+.cache/
+
+# Remotion & render caches
+.remotion/
+out/
+output/
+
+# macOS system files
+.DS_Store
+*.swp
+*~

@@ -1,0 +1,186 @@
+[
+  {
+    "from": 2,
+    "to": 33,
+    "text": "KENAPA WARNA MATCHA",
+    "highlight": false,
+    "startSec": 0.08,
+    "endSec": 1.08
+  },
+  {
+    "from": 33,
+    "to": 63,
+    "text": "LIRA BISA SEHIJAU",
+    "highlight": false,
+    "startSec": 1.12,
+    "endSec": 2.08
+  },
+  {
+    "from": 63,
+    "to": 98,
+    "text": "ZAMRUD PEKAT GINI",
+    "highlight": false,
+    "startSec": 2.12,
+    "endSec": 3.2
+  },
+  {
+    "from": 100,
+    "to": 128,
+    "text": "TANPA SETETES PUN",
+    "highlight": false,
+    "startSec": 3.36,
+    "endSec": 4.24
+  },
+  {
+    "from": 128,
+    "to": 180,
+    "text": "PEWARNA KIMIA BANYAK",
+    "highlight": false,
+    "startSec": 4.293,
+    "endSec": 5.92
+  },
+  {
+    "from": 180,
+    "to": 206,
+    "text": "BUBUK DI PASARAN",
+    "highlight": false,
+    "startSec": 6,
+    "endSec": 6.8
+  },
+  {
+    "from": 206,
+    "to": 242,
+    "text": "YANG KUSAM KECOKELATAN",
+    "highlight": false,
+    "startSec": 6.88,
+    "endSec": 8
+  },
+  {
+    "from": 242,
+    "to": 283,
+    "text": "KARENA OPLOSAN TEPUNG",
+    "highlight": false,
+    "startSec": 8.08,
+    "endSec": 9.36
+  },
+  {
+    "from": 288,
+    "to": 317,
+    "text": "LIRA CUMA PAKAI",
+    "highlight": false,
+    "startSec": 9.6,
+    "endSec": 10.48
+  },
+  {
+    "from": 319,
+    "to": 353,
+    "text": "PURE JAPANESE PREMIUM",
+    "highlight": true,
+    "startSec": 10.64,
+    "endSec": 11.68
+  },
+  {
+    "from": 355,
+    "to": 388,
+    "text": "MATCHA LANGSUNG DARI",
+    "highlight": false,
+    "startSec": 11.84,
+    "endSec": 12.88
+  },
+  {
+    "from": 388,
+    "to": 424,
+    "text": "PERKEBUNAN JEPANG TINGGI",
+    "highlight": true,
+    "startSec": 12.96,
+    "endSec": 14.12
+  },
+  {
+    "from": 424,
+    "to": 470,
+    "text": "KLOROFIL DAN L-THEANINE",
+    "highlight": true,
+    "startSec": 14.16,
+    "endSec": 15.6
+  },
+  {
+    "from": 470,
+    "to": 514,
+    "text": "ALAMI DI DAPUR",
+    "highlight": false,
+    "startSec": 15.68,
+    "endSec": 17.12
+  },
+  {
+    "from": 514,
+    "to": 554,
+    "text": "KONSENTRATNYA KITA BLENDER",
+    "highlight": false,
+    "startSec": 17.16,
+    "endSec": 18.4
+  },
+  {
+    "from": 554,
+    "to": 590,
+    "text": "KECEPATAN TINGGI BIAR",
+    "highlight": false,
+    "startSec": 18.48,
+    "endSec": 19.6
+  },
+  {
+    "from": 590,
+    "to": 624,
+    "text": "LARUT MIKRO TANPA",
+    "highlight": true,
+    "startSec": 19.68,
+    "endSec": 20.72
+  },
+  {
+    "from": 624,
+    "to": 672,
+    "text": "GUMPALAN DIPADU STEVIA",
+    "highlight": false,
+    "startSec": 20.8,
+    "endSec": 22.32
+  },
+  {
+    "from": 672,
+    "to": 710,
+    "text": "DROPS ALAMI FOKUS",
+    "highlight": false,
+    "startSec": 22.4,
+    "endSec": 23.6
+  },
+  {
+    "from": 710,
+    "to": 756,
+    "text": "TENANG SEHARIAN TANPA",
+    "highlight": false,
+    "startSec": 23.68,
+    "endSec": 25.12
+  },
+  {
+    "from": 756,
+    "to": 799,
+    "text": "DEG-DEGAN LIMITED BATCH",
+    "highlight": true,
+    "startSec": 25.2,
+    "endSec": 26.56
+  },
+  {
+    "from": 804,
+    "to": 820,
+    "text": "AVAILABLE DI",
+    "highlight": false,
+    "startSec": 26.8,
+    "endSec": 27.28
+  },
+  {
+    "from": 820,
+    "to": 847,
+    "text": "LINK BIO",
+    "highlight": true,
+    "startSec": 27.36,
+    "endSec": 28.16
+  }
+]

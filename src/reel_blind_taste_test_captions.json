@@ -1,0 +1,282 @@
+[
+  {
+    "from": 2,
+    "to": 28,
+    "text": "MATCHA KAFE MALL",
+    "highlight": false,
+    "startSec": 0.08,
+    "endSec": 0.88
+  },
+  {
+    "from": 28,
+    "to": 48,
+    "text": "LIMA PULUH LIMA",
+    "highlight": false,
+    "startSec": 0.96,
+    "endSec": 1.52
+  },
+  {
+    "from": 48,
+    "to": 103,
+    "text": "RIBU VS MATCHA",
+    "highlight": false,
+    "startSec": 1.6,
+    "endSec": 3.4
+  },
+  {
+    "from": 103,
+    "to": 132,
+    "text": "OATSIDE LIRA DUA",
+    "highlight": false,
+    "startSec": 3.44,
+    "endSec": 4.36
+  },
+  {
+    "from": 132,
+    "to": 169,
+    "text": "PULUH EMPAT RIBU",
+    "highlight": false,
+    "startSec": 4.4,
+    "endSec": 5.56
+  },
+  {
+    "from": 174,
+    "to": 202,
+    "text": "COBAIN TUTUP MATA",
+    "highlight": true,
+    "startSec": 5.829,
+    "endSec": 6.64
+  },
+  {
+    "from": 213,
+    "to": 240,
+    "text": "SEMBILAN PULUH PERSEN",
+    "highlight": false,
+    "startSec": 7.12,
+    "endSec": 7.92
+  },
+  {
+    "from": 240,
+    "to": 274,
+    "text": "ORANG KETIPU SAMA",
+    "highlight": false,
+    "startSec": 8,
+    "endSec": 9.12
+  },
+  {
+    "from": 274,
+    "to": 300,
+    "text": "GELAS PLASTIK DAN",
+    "highlight": true,
+    "startSec": 9.16,
+    "endSec": 9.92
+  },
+  {
+    "from": 300,
+    "to": 340,
+    "text": "SUASANA KAFE PAS",
+    "highlight": false,
+    "startSec": 10,
+    "endSec": 11.28
+  },
+  {
+    "from": 340,
+    "to": 374,
+    "text": "DITES TUTUP MATA",
+    "highlight": true,
+    "startSec": 11.36,
+    "endSec": 12.4
+  },
+  {
+    "from": 375,
+    "to": 393,
+    "text": "MATCHA KAFE LIMA",
+    "highlight": false,
+    "startSec": 12.52,
+    "endSec": 13.08
+  },
+  {
+    "from": 393,
+    "to": 417,
+    "text": "PULUH LIMA RIBU",
+    "highlight": false,
+    "startSec": 13.12,
+    "endSec": 13.84
+  },
+  {
+    "from": 417,
+    "to": 448,
+    "text": "RASANYA DOMINAN SIRUP",
+    "highlight": false,
+    "startSec": 13.92,
+    "endSec": 14.88
+  },
+  {
+    "from": 448,
+    "to": 486,
+    "text": "GULA PASIR PAS",
+    "highlight": true,
+    "startSec": 14.96,
+    "endSec": 16.16
+  },
+  {
+    "from": 486,
+    "to": 530,
+    "text": "NYOBAIN LIRA PEKAT",
+    "highlight": false,
+    "startSec": 16.2,
+    "endSec": 17.6
+  },
+  {
+    "from": 530,
+    "to": 566,
+    "text": "UMAMI PURE JAPANESE",
+    "highlight": true,
+    "startSec": 17.68,
+    "endSec": 18.8
+  },
+  {
+    "from": 566,
+    "to": 607,
+    "text": "PREMIUM MATCHA MANIS",
+    "highlight": false,
+    "startSec": 18.88,
+    "endSec": 20.16
+  },
+  {
+    "from": 607,
+    "to": 631,
+    "text": "ALAMI DARI DAUN",
+    "highlight": false,
+    "startSec": 20.24,
+    "endSec": 20.96
+  },
+  {
+    "from": 631,
+    "to": 667,
+    "text": "STEVIA DROPS TANPA",
+    "highlight": true,
+    "startSec": 21.04,
+    "endSec": 22.16
+  },
+  {
+    "from": 667,
+    "to": 700,
+    "text": "GULA PASIR DAN",
+    "highlight": true,
+    "startSec": 22.24,
+    "endSec": 23.28
+  },
+  {
+    "from": 700,
+    "to": 749,
+    "text": "GURIHNYA BARISTA OATSIDE",
+    "highlight": true,
+    "startSec": 23.36,
+    "endSec": 24.88
+  },
+  {
+    "from": 751,
+    "to": 782,
+    "text": "HARGA JUJUR TANPA",
+    "highlight": true,
+    "startSec": 25.051,
+    "endSec": 26
+  },
+  {
+    "from": 782,
+    "to": 817,
+    "text": "MARK-UP SEWA KAFE",
+    "highlight": false,
+    "startSec": 26.08,
+    "endSec": 27.2
+  },
+  {
+    "from": 817,
+    "to": 831,
+    "text": "MILK TEA LIMA",
+    "highlight": false,
+    "startSec": 27.253,
+    "endSec": 27.68
+  },
+  {
+    "from": 831,
+    "to": 864,
+    "text": "BELAS RIBU MATCHA",
+    "highlight": false,
+    "startSec": 27.72,
+    "endSec": 28.76
+  },
+  {
+    "from": 864,
+    "to": 890,
+    "text": "CLASSIC SEMBILAN BELAS",
+    "highlight": false,
+    "startSec": 28.8,
+    "endSec": 29.6
+  },
+  {
+    "from": 890,
+    "to": 931,
+    "text": "RIBU CHOCO HAZELNUT",
+    "highlight": false,
+    "startSec": 29.68,
+    "endSec": 30.96
+  },
+  {
+    "from": 931,
+    "to": 948,
+    "text": "DUA PULUH DUA",
+    "highlight": false,
+    "startSec": 31.04,
+    "endSec": 31.547
+  },
+  {
+    "from": 948,
+    "to": 976,
+    "text": "RIBU DAN MATCHA",
+    "highlight": false,
+    "startSec": 31.6,
+    "endSec": 32.52
+  },
+  {
+    "from": 976,
+    "to": 1010,
+    "text": "OATSIDE CUMA DUA",
+    "highlight": false,
+    "startSec": 32.56,
+    "endSec": 33.6
+  },
+  {
+    "from": 1010,
+    "to": 1038,
+    "text": "PULUH EMPAT RIBU",
+    "highlight": false,
+    "startSec": 33.68,
+    "endSec": 34.56
+  },
+  {
+    "from": 1038,
+    "to": 1080,
+    "text": "COBAIN SENDIRI BEDANYA",
+    "highlight": false,
+    "startSec": 34.627,
+    "endSec": 35.92
+  },
+  {
+    "from": 1082,
+    "to": 1112,
+    "text": "LIMITED BATCH AVAILABLE",
+    "highlight": true,
+    "startSec": 36.08,
+    "endSec": 37.04
+  },
+  {
+    "from": 1112,
+    "to": 1140,
+    "text": "DI LINK BIO",
+    "highlight": true,
+    "startSec": 37.08,
+    "endSec": 37.92
+  }
+]

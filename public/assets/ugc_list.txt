@@ -1,0 +1,2 @@
+file '/Users/caleb/.gemini/antigravity/scratch/lira-remotion/public/assets/ugc_part1.mp4'
+file '/Users/caleb/.gemini/antigravity/scratch/lira-remotion/public/assets/ugc_part2.mp4'

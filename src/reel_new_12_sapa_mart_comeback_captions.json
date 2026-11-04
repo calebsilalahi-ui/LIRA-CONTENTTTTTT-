@@ -1,0 +1,170 @@
+[
+  {
+    "from": 2,
+    "to": 25,
+    "text": "KITA DAPET REVIEW",
+    "highlight": false
+  },
+  {
+    "from": 25,
+    "to": 67,
+    "text": "BINTANG SATU GARA-GARA",
+    "highlight": true
+  },
+  {
+    "from": 67,
+    "to": 93,
+    "text": "KULKAS SAPA MART",
+    "highlight": true
+  },
+  {
+    "from": 93,
+    "to": 125,
+    "text": "KOSONG DUA MINGGU",
+    "highlight": true
+  },
+  {
+    "from": 137,
+    "to": 184,
+    "text": "TENANG MINGGU INI",
+    "highlight": false
+  },
+  {
+    "from": 184,
+    "to": 213,
+    "text": "LIRA RESMI BALIK",
+    "highlight": false
+  },
+  {
+    "from": 213,
+    "to": 242,
+    "text": "RESTOCK DI SAPA",
+    "highlight": false
+  },
+  {
+    "from": 242,
+    "to": 276,
+    "text": "MART SENIN PAGI",
+    "highlight": true
+  },
+  {
+    "from": 276,
+    "to": 297,
+    "text": "JAM TUJUH LEWAT",
+    "highlight": false
+  },
+  {
+    "from": 297,
+    "to": 327,
+    "text": "LIMA BELAS GILIRAN",
+    "highlight": false
+  },
+  {
+    "from": 327,
+    "to": 355,
+    "text": "CHOCO HAZELNUT YANG",
+    "highlight": true
+  },
+  {
+    "from": 355,
+    "to": 398,
+    "text": "MASUK KULKAS LANJUT",
+    "highlight": false
+  },
+  {
+    "from": 398,
+    "to": 427,
+    "text": "SELASA PAGI SETENGAH",
+    "highlight": true
+  },
+  {
+    "from": 427,
+    "to": 466,
+    "text": "SEMBILAN GILIRAN PURE",
+    "highlight": false
+  },
+  {
+    "from": 466,
+    "to": 494,
+    "text": "MATCHA OATSIDE DAN",
+    "highlight": true
+  },
+  {
+    "from": 494,
+    "to": 525,
+    "text": "MILK TEA MANIS",
+    "highlight": true
+  },
+  {
+    "from": 525,
+    "to": 565,
+    "text": "ALAMI STEVIA MURNI",
+    "highlight": true
+  },
+  {
+    "from": 565,
+    "to": 602,
+    "text": "ZERO SUGAR CRASH",
+    "highlight": true
+  },
+  {
+    "from": 602,
+    "to": 633,
+    "text": "TAPI JATAH SAPA",
+    "highlight": false
+  },
+  {
+    "from": 633,
+    "to": 674,
+    "text": "MART LIMITED BATCH",
+    "highlight": true
+  },
+  {
+    "from": 674,
+    "to": 709,
+    "text": "PER MINGGU TELAT",
+    "highlight": false
+  },
+  {
+    "from": 709,
+    "to": 760,
+    "text": "DIKIT LANGSUNG LUDES",
+    "highlight": true
+  },
+  {
+    "from": 760,
+    "to": 775,
+    "text": "LO TIM SENIN",
+    "highlight": false
+  },
+  {
+    "from": 775,
+    "to": 804,
+    "text": "CHOCO ATAU SELASA",
+    "highlight": false
+  },
+  {
+    "from": 804,
+    "to": 830,
+    "text": "MATCHA KOMEN DI",
+    "highlight": true
+  },
+  {
+    "from": 830,
+    "to": 871,
+    "text": "BAWAH ATAU AMANKAN",
+    "highlight": false
+  },
+  {
+    "from": 871,
+    "to": 888,
+    "text": "BATCH SABTU",
+    "highlight": false
+  },
+  {
+    "from": 888,
+    "to": 912,
+    "text": "DI BIO",
+    "highlight": false
+  }
+]

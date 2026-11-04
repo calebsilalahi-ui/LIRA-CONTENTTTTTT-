@@ -1,0 +1,133 @@
+{
+  "id": "carousel_stevia_science_8slides",
+  "title": "Anatomi Sugar Crash vs Clean Focus",
+  "pillar": "Sugar Crash & Stevia Science",
+  "hookCategory": "Educational",
+  "theme": "emerald",
+  "slides": [
+    {
+      "slideNumber": 1,
+      "type": "hook",
+      "headline": "ANATOMI SUGAR CRASH VS CLEAN FOCUS",
+      "subhead": "Kenapa matcha kafe biasa bikin lemas di jam 2 siang?",
+      "categoryTag": "SAINS METABOLISME",
+      "badgeText": "EDITORIAL BREAKDOWN",
+      "bottleVariant": "matcha",
+      "swipePrompt": "GESER UNTUK BREAKDOWN SAINS"
+    },
+    {
+      "slideNumber": 2,
+      "type": "reserve_hook",
+      "headline": "DUA JAM SETELAH MINUM GULA CAIR DARAH LO DROP",
+      "subhead": "Reaksi biologis tubuh saat menerima lonjakan glukosa tinggi dari sirup komersial kafe.",
+      "categoryTag": "ALGORITMA RE-SERVE",
+      "badgeText": "REAKSI BIOLOGIS",
+      "bottleVariant": "matcha",
+      "keyPoints": [
+        "Gula cair instan diserap lambung dalam hitungan menit",
+        "Pankreas dipaksa memompa insulin dalam jumlah masif",
+        "Gula darah anjlok drastis memicu rasa lelah dan kantuk berat"
+      ],
+      "swipePrompt": "PELAJARI MEKANISME LENGKAPNYA"
+    },
+    {
+      "slideNumber": 3,
+      "type": "body",
+      "headline": "MEKANISME INSULIN SPIKE PADA GULA CAIR",
+      "subhead": "Perbedaan mendasar pemrosesan sirup fruktosa versus energi stabil.",
+      "categoryTag": "MEKANISME TUBUH",
+      "badgeText": "FAKTA KLINIS",
+      "keyPoints": [
+        "Sirup komersial mengandung fruktosa cair berdensitas tinggi",
+        "Reseptor adenosin di otak terblokir sementara lalu memicu kelelahan rebound",
+        "Solusinya bukan tambah kafein, tapi eliminasi gula perusak fokus"
+      ],
+      "bodyText": "Ketika lo minum minuman manis kafe, lo meminjam energi dari masa depan dengan bunga kelelahan ekstrem dua jam berikutnya.",
+      "swipePrompt": "LIHAT ALTERNATIF ALAMI"
+    },
+    {
+      "slideNumber": 4,
+      "type": "body",
+      "headline": "SOLUSI ALAMI: DAUN STEVIA MURNI",
+      "subhead": "Pemanis alami nol kalori yang tidak memicu lonjakan glukosa darah.",
+      "categoryTag": "BAHAN BAKU",
+      "badgeText": "KEMURNIAN BAHAN",
+      "bottleVariant": "matcha",
+      "keyPoints": [
+        "Ekstrak daun stevia murni dengan glikosida alami berkualitas tinggi",
+        "Indeks glikemik nol: tubuh tidak memproduksi lonjakan insulin",
+        "Rasa manis bersih yang tidak meninggalkan rasa lengket di tenggorokan"
+      ],
+      "bodyText": "Lira memadukan pure Japanese green tea dengan barista oat milk dan sentuhan pemanis alami stevia untuk menjaga kurva energi tetap konstan.",
+      "swipePrompt": "CEK RASIO FOKUS 6 JAM"
+    },
+    {
+      "slideNumber": 5,
+      "type": "body",
+      "headline": "L-THEANINE & CAFFEINE RATIO FORMULA",
+      "subhead": "Sinergi asam amino hijau Jepang untuk fokus tenang tanpa tremor.",
+      "categoryTag": "FORMULA ENERGI",
+      "badgeText": "SINERGI BIOAKTIF",
+      "keyPoints": [
+        "L-Theanine menembus sawar darah-otak untuk merangsang gelombang alfa",
+        "Pelepasan kafein alami secara bertahap selama 6 jam penuh",
+        "Bebas dari debar jantung berlebih yang sering muncul dari kopi susu"
+      ],
+      "metricCards": [
+        { "label": "DURASI FOKUS", "value": "6 JAM", "subtext": "Energi tenang berkelanjutan" },
+        { "label": "GLIKEMIK INDEKS", "value": "0", "subtext": "Tanpa lonjakan insulin" },
+        { "label": "GULA PASIR", "value": "0 GRAM", "subtext": "Pemanis alami stevia" }
+      ],
+      "swipePrompt": "SIMPAN TABEL KOMPARASI"
+    },
+    {
+      "slideNumber": 6,
+      "type": "high_save",
+      "headline": "CHEATSHEET: PANDUAN FOCUS 6 JAM TANPA CRASH",
+      "subhead": "Tabel perbandingan objektif minuman kafe umum vs botol dingin Lira.",
+      "categoryTag": "CHEAT SHEET",
+      "badgeText": "BOOKMARK REFERENCE",
+      "bottleVariant": "matcha",
+      "comparisonRows": [
+        { "feature": "Resep Pemanis", "cafe": "Gula Cair Murah", "lira": "Pemanis Alami Stevia" },
+        { "feature": "Mobilitas", "cafe": "Bocor & Basah", "lira": "180° Anti Bocor" },
+        { "feature": "Energy Profile", "cafe": "Crash 2 Jam", "lira": "Fokus Bersih 6 Jam" },
+        { "feature": "Kondisi Suhu", "cafe": "Es Meleleh Hambar", "lira": "Chilled Fresh Sealed" }
+      ],
+      "bodyText": "Simpan postingan ini di koleksi Instagram lo sebagai panduan referensi memilih minuman kerja harian.",
+      "swipePrompt": "CARA AMANKAN BATCH"
+    },
+    {
+      "slideNumber": 7,
+      "type": "routine",
+      "headline": "TRANSPARANSI PROSES: SEDUH DINGIN 03:30",
+      "subhead": "Standar sanitasi ketat dan ekstraksi lambat sebelum fajar menyingsing.",
+      "categoryTag": "CRAFTSMANSHIP",
+      "badgeText": "DAPUR PRODUKSI",
+      "bottleVariant": "matcha",
+      "keyPoints": [
+        "Penyeduhan batch dingin dimulai pukul 03:30 pagi setiap jadwal produksi",
+        "Sterilisasi botol food-grade dengan seal kedap udara",
+        "Penyimpanan instan dalam chiller suhu presisi sebelum pengiriman"
+      ],
+      "bodyText": "Setiap botol diracik solo founder dengan perhatian penuh pada higienitas, tanpa pengawet sintetis dan tanpa sirup komersial.",
+      "swipePrompt": "CARA PRE-ORDER SABTU"
+    },
+    {
+      "slideNumber": 8,
+      "type": "cta",
+      "headline": "LIMITED BATCH SABTU: CARA AMANKAN BOTTLE LO",
+      "subhead": "Langkah mudah reservasi batch dingin mingguan via kurir Gojek.",
+      "categoryTag": "PRE-ORDER RESMI",
+      "badgeText": "BATCH MINGGUAN",
+      "bottleVariant": "matcha",
+      "orderSteps": [
+        "Klik tautan pre-order di profil bio resmi @drinklira",
+        "Pilih varian favorit lo: Matcha Oatside, Choco Hazelnut, Milk Tea",
+        "Batch dingin diantar hari Sabtu via Gojek dalam thermal bag dingin"
+      ],
+      "bodyText": "Limited batch tersedia setiap minggu. Amankan jatah botol lo sebelum kuota batch dingin ditutup.",
+      "swipePrompt": "TAP LINK DI BIO"
+    }
+  ]
+}

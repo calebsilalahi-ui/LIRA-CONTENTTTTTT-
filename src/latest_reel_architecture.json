@@ -1,0 +1,29 @@
+{
+  "editingStyle": "10 FPS retro indie-game pixel art, kinetic cuts, zero dead space (silences > 0.1s trimmed)",
+  "topic": "3 Tanda minuman kafe 50 ribuan ngerugiin lo pelan-pelan",
+  "format": "Voiceover + B-roll shot changes + real Google search screenshot proof",
+  "hookStack": {
+    "verbalHook": "Tiga tanda minuman kafe lima puluh ribuan lo sebenernya ngerugiin lo. Dan yang ketiga, lo lakuin tiap hari.",
+    "visualHook": "First-person POV of sweating plastic cup diluting into water beside laptop, followed by sealed Lira bottle 180° inverted test.",
+    "writtenHook": "3 Tanda Minuman Kafe 50k Ngerugiin Lo"
+  },
+  "valuePillars": [
+    "Tanda 1: Lima belas menit pertama, rasa matcha lo udah berubah jadi air tawar dingin karena es batu mencair.",
+    "Tanda 2: Tangan lo tersandera harus megang terus karena gabisa masuk ke dalam tas ransel atau tote bag.",
+    "Tanda 3 (Yang paling sering lo lakuin): Lo bayar mahal cuma buat nahan rasa was-was kopi tumpah ke laptop seharian."
+  ],
+  "coreSolution": "Lira dibikin murni tanpa es batu pengencer rasa, bersegel rapat anti-bocor, dan tahan 7 hari di kulkas.",
+  "cta": "Batch Sabtu siap diamankan via link di bio sekarang.",
+  "captionsPlacement": "top: 56% (down-center eye level)",
+  "captionsFont": "Montserrat 900 Heavy, 2-3 words per chunk, zero emojis",
+  "staticPopups": [
+    {
+      "triggerWord": "es batu mencair",
+      "type": "Google Search screenshot: \"berapa menit es kopi kafe mencair\""
+    },
+    {
+      "triggerWord": "tumpah ke laptop",
+      "type": "Google Review screenshot: \"cup kopi tumpah kena keyboard laptop\""
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/caleb/.gemini/antigravity/scratch/lira-remotion/.archify/lira-retention-system.archify.md",
+    "sha256": "a5f97528ab86fa3325757ba7bb9a3c66c25250fb7d6673f3f88790ca84c37311",
+    "bytes": 7423
+  },
+  "artifact": {
+    "path": "/Users/caleb/.gemini/antigravity/scratch/lira-remotion/.archify/lira-retention-system.html",
+    "sha256": "83ae330b725221b9ccabe8fa118d033ea40cfe8caae45e7cf77ac1db3bb27742",
+    "bytes": 954952
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "pass"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/caleb/.gemini/antigravity/scratch/lira-remotion/.archify/lira-retention-system.finalize.json",
+    "summaryReceipt": "/Users/caleb/.gemini/antigravity/scratch/lira-remotion/.archify/lira-retention-system.finalize-summary.json",
+    "browserCheckReceipt": "/Users/caleb/.gemini/antigravity/scratch/lira-remotion/.archify/lira-retention-system.browser-check.json"
+  },
+  "visualReview": "not-requested",
+  "durationMs": 11031,
+  "browserCheck": {
+    "requested": true,
+    "ran": true
+  }
+}

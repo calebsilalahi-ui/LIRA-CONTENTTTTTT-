@@ -1,0 +1,740 @@
+[
+  {
+    "index": 0,
+    "word": "Kita",
+    "clean": "KITA",
+    "start": 0.067,
+    "end": 0.16,
+    "startFrame": 2,
+    "endFrame": 5
+  },
+  {
+    "index": 1,
+    "word": "dapet",
+    "clean": "DAPET",
+    "start": 0.24,
+    "end": 0.48,
+    "startFrame": 7,
+    "endFrame": 15
+  },
+  {
+    "index": 2,
+    "word": "review",
+    "clean": "REVIEW",
+    "start": 0.64,
+    "end": 0.8,
+    "startFrame": 19,
+    "endFrame": 24
+  },
+  {
+    "index": 3,
+    "word": "bintang",
+    "clean": "BINTANG",
+    "start": 0.853,
+    "end": 1.04,
+    "startFrame": 25,
+    "endFrame": 32
+  },
+  {
+    "index": 4,
+    "word": "satu",
+    "clean": "SATU",
+    "start": 1.2,
+    "end": 1.6,
+    "startFrame": 36,
+    "endFrame": 48
+  },
+  {
+    "index": 5,
+    "word": "gara-gara",
+    "clean": "GARA-GARA",
+    "start": 1.84,
+    "end": 2.16,
+    "startFrame": 55,
+    "endFrame": 65
+  },
+  {
+    "index": 6,
+    "word": "kulkas",
+    "clean": "KULKAS",
+    "start": 2.24,
+    "end": 2.48,
+    "startFrame": 67,
+    "endFrame": 75
+  },
+  {
+    "index": 7,
+    "word": "SAPA",
+    "clean": "SAPA",
+    "start": 2.52,
+    "end": 2.8,
+    "startFrame": 75,
+    "endFrame": 84
+  },
+  {
+    "index": 8,
+    "word": "Mart",
+    "clean": "MART",
+    "start": 2.92,
+    "end": 3.04,
+    "startFrame": 87,
+    "endFrame": 92
+  },
+  {
+    "index": 9,
+    "word": "kosong",
+    "clean": "KOSONG",
+    "start": 3.12,
+    "end": 3.28,
+    "startFrame": 93,
+    "endFrame": 99
+  },
+  {
+    "index": 10,
+    "word": "dua",
+    "clean": "DUA",
+    "start": 3.32,
+    "end": 3.44,
+    "startFrame": 99,
+    "endFrame": 104
+  },
+  {
+    "index": 11,
+    "word": "minggu.",
+    "clean": "MINGGU",
+    "start": 3.52,
+    "end": 4.08,
+    "startFrame": 105,
+    "endFrame": 123
+  },
+  {
+    "index": 12,
+    "word": "Tenang,",
+    "clean": "TENANG",
+    "start": 4.587,
+    "end": 5.36,
+    "startFrame": 137,
+    "endFrame": 161
+  },
+  {
+    "index": 13,
+    "word": "minggu",
+    "clean": "MINGGU",
+    "start": 5.44,
+    "end": 5.68,
+    "startFrame": 163,
+    "endFrame": 171
+  },
+  {
+    "index": 14,
+    "word": "ini",
+    "clean": "INI",
+    "start": 5.76,
+    "end": 6,
+    "startFrame": 172,
+    "endFrame": 180
+  },
+  {
+    "index": 15,
+    "word": "Lira",
+    "clean": "LIRA",
+    "start": 6.16,
+    "end": 6.4,
+    "startFrame": 184,
+    "endFrame": 192
+  },
+  {
+    "index": 16,
+    "word": "resmi",
+    "clean": "RESMI",
+    "start": 6.48,
+    "end": 6.8,
+    "startFrame": 194,
+    "endFrame": 204
+  },
+  {
+    "index": 17,
+    "word": "balik",
+    "clean": "BALIK",
+    "start": 6.88,
+    "end": 7.04,
+    "startFrame": 206,
+    "endFrame": 212
+  },
+  {
+    "index": 18,
+    "word": "restock",
+    "clean": "RESTOCK",
+    "start": 7.12,
+    "end": 7.44,
+    "startFrame": 213,
+    "endFrame": 224
+  },
+  {
+    "index": 19,
+    "word": "di",
+    "clean": "DI",
+    "start": 7.48,
+    "end": 7.52,
+    "startFrame": 224,
+    "endFrame": 226
+  },
+  {
+    "index": 20,
+    "word": "SAPA",
+    "clean": "SAPA",
+    "start": 7.6,
+    "end": 7.92,
+    "startFrame": 228,
+    "endFrame": 238
+  },
+  {
+    "index": 21,
+    "word": "Mart!",
+    "clean": "MART",
+    "start": 8.08,
+    "end": 8.48,
+    "startFrame": 242,
+    "endFrame": 255
+  },
+  {
+    "index": 22,
+    "word": "Senin",
+    "clean": "SENIN",
+    "start": 8.56,
+    "end": 8.72,
+    "startFrame": 256,
+    "endFrame": 262
+  },
+  {
+    "index": 23,
+    "word": "pagi",
+    "clean": "PAGI",
+    "start": 8.8,
+    "end": 9.12,
+    "startFrame": 264,
+    "endFrame": 274
+  },
+  {
+    "index": 24,
+    "word": "jam",
+    "clean": "JAM",
+    "start": 9.2,
+    "end": 9.36,
+    "startFrame": 276,
+    "endFrame": 281
+  },
+  {
+    "index": 25,
+    "word": "tujuh",
+    "clean": "TUJUH",
+    "start": 9.44,
+    "end": 9.64,
+    "startFrame": 283,
+    "endFrame": 290
+  },
+  {
+    "index": 26,
+    "word": "lewat",
+    "clean": "LEWAT",
+    "start": 9.68,
+    "end": 9.84,
+    "startFrame": 290,
+    "endFrame": 296
+  },
+  {
+    "index": 27,
+    "word": "lima",
+    "clean": "LIMA",
+    "start": 9.92,
+    "end": 10.04,
+    "startFrame": 297,
+    "endFrame": 302
+  },
+  {
+    "index": 28,
+    "word": "belas,",
+    "clean": "BELAS",
+    "start": 10.08,
+    "end": 10.4,
+    "startFrame": 302,
+    "endFrame": 312
+  },
+  {
+    "index": 29,
+    "word": "giliran",
+    "clean": "GILIRAN",
+    "start": 10.56,
+    "end": 10.88,
+    "startFrame": 316,
+    "endFrame": 327
+  },
+  {
+    "index": 30,
+    "word": "Choco",
+    "clean": "CHOCO",
+    "start": 10.92,
+    "end": 11.12,
+    "startFrame": 327,
+    "endFrame": 334
+  },
+  {
+    "index": 31,
+    "word": "Hazelnut",
+    "clean": "HAZELNUT",
+    "start": 11.2,
+    "end": 11.6,
+    "startFrame": 336,
+    "endFrame": 348
+  },
+  {
+    "index": 32,
+    "word": "yang",
+    "clean": "YANG",
+    "start": 11.68,
+    "end": 11.76,
+    "startFrame": 350,
+    "endFrame": 353
+  },
+  {
+    "index": 33,
+    "word": "masuk",
+    "clean": "MASUK",
+    "start": 11.84,
+    "end": 12.08,
+    "startFrame": 355,
+    "endFrame": 363
+  },
+  {
+    "index": 34,
+    "word": "kulkas.",
+    "clean": "KULKAS",
+    "start": 12.12,
+    "end": 12.76,
+    "startFrame": 363,
+    "endFrame": 383
+  },
+  {
+    "index": 35,
+    "word": "Lanjut",
+    "clean": "LANJUT",
+    "start": 12.944,
+    "end": 13.2,
+    "startFrame": 388,
+    "endFrame": 396
+  },
+  {
+    "index": 36,
+    "word": "Selasa",
+    "clean": "SELASA",
+    "start": 13.28,
+    "end": 13.52,
+    "startFrame": 398,
+    "endFrame": 406
+  },
+  {
+    "index": 37,
+    "word": "pagi",
+    "clean": "PAGI",
+    "start": 13.64,
+    "end": 13.8,
+    "startFrame": 409,
+    "endFrame": 414
+  },
+  {
+    "index": 38,
+    "word": "setengah",
+    "clean": "SETENGAH",
+    "start": 13.84,
+    "end": 14.16,
+    "startFrame": 415,
+    "endFrame": 425
+  },
+  {
+    "index": 39,
+    "word": "sembilan,",
+    "clean": "SEMBILAN",
+    "start": 14.24,
+    "end": 14.68,
+    "startFrame": 427,
+    "endFrame": 441
+  },
+  {
+    "index": 40,
+    "word": "giliran",
+    "clean": "GILIRAN",
+    "start": 14.8,
+    "end": 15.12,
+    "startFrame": 444,
+    "endFrame": 454
+  },
+  {
+    "index": 41,
+    "word": "Pure",
+    "clean": "PURE",
+    "start": 15.28,
+    "end": 15.44,
+    "startFrame": 458,
+    "endFrame": 464
+  },
+  {
+    "index": 42,
+    "word": "Matcha",
+    "clean": "MATCHA",
+    "start": 15.56,
+    "end": 15.72,
+    "startFrame": 466,
+    "endFrame": 472
+  },
+  {
+    "index": 43,
+    "word": "Oatside",
+    "clean": "OATSIDE",
+    "start": 15.76,
+    "end": 16.16,
+    "startFrame": 472,
+    "endFrame": 485
+  },
+  {
+    "index": 44,
+    "word": "dan",
+    "clean": "DAN",
+    "start": 16.24,
+    "end": 16.4,
+    "startFrame": 487,
+    "endFrame": 492
+  },
+  {
+    "index": 45,
+    "word": "Milk",
+    "clean": "MILK",
+    "start": 16.48,
+    "end": 16.64,
+    "startFrame": 494,
+    "endFrame": 500
+  },
+  {
+    "index": 46,
+    "word": "Tea.",
+    "clean": "TEA",
+    "start": 16.72,
+    "end": 17.2,
+    "startFrame": 501,
+    "endFrame": 516
+  },
+  {
+    "index": 47,
+    "word": "Manis",
+    "clean": "MANIS",
+    "start": 17.28,
+    "end": 17.44,
+    "startFrame": 518,
+    "endFrame": 524
+  },
+  {
+    "index": 48,
+    "word": "alami",
+    "clean": "ALAMI",
+    "start": 17.52,
+    "end": 17.76,
+    "startFrame": 525,
+    "endFrame": 533
+  },
+  {
+    "index": 49,
+    "word": "Stevia",
+    "clean": "STEVIA",
+    "start": 17.8,
+    "end": 18.08,
+    "startFrame": 534,
+    "endFrame": 543
+  },
+  {
+    "index": 50,
+    "word": "murni,",
+    "clean": "MURNI",
+    "start": 18.16,
+    "end": 18.72,
+    "startFrame": 544,
+    "endFrame": 562
+  },
+  {
+    "index": 51,
+    "word": "zero",
+    "clean": "ZERO",
+    "start": 18.84,
+    "end": 18.96,
+    "startFrame": 565,
+    "endFrame": 569
+  },
+  {
+    "index": 52,
+    "word": "sugar",
+    "clean": "SUGAR",
+    "start": 19.12,
+    "end": 19.36,
+    "startFrame": 573,
+    "endFrame": 581
+  },
+  {
+    "index": 53,
+    "word": "crash!",
+    "clean": "CRASH",
+    "start": 19.44,
+    "end": 20,
+    "startFrame": 583,
+    "endFrame": 600
+  },
+  {
+    "index": 54,
+    "word": "Tapi",
+    "clean": "TAPI",
+    "start": 20.067,
+    "end": 20.4,
+    "startFrame": 602,
+    "endFrame": 612
+  },
+  {
+    "index": 55,
+    "word": "jatah",
+    "clean": "JATAH",
+    "start": 20.56,
+    "end": 20.76,
+    "startFrame": 616,
+    "endFrame": 623
+  },
+  {
+    "index": 56,
+    "word": "SAPA",
+    "clean": "SAPA",
+    "start": 20.8,
+    "end": 21.04,
+    "startFrame": 624,
+    "endFrame": 632
+  },
+  {
+    "index": 57,
+    "word": "Mart",
+    "clean": "MART",
+    "start": 21.12,
+    "end": 21.2,
+    "startFrame": 633,
+    "endFrame": 636
+  },
+  {
+    "word": "limited",
+    "clean": "LIMITED",
+    "start": 21.24,
+    "end": 21.8,
+    "startFrame": 637,
+    "endFrame": 654,
+    "index": 58
+  },
+  {
+    "word": "batch",
+    "clean": "BATCH",
+    "start": 21.84,
+    "end": 22.4,
+    "startFrame": 655,
+    "endFrame": 672,
+    "index": 59
+  },
+  {
+    "index": 60,
+    "word": "per",
+    "clean": "PER",
+    "start": 22.48,
+    "end": 22.56,
+    "startFrame": 674,
+    "endFrame": 677
+  },
+  {
+    "index": 61,
+    "word": "minggu.",
+    "clean": "MINGGU",
+    "start": 22.68,
+    "end": 23.28,
+    "startFrame": 680,
+    "endFrame": 699
+  },
+  {
+    "index": 62,
+    "word": "Telat",
+    "clean": "TELAT",
+    "start": 23.32,
+    "end": 23.52,
+    "startFrame": 699,
+    "endFrame": 706
+  },
+  {
+    "index": 63,
+    "word": "dikit,",
+    "clean": "DIKIT",
+    "start": 23.653,
+    "end": 24.08,
+    "startFrame": 709,
+    "endFrame": 723
+  },
+  {
+    "index": 64,
+    "word": "langsung",
+    "clean": "LANGSUNG",
+    "start": 24.16,
+    "end": 24.4,
+    "startFrame": 724,
+    "endFrame": 732
+  },
+  {
+    "index": 65,
+    "word": "ludes!",
+    "clean": "LUDES",
+    "start": 24.44,
+    "end": 25.28,
+    "startFrame": 733,
+    "endFrame": 759
+  },
+  {
+    "index": 66,
+    "word": "Lo",
+    "clean": "LO",
+    "start": 25.349,
+    "end": 25.36,
+    "startFrame": 760,
+    "endFrame": 761
+  },
+  {
+    "index": 67,
+    "word": "tim",
+    "clean": "TIM",
+    "start": 25.44,
+    "end": 25.52,
+    "startFrame": 763,
+    "endFrame": 766
+  },
+  {
+    "index": 68,
+    "word": "Senin",
+    "clean": "SENIN",
+    "start": 25.6,
+    "end": 25.76,
+    "startFrame": 768,
+    "endFrame": 773
+  },
+  {
+    "index": 69,
+    "word": "Choco",
+    "clean": "CHOCO",
+    "start": 25.84,
+    "end": 26.16,
+    "startFrame": 775,
+    "endFrame": 785
+  },
+  {
+    "index": 70,
+    "word": "atau",
+    "clean": "ATAU",
+    "start": 26.24,
+    "end": 26.36,
+    "startFrame": 787,
+    "endFrame": 791
+  },
+  {
+    "index": 71,
+    "word": "Selasa",
+    "clean": "SELASA",
+    "start": 26.4,
+    "end": 26.64,
+    "startFrame": 792,
+    "endFrame": 800
+  },
+  {
+    "index": 72,
+    "word": "Matcha?",
+    "clean": "MATCHA",
+    "start": 26.8,
+    "end": 27.28,
+    "startFrame": 804,
+    "endFrame": 819
+  },
+  {
+    "index": 73,
+    "word": "Komen",
+    "clean": "KOMEN",
+    "start": 27.32,
+    "end": 27.52,
+    "startFrame": 819,
+    "endFrame": 826
+  },
+  {
+    "index": 74,
+    "word": "di",
+    "clean": "DI",
+    "start": 27.56,
+    "end": 27.6,
+    "startFrame": 826,
+    "endFrame": 828
+  },
+  {
+    "index": 75,
+    "word": "bawah,",
+    "clean": "BAWAH",
+    "start": 27.68,
+    "end": 28.16,
+    "startFrame": 830,
+    "endFrame": 845
+  },
+  {
+    "index": 76,
+    "word": "atau",
+    "clean": "ATAU",
+    "start": 28.32,
+    "end": 28.52,
+    "startFrame": 849,
+    "endFrame": 856
+  },
+  {
+    "index": 77,
+    "word": "amankan",
+    "clean": "AMANKAN",
+    "start": 28.56,
+    "end": 28.96,
+    "startFrame": 856,
+    "endFrame": 869
+  },
+  {
+    "index": 78,
+    "word": "batch",
+    "clean": "BATCH",
+    "start": 29.04,
+    "end": 29.2,
+    "startFrame": 871,
+    "endFrame": 876
+  },
+  {
+    "index": 79,
+    "word": "Sabtu",
+    "clean": "SABTU",
+    "start": 29.32,
+    "end": 29.52,
+    "startFrame": 879,
+    "endFrame": 886
+  },
+  {
+    "index": 80,
+    "word": "di",
+    "clean": "DI",
+    "start": 29.6,
+    "end": 29.68,
+    "startFrame": 888,
+    "endFrame": 891
+  },
+  {
+    "index": 81,
+    "word": "bio!",
+    "clean": "BIO",
+    "start": 29.76,
+    "end": 30.32,
+    "startFrame": 892,
+    "endFrame": 910
+  }
+]

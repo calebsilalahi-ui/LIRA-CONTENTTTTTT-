@@ -1,0 +1,87 @@
+name: Lira 24/7 Viral Content Engine
+
+on:
+  schedule:
+    # 07:30 WIB (Asia/Jakarta) = 00:30 UTC
+    # 12:30 WIB (Asia/Jakarta) = 05:30 UTC
+    # 18:30 WIB (Asia/Jakarta) = 11:30 UTC
+    - cron: '30 0,5,11 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry Run Mode (simulate without publishing to live Instagram)'
+        type: boolean
+        default: false
+      format:
+        description: 'Content Format (auto, reel, carousel)'
+        type: choice
+        options:
+          - auto
+          - reel
+          - carousel
+        default: auto
+
+permissions:
+  contents: write
+
+jobs:
+  run-engine:
+    name: Generate & Stage/Publish Content
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install System Dependencies (FFmpeg & Chromium libraries)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxrandr2 libgbm1 libasound2
+
+      - name: Install Node Dependencies
+        run: npm install
+
+      - name: Execute Lira Content Automator
+        env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}
+          BUFFER_CHANNEL_ID: ${{ secrets.BUFFER_CHANNEL_ID || '6ad933a2778b240e2f81b45d' }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          CALEB_VOICE_ID: ${{ secrets.CALEB_VOICE_ID || 'WVwVlhKdnZoCuTIoxjYr' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="--dry-run"
+          else
+            ARGS="--render --publish-mode postNow"
+          fi
+          
+          if [ "${{ github.event.inputs.format }}" = "reel" ]; then
+            ARGS="$ARGS --type reel"
+          elif [ "${{ github.event.inputs.format }}" = "carousel" ]; then
+            ARGS="$ARGS --type carousel"
+          fi
+
+          echo "Running automator with args: $ARGS"
+          node scripts/lira_content_automator.js $ARGS
+
+      - name: Commit & Push Updated Content Ledger
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/content_ledger.json
+          if git diff --staged --quiet; then
+            echo "No ledger changes to commit."
+          else
+            git commit -m "chore(ledger): update content ledger after scheduled rush-hour post [skip ci]"
+            git push
+          fi

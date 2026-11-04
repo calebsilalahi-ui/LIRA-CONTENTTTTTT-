@@ -1,0 +1,282 @@
+[
+  {
+    "from": 3,
+    "to": 26,
+    "text": "KENAPA DI DAPUR",
+    "highlight": false,
+    "startSec": 0.133,
+    "endSec": 0.8
+  },
+  {
+    "from": 26,
+    "to": 61,
+    "text": "LIRA KITA BLENDER",
+    "highlight": true,
+    "startSec": 0.88,
+    "endSec": 2
+  },
+  {
+    "from": 61,
+    "to": 96,
+    "text": "KONSENTRAT MATCHANYA BUKAN",
+    "highlight": true,
+    "startSec": 2.04,
+    "endSec": 3.2
+  },
+  {
+    "from": 96,
+    "to": 145,
+    "text": "DIKOCOK MANUAL BANYAK",
+    "highlight": true,
+    "startSec": 3.227,
+    "endSec": 4.8
+  },
+  {
+    "from": 145,
+    "to": 170,
+    "text": "YANG KIRA BIKIN",
+    "highlight": false,
+    "startSec": 4.84,
+    "endSec": 5.6
+  },
+  {
+    "from": 170,
+    "to": 200,
+    "text": "MATCHA PREMIUM HARUS",
+    "highlight": false,
+    "startSec": 5.68,
+    "endSec": 6.64
+  },
+  {
+    "from": 200,
+    "to": 259,
+    "text": "DIKOCOK BAMBU PELAN-PELAN",
+    "highlight": false,
+    "startSec": 6.68,
+    "endSec": 8.56
+  },
+  {
+    "from": 264,
+    "to": 298,
+    "text": "TAPI PAS ORDERAN",
+    "highlight": false,
+    "startSec": 8.8,
+    "endSec": 9.84
+  },
+  {
+    "from": 298,
+    "to": 330,
+    "text": "BATCH MULAI NUMPUK",
+    "highlight": false,
+    "startSec": 9.96,
+    "endSec": 10.96
+  },
+  {
+    "from": 330,
+    "to": 362,
+    "text": "KITA BUTUH EFISIENSI",
+    "highlight": false,
+    "startSec": 11,
+    "endSec": 12
+  },
+  {
+    "from": 362,
+    "to": 404,
+    "text": "DAN KONSISTENSI TINGGI",
+    "highlight": false,
+    "startSec": 12.08,
+    "endSec": 13.4
+  },
+  {
+    "from": 409,
+    "to": 446,
+    "text": "BLENDER KOMERSIAL KECEPATAN",
+    "highlight": true,
+    "startSec": 13.664,
+    "endSec": 14.8
+  },
+  {
+    "from": 446,
+    "to": 485,
+    "text": "TINGGI MEMECAH PARTIKEL",
+    "highlight": false,
+    "startSec": 14.88,
+    "endSec": 16.08
+  },
+  {
+    "from": 487,
+    "to": 523,
+    "text": "PURE JAPANESE MATCHA",
+    "highlight": true,
+    "startSec": 16.24,
+    "endSec": 17.36
+  },
+  {
+    "from": 525,
+    "to": 548,
+    "text": "SAMPAI KE LEVEL",
+    "highlight": false,
+    "startSec": 17.52,
+    "endSec": 18.24
+  },
+  {
+    "from": 548,
+    "to": 592,
+    "text": "MIKRO KONSENTRAT LARUT",
+    "highlight": false,
+    "startSec": 18.28,
+    "endSec": 19.68
+  },
+  {
+    "from": 592,
+    "to": 646,
+    "text": "SEMPURNA TANPA GUMPALAN",
+    "highlight": true,
+    "startSec": 19.76,
+    "endSec": 21.52
+  },
+  {
+    "from": 646,
+    "to": 679,
+    "text": "DAN EMULSINYA MENYATU",
+    "highlight": false,
+    "startSec": 21.56,
+    "endSec": 22.56
+  },
+  {
+    "from": 679,
+    "to": 709,
+    "text": "HALUS PAS DICAMPUR",
+    "highlight": false,
+    "startSec": 22.64,
+    "endSec": 23.6
+  },
+  {
+    "from": 709,
+    "to": 751,
+    "text": "OATSIDE NOL GULA",
+    "highlight": true,
+    "startSec": 23.64,
+    "endSec": 24.96
+  },
+  {
+    "from": 751,
+    "to": 787,
+    "text": "PASIR CUKUP PEMANIS",
+    "highlight": false,
+    "startSec": 25.04,
+    "endSec": 26.16
+  },
+  {
+    "from": 787,
+    "to": 830,
+    "text": "ALAMI STEVIA DROPS",
+    "highlight": true,
+    "startSec": 26.24,
+    "endSec": 27.6
+  },
+  {
+    "from": 836,
+    "to": 852,
+    "text": "DARI MILK TEA",
+    "highlight": false,
+    "startSec": 27.874,
+    "endSec": 28.373
+  },
+  {
+    "from": 852,
+    "to": 881,
+    "text": "LIMA BELAS RIBU",
+    "highlight": true,
+    "startSec": 28.427,
+    "endSec": 29.28
+  },
+  {
+    "from": 882,
+    "to": 909,
+    "text": "MATCHA CLASSIC SEMBILAN",
+    "highlight": false,
+    "startSec": 29.4,
+    "endSec": 30.24
+  },
+  {
+    "from": 909,
+    "to": 943,
+    "text": "BELAS RIBU CHOCO",
+    "highlight": false,
+    "startSec": 30.32,
+    "endSec": 31.36
+  },
+  {
+    "from": 943,
+    "to": 972,
+    "text": "HAZELNUT DUA PULUH",
+    "highlight": false,
+    "startSec": 31.44,
+    "endSec": 32.32
+  },
+  {
+    "from": 972,
+    "to": 1003,
+    "text": "DUA RIBU SAMPAI",
+    "highlight": false,
+    "startSec": 32.4,
+    "endSec": 33.36
+  },
+  {
+    "from": 1003,
+    "to": 1036,
+    "text": "MATCHA OATSIDE DUA",
+    "highlight": true,
+    "startSec": 33.44,
+    "endSec": 34.48
+  },
+  {
+    "from": 1036,
+    "to": 1064,
+    "text": "PULUH EMPAT RIBU",
+    "highlight": false,
+    "startSec": 34.56,
+    "endSec": 35.387
+  },
+  {
+    "from": 1073,
+    "to": 1096,
+    "text": "LIMITED BATCH AVAILABLE",
+    "highlight": true,
+    "startSec": 35.776,
+    "endSec": 36.48
+  },
+  {
+    "from": 1096,
+    "to": 1118,
+    "text": "BUAT DROP MINGGU",
+    "highlight": false,
+    "startSec": 36.56,
+    "endSec": 37.2
+  },
+  {
+    "from": 1118,
+    "to": 1155,
+    "text": "DEPAN AMANKAN BOTOL",
+    "highlight": false,
+    "startSec": 37.28,
+    "endSec": 38.48
+  },
+  {
+    "from": 1155,
+    "to": 1172,
+    "text": "LO LEWAT LINK",
+    "highlight": false,
+    "startSec": 38.52,
+    "endSec": 39.04
+  },
+  {
+    "from": 1172,
+    "to": 1195,
+    "text": "DI BIO",
+    "highlight": false,
+    "startSec": 39.08,
+    "endSec": 39.76
+  }
+]

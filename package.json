@@ -1,0 +1,32 @@
+{
+  "name": "lira-remotion",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "remotion studio",
+    "build": "npm run render:all",
+    "render:reel1": "remotion render src/index.ts Video1-TOFU \"$HOME/Desktop/lira reels/01_lira_founder_story.mp4\" --codec=h264 --crf=18",
+    "render:reel2": "remotion render src/index.ts Video2-SapaMart \"$HOME/Desktop/lira reels/02_sapa_mart_blackout.mp4\" --codec=h264 --crf=18",
+    "render:reel3": "remotion render src/index.ts Video3-Leaderboard \"$HOME/Desktop/lira reels/03_referral_leaderboard.mp4\" --codec=h264 --crf=18",
+    "render:reel4": "remotion render src/index.ts Video4-VIPClub \"$HOME/Desktop/lira reels/04_lira_fam_inner_circle.mp4\" --codec=h264 --crf=18",
+    "render:tutorial": "remotion render src/index.ts Video4-Tutorial \"$HOME/Desktop/lira reels/04_order_tutorial.mp4\" --codec=h264 --crf=18",
+    "render:reel5": "remotion render src/index.ts Video5-CupVsBottle \"$HOME/Desktop/lira reels/05_cup_vs_bottle.mp4\" --codec=h264 --crf=18",
+    "render:all": "npm run render:reel1 && npm run render:reel2 && npm run render:reel3 && npm run render:reel4",
+    "open:reels": "open \"$HOME/Desktop/lira reels\"",
+    "post:reel": "node scripts/post_reel.js",
+    "prepare-assets": "node scripts/generate-audio.mjs && node scripts/sync-voiceover.mjs"
+  },
+  "dependencies": {
+    "@google/genai": "^2.31.0",
+    "@remotion/cli": "4.0.270",
+    "@remotion/google-fonts": "4.0.270",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.270",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "typescript": "^5.7.2"
+  }
+}
