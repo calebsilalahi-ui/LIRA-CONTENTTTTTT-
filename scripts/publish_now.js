@@ -33,22 +33,28 @@ const PROJECT_ROOT = path.resolve(__dirname, '..');
 // 1. Environment & Credentials Loading
 // ---------------------------------------------------------------------------
 
-function loadEnv() {
-  const envPath = path.join(PROJECT_ROOT, '.env');
-  if (fs.existsSync(envPath)) {
-    const envContent = fs.readFileSync(envPath, 'utf-8');
-    for (const line of envContent.split('\n')) {
-      const trimmed = line.trim();
-      if (trimmed && !trimmed.startsWith('#') && trimmed.includes('=')) {
-        const [k, ...v] = trimmed.split('=');
-        const key = k.trim();
-        const val = v.join('=').trim().replace(/[\r\n\t]/g, '');
-        if (!process.env[key]) {
-          process.env[key] = val;
-        }
+function parseEnvBlock(str) {
+  if (!str || !str.includes('=')) return;
+  for (const line of str.split(/[\r\n]+/)) {
+    const trimmed = line.trim();
+    if (trimmed && !trimmed.startsWith('#') && trimmed.includes('=')) {
+      const [k, ...v] = trimmed.split('=');
+      const key = k.trim();
+      const val = v.join('=').trim().replace(/[\r\n\t]/g, '');
+      if (val && (!process.env[key] || process.env[key].includes('='))) {
+        process.env[key] = val;
       }
     }
   }
+}
+
+function loadEnv() {
+  const envPath = path.join(PROJECT_ROOT, '.env');
+  if (fs.existsSync(envPath)) {
+    parseEnvBlock(fs.readFileSync(envPath, 'utf-8'));
+  }
+  parseEnvBlock(process.env.CALEB);
+  parseEnvBlock(process.env.CALEB_SECRET);
 }
 
 // Ensure .env is loaded immediately upon require/startup

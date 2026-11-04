@@ -29,28 +29,42 @@ const FFMPEG = fs.existsSync('/Users/caleb/.local/bin/ffmpeg')
   ? '/Users/caleb/.local/bin/ffmpeg'
   : 'ffmpeg';
 
-// Auto-load .env without leaking hardcoded fallback credentials
-const envPath = path.join(PROJECT_ROOT, '.env');
-if (fs.existsSync(envPath)) {
-  const envContent = fs.readFileSync(envPath, 'utf-8');
-  for (const line of envContent.split('\n')) {
+function parseEnvBlock(str) {
+  if (!str || !str.includes('=')) return;
+  for (const line of str.split(/[\r\n]+/)) {
     const trimmed = line.trim();
     if (trimmed && !trimmed.startsWith('#') && trimmed.includes('=')) {
       const [k, ...v] = trimmed.split('=');
       const key = k.trim();
       const val = v.join('=').trim().replace(/[\r\n\t]/g, '');
-      if (!process.env[key]) {
+      if (val && (!process.env[key] || process.env[key].includes('='))) {
         process.env[key] = val;
       }
     }
   }
 }
 
+function resolveVoiceId(voiceId) {
+  const clean = String(voiceId || '').trim().replace(/[\r\n\t]/g, '');
+  if (/^[a-zA-Z0-9_-]{15,30}$/.test(clean)) {
+    return clean;
+  }
+  return 'WVwVlhKdnZoCuTIoxjYr';
+}
+
+// Auto-load .env without leaking hardcoded fallback credentials
+const envPath = path.join(PROJECT_ROOT, '.env');
+if (fs.existsSync(envPath)) {
+  parseEnvBlock(fs.readFileSync(envPath, 'utf-8'));
+}
+parseEnvBlock(process.env.CALEB);
+parseEnvBlock(process.env.CALEB_SECRET);
+
 // Credentials loaded cleanly from process.env (strictly zero hardcoded fallbacks)
 const BUFFER_TOKEN = (process.env.BUFFER_TOKEN || process.env.BUFFERTOKEN || process.env.BUFFER_ACCESS_TOKEN || '').trim().replace(/[\r\n\t]/g, '');
 const BUFFER_CHANNEL_ID = (process.env.BUFFER_CHANNEL_ID || '6ad933a2778b240e2f81b45d').trim().replace(/[\r\n\t]/g, ''); // @drinklira
 const ELEVENLABS_API_KEY = (process.env.ELEVENLABS_API_KEY || process.env.ELEVENLABS || process.env.XI_API_KEY || '').trim().replace(/[\r\n\t]/g, '');
-const CALEB_VOICE_ID = (process.env.CALEB_VOICE_ID || process.env.CALEB || 'WVwVlhKdnZoCuTIoxjYr').trim().replace(/[\r\n\t]/g, '');
+const CALEB_VOICE_ID = resolveVoiceId(process.env.CALEB_VOICE_ID || process.env.CALEB);
 
 // Import Guardrail Validator
 const { validateContent, GuardrailError } = require('./validate_guardrails');

@@ -17,21 +17,40 @@ const fw = require('./framework');
 
 const { PROJECT_ROOT } = fw;
 
-function loadEnv() {
-  const p = path.join(PROJECT_ROOT, '.env');
-  if (!fs.existsSync(p)) return;
-  for (const line of fs.readFileSync(p, 'utf-8').split('\n')) {
-    const t = line.trim();
-    if (!t || t.startsWith('#') || !t.includes('=')) continue;
-    const [k, ...v] = t.split('=');
-    const key = k.trim();
-    const val = v.join('=').trim().replace(/[\r\n\t]/g, '');
-    if (!process.env[key]) process.env[key] = val;
+function parseEnvBlock(str) {
+  if (!str || !str.includes('=')) return;
+  for (const line of str.split(/[\r\n]+/)) {
+    const trimmed = line.trim();
+    if (trimmed && !trimmed.startsWith('#') && trimmed.includes('=')) {
+      const [k, ...v] = trimmed.split('=');
+      const key = k.trim();
+      const val = v.join('=').trim().replace(/[\r\n\t]/g, '');
+      if (val && (!process.env[key] || process.env[key].includes('='))) {
+        process.env[key] = val;
+      }
+    }
   }
 }
 
+function resolveVoiceId(voiceId) {
+  const clean = String(voiceId || '').trim().replace(/[\r\n\t]/g, '');
+  if (/^[a-zA-Z0-9_-]{15,30}$/.test(clean)) {
+    return clean;
+  }
+  return 'WVwVlhKdnZoCuTIoxjYr';
+}
+
+function loadEnv() {
+  const p = path.join(PROJECT_ROOT, '.env');
+  if (fs.existsSync(p)) {
+    parseEnvBlock(fs.readFileSync(p, 'utf-8'));
+  }
+  parseEnvBlock(process.env.CALEB);
+  parseEnvBlock(process.env.CALEB_SECRET);
+}
+
 async function callElevenLabsTTS(text, voiceId, apiKey) {
-  const cleanVoiceId = encodeURIComponent(String(voiceId || '').trim().replace(/[\r\n\t]/g, ''));
+  const cleanVoiceId = resolveVoiceId(voiceId);
   const cleanApiKey = String(apiKey || '').trim().replace(/[\r\n\t]/g, '');
   const payload = JSON.stringify({
     text,
@@ -185,7 +204,7 @@ async function buildReelAudio(cfg, opts = {}) {
   if (!apiKey) {
     throw new Error('❌ ELEVENLABS_API_KEY is missing from environment.');
   }
-  const voiceId = (process.env.CALEB_VOICE_ID || process.env.CALEB || 'WVwVlhKdnZoCuTIoxjYr').trim().replace(/[\r\n\t]/g, '');
+  const voiceId = resolveVoiceId(process.env.CALEB_VOICE_ID || process.env.CALEB);
 
   if (/\[\s*whisper/i.test(cfg.script) || /whisper/i.test(cfg.script)) {
     throw new Error('❌ Banned tag: [whisper] is strictly prohibited by plan §3.1');

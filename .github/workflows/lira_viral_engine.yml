@@ -88,14 +88,32 @@ jobs:
           BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN || secrets.BUFFERTOKEN }}
           BUFFER_CHANNEL_ID: ${{ secrets.BUFFER_CHANNEL_ID || '6ad933a2778b240e2f81b45d' }}
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY || secrets.ELEVENLABS }}
-          CALEB_VOICE_ID: ${{ secrets.CALEB_VOICE_ID || secrets.CALEB || 'WVwVlhKdnZoCuTIoxjYr' }}
+          CALEB_VOICE_ID: ${{ secrets.CALEB_VOICE_ID || 'WVwVlhKdnZoCuTIoxjYr' }}
+          CALEB_SECRET: ${{ secrets.CALEB }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
+          # If CALEB_SECRET contains a multi-line .env format, parse its keys safely
+          if printf '%s' "$CALEB_SECRET" | grep -q '='; then
+            while IFS='=' read -r key val || [ -n "$key" ]; do
+              key="$(printf '%s' "$key" | tr -d ' \t\r\n')"
+              val="$(printf '%s' "$val" | tr -d '\r\n')"
+              if [ -n "$key" ] && [ -n "$val" ] && [ "${key#\#}" = "$key" ]; then
+                export "$key"="$val"
+              fi
+            done <<< "$CALEB_SECRET"
+          fi
+
           # Sanitize environment variables against unwanted newlines/carriage returns
           export BUFFER_TOKEN="$(printf '%s' "$BUFFER_TOKEN" | tr -d '\r\n')"
           export BUFFER_CHANNEL_ID="$(printf '%s' "$BUFFER_CHANNEL_ID" | tr -d '\r\n')"
           export ELEVENLABS_API_KEY="$(printf '%s' "$ELEVENLABS_API_KEY" | tr -d '\r\n')"
           export CALEB_VOICE_ID="$(printf '%s' "$CALEB_VOICE_ID" | tr -d '\r\n')"
           export GEMINI_API_KEY="$(printf '%s' "$GEMINI_API_KEY" | tr -d '\r\n')"
+
+          # Enforce canonical voice ID if CALEB_VOICE_ID is invalid, contains =, or is too long
+          if [ -z "$CALEB_VOICE_ID" ] || printf '%s' "$CALEB_VOICE_ID" | grep -q '=' || [ ${#CALEB_VOICE_ID} -gt 30 ]; then
+            export CALEB_VOICE_ID="WVwVlhKdnZoCuTIoxjYr"
+          fi
 
           ARGS=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
