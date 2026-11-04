@@ -435,26 +435,59 @@ async function main() {
   console.log(`[Guardrails] ✓ Pre-flight validation passed for topic: "${template.topic}"`);
   console.log(`[Architecture] Explainer verified at: ${ARCH_PATH}`);
 
-  // Optional Render Step
-  if (opts.render) {
-    if (template.format === 'carousel' || opts.type === 'carousel') {
+  // Render & Audio Synthesis Step
+  let renderedFiles = [];
+  const isCarousel = template.format === 'carousel' || opts.type === 'carousel';
+
+  if (opts.render || opts.publishMode === 'postNow') {
+    if (isCarousel) {
       console.log(`[Renderer] Triggering locked-in canonical carousel render (CarouselRevisedLightStudio)...`);
       const renderScript = path.join(__dirname, 'render_revised_carousel.js');
       const res = spawnSync(NODE_BIN, [renderScript], { stdio: 'inherit', env: process.env });
       if (res.status !== 0) {
         throw new Error(`Carousel rendering failed with exit code ${res.status}`);
       }
-      console.log(`[Renderer] ✓ All 8 slides rendered to /Users/caleb/Desktop/lira reels/carousel_revised_light_studio/`);
+      const outDir = process.env.LIRA_CAROUSEL_DIR || (
+        fs.existsSync('/Users/caleb/Desktop/lira reels/carousel_revised_light_studio')
+          ? '/Users/caleb/Desktop/lira reels/carousel_revised_light_studio'
+          : path.join(PROJECT_ROOT, 'public/carousel_revised_light_studio')
+      );
+      renderedFiles = [1, 2, 3, 4, 5, 6, 7, 8].map(i => path.join(outDir, `slide_${i}.jpg`));
+      console.log(`[Renderer] ✓ All 8 slides rendered to ${outDir}`);
     } else {
-      console.log(`[Renderer] Reel render requested for template ${template.id}`);
+      console.log(`[Renderer] Checking ElevenLabs audio and Reel assets for template ${template.id}...`);
+      const audioScript = path.join(__dirname, 'generate_sample_3p_reel_audio.js');
+      if (fs.existsSync(audioScript) && ELEVENLABS_API_KEY) {
+        console.log(`[ElevenLabs] Synthesizing Caleb founder voice clone (${CALEB_VOICE_ID})...`);
+        spawnSync(NODE_BIN, [audioScript], { stdio: 'inherit', env: process.env });
+      }
+      const outMp4 = fs.existsSync('/Users/caleb/Desktop/lira reels/Sample_3P_Somatic_Reel.mp4')
+        ? '/Users/caleb/Desktop/lira reels/Sample_3P_Somatic_Reel.mp4'
+        : path.join(PROJECT_ROOT, 'public/assets/Sample_3P_Somatic_Reel.mp4');
+      renderedFiles = [outMp4];
     }
   }
 
+  // Live Buffer Dispatch
   if (opts.publishMode === 'postNow') {
     if (!BUFFER_TOKEN) {
       console.warn('[Warning] BUFFER_TOKEN not configured in process.env. Skipping live mutation.');
     } else {
-      console.log(`[Buffer] Dispatching single post to @drinklira channel ${BUFFER_CHANNEL_ID}...`);
+      console.log(`[Buffer] Dispatching live post to @drinklira channel ${BUFFER_CHANNEL_ID}...`);
+      const publisherScript = path.join(__dirname, 'publish_now.js');
+      const publishArgs = [publisherScript, '--live'];
+      if (isCarousel) {
+        publishArgs.push('--format', 'carousel', '--slides', ...renderedFiles);
+      } else {
+        publishArgs.push('--format', 'reel', '--file', renderedFiles[0]);
+      }
+      publishArgs.push('--caption', template.caption);
+
+      const pubRes = spawnSync(NODE_BIN, publishArgs, { stdio: 'inherit', env: process.env });
+      if (pubRes.status !== 0) {
+        throw new Error(`Buffer publisher failed with exit code ${pubRes.status}`);
+      }
+      console.log(`[Buffer] ✓ Post published/queued successfully to @drinklira.`);
     }
   }
 
