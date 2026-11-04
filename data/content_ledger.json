@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "lastUpdated": "2026-11-04T09:00:19.880Z",
+  "lastUpdated": "2026-11-04T10:12:46.295Z",
   "entries": [
     {
       "id": "reel_01_founder_story",
@@ -594,6 +594,20 @@
         "multi_track_tension_sfx_suite",
         "contiguous_word_aligned_captions_no_flicker"
       ]
+    },
+    {
+      "id": "fw_signature_milk_tea_somatic_science_1793784513456_1793787166295",
+      "timestamp": "2026-11-04T10:12:46.295Z",
+      "createdAt": "2026-11-04T10:12:46.295Z",
+      "format": "reel",
+      "sku": "Matcha Oatside",
+      "pillar": "Cold Chain & Saturday COD Loop",
+      "hook_category": "Educational",
+      "topic": "Milk tea sugar crash vs craft milk tea somatic experience",
+      "verbal_hook": "[serious] Jantung lo berdegup kencang tapi otak malah kerasa kosong setelah minum milk tea kafe",
+      "written_hook": "JANTUNG BERDEGUP OTAK KOSONG?",
+      "caption": "Lemes dan kosong setelah minum milk tea itu tanda tubuh lo kaget sama lonjakan gula. Gue bikin Signature Milk Tea pakai daun teh asli yang direndam semalaman biar rasanya jujur tanpa tambahan krimer nabati atau gula pasir. Manisnya murni dari stevia dan diantar dingin sampai depan gerbang lo dalam Forest Green cooler bag. Amankan porsi lo buat batch minggu ini lewat link di bio.\nCrafted solo by @caleb766h1\n#milktea #craftmilktea #drinklira #jakarta #coldsteep #beverages #milktealover #healthylifestyle",
+      "status": "published_live"
     }
   ]
 }
