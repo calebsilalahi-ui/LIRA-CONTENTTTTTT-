@@ -108,7 +108,7 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
     hook_category: 'Comparison',
     topic: 'Kenapa matcha kafe 50k bikin otak ngantuk jam 2 siang',
     verbal_hook: 'Pernah gak lo beli matcha lima puluh ribu di kafe, tapi dua jam kemudian kepala lo malah lemes dan ngantuk parah?',
-    verbal_script: 'Pernah gak lo ngerasa... pas jam dua siang, kepala lo mendadak lemes, berat, dan susah banget fokus? Banyak yang ngira itu kurang tidur. Padahal bukan! Itu efek gula tersembunyi dari matcha kafe lima puluh ribuan yang lo minum tadi siang. Gula cair murah bikin insulin lo melonjak tajam, terus nge-drop drastis ke titik nol! Bandingin sama botol Lira ini: pure matcha Jepang murni, barista oat milk, dan pemanis alami stevia. Nol gula pasir, nol crash, energi fokus empat jam penuh! Segel rapat seratus delapan puluh derajat anti bocor. Limited batch diseduh fresh weekend ini lewat link di bio sebelum kehabisan!',
+    verbal_script: '[curious] Pernah gak lo ngerasa... pas jam dua siang, kepala lo mendadak lemes, berat, dan susah banget fokus? [frustrated] Banyak yang ngira itu kurang tidur. Padahal bukan! [dramatic] Itu efek gula tersembunyi dari matcha kafe lima puluh ribuan yang lo minum tadi siang. [urgent] Gula cair murah bikin insulin lo melonjak tajam, terus nge-drop drastis ke titik nol! [excited] Bandingin sama botol Lira ini! [proud] Pure matcha Jepang murni, barista oat milk, dan pemanis alami stevia. [confident] Nol gula pasir, nol crash, energi fokus empat jam penuh! [proud] Segel rapat seratus delapan puluh derajat anti bocor. [urgent] Limited batch diseduh fresh weekend ini lewat link di bio sebelum kehabisan!',
     written_hook: 'KENAPA MATCHA 50K BIKIN CRASH',
     caption: 'Di Lira, kita tolak resep murahan: pure Japanese premium matcha diemulsi bareng barista oat milk dan pemanis alami stevia. Zero gula pasir, zero crash. Limited batch available untuk Sabtu ini lewat link di bio.\n\nCrafted solo by @caleb766h1',
     overlays: [{ text: 'KENAPA MATCHA 50K BIKIN CRASH', x: 120, y: 350 }],
@@ -141,7 +141,7 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
     hook_category: 'Storytelling',
     topic: 'Rahasia tas thermal hijau forest jemput milk tea dingin',
     verbal_hook: 'Hari Sabtu jam satu siang di Tangerang Selatan, suhu aspal bisa sampai tiga puluh tujuh derajat celsius.',
-    verbal_script: 'Hari Sabtu jam satu siang di Tangerang Selatan, suhu aspal bisa sampai tiga puluh tujuh derajat celsius. Kalo lo pesen es kopi atau milk tea cup biasa, esnya bakal cair sebelum driver sampe rumah lo! Makanya setiap rute Gojek COD Lira, botol dingin langsung masuk tas thermal aluminium foil forest green. Suhu dingin dua sampai empat derajat terjaga aman dari chiller sampe tangan lo. Pure tea murni, tanpa gula pasir, nol crash. Limited batch weekend ini, amankan slot lewat link bio!',
+    verbal_script: '[dramatic] Hari Sabtu jam satu siang di Tangerang Selatan, suhu aspal bisa sampai tiga puluh tujuh derajat celsius. [frustrated] Kalo lo pesen es kopi atau milk tea cup biasa, esnya bakal cair sebelum driver sampe rumah lo! [confident] Makanya setiap rute Gojek COD Lira, botol dingin langsung masuk tas thermal aluminium foil forest green. [proud] Suhu dingin dua sampai empat derajat terjaga aman dari chiller sampe tangan lo. Pure tea murni, tanpa gula pasir, nol crash. [urgent] Limited batch weekend ini, amankan slot lewat link bio!',
     written_hook: 'RAHASIA TAS THERMAL HIJAU FOREST',
     caption: 'Makanya setiap rute Gojek COD Lira wajib masuk tas thermal berinsulasi aluminium foil forest green. Dingin terjaga dari chiller sampai tangan lo. Limited batch order via link bio.\n\nCrafted solo by @caleb766h1',
     overlays: [{ text: 'RAHASIA TAS THERMAL DINGIN', x: 120, y: 350 }],
@@ -174,7 +174,7 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
     hook_category: 'Day in the Life',
     topic: 'Rutinitas jam 03:30 AM solo founder seduh manual',
     verbal_hook: 'Jam setengah empat pagi pas seluruh komplek masih tidur, dapur Lira udah mulai nyala.',
-    verbal_script: 'Jam setengah empat pagi pas seluruh komplek masih tidur, dapur Lira udah mulai nyala. Kenapa harus se-pagi itu? Karena kita gak pake bubuk sirup pabrikan instan! Dari nimbang daun matcha murni, cold-steep teh, sampe segel botol seratus delapan puluh derajat anti bocor, semua gue kerjain sendiri demi kesegaran maksimal. Nol gula pasir, nol crash, fokus empat jam penuh. Limited batch siap antar weekend ini lewat link di bio!',
+    verbal_script: '[curious] Jam setengah empat pagi pas seluruh komplek masih tidur, dapur Lira udah mulai nyala. [intrigued] Kenapa harus se-pagi itu? [proud] Karena kita gak pake bubuk sirup pabrikan instan! Dari nimbang daun matcha murni, cold-steep teh, sampe segel botol seratus delapan puluh derajat anti bocor, semua gue kerjain sendiri demi kesegaran maksimal. [confident] Nol gula pasir, nol crash, fokus empat jam penuh. [urgent] Limited batch siap antar weekend ini lewat link di bio!',
     written_hook: 'SOLO FOUNDER ROUTINE 0330 AM',
     caption: 'Dari nimbang daun matcha sampai segel botol 180 derajat, semua gue kerjain sendiri demi rasa fresh maksimal. Limited batch siap antar Sabtu siang. Link di bio.\n\nCrafted solo by @caleb766h1',
     overlays: [{ text: 'RUTINITAS JAM 03:30 AM', x: 120, y: 350 }],
@@ -207,7 +207,7 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
     hook_category: 'Random',
     topic: 'Tes goncang 180 derajat botol Lira di atas keyboard MacBook',
     verbal_hook: 'Kita tes botol Lira dibalik 180 derajat dan diguncang tepat di atas laptop.',
-    verbal_script: 'Kita tes botol Lira dibalik seratus delapan puluh derajat dan diguncang tepat di atas keyboard laptop! Lo berani lakuin ini sama cup kafe lima puluh ribuan? Pasti basah kuyup! Botol Lira didesain kedap udara dengan segel rapat anti bocor. Masuk ransel aman, samping laptop tenang. Rasanya? Pure dark cocoa dan hazelnut murni dengan pemanis alami stevia. Nol crash, energi bersih. Limited batch weekend ini via link di bio!',
+    verbal_script: '[dramatic] Kita tes botol Lira dibalik seratus delapan puluh derajat dan diguncang tepat di atas keyboard laptop! [curious] Lo berani lakuin ini sama cup kafe lima puluh ribuan? [frustrated] Pasti basah kuyup! [confident] Botol Lira didesain kedap udara dengan segel rapat anti bocor. Masuk ransel aman, samping laptop tenang. [proud] Rasanya? Pure dark cocoa dan hazelnut murni dengan pemanis alami stevia. [urgent] Limited batch weekend ini via link di bio!',
     written_hook: 'TES 180 DERAJAT ZERO REMBES',
     caption: 'Hasilnya: nol rembes, segel utuh, suhu tetap dingin berkat botol tebal dan cooler bag. Aman masuk tas ransel lo. Limited batch Sabtu ini lewat bio.\n\nCrafted solo by @caleb766h1',
     overlays: [{ text: 'TES 180 DERAJAT ZERO REMBES', x: 120, y: 350 }],
@@ -240,7 +240,7 @@ const PRODUCTION_SLOT_BLUEPRINTS = [
     hook_category: 'Educational',
     topic: '3 Tanda gula kafe bikin otak crash vs Lira matcha murni',
     verbal_hook: 'Ini 3 tanda tubuh lo udah kecanduan gula tersembunyi dari matcha kafe 50k.',
-    verbal_script: 'Ini tiga tanda tubuh lo kecanduan gula tersembunyi dari matcha kafe lima puluh ribuan: jam dua siang lemes, susah konsentrasi, dan bawaannya pengen ngemil manis terus. Itu alarm insulin lo drop ke titik nol! Bandingin sama Lira: pure matcha Jepang, barista oat milk, dan pemanis alami stevia. Nol gula pasir, nol crash, energi fokus empat jam penuh. Limited batch diseduh fresh weekend ini via link di bio!',
+    verbal_script: '[dramatic] Ini tiga tanda tubuh lo kecanduan gula tersembunyi dari matcha kafe lima puluh ribuan: [frustrated] jam dua siang lemes, susah konsentrasi, dan bawaannya pengen ngemil manis terus. [urgent] Itu alarm insulin lo drop ke titik nol! [excited] Bandingin sama Lira: [proud] pure matcha Jepang, barista oat milk, dan pemanis alami stevia. [confident] Nol gula pasir, nol crash, energi fokus empat jam penuh. [urgent] Limited batch diseduh fresh weekend ini via link di bio!',
     written_hook: '3 TANDA OTAK CRASH JAM 2 SIANG',
     caption: 'Ini 3 tanda tubuh lo kecanduan gula tersembunyi dari matcha kafe: jam 2 siang mendadak lemes dan insulin drop ke titik nol. Bandingin sama Lira: pure matcha Jepang dan barista oat milk tanpa gula pasir. Segel 180 derajat anti rembes. Limited batch ready Sabtu via bio.\n\nCrafted solo by @caleb766h1',
     overlays: [{ text: '3 TANDA OTAK CRASH JAM 2 SIANG', x: 120, y: 350 }],
@@ -427,9 +427,9 @@ function runDryRunSimulation(slotCount = 10) {
 }
 
 /**
- * Synthesizes dynamic ElevenLabs voiceover with high emotion (stability: 0.32, style: 0.35),
- * aligns contiguous word timestamps to eliminate caption flickering, and pre-mixes
- * with audible, groovy Lo-Fi BGM via FFmpeg loudnorm (-14 LUFS).
+ * Synthesizes dynamic ElevenLabs v4 voiceover with emotion tags (never whisper),
+ * aligns contiguous word timestamps filtering out bracketed directives, and pre-mixes
+ * with audible, groovy Lo-Fi BGM + tension SFX suite via FFmpeg loudnorm (-14 LUFS).
  */
 async function synthesizeReelAudio(template) {
   const apiKey = process.env.ELEVENLABS_API_KEY || process.env.ELEVENLABS || process.env.XI_API_KEY;
@@ -438,15 +438,18 @@ async function synthesizeReelAudio(template) {
     return;
   }
 
-  console.log(`[Audio Engine] 🎙️ Synthesizing dynamic high-emotion ElevenLabs voiceover for "${template.id}"...`);
+  // Strict User Constraint: NEVER USE [whisper]
+  if (template.verbal_script.toLowerCase().includes('[whisper]')) {
+    throw new Error('❌ Constraint Violation: [whisper] tag is strictly banned in Lira content!');
+  }
+
+  console.log(`[Audio Engine] 🎙️ Synthesizing dynamic ElevenLabs v4 voiceover with emotion tags for "${template.id}"...`);
   const payload = JSON.stringify({
     text: template.verbal_script,
-    model_id: 'eleven_multilingual_v2',
+    model_id: 'eleven_v4',
     voice_settings: {
-      stability: 0.32,
-      similarity_boost: 0.78,
-      style: 0.35,
-      use_speaker_boost: true,
+      stability: 0.35,
+      similarity_boost: 0.82,
     },
   });
 
@@ -488,7 +491,7 @@ async function synthesizeReelAudio(template) {
   const rawPath = path.join(PROJECT_ROOT, 'public/assets/emotional_somatic_raw.mp3');
   fs.writeFileSync(rawPath, rawBuffer);
 
-  // Parse word alignments
+  // Parse word alignments filtering out emotion tags in [...]
   const align = resData.alignment;
   const chars = align.characters;
   const starts = align.character_start_times_seconds;
@@ -498,11 +501,20 @@ async function synthesizeReelAudio(template) {
   let curWord = '';
   let curStart = null;
   let curEnd = null;
+  let inTag = false;
 
   for (let idx = 0; idx < chars.length; idx++) {
     const ch = chars[idx];
-    const s = starts[idx];
-    const e = ends[idx];
+    if (ch === '[') {
+      inTag = true;
+      continue;
+    }
+    if (ch === ']') {
+      inTag = false;
+      continue;
+    }
+    if (inTag) continue;
+
     if (/\s/.test(ch)) {
       if (curWord.length > 0) {
         words.push({ word: curWord, start: curStart, end: curEnd });
@@ -511,8 +523,8 @@ async function synthesizeReelAudio(template) {
         curEnd = null;
       }
     } else {
-      if (curStart === null) curStart = s;
-      curEnd = e;
+      if (curStart === null) curStart = starts[idx];
+      curEnd = ends[idx];
       curWord += ch;
     }
   }
@@ -520,12 +532,24 @@ async function synthesizeReelAudio(template) {
     words.push({ word: curWord, start: curStart, end: curEnd });
   }
 
+  function findWordTime(keyword, fallbackSec) {
+    const found = words.find((w) => w.word.toLowerCase().includes(keyword.toLowerCase()));
+    return found ? found.start : fallbackSec;
+  }
+
+  const tBukan = findWordTime('bukan', 9.5);
+  const tTitikNol = findWordTime('titik', 19.4);
+  const tBandingin = findWordTime('bandingin', 21.0);
+  const tStevia = findWordTime('stevia', 25.3);
+  const tBocor = findWordTime('bocor', 30.5);
+  const tKehabisan = findWordTime('kehabisan', 35.5);
+
   const chunks = [];
   let wIdx = 0;
   while (wIdx < words.length) {
     const count = wIdx % 2 === 0 ? Math.min(2, words.length - wIdx) : Math.min(3, words.length - wIdx);
     const slice = words.slice(wIdx, wIdx + count);
-    const chunkText = slice.map((w) => w.word).join(' ');
+    const chunkText = slice.map((w) => w.word.toUpperCase().replace(/[.,:!?]/g, '')).join(' ');
     const fromSec = slice[0].start;
     const toSec = slice[slice.length - 1].end;
 
@@ -542,7 +566,7 @@ async function synthesizeReelAudio(template) {
 
   // Eliminate subtitle gaps to prevent blinking
   for (let j = 0; j < chunks.length - 1; j++) {
-    if (chunks[j + 1].startSec - chunks[j].endSec < 0.4) {
+    if (chunks[j + 1].startSec - chunks[j].endSec < 0.45) {
       chunks[j].endSec = chunks[j + 1].startSec;
       chunks[j].toFrame = chunks[j + 1].fromFrame;
     }
@@ -551,33 +575,56 @@ async function synthesizeReelAudio(template) {
   const captionsPath = path.join(PROJECT_ROOT, 'src/emotional_somatic_captions.json');
   fs.writeFileSync(captionsPath, JSON.stringify(chunks, null, 2), 'utf-8');
 
-  // Pre-mix with FFmpeg: Lo-Fi BGM + loudnorm voiceover to -14 LUFS
+  // Pre-mix with FFmpeg: Multi-track Tension Sound Design
   const bgmPath = path.join(PROJECT_ROOT, 'public/assets/bg_music.mp3');
+  const sfxDir = path.join(PROJECT_ROOT, 'public/assets/sfx');
   const masterPath = path.join(PROJECT_ROOT, 'public/assets/emotional_somatic_master.mp3');
-  const mixFilter = `[0:a]volume=1.2,loudnorm=I=-14:TP=-1.5:LRA=11[vo];[1:a]aloop=loop=-1:size=2e+09,volume=0.45[bgm];[vo][bgm]amix=inputs=2:duration=first:dropout_transition=2[out]`;
+
+  const msBukan = Math.round(tBukan * 1000);
+  const msTitikNol = Math.round(tTitikNol * 1000);
+  const msBandingin = Math.round(tBandingin * 1000);
+  const msStevia = Math.round(tStevia * 1000);
+  const msBocor = Math.round(tBocor * 1000);
+  const msKehabisan = Math.round(tKehabisan * 1000);
+
+  const filterComplex = [
+    `[0:a]volume=1.2,loudnorm=I=-14:TP=-1.5:LRA=11[vo];`,
+    `[1:a]aloop=loop=-1:size=2e+09,volume=0.42[bgm];`,
+    `[2:a]volume=0.85[sfx_sub];`,
+    `[3:a]adelay=80|80,volume=0.75[sfx_clock];`,
+    `[4:a]adelay=${msBukan}|${msBukan},volume=0.9[sfx_snap];`,
+    `[5:a]adelay=${msTitikNol}|${msTitikNol},volume=0.9[sfx_buzz];`,
+    `[6:a]adelay=${msBandingin}|${msBandingin},volume=0.8[sfx_whoosh];`,
+    `[7:a]adelay=${msStevia}|${msStevia},volume=0.8[sfx_shimmer];`,
+    `[8:a]adelay=${msBocor}|${msBocor},volume=0.85[sfx_pop];`,
+    `[9:a]adelay=${msKehabisan}|${msKehabisan},volume=0.8[sfx_fanfare];`,
+    `[vo][bgm][sfx_sub][sfx_clock][sfx_snap][sfx_buzz][sfx_whoosh][sfx_shimmer][sfx_pop][sfx_fanfare]amix=inputs=10:duration=first:dropout_transition=2[out]`,
+  ].join('');
 
   spawnSync(
     FFMPEG,
     [
       '-y',
-      '-i',
-      rawPath,
-      '-i',
-      bgmPath,
-      '-filter_complex',
-      mixFilter,
-      '-map',
-      '[out]',
-      '-c:a',
-      'libmp3lame',
-      '-b:a',
-      '192k',
+      '-i', rawPath,
+      '-i', bgmPath,
+      '-i', path.join(sfxDir, 'sub_hit.mp3'),
+      '-i', path.join(sfxDir, 'eightbit_clock_spin.wav'),
+      '-i', path.join(sfxDir, 'snap.mp3'),
+      '-i', path.join(sfxDir, 'eightbit_1star_buzz.wav'),
+      '-i', path.join(sfxDir, 'whoosh.mp3'),
+      '-i', path.join(sfxDir, 'eightbit_portal_shimmer.wav'),
+      '-i', path.join(sfxDir, 'eightbit_pop.wav'),
+      '-i', path.join(sfxDir, 'eightbit_5star_fanfare.wav'),
+      '-filter_complex', filterComplex,
+      '-map', '[out]',
+      '-c:a', 'libmp3lame',
+      '-b:a', '192k',
       masterPath,
     ],
     { stdio: 'inherit' }
   );
 
-  console.log(`[Audio Engine] ✓ Dynamic high-emotion voice & audible BGM mastered: ${masterPath}`);
+  console.log(`[Audio Engine] ✓ Dynamic ElevenLabs v4 voice & tension SFX suite mastered: ${masterPath}`);
 }
 
 async function main() {

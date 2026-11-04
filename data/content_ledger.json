@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "lastUpdated": "2026-11-04T08:47:51.027Z",
+  "lastUpdated": "2026-11-04T09:00:19.880Z",
   "entries": [
     {
       "id": "reel_01_founder_story",
@@ -342,8 +342,8 @@
     },
     {
       "id": "slot_01_reel_matcha_crash",
-      "timestamp": "2026-11-04T08:47:51.024Z",
-      "createdAt": "2026-11-04T08:47:51.024Z",
+      "timestamp": "2026-11-04T09:00:19.862Z",
+      "createdAt": "2026-11-04T09:00:19.862Z",
       "format": "reel",
       "pillar": "Sugar Crash & Stevia Science",
       "hook_category": "Comparison",
@@ -355,8 +355,8 @@
     },
     {
       "id": "slot_02_carousel_dark_cocoa",
-      "timestamp": "2026-11-04T13:47:51.026Z",
-      "createdAt": "2026-11-04T13:47:51.026Z",
+      "timestamp": "2026-11-04T14:00:19.865Z",
+      "createdAt": "2026-11-04T14:00:19.865Z",
       "format": "carousel",
       "pillar": "Craftsmanship & Student Lifestyle",
       "hook_category": "Educational",
@@ -368,8 +368,8 @@
     },
     {
       "id": "slot_03_reel_forest_bag",
-      "timestamp": "2026-11-04T18:47:51.026Z",
-      "createdAt": "2026-11-04T18:47:51.026Z",
+      "timestamp": "2026-11-04T19:00:19.865Z",
+      "createdAt": "2026-11-04T19:00:19.865Z",
       "format": "reel",
       "pillar": "Cold Chain & Saturday COD Loop",
       "hook_category": "Storytelling",
@@ -381,8 +381,8 @@
     },
     {
       "id": "slot_04_carousel_matcha_myth",
-      "timestamp": "2026-11-04T23:47:51.026Z",
-      "createdAt": "2026-11-04T23:47:51.026Z",
+      "timestamp": "2026-11-05T00:00:19.865Z",
+      "createdAt": "2026-11-05T00:00:19.866Z",
       "format": "carousel",
       "pillar": "Indie Game & Pixel Culture",
       "hook_category": "Myth Busting",
@@ -394,8 +394,8 @@
     },
     {
       "id": "slot_05_reel_founder_routine",
-      "timestamp": "2026-11-05T04:47:51.026Z",
-      "createdAt": "2026-11-05T04:47:51.026Z",
+      "timestamp": "2026-11-05T05:00:19.866Z",
+      "createdAt": "2026-11-05T05:00:19.866Z",
       "format": "reel",
       "pillar": "Craftsmanship & Student Lifestyle",
       "hook_category": "Day in the Life",
@@ -407,8 +407,8 @@
     },
     {
       "id": "slot_06_carousel_ceylon_steep",
-      "timestamp": "2026-11-05T09:47:51.026Z",
-      "createdAt": "2026-11-05T09:47:51.026Z",
+      "timestamp": "2026-11-05T10:00:19.866Z",
+      "createdAt": "2026-11-05T10:00:19.866Z",
       "format": "carousel",
       "pillar": "Sugar Crash & Stevia Science",
       "hook_category": "Authority",
@@ -420,8 +420,8 @@
     },
     {
       "id": "slot_07_reel_shake_test",
-      "timestamp": "2026-11-05T14:47:51.026Z",
-      "createdAt": "2026-11-05T14:47:51.026Z",
+      "timestamp": "2026-11-05T15:00:19.879Z",
+      "createdAt": "2026-11-05T15:00:19.879Z",
       "format": "reel",
       "pillar": "Cold Chain & Saturday COD Loop",
       "hook_category": "Random",
@@ -433,8 +433,8 @@
     },
     {
       "id": "slot_08_carousel_library_guide",
-      "timestamp": "2026-11-05T19:47:51.026Z",
-      "createdAt": "2026-11-05T19:47:51.026Z",
+      "timestamp": "2026-11-05T20:00:19.879Z",
+      "createdAt": "2026-11-05T20:00:19.879Z",
       "format": "carousel",
       "pillar": "Craftsmanship & Student Lifestyle",
       "hook_category": "Storytelling",
@@ -459,8 +459,8 @@
     },
     {
       "id": "slot_10_carousel_milk_tea_calories",
-      "timestamp": "2026-11-06T05:47:51.026Z",
-      "createdAt": "2026-11-06T05:47:51.026Z",
+      "timestamp": "2026-11-06T06:00:19.879Z",
+      "createdAt": "2026-11-06T06:00:19.879Z",
       "format": "carousel",
       "pillar": "Sugar Crash & Stevia Science",
       "hook_category": "Comparison",
@@ -528,8 +528,8 @@
     },
     {
       "id": "slot_09_reel_cup_struggle_fresh",
-      "timestamp": "2026-11-06T00:47:51.026Z",
-      "createdAt": "2026-11-06T00:47:51.026Z",
+      "timestamp": "2026-11-06T01:00:19.879Z",
+      "createdAt": "2026-11-06T01:00:19.879Z",
       "format": "reel",
       "pillar": "Cold Chain & Saturday COD Loop",
       "hook_category": "Educational",
@@ -589,8 +589,9 @@
       "resolution": "1080x1920",
       "audioMaster": "emotional_somatic_master.mp3",
       "audioFeatures": [
-        "high_emotion_conversational_elevenlabs",
+        "eleven_v4_with_emotion_tags_no_whisper",
         "premixed_loudnorm_14lufs_bgm_ffmpeg",
+        "multi_track_tension_sfx_suite",
         "contiguous_word_aligned_captions_no_flicker"
       ]
     }

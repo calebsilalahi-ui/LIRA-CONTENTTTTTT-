@@ -13,14 +13,14 @@ import captionsData from './emotional_somatic_captions.json';
 
 const { fontFamily: PIXEL_FONT } = loadPressStart();
 
-// 980 frames @ 30fps = 32.67s (strictly within canonical 22s–35s sweet spot)
-export const SCIENCE8BIT_DURATION = 980;
+// 1095 frames @ 30fps = 36.5s (strictly aligned to v4 audio duration with tension SFX suite)
+export const SCIENCE8BIT_DURATION = 1095;
 
 export const Reel_Science8Bit_Somatic: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // Continuous subtle camera drift across all 980 frames (never freezes)
+  // Continuous subtle camera drift across all frames (never freezes)
   const cameraDriftScale = interpolate(frame, [0, SCIENCE8BIT_DURATION], [1.05, 0.98], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
@@ -51,15 +51,15 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
     return { x: baseX + swayX, y, size, alpha, color };
   });
 
-  // Narrative Beat Intervals (strictly aligned to emotional VO)
-  // Beat 1 (0 - 214f / 0.0s - 7.1s): 2 PM Brain Fog & Mystery
-  // Beat 2 (214 - 540f / 7.1s - 18.0s): Sugar Spike Deception vs Zero Crash
-  // Beat 3 (540 - 780f / 18.0s - 26.0s): Pure Matcha + 180° Inverted Bottle Proof
-  // Beat 4 (780 - 980f / 26.0s - 32.67s): Forest Green Cooler Bag + Saturday Batch Drop
-  const isBeat1 = frame < 214;
-  const isBeat2 = frame >= 214 && frame < 540;
-  const isBeat3 = frame >= 540 && frame < 780;
-  const isBeat4 = frame >= 780;
+  // Narrative Beat Intervals (strictly aligned to v4 emotional VO & SFX anchors)
+  // Beat 1 (0 - 278f / 0.0s - 9.28s): 2 PM Brain Fog & Mystery (sub-hit + clock spin + snap at 9.28s)
+  // Beat 2 (278 - 602f / 9.28s - 20.07s): Sugar Spike Deception vs Zero Crash (buzz at 18.96s)
+  // Beat 3 (602 - 956f / 20.07s - 31.88s): Pure Matcha + 180° Inverted Bottle Proof (whoosh + shimmer + pop)
+  // Beat 4 (956 - 1095f / 31.88s - 36.5s): Forest Green Cooler Bag + Saturday Batch Drop (fanfare at 35.68s)
+  const isBeat1 = frame < 278;
+  const isBeat2 = frame >= 278 && frame < 602;
+  const isBeat3 = frame >= 602 && frame < 956;
+  const isBeat4 = frame >= 956;
 
   // Active Caption Chunk from Word-Level Timestamps (Frame-Accurate Matching)
   const activeChunk = captionsData.find(
@@ -319,10 +319,10 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
             </div>
           )}
 
-          {/* BEAT 3: 540 - 780f: Real SSOT Lira Bottle & 180° Inverted Proof */}
+          {/* BEAT 3: 602 - 956f: Real SSOT Lira Bottle & 180° Inverted Proof */}
           {isBeat3 && (
             <div style={{ position: 'relative', width: 780, height: 780, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              {frame < 660 ? (
+              {frame < 800 ? (
                 <div
                   style={{
                     transform: `translateY(${Math.sin((frame / 20) * Math.PI) * 12}px)`,
@@ -342,7 +342,7 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
             </div>
           )}
 
-          {/* BEAT 4: 780 - 980f: Forest Green Cooler Bag + Saturday Drop */}
+          {/* BEAT 4: 956 - 1095f: Forest Green Cooler Bag + Saturday Drop */}
           {isBeat4 && (
             <div style={{ position: 'relative', width: 780, height: 780, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <div
@@ -382,15 +382,15 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
                 '-3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000, 0 6px 20px rgba(0,0,0,0.95)',
             }}
           >
-            {frame < 214 ? (
+            {frame < 278 ? (
               <>
                 KENAPA OTAK LO <span style={{ color: '#FFE566' }}>CRASH</span> JAM 2 SIANG?
               </>
-            ) : frame < 540 ? (
+            ) : frame < 602 ? (
               <>
                 INSULIN DROP <span style={{ color: '#FF2E63' }}>KE TITIK NOL</span>
               </>
-            ) : frame < 780 ? (
+            ) : frame < 956 ? (
               <>
                 MATCHA MURNI <span style={{ color: '#39FF88' }}>ZERO CRASH</span>
               </>
