@@ -1,0 +1,274 @@
+[
+  {
+    "text": "PERNAH GAK LO",
+    "highlight": false,
+    "startSec": 0,
+    "endSec": 0.882,
+    "fromFrame": 0,
+    "toFrame": 26
+  },
+  {
+    "text": "NGERASA PAS JAM",
+    "highlight": false,
+    "startSec": 0.882,
+    "endSec": 2.229,
+    "fromFrame": 26,
+    "toFrame": 66
+  },
+  {
+    "text": "DUA SIANG KEPALA",
+    "highlight": false,
+    "startSec": 2.229,
+    "endSec": 3.39,
+    "fromFrame": 66,
+    "toFrame": 101
+  },
+  {
+    "text": "LO MENDADAK LEMES",
+    "highlight": true,
+    "startSec": 3.39,
+    "endSec": 4.191,
+    "fromFrame": 101,
+    "toFrame": 125
+  },
+  {
+    "text": "BERAT DAN SUSAH",
+    "highlight": false,
+    "startSec": 4.191,
+    "endSec": 5.097,
+    "fromFrame": 125,
+    "toFrame": 152
+  },
+  {
+    "text": "BANGET FOKUS BANYAK",
+    "highlight": false,
+    "startSec": 5.097,
+    "endSec": 6.432,
+    "fromFrame": 152,
+    "toFrame": 192
+  },
+  {
+    "text": "YANG NGIRA ITU",
+    "highlight": false,
+    "startSec": 6.432,
+    "endSec": 7.152,
+    "fromFrame": 192,
+    "toFrame": 214
+  },
+  {
+    "text": "KURANG TIDUR PADAHAL",
+    "highlight": true,
+    "startSec": 7.152,
+    "endSec": 8.162,
+    "fromFrame": 214,
+    "toFrame": 244
+  },
+  {
+    "text": "BUKAN ITU EFEK",
+    "highlight": false,
+    "startSec": 8.162,
+    "endSec": 9.369,
+    "fromFrame": 244,
+    "toFrame": 281
+  },
+  {
+    "text": "GULA TERSEMBUNYI DARI",
+    "highlight": true,
+    "startSec": 9.369,
+    "endSec": 10.205,
+    "fromFrame": 281,
+    "toFrame": 306
+  },
+  {
+    "text": "MATCHA KAFE LIMA",
+    "highlight": false,
+    "startSec": 10.205,
+    "endSec": 10.983,
+    "fromFrame": 306,
+    "toFrame": 329
+  },
+  {
+    "text": "PULUH RIBUAN YANG",
+    "highlight": false,
+    "startSec": 10.983,
+    "endSec": 12.19,
+    "fromFrame": 329,
+    "toFrame": 365
+  },
+  {
+    "text": "LO MINUM TADI",
+    "highlight": false,
+    "startSec": 12.19,
+    "endSec": 13.444,
+    "fromFrame": 365,
+    "toFrame": 403
+  },
+  {
+    "text": "SIANG GULA CAIR",
+    "highlight": false,
+    "startSec": 13.444,
+    "endSec": 14.779,
+    "fromFrame": 403,
+    "toFrame": 443
+  },
+  {
+    "text": "MURAH BIKIN INSULIN",
+    "highlight": false,
+    "startSec": 14.779,
+    "endSec": 15.859,
+    "fromFrame": 443,
+    "toFrame": 475
+  },
+  {
+    "text": "LO MELONJAK TAJAM",
+    "highlight": false,
+    "startSec": 15.859,
+    "endSec": 16.892,
+    "fromFrame": 475,
+    "toFrame": 506
+  },
+  {
+    "text": "TERUS NGE-DROP DRASTIS",
+    "highlight": false,
+    "startSec": 16.892,
+    "endSec": 18.065,
+    "fromFrame": 506,
+    "toFrame": 541
+  },
+  {
+    "text": "KE TITIK NOL",
+    "highlight": true,
+    "startSec": 18.065,
+    "endSec": 18.773,
+    "fromFrame": 541,
+    "toFrame": 563
+  },
+  {
+    "text": "BANDINGIN SAMA BOTOL",
+    "highlight": false,
+    "startSec": 18.773,
+    "endSec": 19.644,
+    "fromFrame": 563,
+    "toFrame": 589
+  },
+  {
+    "text": "LIRA INI PURE",
+    "highlight": false,
+    "startSec": 19.644,
+    "endSec": 20.317,
+    "fromFrame": 589,
+    "toFrame": 609
+  },
+  {
+    "text": "MATCHA JEPANG MURNI",
+    "highlight": false,
+    "startSec": 20.317,
+    "endSec": 21.258,
+    "fromFrame": 609,
+    "toFrame": 637
+  },
+  {
+    "text": "BARISTA OAT MILK",
+    "highlight": false,
+    "startSec": 21.258,
+    "endSec": 22.105,
+    "fromFrame": 637,
+    "toFrame": 663
+  },
+  {
+    "text": "DAN PEMANIS ALAMI",
+    "highlight": false,
+    "startSec": 22.105,
+    "endSec": 22.953,
+    "fromFrame": 663,
+    "toFrame": 688
+  },
+  {
+    "text": "STEVIA NOL GULA",
+    "highlight": false,
+    "startSec": 22.953,
+    "endSec": 23.858,
+    "fromFrame": 688,
+    "toFrame": 715
+  },
+  {
+    "text": "PASIR NOL CRASH",
+    "highlight": true,
+    "startSec": 23.858,
+    "endSec": 24.706,
+    "fromFrame": 715,
+    "toFrame": 741
+  },
+  {
+    "text": "ENERGI FOKUS EMPAT",
+    "highlight": false,
+    "startSec": 24.706,
+    "endSec": 25.693,
+    "fromFrame": 741,
+    "toFrame": 770
+  },
+  {
+    "text": "JAM PENUH SEGEL",
+    "highlight": false,
+    "startSec": 25.693,
+    "endSec": 26.68,
+    "fromFrame": 770,
+    "toFrame": 800
+  },
+  {
+    "text": "RAPAT SERATUS DELAPAN",
+    "highlight": false,
+    "startSec": 26.68,
+    "endSec": 27.725,
+    "fromFrame": 800,
+    "toFrame": 831
+  },
+  {
+    "text": "PULUH DERAJAT ANTI",
+    "highlight": false,
+    "startSec": 27.725,
+    "endSec": 28.619,
+    "fromFrame": 831,
+    "toFrame": 858
+  },
+  {
+    "text": "BOCOR LIMITED BATCH",
+    "highlight": true,
+    "startSec": 28.619,
+    "endSec": 29.664,
+    "fromFrame": 858,
+    "toFrame": 889
+  },
+  {
+    "text": "DISEDUH FRESH WEEKEND",
+    "highlight": false,
+    "startSec": 29.664,
+    "endSec": 30.511,
+    "fromFrame": 889,
+    "toFrame": 915
+  },
+  {
+    "text": "INI LEWAT LINK",
+    "highlight": false,
+    "startSec": 30.511,
+    "endSec": 31.126,
+    "fromFrame": 915,
+    "toFrame": 933
+  },
+  {
+    "text": "DI BIO",
+    "highlight": false,
+    "startSec": 31.126,
+    "endSec": 31.509,
+    "fromFrame": 933,
+    "toFrame": 945
+  },
+  {
+    "text": "SEBELUM KEHABISAN",
+    "highlight": false,
+    "startSec": 31.509,
+    "endSec": 32.601,
+    "fromFrame": 945,
+    "toFrame": 979
+  }
+]

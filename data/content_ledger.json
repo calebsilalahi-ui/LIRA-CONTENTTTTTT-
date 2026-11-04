@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "lastUpdated": "2026-11-04T08:30:56.990Z",
+  "lastUpdated": "2026-11-04T08:47:51.027Z",
   "entries": [
     {
       "id": "reel_01_founder_story",
@@ -342,8 +342,8 @@
     },
     {
       "id": "slot_01_reel_matcha_crash",
-      "timestamp": "2026-11-04T08:30:56.962Z",
-      "createdAt": "2026-11-04T08:30:56.963Z",
+      "timestamp": "2026-11-04T08:47:51.024Z",
+      "createdAt": "2026-11-04T08:47:51.024Z",
       "format": "reel",
       "pillar": "Sugar Crash & Stevia Science",
       "hook_category": "Comparison",
@@ -355,8 +355,8 @@
     },
     {
       "id": "slot_02_carousel_dark_cocoa",
-      "timestamp": "2026-11-04T13:30:56.965Z",
-      "createdAt": "2026-11-04T13:30:56.965Z",
+      "timestamp": "2026-11-04T13:47:51.026Z",
+      "createdAt": "2026-11-04T13:47:51.026Z",
       "format": "carousel",
       "pillar": "Craftsmanship & Student Lifestyle",
       "hook_category": "Educational",
@@ -368,8 +368,8 @@
     },
     {
       "id": "slot_03_reel_forest_bag",
-      "timestamp": "2026-11-04T18:30:56.965Z",
-      "createdAt": "2026-11-04T18:30:56.965Z",
+      "timestamp": "2026-11-04T18:47:51.026Z",
+      "createdAt": "2026-11-04T18:47:51.026Z",
       "format": "reel",
       "pillar": "Cold Chain & Saturday COD Loop",
       "hook_category": "Storytelling",
@@ -381,8 +381,8 @@
     },
     {
       "id": "slot_04_carousel_matcha_myth",
-      "timestamp": "2026-11-04T23:30:56.965Z",
-      "createdAt": "2026-11-04T23:30:56.965Z",
+      "timestamp": "2026-11-04T23:47:51.026Z",
+      "createdAt": "2026-11-04T23:47:51.026Z",
       "format": "carousel",
       "pillar": "Indie Game & Pixel Culture",
       "hook_category": "Myth Busting",
@@ -394,8 +394,8 @@
     },
     {
       "id": "slot_05_reel_founder_routine",
-      "timestamp": "2026-11-05T04:30:56.965Z",
-      "createdAt": "2026-11-05T04:30:56.965Z",
+      "timestamp": "2026-11-05T04:47:51.026Z",
+      "createdAt": "2026-11-05T04:47:51.026Z",
       "format": "reel",
       "pillar": "Craftsmanship & Student Lifestyle",
       "hook_category": "Day in the Life",
@@ -407,8 +407,8 @@
     },
     {
       "id": "slot_06_carousel_ceylon_steep",
-      "timestamp": "2026-11-05T09:30:56.965Z",
-      "createdAt": "2026-11-05T09:30:56.965Z",
+      "timestamp": "2026-11-05T09:47:51.026Z",
+      "createdAt": "2026-11-05T09:47:51.026Z",
       "format": "carousel",
       "pillar": "Sugar Crash & Stevia Science",
       "hook_category": "Authority",
@@ -420,8 +420,8 @@
     },
     {
       "id": "slot_07_reel_shake_test",
-      "timestamp": "2026-11-05T14:30:56.988Z",
-      "createdAt": "2026-11-05T14:30:56.988Z",
+      "timestamp": "2026-11-05T14:47:51.026Z",
+      "createdAt": "2026-11-05T14:47:51.026Z",
       "format": "reel",
       "pillar": "Cold Chain & Saturday COD Loop",
       "hook_category": "Random",
@@ -433,8 +433,8 @@
     },
     {
       "id": "slot_08_carousel_library_guide",
-      "timestamp": "2026-11-05T19:30:56.989Z",
-      "createdAt": "2026-11-05T19:30:56.989Z",
+      "timestamp": "2026-11-05T19:47:51.026Z",
+      "createdAt": "2026-11-05T19:47:51.026Z",
       "format": "carousel",
       "pillar": "Craftsmanship & Student Lifestyle",
       "hook_category": "Storytelling",
@@ -459,8 +459,8 @@
     },
     {
       "id": "slot_10_carousel_milk_tea_calories",
-      "timestamp": "2026-11-06T05:30:56.989Z",
-      "createdAt": "2026-11-06T05:30:56.989Z",
+      "timestamp": "2026-11-06T05:47:51.026Z",
+      "createdAt": "2026-11-06T05:47:51.026Z",
       "format": "carousel",
       "pillar": "Sugar Crash & Stevia Science",
       "hook_category": "Comparison",
@@ -528,8 +528,8 @@
     },
     {
       "id": "slot_09_reel_cup_struggle_fresh",
-      "timestamp": "2026-11-06T00:30:56.989Z",
-      "createdAt": "2026-11-06T00:30:56.989Z",
+      "timestamp": "2026-11-06T00:47:51.026Z",
+      "createdAt": "2026-11-06T00:47:51.026Z",
       "format": "reel",
       "pillar": "Cold Chain & Saturday COD Loop",
       "hook_category": "Educational",
@@ -570,6 +570,29 @@
       "bufferPostId": "6aeaecd9dc38f4d7bae2f1fe",
       "aspectRatio": "9:16",
       "resolution": "1080x1920"
+    },
+    {
+      "id": "reel_science8bit_emotional_1793781879000",
+      "timestamp": "2026-11-04T08:44:39.000Z",
+      "createdAt": "2026-11-04T08:44:39.000Z",
+      "format": "reel",
+      "sku": "Matcha Oatside",
+      "pillar": "Sugar Crash & Stevia Science",
+      "hook_category": "Comparison",
+      "topic": "Kenapa matcha kafe 50k bikin otak lemes jam 2 siang vs Lira pure matcha",
+      "verbal_hook": "Pernah gak lo ngerasa... pas jam dua siang, kepala lo mendadak lemes, berat, dan susah banget fokus?",
+      "written_hook": "KENAPA OTAK LO CRASH JAM 2 SIANG?",
+      "caption": "Pernah gak lo ngerasa jam 2 siang kepala mendadak lemes dan susah fokus? Itu efek gula tersembunyi dari matcha kafe 50k yang bikin insulin melonjak lalu crash ke titik nol. Bandingin sama Lira: pure matcha Jepang, barista oat milk, dan pemanis alami stevia. Nol gula pasir, nol crash, fokus 4 jam penuh. Segel 180 derajat anti bocor. Limited batch diseduh fresh weekend ini lewat link di bio sebelum kehabisan!\n\nCrafted solo by @caleb766h1",
+      "status": "published_live",
+      "bufferPostId": "6aeaf03b2b43f8ba7d84b534",
+      "aspectRatio": "9:16",
+      "resolution": "1080x1920",
+      "audioMaster": "emotional_somatic_master.mp3",
+      "audioFeatures": [
+        "high_emotion_conversational_elevenlabs",
+        "premixed_loudnorm_14lufs_bgm_ffmpeg",
+        "contiguous_word_aligned_captions_no_flicker"
+      ]
     }
   ]
 }

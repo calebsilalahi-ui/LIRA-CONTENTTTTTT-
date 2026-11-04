@@ -4,27 +4,24 @@ import {
   Audio,
   Img,
   interpolate,
-  Sequence,
   staticFile,
   useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
 import { loadFont as loadPressStart } from '@remotion/google-fonts/PressStart2P';
-import { loadFont as loadSilkscreen } from '@remotion/google-fonts/Silkscreen';
-import captionsData from './sample_3p_somatic_reel_captions.json';
+import captionsData from './emotional_somatic_captions.json';
 
 const { fontFamily: PIXEL_FONT } = loadPressStart();
-const { fontFamily: PIXEL_SUB_FONT } = loadSilkscreen();
 
-// 914 frames @ 30fps = 30.48s (Canonical 22s–35s sweet spot)
-export const SCIENCE8BIT_DURATION = 914;
+// 980 frames @ 30fps = 32.67s (strictly within canonical 22s–35s sweet spot)
+export const SCIENCE8BIT_DURATION = 980;
 
 export const Reel_Science8Bit_Somatic: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // Continuous subtle camera drift across all 914 frames (never freezes)
-  const cameraDriftScale = interpolate(frame, [0, SCIENCE8BIT_DURATION], [1.04, 0.98], {
+  // Continuous subtle camera drift across all 980 frames (never freezes)
+  const cameraDriftScale = interpolate(frame, [0, SCIENCE8BIT_DURATION], [1.05, 0.98], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });
@@ -42,7 +39,7 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
     const progress = ((frame * speed + i * 45) % 100) / 100;
     const baseX = 120 + ((i * 57) % 840);
     const swayX = Math.sin(progress * Math.PI * 3 + i) * 25;
-    const y = 1600 - progress * 1100; // floats upward
+    const y = 1600 - progress * 1100;
     const size = i % 4 === 0 ? 10 : i % 2 === 0 ? 7 : 5;
     const alpha =
       progress < 0.15
@@ -54,20 +51,19 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
     return { x: baseX + swayX, y, size, alpha, color };
   });
 
-  // Narrative Beat Intervals (synchronized with spoken audio in sample_3p_somatic_reel_captions.json)
-  // Beat 1 (0 - 280f / 0.0s - 9.3s): Somatic Hook - 2 PM Crash & Coffee Deception
-  // Beat 2 (280 - 504f / 9.3s - 16.8s): Insulin Drop vs Brain Fog Wave
-  // Beat 3 (504 - 732f / 16.8s - 24.4s): Real SSOT Lira Matcha & 180° Leakproof Proof
-  // Beat 4 (732 - 914f / 24.4s - 30.48s): Forest Green Cooler Bag & Saturday Batch
-  const isBeat1 = frame < 280;
-  const isBeat2 = frame >= 280 && frame < 504;
-  const isBeat3 = frame >= 504 && frame < 732;
-  const isBeat4 = frame >= 732;
+  // Narrative Beat Intervals (strictly aligned to emotional VO)
+  // Beat 1 (0 - 214f / 0.0s - 7.1s): 2 PM Brain Fog & Mystery
+  // Beat 2 (214 - 540f / 7.1s - 18.0s): Sugar Spike Deception vs Zero Crash
+  // Beat 3 (540 - 780f / 18.0s - 26.0s): Pure Matcha + 180° Inverted Bottle Proof
+  // Beat 4 (780 - 980f / 26.0s - 32.67s): Forest Green Cooler Bag + Saturday Batch Drop
+  const isBeat1 = frame < 214;
+  const isBeat2 = frame >= 214 && frame < 540;
+  const isBeat3 = frame >= 540 && frame < 780;
+  const isBeat4 = frame >= 780;
 
-  // Active Caption Chunk from Word-Level Timestamps
-  const currentSec = frame / 30;
+  // Active Caption Chunk from Word-Level Timestamps (Frame-Accurate Matching)
   const activeChunk = captionsData.find(
-    (chunk) => currentSec >= chunk.startSec && currentSec <= chunk.endSec
+    (chunk) => frame >= chunk.fromFrame && frame < chunk.toFrame
   );
 
   // Seamless loop opacity for the final 15 frames
@@ -95,14 +91,14 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
           transformOrigin: 'center center',
         }}
       >
-        {/* Deep Atmospheric Mystical Tea Room Gradient (matches @science_in_8bit burgundy/plum but in Lira deep forest green) */}
+        {/* Deep Atmospheric Mystical Tea Room Gradient */}
         <AbsoluteFill
           style={{
             background: 'radial-gradient(circle at 50% 48%, #0F2A1E 0%, #08150F 55%, #030806 100%)',
           }}
         />
 
-        {/* 4 Retro Pixel Wall Lanterns (like in @science_in_8bit frame_01.jpg) */}
+        {/* 4 Retro Pixel Wall Lanterns */}
         <div style={{ position: 'absolute', top: 480, left: 75, width: 22, height: 42, backgroundColor: '#FFE566', boxShadow: '0 0 35px #FFE566, 0 0 70px rgba(255, 229, 102, 0.45)', borderRadius: 4 }} />
         <div style={{ position: 'absolute', top: 480, right: 75, width: 22, height: 42, backgroundColor: '#FFE566', boxShadow: '0 0 35px #FFE566, 0 0 70px rgba(255, 229, 102, 0.45)', borderRadius: 4 }} />
         <div style={{ position: 'absolute', top: 1380, left: 75, width: 22, height: 42, backgroundColor: '#FFE566', boxShadow: '0 0 35px #FFE566, 0 0 70px rgba(255, 229, 102, 0.45)', borderRadius: 4 }} />
@@ -128,8 +124,7 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
         ))}
 
         {/* ----------------------------------------------------
-            SWINGING BRASS PENDULUM CLOCK (Identical to @science_in_8bit)
-            Hangs from top-center down to y: 480px, swinging rhythmically
+            SWINGING BRASS PENDULUM CLOCK
             ---------------------------------------------------- */}
         <div
           style={{
@@ -163,7 +158,7 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
               position: 'relative',
             }}
           >
-            {/* Clock hour & minute hands */}
+            {/* Clock hands */}
             <div
               style={{
                 position: 'absolute',
@@ -196,7 +191,6 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
 
         {/* ----------------------------------------------------
             CENTER HYPNOTIC VISUAL STAGE (x:[140, 940], y:[500, 1300])
-            Unified aesthetic arena matching @science_in_8bit
             ---------------------------------------------------- */}
         <div
           style={{
@@ -212,15 +206,15 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
             zIndex: 20,
           }}
         >
-          {/* BEAT 1: 0 - 280f (0 - 9.3s): Caleb at Study Desk + 2 PM Sleepy Fog */}
+          {/* BEAT 1: 0 - 214f: Caleb at Study Desk + 2 PM Sleepy Fog */}
           {isBeat1 && (
             <div style={{ position: 'relative', width: 780, height: 780, borderRadius: 32, overflow: 'hidden', boxShadow: '0 25px 60px rgba(0,0,0,0.95), 0 0 35px rgba(57, 255, 136, 0.25)', border: '2px solid rgba(57, 255, 136, 0.4)' }}>
               <Img
                 src={staticFile('assets/pixel/scene_5_laptop_a.jpg')}
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
-              {/* Floating Zzz Motes (like in reference video nostrils sleeping) */}
-              {frame >= 30 && (
+              {/* Floating Zzz Motes */}
+              {frame >= 25 && (
                 <div
                   style={{
                     position: 'absolute',
@@ -260,7 +254,7 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
             </div>
           )}
 
-          {/* BEAT 2: 280 - 504f (9.3 - 16.8s): Insulin Spike vs Zero-Crash Alpha Wave */}
+          {/* BEAT 2: 214 - 540f: Insulin Spike vs Zero-Crash Alpha Wave */}
           {isBeat2 && (
             <div
               style={{
@@ -287,7 +281,6 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
                     INSULIN CRASH ▼
                   </span>
                 </div>
-                {/* Red Jagged Crash Wave (SVG) */}
                 <svg width="700" height="120" style={{ overflow: 'visible' }}>
                   <path
                     d="M 0 100 Q 150 -10, 280 20 T 420 110 L 700 115"
@@ -296,7 +289,6 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
                     strokeWidth="4"
                     strokeDasharray="8 4"
                   />
-                  {/* Pulsing Red Spike Node */}
                   <circle cx="280" cy="20" r="8" fill="#FF2E63" style={{ filter: 'drop-shadow(0 0 10px #FF2E63)' }} />
                 </svg>
               </div>
@@ -314,7 +306,6 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
                     ALPHA FOCUS 4 JAM ▲
                   </span>
                 </div>
-                {/* Clean Emerald Sustained Wave (SVG) */}
                 <svg width="700" height="100" style={{ overflow: 'visible' }}>
                   <path
                     d="M 0 50 Q 180 35, 350 45 T 700 48"
@@ -322,18 +313,16 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
                     stroke="#39FF88"
                     strokeWidth="5"
                   />
-                  {/* Glowing Green Node with ripple */}
                   <circle cx="350" cy="45" r="9" fill="#39FF88" style={{ filter: 'drop-shadow(0 0 12px #39FF88)' }} />
                 </svg>
               </div>
             </div>
           )}
 
-          {/* BEAT 3: 504 - 732f (16.8 - 24.4s): Real SSOT Lira Bottle & 180° Inverted Proof */}
+          {/* BEAT 3: 540 - 780f: Real SSOT Lira Bottle & 180° Inverted Proof */}
           {isBeat3 && (
             <div style={{ position: 'relative', width: 780, height: 780, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               {frame < 660 ? (
-                // 100% Real Authentic Lira Matcha PET Bottle Cutout with authentic condensation
                 <div
                   style={{
                     transform: `translateY(${Math.sin((frame / 20) * Math.PI) * 12}px)`,
@@ -343,7 +332,6 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
                   <Img src={staticFile('assets/bottles_ssot/matcha_ssot.png')} style={{ height: 680 }} />
                 </div>
               ) : (
-                // 180° Inverted Bottle Leakproof Proof over MacBook Keyboard
                 <div style={{ width: 780, height: 780, borderRadius: 32, overflow: 'hidden', boxShadow: '0 25px 60px rgba(0,0,0,0.95)', border: '2px solid #39FF88' }}>
                   <Img
                     src={staticFile('assets/pixel/cup_struggle/s3_inverted_a.jpg')}
@@ -354,7 +342,7 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
             </div>
           )}
 
-          {/* BEAT 4: 732 - 914f (24.4 - 30.48s): Forest Green Cooler Bag + Saturday Drop */}
+          {/* BEAT 4: 780 - 980f: Forest Green Cooler Bag + Saturday Drop */}
           {isBeat4 && (
             <div style={{ position: 'relative', width: 780, height: 780, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <div
@@ -370,8 +358,7 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
         </div>
 
         {/* ----------------------------------------------------
-            TOP RETRO HEADER (x:[100, 980], y: 280px)
-            Borderless, Crisp 8-Bit Font (PressStart2P) - @science_in_8bit Style
+            TOP RETRO HEADER
             ---------------------------------------------------- */}
         <div
           style={{
@@ -395,15 +382,15 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
                 '-3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000, 0 6px 20px rgba(0,0,0,0.95)',
             }}
           >
-            {frame < 280 ? (
+            {frame < 214 ? (
               <>
                 KENAPA OTAK LO <span style={{ color: '#FFE566' }}>CRASH</span> JAM 2 SIANG?
               </>
-            ) : frame < 504 ? (
+            ) : frame < 540 ? (
               <>
                 INSULIN DROP <span style={{ color: '#FF2E63' }}>KE TITIK NOL</span>
               </>
-            ) : frame < 732 ? (
+            ) : frame < 780 ? (
               <>
                 MATCHA MURNI <span style={{ color: '#39FF88' }}>ZERO CRASH</span>
               </>
@@ -416,9 +403,9 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
         </div>
 
         {/* ----------------------------------------------------
-            LOWER DYNAMIC CAPTION STREAM (x:[100, 980], y: 1420px)
+            LOWER DYNAMIC CAPTION STREAM
             Strictly 1-Stream, Borderless Retro Pixel Typography
-            Synchronized Word-for-Word with Caleb's Voiceover
+            Synchronized Word-for-Word with Caleb's Spoken Audio
             ---------------------------------------------------- */}
         {activeChunk && (
           <div
@@ -450,18 +437,8 @@ export const Reel_Science8Bit_Somatic: React.FC = () => {
         )}
       </div>
 
-      {/* Audio Track: Caleb Founder Voiceover Clone */}
-      <Audio src={staticFile('assets/sample_reel_audio.mp3')} volume={1.0} />
-
-      {/* Ambient Lo-Fi Background Music: Ducked cleanly to -16dB */}
-      <Audio
-        src={staticFile('assets/bg_music.mp3')}
-        volume={(f) => {
-          if (f < 15) return interpolate(f, [0, 15], [0, 0.14]);
-          if (f > SCIENCE8BIT_DURATION - 20) return interpolate(f, [SCIENCE8BIT_DURATION - 20, SCIENCE8BIT_DURATION], [0.14, 0.05]);
-          return 0.14;
-        }}
-      />
+      {/* Master Pre-Mixed Audio (High-Emotion Caleb VO + Groovy Auditory BGM) */}
+      <Audio src={staticFile('assets/emotional_somatic_master.mp3')} volume={1.0} />
 
       {/* Seamless Infinite Loop Splice Overlay */}
       {frame >= SCIENCE8BIT_DURATION - 15 && (
