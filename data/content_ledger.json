@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "lastUpdated": "2026-11-04T07:23:34.441Z",
+  "lastUpdated": "2026-11-04T07:54:55.971Z",
   "entries": [
     {
       "id": "reel_01_founder_story",
@@ -502,6 +502,20 @@
       "id": "slot_09_reel_sapa_restock_1793777014441",
       "timestamp": "2026-11-04T07:23:34.441Z",
       "createdAt": "2026-11-04T07:23:34.441Z",
+      "format": "reel",
+      "sku": "Matcha Oatside",
+      "pillar": "Cold Chain & Saturday COD Loop",
+      "hook_category": "Educational",
+      "topic": "Restock dadakan di chiller SAPA Mart jam istirahat",
+      "verbal_hook": "Jam makan siang pas chiller SAPA Mart mendadak kosong, kita langsung kirim batch baru.",
+      "written_hook": "RESTOCK CHILLER SAPA MART",
+      "caption": "Buat lo yang ada di area kampus, botol segar Lira selalu restock langsung dari chiller. Fresh cold and ready. Limited batch tersedia weekend ini via bio.\n\nCrafted solo by @caleb766h1",
+      "status": "published_live"
+    },
+    {
+      "id": "slot_09_reel_sapa_restock_1793778895971",
+      "timestamp": "2026-11-04T07:54:55.971Z",
+      "createdAt": "2026-11-04T07:54:55.971Z",
       "format": "reel",
       "sku": "Matcha Oatside",
       "pillar": "Cold Chain & Saturday COD Loop",
