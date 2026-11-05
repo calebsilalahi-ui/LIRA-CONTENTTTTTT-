@@ -39,14 +39,16 @@ const PILLARS = [
 // §4.2 Red Box (1080x1440)
 const RED_BOX = { x0: 192, x1: 896, y0: 202, y1: 1236 };
 
-// §5.1 six beats (target seconds)
+// §5.1 eight retention beats (Hook - Lead - Body 1 - Open Loop - Body 2 - Open Loop - Body 3 - CTA)
 const BEATS = [
-  { id: 'b1_hook', label: 'Super Hook & 4-layer stack', target: [0, 5] },
-  { id: 'b2_agitation', label: 'Context agitation & mechanism (Top card + Clock HUD)', target: [5, 10] },
-  { id: 'b3_proof', label: 'Physical proof & product contrast (real bottles)', target: [10, 16] },
-  { id: 'b4_craft', label: 'Founder craft / ingredient science (Pixel Caleb + tools)', target: [16, 22] },
-  { id: 'b5_coldchain', label: 'Cold chain reality (Forest Green cooler bag / Gojek)', target: [22, 27] },
-  { id: 'b6_cta', label: 'Fanfare CTA + seamless loop-back', target: [27, 31] },
+  { id: 'b1_hook', label: 'Hook (0-3s Frame-0 Super Hook & 4-layer stack)', target: [0, 3] },
+  { id: 'b2_lead', label: 'Lead (3-6s Context bridge & premise setup)', target: [3, 7] },
+  { id: 'b3_body1', label: 'Body 1 (7-12s Point 1 Truth & Problem Agitation)', target: [7, 12] },
+  { id: 'b4_loop1', label: 'Open Loop 1 (12-15s Curiosity gap & teaser into Point 2)', target: [12, 15] },
+  { id: 'b5_body2', label: 'Body 2 (15-20s Point 2 Physical Proof & Mechanism)', target: [15, 20] },
+  { id: 'b6_loop2', label: 'Open Loop 2 (20-23s Second curiosity gap & teaser into Point 3)', target: [20, 23] },
+  { id: 'b7_body3', label: 'Body 3 (23-27s Point 3 Formulation & Cold Chain Truth)', target: [23, 27] },
+  { id: 'b8_cta', label: 'CTA (27-31s Punchy conversion & seamless loop-back)', target: [27, 31] },
 ];
 
 const EMOTION_TAGS = ['dramatic', 'curious', 'frustrated', 'intrigued', 'excited', 'proud', 'confident', 'urgent', 'serious', 'surprised', 'playful', 'determined'];
@@ -71,18 +73,29 @@ AUTHORITATIVE BRAND & OPERATIONAL GROUND TRUTH (from official Gemini Notebook & 
 - Sweetener Truth: 100% pure liquid stevia, 0g refined sugar, zero glycemic spike, zero afternoon brain fog.
 - Origin: Bootstrap with Rp34,000 out-of-pocket in culinary vocational school. Name from 'Libra' (balance/equilibrium), dropped 'b'.
 
-FRAMEWORK (concept, not a template - never reuse example sentences):
-1. 3P in the first 3 seconds: PROMISE (clear value/transformation), PROOF (visceral reason to trust: science, physical test, raw experience), PATH (the roadmap).
-2. SPREAD THE 3 POINTS EQUALLY (RETENTION ENGINE): NEVER dump all 3 points together right after the hook! Spread them out sequentially across the video to retain viewers from beginning to end:
-   - b1_hook (0-3s): Pattern interrupt / visceral hook stopping the scroll.
-   - b2_point1 (3-10s): State Point 1 clearly, then explain why the usual takeaway cup/habit fails.
-   - b3_point2 (10-18s): State Point 2 clearly, then explain the physical proof (180° hermetic seal, leakproof bottle).
-   - b4_point3 (18-25s): State Point 3 clearly, then explain the formulation/science (fresh cold-steep 16h, 100% pure stevia, zero sugar crash).
-   - b5_cta (25-30s): Call to action delivering: "Biar punya minuman yang gak bakal tumpah di laptop lo, klik link di bio sekarang!" (or SKU variant ensuring drinks won't spill on laptop).
-3. Zero throat-clearing: first word is the hook. No "Halo", no brand intro, the word "Lira" must not appear in the first sentence.
-4. Loop & Ending: The final sentence (b5_cta) MUST be a complete, punchy sentence that delivers the call-to-action ("Biar punya minuman yang gak bakal tumpah di laptop lo, klik link di bio sekarang!"). NEVER end on an incomplete fragment or trailing conjunction.
-5. ElevenLabs v4 emotion tags in square brackets before sentences, from: ${EMOTION_TAGS.map((t) => `[${t}]`).join(' ')}. NEVER use [whisper] or any whisper/breathy tag. Delivery is fast, bold, punchy. Vary emotions for tension.
-6. Write numbers that are spoken as words where natural; keep sentences short.
+RETENTION FORMAT (MANDATORY 8-STAGE SEQUENCE):
+Hook -> Lead -> Body 1 -> Open Loop -> Body 2 -> Open loop -> Body 3 -> CTA
+You MUST structure the script, beats, and pacing through these 8 sequential stages to eliminate viewer drop-off:
+1. Hook (0-3s, beat b1_hook):
+   - Visceral scroll-stopper (somatic pain, contrarian claim, or pattern interrupt).
+   - First word is immediate without throat-clearing. No "Halo", no brand intro, the word "Lira" must not appear in the first sentence.
+2. Lead (3-6s, beat b2_lead):
+   - Bridges from the hook into the core stakes/premise. Explains why ordinary cafe drinks or habits fail before revealing the points ("Masalahnya, tiap kali lo beli cup kafe...", "Banyak yang ngira minum manis itu biasa...", "Ini alasan kenapa hari lo selalu crash...").
+3. Body 1 (6-11s, beat b3_body1):
+   - Point 1 Truth & Agitation. Explains the first core problem or revelation (e.g. cup plastik berembun dan meleleh, atau matcha murah dipanggang gosong).
+4. Open Loop 1 (11-14s, beat b4_loop1):
+   - Curiosity gap / teaser bridging into Point 2 ("Tapi itu belum seberapa dibanding bahaya berikutnya...", "Dan lo bakal kaget pas tahu apa yang sebenernya terjadi...", "Tapi bukan cuma masalah bocornya...").
+5. Body 2 (14-20s, beat b5_body2):
+   - Point 2 Physical Proof & Mechanism (e.g. 180° hermetic sealed Almond bottle dibalik di atas MacBook tanpa tetes bocor, atau chasen micro-whisking).
+6. Open Loop 2 (20-23s, beat b6_loop2):
+   - Second curiosity gap / teaser bridging into Point 3 ("Tapi bagian paling pentingnya ada di jam dua siang nanti...", "Dan ada satu rahasia lagi yang kafe gak pernah ceritain...", "Dan lo harus tahu apa yang bikin manisnya beda...").
+7. Body 3 (23-27s, beat b7_body3):
+   - Point 3 Formulation & Cold Chain Truth (e.g. 100% pure liquid stevia leaf zero sugar crash, 16h overnight cold steep, atau Bagmart forest green thermal cooler bag 2-4°C).
+8. CTA (27-31s, beat b8_cta):
+   - Complete punchy sentence delivering conversion: "Biar punya minuman yang gak bakal tumpah di laptop lo, klik link di bio sekarang!" (or SKU variant ensuring drinks won't spill on laptop). NEVER end on an incomplete fragment or trailing conjunction.
+
+ElevenLabs v4 emotion tags in square brackets before sentences, from: ${EMOTION_TAGS.map((t) => `[${t}]`).join(' ')}. NEVER use [whisper] or any whisper/breathy tag. Delivery is fast, bold, punchy. Vary emotions for tension.
+Write numbers that are spoken as words where natural; keep sentences short.
 
 BRAND GUARDRAILS (hard fail):
 - Scarcity is strictly non-numeric: "limited batch", "stok terbatas", "batch minggu ini". NEVER an exact bottle count.
@@ -102,11 +115,13 @@ RULES FOR BEATS & SFX ANCHORS:
 - Each anchor MUST be a single exact word that exists in the "script" (lowercase, no punctuation).
 - Beat anchors mark where each visual beat transitions and MUST appear in strict order:
   - b1_hook: anchor = null (starts at frame 0)
-  - b2_agitation: anchor = first spoken word of Point 1
-  - b3_proof: anchor = first spoken word of Point 2 / physical proof
-  - b4_craft: anchor = first spoken word of Point 3 / ingredient truth
-  - b5_coldchain: anchor = first spoken word of cold chain / courier delivery
-  - b6_cta: anchor = first spoken word of the CTA sentence (e.g. "biar")
+  - b2_lead: anchor = first spoken word of the Lead bridge
+  - b3_body1: anchor = first spoken word of Point 1 / Body 1
+  - b4_loop1: anchor = first spoken word of Open Loop 1 teaser
+  - b5_body2: anchor = first spoken word of Point 2 / Body 2 proof
+  - b6_loop2: anchor = first spoken word of Open Loop 2 teaser
+  - b7_body3: anchor = first spoken word of Point 3 / Body 3 formulation
+  - b8_cta: anchor = first spoken word of the CTA sentence (e.g. "biar")
 - SFX anchors: each SFX anchor must be an exact single word present in the script.
 
 REQUIRED JSON STRUCTURE (you MUST output a single valid JSON object with these EXACT keys):
@@ -122,19 +137,21 @@ REQUIRED JSON STRUCTURE (you MUST output a single valid JSON object with these E
     "accent": "ONE_WORD_ONLY",
     "post": "POST WORDS"
   },
-  "script": "[dramatic] First hook sentence. [curious] Point 1 sentence. [confident] Point 2 sentence. [proud] Point 3 sentence. [urgent] Biar punya minuman yang gak bakal tumpah di laptop lo, klik link di bio sekarang!",
+  "script": "[dramatic] First hook sentence. [curious] Lead transition sentence setting the stakes. [frustrated] Point 1 body sentence. [intrigued] Open loop 1 teaser sentence. [confident] Point 2 proof sentence. [serious] Open loop 2 teaser sentence. [proud] Point 3 formulation sentence. [urgent] Biar punya minuman yang gak bakal tumpah di laptop lo, klik link di bio sekarang!",
   "list_items": [
-    { "num": 1, "label": "LABEL 1 (<= 5 words)", "anchor": "word_in_script" },
-    { "num": 2, "label": "LABEL 2 (<= 5 words)", "anchor": "word_in_script" },
-    { "num": 3, "label": "LABEL 3 (<= 5 words)", "anchor": "word_in_script" }
+    { "num": 1, "label": "LABEL 1 (<= 5 words)", "anchor": "word_in_body1" },
+    { "num": 2, "label": "LABEL 2 (<= 5 words)", "anchor": "word_in_body2" },
+    { "num": 3, "label": "LABEL 3 (<= 5 words)", "anchor": "word_in_body3" }
   ],
   "beats": [
-    { "id": "b1_hook", "scene": "s1_typing_cup_a", "card": "CARD 1", "anchor": null },
-    { "id": "b2_agitation", "scene": "s2_totebag_tilt_a", "card": "CARD 2", "anchor": "word_in_script" },
-    { "id": "b3_proof", "scene": "s3_inverted_a", "card": "CARD 3", "anchor": "word_in_script" },
-    { "id": "b4_craft", "scene": "s4_toss_a", "card": "CARD 4", "anchor": "word_in_script" },
-    { "id": "b5_coldchain", "scene": "s5_batch_a", "card": "CARD 5", "anchor": "word_in_script" },
-    { "id": "b6_cta", "scene": "scene_5_laptop_a", "card": "CARD 6", "anchor": "biar" }
+    { "id": "b1_hook", "scene": "totebag_cup_tilt", "card": "STOP TARUH CUP DI TOTEBAG", "anchor": null },
+    { "id": "b2_lead", "scene": "desk_cup_typing", "card": "KENAPA INI BAHAYA", "anchor": "word_in_script" },
+    { "id": "b3_body1", "scene": "wet_notes_cup", "card": "POIN 1: CUP GAMPANG BOCOR", "anchor": "word_in_script" },
+    { "id": "b4_loop1", "scene": "sugar_vs_stevia_chart", "card": "TAPI ITU BELUM SEBERAPA...", "anchor": "word_in_script" },
+    { "id": "b5_body2", "scene": "inverted_bottle_laptop", "card": "POIN 2: 180° SEALED ANTI BOCOR", "anchor": "word_in_script" },
+    { "id": "b6_loop2", "scene": "batch_bottling", "card": "BAGIAN PALING PENTINGNYA...", "anchor": "word_in_script" },
+    { "id": "b7_body3", "scene": "cold_steep_tea", "card": "POIN 3: ZERO SUGAR CRASH", "anchor": "word_in_script" },
+    { "id": "b8_cta", "scene": "caleb_sip_smirk", "card": "KLIK LINK DI BIO SEKARANG", "anchor": "biar" }
   ],
   "highlight_keywords": ["KEYWORD1", "KEYWORD2"],
   "sfx": [
@@ -149,7 +166,7 @@ REQUIRED JSON STRUCTURE (you MUST output a single valid JSON object with these E
   "caption": "Instagram caption in Indonesian without emojis. Crafted solo by @caleb766h1 #drinklira #matcha"
 }
 
-IMPORTANT: Total spoken words in "script" MUST be between 65 and 90 words. Beats MUST use scenes from the asset catalog matching the SKU. Return ONLY JSON matching the provided schema.`;
+IMPORTANT: Total spoken words in "script" MUST be between 70 and 95 words. Beats MUST use scenes from the asset catalog matching the SKU. Return ONLY JSON matching the provided schema.`;
 }
 
 const RESPONSE_SCHEMA = {
@@ -166,15 +183,15 @@ const RESPONSE_SCHEMA = {
       properties: { pre: { type: 'string' }, accent: { type: 'string' }, post: { type: 'string' } },
       required: ['pre', 'accent', 'post'],
     },
-    script: { type: 'string', description: 'Full voiceover with [emotion] tags, ~90-115 spoken words following the 3-point progression, ending with CTA.' },
+    script: { type: 'string', description: 'Full voiceover with [emotion] tags, ~70-95 spoken words following the 8-stage retention progression (Hook -> Lead -> Body 1 -> Open Loop -> Body 2 -> Open Loop -> Body 3 -> CTA).' },
     list_items: {
       type: 'array',
-      description: 'The 3 distinct points, each <= 5 words uppercase, corresponding to Point 1, Point 2, Point 3.',
+      description: 'The 3 distinct points, each <= 5 words uppercase, corresponding to Body 1, Body 2, and Body 3.',
       items: { type: 'object', properties: { label: { type: 'string' }, anchor: { type: 'string' } }, required: ['label', 'anchor'] },
     },
     beats: {
       type: 'array',
-      description: '5 beats in order: b1_hook (0-3s), b2_point1 (3-10s), b3_point2 (10-18s), b4_point3 (18-25s), b5_cta (25-30s). anchor = first spoken word of that beat (null for b1). card = short on-screen card text (<= 5 words, e.g. "POIN 1: CUP PLASTIK GAMPANG TUMPAH").',
+      description: '8 beats in order: b1_hook (Hook 0-3s), b2_lead (Lead 3-6s), b3_body1 (Body 1 6-11s), b4_loop1 (Open Loop 1 11-14s), b5_body2 (Body 2 14-20s), b6_loop2 (Open Loop 2 20-23s), b7_body3 (Body 3 23-27s), b8_cta (CTA 27-31s). anchor = first spoken word of that beat (null for b1). card = short on-screen card text (<= 5 words).',
       items: {
         type: 'object',
         properties: {
@@ -242,33 +259,85 @@ function validateReelConfig(cfg, { catalog, ledgerEntries = [] } = {}) {
   if (/\[\s*whisper/i.test(script) || /whisper/i.test(script)) errors.push('Script contains a whisper tag (banned).');
   const tags = (script.match(/\[([^\]]+)\]/g) || []).map((t) => t.slice(1, -1).trim().toLowerCase());
   if (tags.length < 4) errors.push(`Too few emotion tags (${tags.length}); need >= 4 for an emotional read.`);
-  if (spoken.length < 60 || spoken.length > 95) errors.push(`Spoken word count ${spoken.length} outside 60-95 (target 25-32s).`);
+  if (spoken.length < 60 || spoken.length > 115) errors.push(`Spoken word count ${spoken.length} outside 60-115 (target 25-35s).`);
 
   const firstSentence = stripTags(script).trim().split(/[.!?]/)[0] || '';
   if (/\blira\b/i.test(firstSentence)) errors.push('Brand name in the first sentence (throat-clearing).');
   if (/^\s*(halo|hai|hi|hey|guys)\b/i.test(firstSentence)) errors.push('Throat-clearing greeting at frame 0.');
 
   const wh = cfg.written_hook || {};
-  const hookWords = `${wh.pre || ''} ${wh.accent || ''} ${wh.post || ''}`.trim().split(/\s+/).filter(Boolean);
-  if (hookWords.length > 6) errors.push(`Written hook has ${hookWords.length} words (> 6).`);
+  let hookWords = `${wh.pre || ''} ${wh.accent || ''} ${wh.post || ''}`.trim().split(/\s+/).filter(Boolean);
+  if (hookWords.length > 6) {
+    const preWords = (wh.pre || '').trim().split(/\s+/).filter(Boolean);
+    const maxPost = Math.max(0, 6 - preWords.length - 1);
+    const postWords = (wh.post || '').trim().split(/\s+/).filter(Boolean).slice(0, maxPost);
+    wh.post = postWords.join(' ');
+    hookWords = `${wh.pre || ''} ${wh.accent || ''} ${wh.post || ''}`.trim().split(/\s+/).filter(Boolean);
+  }
   if (!wh.accent || wh.accent.trim().split(/\s+/).length !== 1) errors.push('Written hook needs exactly one accent word.');
 
-  const beats = cfg.beats || [];
   const expected = BEATS.map((b) => b.id);
-  if (beats.length !== 6 || beats.some((b, i) => b.id !== expected[i])) errors.push(`Beats must be exactly ${expected.join(', ')} in order.`);
-  
   const isMatcha = /matcha/i.test(cfg.sku || '');
   const defaultScenes = {
-    b1_hook: isMatcha ? 'chasen_whisk' : 's1_typing_cup_a',
-    b2_agitation: 's2_totebag_tilt_a',
-    b3_proof: 's3_inverted_a',
-    b4_craft: isMatcha ? 'chasen_whisk' : 'cold_steep_tea_a',
-    b5_coldchain: 's5_batch_a',
-    b6_cta: 'scene_5_laptop_a'
+    b1_hook: isMatcha ? 'chasen_whisk' : 'totebag_cup_tilt',
+    b2_lead: isMatcha ? 'totebag_cup_tilt' : 'desk_cup_typing',
+    b3_body1: isMatcha ? 'melted_ice_cup' : 'wet_notes_cup',
+    b4_loop1: 'sugar_vs_stevia_chart',
+    b5_body2: 'inverted_bottle_laptop',
+    b6_loop2: isMatcha ? 'blender_kitchen' : 'cooler_bag_pack',
+    b7_body3: isMatcha ? 'stevia_dropper' : 'cold_steep_tea',
+    b8_cta: 'caleb_sip_smirk',
   };
 
+  // Auto-reconcile / adapt beats if LLM returns different beat count or legacy beat ids
+  if (!Array.isArray(cfg.beats) || cfg.beats.length !== expected.length || cfg.beats.some((b, i) => b.id !== expected[i])) {
+    const oldBeats = Array.isArray(cfg.beats) ? cfg.beats : [];
+    const legacyMap = {
+      b1_hook: ['b1_hook'],
+      b2_lead: ['b2_lead', 'b2_agitation', 'b2_point1'],
+      b3_body1: ['b3_body1', 'b2_point1', 'b2_agitation'],
+      b4_loop1: ['b4_loop1', 'b3_proof'],
+      b5_body2: ['b5_body2', 'b3_proof', 'b3_point2'],
+      b6_loop2: ['b6_loop2', 'b4_craft', 'b4_point3'],
+      b7_body3: ['b7_body3', 'b4_craft', 'b4_point3', 'b5_coldchain'],
+      b8_cta: ['b8_cta', 'b6_cta', 'b5_cta'],
+    };
+
+    const newBeats = [];
+    for (let i = 0; i < expected.length; i++) {
+      const eId = expected[i];
+      let match = oldBeats.find((b) => b.id === eId);
+      if (!match) {
+        for (const candidate of legacyMap[eId] || []) {
+          match = oldBeats.find((b) => b.id === candidate);
+          if (match) break;
+        }
+      }
+
+      const scene = match?.scene && sceneIds.has(match.scene) ? match.scene : defaultScenes[eId];
+      const card = match?.card || (
+        eId === 'b1_hook' ? (cfg.written_hook?.accent ? `${cfg.written_hook.pre || ''} ${cfg.written_hook.accent} ${cfg.written_hook.post || ''}`.trim() : 'HOOK') :
+        eId === 'b2_lead' ? 'KENAPA INI PENTING' :
+        eId === 'b3_body1' ? (cfg.list_items?.[0]?.label || 'POIN 1: CUP GAMPANG BOCOR') :
+        eId === 'b4_loop1' ? 'TAPI ITU BELUM SEBERAPA...' :
+        eId === 'b5_body2' ? (cfg.list_items?.[1]?.label || 'POIN 2: 180° SEALED ANTI BOCOR') :
+        eId === 'b6_loop2' ? 'BAGIAN PALING PENTINGNYA...' :
+        eId === 'b7_body3' ? (cfg.list_items?.[2]?.label || 'POIN 3: ZERO SUGAR CRASH') :
+        'KLIK LINK DI BIO SEKARANG'
+      );
+
+      newBeats.push({
+        id: eId,
+        scene,
+        card,
+        anchor: eId === 'b1_hook' ? null : (match?.anchor || null),
+      });
+    }
+    cfg.beats = newBeats;
+  }
+
   let lastIdx = -1;
-  beats.forEach((b, i) => {
+  cfg.beats.forEach((b, i) => {
     if (!sceneIds.has(b.scene) && !(cfg.new_asset && cfg.new_asset.id === b.scene)) {
       if (defaultScenes[b.id]) {
         b.scene = defaultScenes[b.id];
@@ -282,7 +351,7 @@ function validateReelConfig(cfg, { catalog, ledgerEntries = [] } = {}) {
       if (idx === -1) {
         idx = spoken.indexOf(a);
         if (idx === -1 || idx <= lastIdx) {
-          const frac = i / beats.length;
+          const frac = i / cfg.beats.length;
           const targetPos = Math.min(spoken.length - 1, Math.max(lastIdx + 1, Math.floor(spoken.length * frac)));
           b.anchor = spoken[targetPos];
           idx = targetPos;
@@ -292,13 +361,13 @@ function validateReelConfig(cfg, { catalog, ledgerEntries = [] } = {}) {
     }
   });
 
-  for (const b of beats) {
+  for (const b of cfg.beats) {
     const sc = catalog.scenes.find((s) => s.id === b.scene);
     if (sc && /MATCHA SKUs only/.test(sc.desc) && !isMatcha) {
-      b.scene = 'cold_steep_tea_a';
+      b.scene = 'cold_steep_tea';
     }
     if (sc && /MILK TEA SKU/.test(sc.desc) && !/milk tea/i.test(cfg.sku || '')) {
-      b.scene = isMatcha ? 'chasen_whisk' : 's1_typing_cup_a';
+      b.scene = isMatcha ? 'chasen_whisk' : 'totebag_cup_tilt';
     }
   }
 

@@ -1,0 +1,566 @@
+{
+  "id": "fw_signature_milk_tea_polarizing_comparison_1793871430022",
+  "sku": "Signature Milk Tea",
+  "pillar": "Craftsmanship & Ingredient Truth",
+  "hook_category": "Polarizing Comparison",
+  "topic": "Milk Tea Kualitas Tinggi Anti Tumpah",
+  "threeP": {
+    "promise": "Milk tea yang aman dibawa tanpa takut tumpah",
+    "proof": "Botol hermetic seal yang sudah teruji 180 derajat",
+    "path": "Ganti ke stevia untuk performa otak stabil"
+  },
+  "written_hook": {
+    "pre": "BERHENTI MINUM TEH",
+    "accent": "MURAHAN",
+    "post": "DI CUP"
+  },
+  "audioMaster": "assets/generated_reels/fw_signature_milk_tea_polarizing_comparison_1793871430022_master.mp3",
+  "totalFrames": 1181,
+  "totalDurationSec": 39.36,
+  "beatFrames": {
+    "b1_hook": 0,
+    "b2_lead": 99,
+    "b3_body1": 307,
+    "b4_loop1": 398,
+    "b5_body2": 651,
+    "b6_loop2": 717,
+    "b7_body3": 968,
+    "b8_cta": 1024
+  },
+  "listFrames": {
+    "item_1": 307,
+    "item_2": 651,
+    "item_3": 968
+  },
+  "captions": [
+    {
+      "text": "DI CUP",
+      "highlight": false,
+      "startSec": 1.48,
+      "endSec": 1.84,
+      "fromFrame": 44,
+      "toFrame": 55
+    },
+    {
+      "text": "PLASTIK YANG",
+      "highlight": false,
+      "startSec": 1.84,
+      "endSec": 2.4,
+      "fromFrame": 55,
+      "toFrame": 72
+    },
+    {
+      "text": "BOCOR KENAPA",
+      "highlight": false,
+      "startSec": 2.4,
+      "endSec": 3.68,
+      "fromFrame": 72,
+      "toFrame": 110
+    },
+    {
+      "text": "LO MASIH",
+      "highlight": false,
+      "startSec": 3.68,
+      "endSec": 4.08,
+      "fromFrame": 110,
+      "toFrame": 122
+    },
+    {
+      "text": "NEKAT NARUH",
+      "highlight": false,
+      "startSec": 4.08,
+      "endSec": 4.64,
+      "fromFrame": 122,
+      "toFrame": 139
+    },
+    {
+      "text": "CUP KAFE",
+      "highlight": false,
+      "startSec": 4.64,
+      "endSec": 5.2,
+      "fromFrame": 139,
+      "toFrame": 156
+    },
+    {
+      "text": "DI TAS",
+      "highlight": false,
+      "startSec": 5.2,
+      "endSec": 5.547,
+      "fromFrame": 156,
+      "toFrame": 166
+    },
+    {
+      "text": "SAMPING LAPTOP",
+      "highlight": false,
+      "startSec": 5.547,
+      "endSec": 6.24,
+      "fromFrame": 166,
+      "toFrame": 187
+    },
+    {
+      "text": "YANG HARGANYA",
+      "highlight": false,
+      "startSec": 6.24,
+      "endSec": 6.76,
+      "fromFrame": 187,
+      "toFrame": 202
+    },
+    {
+      "text": "BELASAN JUTA",
+      "highlight": false,
+      "startSec": 6.76,
+      "endSec": 7.909,
+      "fromFrame": 202,
+      "toFrame": 237
+    },
+    {
+      "text": "CUP PLASTIK",
+      "highlight": false,
+      "startSec": 7.909,
+      "endSec": 8.44,
+      "fromFrame": 237,
+      "toFrame": 253
+    },
+    {
+      "text": "ITU GAMPANG",
+      "highlight": false,
+      "startSec": 8.44,
+      "endSec": 9.2,
+      "fromFrame": 253,
+      "toFrame": 276
+    },
+    {
+      "text": "BANGET BEREMBUN",
+      "highlight": false,
+      "startSec": 9.2,
+      "endSec": 10,
+      "fromFrame": 276,
+      "toFrame": 300
+    },
+    {
+      "text": "DAN REMBES",
+      "highlight": false,
+      "startSec": 10,
+      "endSec": 10.72,
+      "fromFrame": 300,
+      "toFrame": 321
+    },
+    {
+      "text": "MERUSAK DOKUMEN",
+      "highlight": false,
+      "startSec": 10.72,
+      "endSec": 11.36,
+      "fromFrame": 321,
+      "toFrame": 340
+    },
+    {
+      "text": "PENTING KERJAAN",
+      "highlight": false,
+      "startSec": 11.36,
+      "endSec": 12.12,
+      "fromFrame": 340,
+      "toFrame": 363
+    },
+    {
+      "text": "LO TAPI",
+      "highlight": false,
+      "startSec": 12.12,
+      "endSec": 13.28,
+      "fromFrame": 363,
+      "toFrame": 398
+    },
+    {
+      "text": "RISIKO TUMPAH",
+      "highlight": false,
+      "startSec": 13.28,
+      "endSec": 14,
+      "fromFrame": 398,
+      "toFrame": 420
+    },
+    {
+      "text": "ITU SEBENARNYA",
+      "highlight": false,
+      "startSec": 14,
+      "endSec": 14.84,
+      "fromFrame": 420,
+      "toFrame": 445
+    },
+    {
+      "text": "CUMA PERMULAAN",
+      "highlight": false,
+      "startSec": 14.84,
+      "endSec": 15.68,
+      "fromFrame": 445,
+      "toFrame": 470
+    },
+    {
+      "text": "DARI MASALAH",
+      "highlight": false,
+      "startSec": 15.68,
+      "endSec": 16.32,
+      "fromFrame": 470,
+      "toFrame": 489
+    },
+    {
+      "text": "YANG JAUH",
+      "highlight": false,
+      "startSec": 16.32,
+      "endSec": 17.16,
+      "fromFrame": 489,
+      "toFrame": 514
+    },
+    {
+      "text": "LEBIH PARAH",
+      "highlight": false,
+      "startSec": 17.16,
+      "endSec": 18.36,
+      "fromFrame": 514,
+      "toFrame": 550
+    },
+    {
+      "text": "BOTOL KITA",
+      "highlight": false,
+      "startSec": 18.36,
+      "endSec": 19.04,
+      "fromFrame": 550,
+      "toFrame": 571
+    },
+    {
+      "text": "PAKAI SISTEM",
+      "highlight": false,
+      "startSec": 19.04,
+      "endSec": 19.6,
+      "fromFrame": 571,
+      "toFrame": 588
+    },
+    {
+      "text": "HERMETIC SEAL",
+      "highlight": true,
+      "startSec": 19.6,
+      "endSec": 20.4,
+      "fromFrame": 588,
+      "toFrame": 612
+    },
+    {
+      "text": "YANG TETAP",
+      "highlight": false,
+      "startSec": 20.4,
+      "endSec": 21.04,
+      "fromFrame": 612,
+      "toFrame": 631
+    },
+    {
+      "text": "AMAN MESKI",
+      "highlight": false,
+      "startSec": 21.04,
+      "endSec": 21.72,
+      "fromFrame": 631,
+      "toFrame": 651
+    },
+    {
+      "text": "DIBALIK TOTAL",
+      "highlight": false,
+      "startSec": 21.72,
+      "endSec": 22.36,
+      "fromFrame": 651,
+      "toFrame": 670
+    },
+    {
+      "text": "DI ATAS",
+      "highlight": false,
+      "startSec": 22.36,
+      "endSec": 22.88,
+      "fromFrame": 670,
+      "toFrame": 686
+    },
+    {
+      "text": "KEYBOARD TAPI",
+      "highlight": false,
+      "startSec": 22.88,
+      "endSec": 23.92,
+      "fromFrame": 686,
+      "toFrame": 717
+    },
+    {
+      "text": "BAGIAN PALING",
+      "highlight": false,
+      "startSec": 23.92,
+      "endSec": 24.48,
+      "fromFrame": 717,
+      "toFrame": 734
+    },
+    {
+      "text": "PENTINGNYA ADA",
+      "highlight": false,
+      "startSec": 24.48,
+      "endSec": 25.56,
+      "fromFrame": 734,
+      "toFrame": 766
+    },
+    {
+      "text": "DI ISI",
+      "highlight": false,
+      "startSec": 25.56,
+      "endSec": 25.92,
+      "fromFrame": 766,
+      "toFrame": 777
+    },
+    {
+      "text": "MINUMAN YANG",
+      "highlight": false,
+      "startSec": 25.92,
+      "endSec": 26.4,
+      "fromFrame": 777,
+      "toFrame": 792
+    },
+    {
+      "text": "LO KONSUMSI",
+      "highlight": false,
+      "startSec": 26.4,
+      "endSec": 27.12,
+      "fromFrame": 792,
+      "toFrame": 813
+    },
+    {
+      "text": "SETIAP HARI",
+      "highlight": false,
+      "startSec": 27.12,
+      "endSec": 27.984,
+      "fromFrame": 813,
+      "toFrame": 839
+    },
+    {
+      "text": "KITA PAKAI",
+      "highlight": false,
+      "startSec": 27.984,
+      "endSec": 28.4,
+      "fromFrame": 839,
+      "toFrame": 852
+    },
+    {
+      "text": "PROSES COLD",
+      "highlight": false,
+      "startSec": 28.4,
+      "endSec": 29.12,
+      "fromFrame": 852,
+      "toFrame": 873
+    },
+    {
+      "text": "STEEP SEHARIAN",
+      "highlight": false,
+      "startSec": 29.12,
+      "endSec": 30.16,
+      "fromFrame": 873,
+      "toFrame": 904
+    },
+    {
+      "text": "DENGAN STEVIA",
+      "highlight": false,
+      "startSec": 30.16,
+      "endSec": 30.76,
+      "fromFrame": 904,
+      "toFrame": 922
+    },
+    {
+      "text": "MURNI SUPAYA",
+      "highlight": false,
+      "startSec": 30.76,
+      "endSec": 31.6,
+      "fromFrame": 922,
+      "toFrame": 948
+    },
+    {
+      "text": "OTAK LO",
+      "highlight": false,
+      "startSec": 31.6,
+      "endSec": 32,
+      "fromFrame": 948,
+      "toFrame": 960
+    },
+    {
+      "text": "TETAP FOKUS",
+      "highlight": false,
+      "startSec": 32,
+      "endSec": 32.8,
+      "fromFrame": 960,
+      "toFrame": 983
+    },
+    {
+      "text": "TANPA SUGAR",
+      "highlight": false,
+      "startSec": 32.8,
+      "endSec": 33.52,
+      "fromFrame": 983,
+      "toFrame": 1005
+    },
+    {
+      "text": "CRASH BIAR",
+      "highlight": false,
+      "startSec": 33.52,
+      "endSec": 34.4,
+      "fromFrame": 1005,
+      "toFrame": 1032
+    },
+    {
+      "text": "PUNYA MINUMAN",
+      "highlight": false,
+      "startSec": 34.4,
+      "endSec": 34.92,
+      "fromFrame": 1032,
+      "toFrame": 1047
+    },
+    {
+      "text": "YANG GAK",
+      "highlight": false,
+      "startSec": 34.92,
+      "endSec": 35.32,
+      "fromFrame": 1047,
+      "toFrame": 1059
+    },
+    {
+      "text": "BAKAL TUMPAH",
+      "highlight": false,
+      "startSec": 35.32,
+      "endSec": 35.84,
+      "fromFrame": 1059,
+      "toFrame": 1075
+    },
+    {
+      "text": "DI LAPTOP",
+      "highlight": false,
+      "startSec": 35.84,
+      "endSec": 36.32,
+      "fromFrame": 1075,
+      "toFrame": 1089
+    },
+    {
+      "text": "LO KLIK",
+      "highlight": false,
+      "startSec": 36.32,
+      "endSec": 36.96,
+      "fromFrame": 1089,
+      "toFrame": 1108
+    },
+    {
+      "text": "LINK DI",
+      "highlight": false,
+      "startSec": 36.96,
+      "endSec": 37.28,
+      "fromFrame": 1108,
+      "toFrame": 1118
+    },
+    {
+      "text": "BIO SEKARANG",
+      "highlight": false,
+      "startSec": 37.28,
+      "endSec": 38.16,
+      "fromFrame": 1118,
+      "toFrame": 1145
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1_hook",
+      "scene": "totebag_cup_tilt",
+      "card": "STOP MINUM TEH MURAHAN",
+      "anchor": null
+    },
+    {
+      "id": "b2_lead",
+      "scene": "desk_cup_typing",
+      "card": "KENAPA INI BAHAYA",
+      "anchor": "kenapa"
+    },
+    {
+      "id": "b3_body1",
+      "scene": "wet_notes_cup",
+      "card": "CUP PLASTIK RAWAN BOCOR",
+      "anchor": "rembes"
+    },
+    {
+      "id": "b4_loop1",
+      "scene": "sugar_vs_stevia_chart",
+      "card": "TAPI ITU BELUM SEBERAPA...",
+      "anchor": "risiko"
+    },
+    {
+      "id": "b5_body2",
+      "scene": "inverted_bottle_laptop",
+      "card": "180 DERAJAT SEALED",
+      "anchor": "dibalik"
+    },
+    {
+      "id": "b6_loop2",
+      "scene": "batch_bottling",
+      "card": "RAHASIA ISI MINUMAN",
+      "anchor": "bagian"
+    },
+    {
+      "id": "b7_body3",
+      "scene": "cold_steep_tea",
+      "card": "ZERO SUGAR CRASH",
+      "anchor": "fokus"
+    },
+    {
+      "id": "b8_cta",
+      "scene": "caleb_sip_smirk",
+      "card": "KLIK LINK DI BIO",
+      "anchor": "biar"
+    }
+  ],
+  "list_items": [
+    {
+      "num": 1,
+      "label": "Cup plastik rawan bocor",
+      "anchor": "rembes"
+    },
+    {
+      "num": 2,
+      "label": "Botol 180 derajat sealed",
+      "anchor": "dibalik"
+    },
+    {
+      "num": 3,
+      "label": "Stevia tanpa sugar crash",
+      "anchor": "fokus"
+    }
+  ],
+  "highlight_keywords": [
+    "hermetic",
+    "cold steep"
+  ],
+  "resolvedSFX": [
+    {
+      "file": "sub_hit.mp3",
+      "delayMs": 0,
+      "volume": 1
+    },
+    {
+      "file": "eightbit_clock_spin.wav",
+      "delayMs": 50,
+      "volume": 0.8
+    },
+    {
+      "file": "snap.mp3",
+      "delayMs": 10240,
+      "volume": 0.9
+    },
+    {
+      "file": "whoosh.mp3",
+      "delayMs": 21720,
+      "volume": 0.8
+    },
+    {
+      "file": "eightbit_pop.wav",
+      "delayMs": 23920,
+      "volume": 0.85
+    },
+    {
+      "file": "eightbit_portal_shimmer.wav",
+      "delayMs": 32280,
+      "volume": 0.8
+    }
+  ],
+  "caption": "Jangan korbankan laptop dan fokus kerja lo demi teh manis gula pasir. Beralih ke Lira yang sudah terbukti tahan bocor dan pakai pemanis alami stevia untuk energi seharian. Dibuat dengan metode cold steep agar rasa tehnya tetap murni tanpa rasa pahit berlebih. Cek link di bio untuk batch hari ini. #drinklira #milktea #craftdrink",
+  "createdAt": "2026-11-05T09:37:31.955Z"
+}

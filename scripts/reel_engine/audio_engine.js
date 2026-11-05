@@ -194,8 +194,8 @@ function buildCaptions(words, highlightKeywords = []) {
     }
   }
 
-  // Saccadic decoupling: suppress lower subtitles until ~1.33s (frame 40)
-  return chunks.filter((c) => c.fromFrame >= 38 || c.startSec >= 1.25);
+  // Include all captions from the very start of speech
+  return chunks;
 }
 
 async function buildReelAudio(cfg, opts = {}) {

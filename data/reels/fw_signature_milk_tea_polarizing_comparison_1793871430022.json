@@ -1,0 +1,126 @@
+{
+  "topic": "Milk Tea Kualitas Tinggi Anti Tumpah",
+  "threeP": {
+    "promise": "Milk tea yang aman dibawa tanpa takut tumpah",
+    "proof": "Botol hermetic seal yang sudah teruji 180 derajat",
+    "path": "Ganti ke stevia untuk performa otak stabil"
+  },
+  "written_hook": {
+    "pre": "BERHENTI MINUM TEH",
+    "accent": "MURAHAN",
+    "post": "DI CUP"
+  },
+  "script": "[dramatic] Berhenti minum teh murahan di cup plastik yang bocor. [curious] Kenapa lo masih nekat naruh cup kafe di tas samping laptop yang harganya belasan juta. [frustrated] Cup plastik itu gampang banget berembun dan rembes merusak dokumen penting kerjaan lo. [intrigued] Tapi risiko tumpah itu sebenarnya cuma permulaan dari masalah yang jauh lebih parah. [confident] Botol kita pakai sistem hermetic seal yang tetap aman meski dibalik total di atas keyboard. [serious] Tapi bagian paling pentingnya ada di isi minuman yang lo konsumsi setiap hari. [proud] Kita pakai proses cold steep seharian dengan stevia murni supaya otak lo tetap fokus tanpa sugar crash. [urgent] Biar punya minuman yang gak bakal tumpah di laptop lo, klik link di bio sekarang!",
+  "list_items": [
+    {
+      "num": 1,
+      "label": "Cup plastik rawan bocor",
+      "anchor": "rembes"
+    },
+    {
+      "num": 2,
+      "label": "Botol 180 derajat sealed",
+      "anchor": "dibalik"
+    },
+    {
+      "num": 3,
+      "label": "Stevia tanpa sugar crash",
+      "anchor": "fokus"
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1_hook",
+      "scene": "totebag_cup_tilt",
+      "card": "STOP MINUM TEH MURAHAN",
+      "anchor": null
+    },
+    {
+      "id": "b2_lead",
+      "scene": "desk_cup_typing",
+      "card": "KENAPA INI BAHAYA",
+      "anchor": "kenapa"
+    },
+    {
+      "id": "b3_body1",
+      "scene": "wet_notes_cup",
+      "card": "CUP PLASTIK RAWAN BOCOR",
+      "anchor": "rembes"
+    },
+    {
+      "id": "b4_loop1",
+      "scene": "sugar_vs_stevia_chart",
+      "card": "TAPI ITU BELUM SEBERAPA...",
+      "anchor": "risiko"
+    },
+    {
+      "id": "b5_body2",
+      "scene": "inverted_bottle_laptop",
+      "card": "180 DERAJAT SEALED",
+      "anchor": "dibalik"
+    },
+    {
+      "id": "b6_loop2",
+      "scene": "batch_bottling",
+      "card": "RAHASIA ISI MINUMAN",
+      "anchor": "bagian"
+    },
+    {
+      "id": "b7_body3",
+      "scene": "cold_steep_tea",
+      "card": "ZERO SUGAR CRASH",
+      "anchor": "fokus"
+    },
+    {
+      "id": "b8_cta",
+      "scene": "caleb_sip_smirk",
+      "card": "KLIK LINK DI BIO",
+      "anchor": "biar"
+    }
+  ],
+  "highlight_keywords": [
+    "hermetic",
+    "cold steep"
+  ],
+  "sfx": [
+    {
+      "file": "sub_hit.mp3",
+      "at": 0,
+      "vol": 1
+    },
+    {
+      "file": "eightbit_clock_spin.wav",
+      "at": 0.05,
+      "vol": 0.8
+    },
+    {
+      "file": "snap.mp3",
+      "anchor": "rembes",
+      "vol": 0.9
+    },
+    {
+      "file": "whoosh.mp3",
+      "anchor": "dibalik",
+      "vol": 0.8
+    },
+    {
+      "file": "eightbit_pop.wav",
+      "anchor": "bagian",
+      "vol": 0.85
+    },
+    {
+      "file": "eightbit_portal_shimmer.wav",
+      "anchor": "fokus",
+      "vol": 0.8
+    }
+  ],
+  "new_asset": null,
+  "caption": "Jangan korbankan laptop dan fokus kerja lo demi teh manis gula pasir. Beralih ke Lira yang sudah terbukti tahan bocor dan pakai pemanis alami stevia untuk energi seharian. Dibuat dengan metode cold steep agar rasa tehnya tetap murni tanpa rasa pahit berlebih. Cek link di bio untuk batch hari ini. #drinklira #milktea #craftdrink",
+  "sku": "Signature Milk Tea",
+  "pillar": "Craftsmanship & Ingredient Truth",
+  "hook_category": "Polarizing Comparison",
+  "format": "reel",
+  "writer_model": "gemini-3.1-flash-lite (Google Gemini)",
+  "id": "fw_signature_milk_tea_polarizing_comparison_1793871430022",
+  "createdAt": "2026-11-05T09:37:10.022Z"
+}

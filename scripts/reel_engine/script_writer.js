@@ -147,6 +147,58 @@ function requestOpenAICompatible(endpoint, key, model, systemPrompt, userPrompt)
   });
 }
 
+function requestNativeGemini(key, model, systemPrompt, userPrompt) {
+  return new Promise((resolve, reject) => {
+    const payload = JSON.stringify({
+      contents: [{ role: 'user', parts: [{ text: userPrompt }] }],
+      systemInstruction: { parts: [{ text: systemPrompt + '\n\nIMPORTANT: Respond ONLY with a valid JSON object matching the required schema. Zero markdown wrappers, zero preamble.' }] },
+      generationConfig: {
+        responseMimeType: 'application/json',
+        temperature: 1.0,
+      }
+    });
+
+    const req = https.request({
+      protocol: 'https:',
+      hostname: 'generativelanguage.googleapis.com',
+      port: 443,
+      path: `/v1beta/models/${model}:generateContent?key=${key}`,
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Content-Length': Buffer.byteLength(payload)
+      },
+      timeout: 25000
+    }, (res) => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => {
+        if (res.statusCode < 200 || res.statusCode >= 300) {
+          return reject(new Error(`HTTP ${res.statusCode}: ${data.slice(0, 180)}`));
+        }
+        try {
+          const parsed = JSON.parse(data);
+          const text = parsed.candidates?.[0]?.content?.parts?.[0]?.text;
+          if (!text) return reject(new Error('No text returned in candidate parts'));
+          const cleanJson = extractJson(text);
+          if (!cleanJson) return reject(new Error('Failed to parse JSON from response: ' + text.slice(0, 100)));
+          resolve({ json: cleanJson, model: `${model} (Google Gemini)` });
+        } catch (e) {
+          reject(e);
+        }
+      });
+    });
+
+    req.on('timeout', () => {
+      req.destroy();
+      reject(new Error(`Request timed out after 25s to Gemini ${model}`));
+    });
+    req.on('error', reject);
+    req.write(payload);
+    req.end();
+  });
+}
+
 function getProviderCandidates() {
   const candidates = [];
 
@@ -179,13 +231,13 @@ function getProviderCandidates() {
     );
   }
 
-  // 4. Google Gemini (Active Free Tier Models via OpenAI-compatible endpoint)
+  // 4. Google Gemini (Active Fast Free Tier Models via Native REST API)
   const geminiKey = (process.env.GEMINI_API_KEY || '').trim();
   if (geminiKey) {
     candidates.push(
-      { name: 'Gemini (3.5-flash-lite)', endpoint: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions', key: geminiKey, model: 'gemini-3.5-flash-lite' },
-      { name: 'Gemini (3.6-flash)', endpoint: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions', key: geminiKey, model: 'gemini-3.6-flash' },
-      { name: 'Gemini (3.8-flash)', endpoint: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions', key: geminiKey, model: 'gemini-3.8-flash' }
+      { name: 'Gemini (3.1-flash-lite)', nativeGemini: true, key: geminiKey, model: 'gemini-3.1-flash-lite' },
+      { name: 'Gemini (3.5-flash-lite)', nativeGemini: true, key: geminiKey, model: 'gemini-3.5-flash-lite' },
+      { name: 'Gemini (3.6-flash)', nativeGemini: true, key: geminiKey, model: 'gemini-3.6-flash' }
     );
   }
 
@@ -207,7 +259,9 @@ async function callFreeLLM(systemPrompt, userPrompt) {
     for (const cand of candidates) {
       try {
         console.log(`[Writer] Querying ${cand.name}...`);
-        const res = await requestOpenAICompatible(cand.endpoint, cand.key, cand.model, systemPrompt, userPrompt);
+        const res = cand.nativeGemini
+          ? await requestNativeGemini(cand.key, cand.model, systemPrompt, userPrompt)
+          : await requestOpenAICompatible(cand.endpoint, cand.key, cand.model, systemPrompt, userPrompt);
         return res;
       } catch (e) {
         lastErr = e;
@@ -234,10 +288,20 @@ async function writeWithFreeLLM(tuple, entries, catalog) {
   const avoid = recentHooks(entries);
   let feedback = '';
   for (let attempt = 1; attempt <= 4; attempt++) {
-    const user = `Write today's reel.
+    const user = `Write today's reel following the 8-stage retention format:
+Hook -> Lead -> Body 1 -> Open Loop -> Body 2 -> Open loop -> Body 3 -> CTA
 SKU: ${tuple.sku} (${fw.SKU_ANGLES[tuple.sku]})
 Pillar: ${tuple.pillar}
 Hook category: ${tuple.hook_category}
+Beats required (8):
+- b1_hook: Hook (0-3s scroll-stopping pattern interrupt / somatic pain)
+- b2_lead: Lead (3-6s context bridge / why ordinary drinks fail)
+- b3_body1: Body 1 (6-11s Point 1 problem agitation)
+- b4_loop1: Open Loop 1 (11-14s curiosity gap teasing Point 2)
+- b5_body2: Body 2 (14-20s Point 2 physical proof / 180° sealed bottle)
+- b6_loop2: Open Loop 2 (20-23s second curiosity gap teasing Point 3)
+- b7_body3: Body 3 (23-27s Point 3 formulation / 100% stevia zero crash)
+- b8_cta: CTA (27-31s conversion to bio link)
 Recent hooks to AVOID echoing (different angle, different wording):
 ${avoid.map((h) => `- ${h}`).join('\n')}
 ${feedback ? `\nYOUR PREVIOUS ATTEMPT FAILED VALIDATION. Fix every issue:\n${feedback}` : ''}`;

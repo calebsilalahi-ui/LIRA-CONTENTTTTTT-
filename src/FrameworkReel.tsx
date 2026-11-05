@@ -70,7 +70,7 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
   if (manifest.beatFrames && Array.isArray(manifest.beats)) {
     for (let i = manifest.beats.length - 1; i >= 0; i--) {
       const bId = manifest.beats[i].id;
-      const startF = manifest.beatFrames[bId] ?? 0;
+      const startF = (manifest.beatFrames as Record<string, number>)?.[bId] ?? 0;
       if (frame >= startF) {
         currentBeat = bId;
         break;
@@ -94,8 +94,8 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
     (chunk: any) => frame >= chunk.fromFrame && frame < chunk.toFrame
   );
 
-  // Suppress subtitles at Frame 0 until frame 40 (~1.33s) to decouple saccadic eye-flow (plan §2.4 & §4.1)
-  const showSubtitles = frame >= 40;
+  // Subtitles active from start of voiceover
+  const showSubtitles = frame >= 2;
 
   // Seamless Loop overlay on final 15 frames
   const loopOpacity = interpolate(frame, [manifest.totalFrames - 15, manifest.totalFrames], [0, 0.95], {
@@ -156,166 +156,216 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
           />
         </AbsoluteFill>
 
-        {/* Ambient Floating 8-Bit Emerald/Gold Motes */}
-        {Array.from({ length: 16 }, (_, i) => {
-          const speed = 0.9 + (i % 3) * 0.3;
-          const prog = ((frame * speed + i * 35) % 100) / 100;
-          const bx = 210 + ((i * 73) % 660);
-          const sx = Math.sin(prog * Math.PI * 2.5 + i) * 22;
-          const y = 220 + prog * 980;
-          const size = i % 3 === 0 ? 9 : 6;
-          const alpha = prog < 0.15 ? prog / 0.15 : prog > 0.85 ? (1 - prog) / 0.15 : 0.85;
-          const color = i % 2 === 0 ? '#39FF88' : '#FFE566';
-          return (
-            <div
-              key={i}
-              style={{
-                position: 'absolute',
-                left: bx + sx,
-                top: y,
-                width: size,
-                height: size,
-                backgroundColor: color,
-                boxShadow: `0 0 10px ${color}, 2px 2px 0 rgba(0,0,0,0.85)`,
-                opacity: alpha,
-                pointerEvents: 'none',
-                zIndex: 40,
-              }}
-            />
-          );
-        })}
-
         {/* ================================================================== */}
-        {/* BEAT 1 (00s - 05s): FRAME-0 4-LAYER SUPERHOOK STACK                */}
+        {/* BEAT 4: OPEN LOOP 1 / SCIENCE (MINIMALIST EDITORIAL - ZERO SLOP)   */}
         {/* ================================================================== */}
-        {currentBeat === 'b1_hook' && (
-          <div
+        {(currentBeat === 'b4_loop1' || sceneDef.id === 'sugar_vs_stevia_chart') && (
+          <AbsoluteFill
             style={{
-              position: 'absolute',
-              left: 540,
-              top: 720,
-              transform: 'translate(-50%, -50%)',
-              width: 640,
-              backgroundColor: 'rgba(11, 15, 25, 0.94)',
-              border: '3px solid #FF2E63',
-              borderRadius: 22,
-              padding: '24px 28px',
-              boxShadow:
-                '0 24px 60px rgba(0,0,0,0.95), 0 0 35px rgba(255, 46, 99, 0.5), inset 0 0 16px rgba(255, 46, 99, 0.2)',
+              backgroundColor: '#070A0F',
+              backgroundImage:
+                'radial-gradient(circle at 50% 32%, rgba(15, 38, 25, 0.45) 0%, rgba(7, 10, 15, 0.98) 75%)',
+              zIndex: 60,
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              gap: 14,
-              zIndex: 70,
-              backdropFilter: 'blur(12px)',
+              paddingTop: 160,
             }}
           >
+            {/* Minimalist Brand Eyebrow */}
             <div
               style={{
-                display: 'flex',
+                display: 'inline-flex',
                 alignItems: 'center',
-                gap: 10,
-                backgroundColor: 'rgba(255, 46, 99, 0.18)',
-                border: '1.5px solid #FF2E63',
-                padding: '6px 16px',
+                gap: 8,
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                border: '1px solid rgba(255, 255, 255, 0.15)',
+                padding: '6px 18px',
                 borderRadius: 9999,
+                marginBottom: 16,
               }}
             >
               <div
                 style={{
-                  width: 10,
-                  height: 10,
+                  width: 8,
+                  height: 8,
                   borderRadius: '50%',
-                  backgroundColor: '#FF2E63',
-                  boxShadow: '0 0 10px #FF2E63',
+                  backgroundColor: COLORS.goldBright,
+                  boxShadow: '0 0 8px #FFE566',
                 }}
               />
               <span
                 style={{
-                  fontFamily: PIXEL_SUB_FONT,
-                  fontSize: 13,
-                  fontWeight: 800,
-                  color: '#FF2E63',
-                  letterSpacing: '0.1em',
+                  fontFamily: SANS_FONT,
+                  fontSize: 12,
+                  fontWeight: 700,
+                  color: '#FAF7F0',
+                  letterSpacing: '0.14em',
                   textTransform: 'uppercase',
                 }}
               >
-                {manifest.hook_category?.toUpperCase() || 'SOMATIC ALERT'}
+                EFEK METABOLISME OTAK
               </span>
             </div>
 
+            {/* Clean Editorial Title */}
             <div
               style={{
                 fontFamily: PIXEL_HEADER_FONT,
                 fontSize: 22,
+                fontWeight: 900,
                 color: '#FFFFFF',
                 textAlign: 'center',
-                lineHeight: 1.45,
+                lineHeight: 1.35,
+                marginBottom: 28,
                 textShadow: antiArtifactShadow,
               }}
             >
-              {manifest.threeP?.promise || '3 TANDA DI CAFE MERUSAK FOKUS LO'}
+              STEVIA MURNI <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: 18 }}>VS</span> GULA PASIR
             </div>
 
+            {/* Two Side-by-Side Minimalist Cards */}
             <div
               style={{
-                width: '100%',
-                backgroundColor: 'rgba(255, 255, 255, 0.08)',
-                borderRadius: 9999,
-                height: 10,
-                overflow: 'hidden',
-                marginTop: 6,
+                display: 'flex',
+                gap: 20,
+                width: 820,
+                justifyContent: 'center',
               }}
             >
+              {/* CARD 1: STEVIA ALAMI */}
               <div
                 style={{
-                  width: `${interpolate(frame, [0, 90], [25, 95], { extrapolateRight: 'clamp' })}%`,
-                  height: '100%',
-                  backgroundColor: '#FF2E63',
-                  boxShadow: '0 0 12px #FF2E63',
+                  flex: 1,
+                  backgroundColor: 'rgba(10, 20, 15, 0.88)',
+                  border: '2px solid rgba(57, 255, 136, 0.45)',
+                  borderRadius: 20,
+                  padding: '20px',
+                  boxShadow: '0 20px 45px rgba(0,0,0,0.9), 0 0 30px rgba(57, 255, 136, 0.15)',
+                  backdropFilter: 'blur(12px)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  gap: 12,
                 }}
-              />
+              >
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                  <span style={{ fontFamily: SANS_FONT, fontSize: 15, fontWeight: 800, color: '#FFFFFF', letterSpacing: '0.04em' }}>
+                    STEVIA ALAMI
+                  </span>
+                  <span style={{ fontFamily: PIXEL_SUB_FONT, fontSize: 11, fontWeight: 700, color: COLORS.emeraldNeon, backgroundColor: 'rgba(57, 255, 136, 0.15)', padding: '3px 8px', borderRadius: 6 }}>
+                    0g GULA
+                  </span>
+                </div>
+
+                {/* Minimalist SVG Graph: Smooth flat steady energy curve */}
+                <div style={{ width: '100%', height: 90, position: 'relative', marginTop: 4 }}>
+                  <svg width="100%" height="100%" viewBox="0 0 320 90" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id="emeraldGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stopColor="#39FF88" stopOpacity="0.3" />
+                        <stop offset="100%" stopColor="#39FF88" stopOpacity="0.0" />
+                      </linearGradient>
+                    </defs>
+                    <line x1="0" y1="50" x2="320" y2="50" stroke="rgba(255,255,255,0.12)" strokeDasharray="4 4" strokeWidth="1.5" />
+                    <path d="M 0,50 Q 80,47 160,49 T 320,49 L 320,90 L 0,90 Z" fill="url(#emeraldGrad)" />
+                    <path d="M 0,50 Q 80,47 160,49 T 320,49" fill="none" stroke="#39FF88" strokeWidth="3" strokeLinecap="round" />
+                  </svg>
+                </div>
+
+                <div style={{ textAlign: 'center', width: '100%' }}>
+                  <div style={{ fontFamily: SANS_FONT, fontSize: 14, fontWeight: 800, color: '#FAF7F0', marginBottom: 2 }}>
+                    Fokus Stabil 6+ Jam
+                  </div>
+                  <div style={{ fontFamily: SANS_FONT, fontSize: 11, color: 'rgba(250, 247, 240, 0.65)', lineHeight: 1.3 }}>
+                    Tanpa lonjakan insulin & brain fog
+                  </div>
+                </div>
+              </div>
+
+              {/* CARD 2: GULA PASIR (CUP KAFE) */}
+              <div
+                style={{
+                  flex: 1,
+                  backgroundColor: 'rgba(22, 10, 14, 0.88)',
+                  border: '2px solid rgba(255, 46, 99, 0.45)',
+                  borderRadius: 20,
+                  padding: '20px',
+                  boxShadow: '0 20px 45px rgba(0,0,0,0.9), 0 0 30px rgba(255, 46, 99, 0.15)',
+                  backdropFilter: 'blur(12px)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  gap: 12,
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                  <span style={{ fontFamily: SANS_FONT, fontSize: 15, fontWeight: 800, color: '#FFFFFF', letterSpacing: '0.04em' }}>
+                    CUP KAFE
+                  </span>
+                  <span style={{ fontFamily: PIXEL_SUB_FONT, fontSize: 11, fontWeight: 700, color: COLORS.crimson, backgroundColor: 'rgba(255, 46, 99, 0.15)', padding: '3px 8px', borderRadius: 6 }}>
+                    ~25g GULA
+                  </span>
+                </div>
+
+                {/* Minimalist SVG Graph: Spike and Crash */}
+                <div style={{ width: '100%', height: 90, position: 'relative', marginTop: 4 }}>
+                  <svg width="100%" height="100%" viewBox="0 0 320 90" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id="crimsonGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stopColor="#FF2E63" stopOpacity="0.3" />
+                        <stop offset="100%" stopColor="#FF2E63" stopOpacity="0.0" />
+                      </linearGradient>
+                    </defs>
+                    <line x1="0" y1="50" x2="320" y2="50" stroke="rgba(255,255,255,0.12)" strokeDasharray="4 4" strokeWidth="1.5" />
+                    <path d="M 0,50 Q 50,12 90,12 Q 130,12 170,60 Q 210,85 260,78 L 320,68 L 320,90 L 0,90 Z" fill="url(#crimsonGrad)" />
+                    <path d="M 0,50 Q 50,12 90,12 Q 130,12 170,60 Q 210,85 260,78 L 320,68" fill="none" stroke="#FF2E63" strokeWidth="3" strokeLinecap="round" />
+                  </svg>
+                </div>
+
+                <div style={{ textAlign: 'center', width: '100%' }}>
+                  <div style={{ fontFamily: SANS_FONT, fontSize: 14, fontWeight: 800, color: '#FAF7F0', marginBottom: 2 }}>
+                    Sugar Crash 45 Mnt
+                  </div>
+                  <div style={{ fontFamily: SANS_FONT, fontSize: 11, color: 'rgba(250, 247, 240, 0.65)', lineHeight: 1.3 }}>
+                    Gula darah anjlok, lemas & ngantuk
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+          </AbsoluteFill>
         )}
 
         {/* ================================================================== */}
-        {/* BEAT 2 (05s - 10s): CONTEXT AGITATION & OPEN LOOP 3-ITEM HUD       */}
+        {/* POINT 1 / BODY 1 (BEAT 3)                                          */}
         {/* ================================================================== */}
-        {/* ================================================================== */}
-        {/* POINT 1 / BEAT 2                                                   */}
-        {/* ================================================================== */}
-        {(currentBeat === 'b2_point1' || currentBeat === 'b2_agitation') && (
+        {(currentBeat === 'b3_body1' || currentBeat === 'b2_point1') && (
           <div
             style={{
               position: 'absolute',
               left: 540,
-              top: 680,
-              transform: 'translate(-50%, -50%)',
-              width: 660,
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              gap: 12,
-              zIndex: 70,
+              top: 210,
+              transform: 'translateX(-50%)',
+              zIndex: 90,
             }}
           >
             <div
               style={{
-                backgroundColor: 'rgba(11, 15, 25, 0.95)',
-                border: '2px solid #FF2E63',
-                borderRadius: 16,
-                padding: '16px 28px',
+                backgroundColor: 'rgba(7, 10, 15, 0.94)',
+                border: '3px solid #FF2E63',
+                borderRadius: 18,
+                padding: '12px 28px',
                 display: 'flex',
                 alignItems: 'center',
-                gap: 16,
-                boxShadow: '0 16px 36px rgba(0,0,0,0.95), 0 0 25px rgba(255,46,99,0.4)',
+                gap: 14,
+                boxShadow: '0 20px 45px rgba(0,0,0,0.95), 0 0 30px rgba(255,46,99,0.4)',
+                backdropFilter: 'blur(12px)',
               }}
             >
               <div
                 style={{
                   fontFamily: PIXEL_HEADER_FONT,
-                  fontSize: 18,
+                  fontSize: 20,
                   color: '#FF2E63',
                 }}
               >
@@ -328,48 +378,45 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
                   color: '#FFFFFF',
                   letterSpacing: '0.05em',
                   fontWeight: 800,
+                  textTransform: 'uppercase',
                 }}
               >
-                {manifest.list_items?.[0]?.label || beatConfig?.card || 'CUP PLASTIK GAMPANG TUMPAH'}
+                {manifest.list_items?.[0]?.label || beatConfig?.card || 'CUP PLASTIK RAWAN BOCOR'}
               </div>
             </div>
           </div>
         )}
 
         {/* ================================================================== */}
-        {/* POINT 2 / BEAT 3                                                   */}
+        {/* POINT 2 / BODY 2 (BEAT 5)                                          */}
         {/* ================================================================== */}
-        {(currentBeat === 'b3_point2' || currentBeat === 'b3_proof') && (
+        {(currentBeat === 'b5_body2' || currentBeat === 'b3_point2' || currentBeat === 'b3_proof') && (
           <div
             style={{
               position: 'absolute',
               left: 540,
-              top: 680,
-              transform: 'translate(-50%, -50%)',
-              width: 660,
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              gap: 12,
-              zIndex: 70,
+              top: 210,
+              transform: 'translateX(-50%)',
+              zIndex: 90,
             }}
           >
             <div
               style={{
-                backgroundColor: 'rgba(11, 15, 25, 0.95)',
-                border: `2px solid ${COLORS.emeraldNeon}`,
-                borderRadius: 16,
-                padding: '16px 28px',
+                backgroundColor: 'rgba(7, 10, 15, 0.94)',
+                border: `3px solid ${COLORS.emeraldNeon}`,
+                borderRadius: 18,
+                padding: '12px 28px',
                 display: 'flex',
                 alignItems: 'center',
-                gap: 16,
-                boxShadow: '0 16px 36px rgba(0,0,0,0.95), 0 0 25px rgba(57,255,136,0.4)',
+                gap: 14,
+                boxShadow: '0 20px 45px rgba(0,0,0,0.95), 0 0 30px rgba(57,255,136,0.4)',
+                backdropFilter: 'blur(12px)',
               }}
             >
               <div
                 style={{
                   fontFamily: PIXEL_HEADER_FONT,
-                  fontSize: 18,
+                  fontSize: 20,
                   color: COLORS.emeraldNeon,
                 }}
               >
@@ -382,6 +429,7 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
                   color: '#FFFFFF',
                   letterSpacing: '0.05em',
                   fontWeight: 800,
+                  textTransform: 'uppercase',
                 }}
               >
                 {manifest.list_items?.[1]?.label || beatConfig?.card || 'BOTOL 180° SEALED ANTI BOCOR'}
@@ -391,39 +439,35 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
         )}
 
         {/* ================================================================== */}
-        {/* POINT 3 / BEAT 4                                                   */}
+        {/* POINT 3 / BODY 3 (BEAT 7)                                          */}
         {/* ================================================================== */}
-        {(currentBeat === 'b4_point3' || currentBeat === 'b4_craft') && (
+        {(currentBeat === 'b7_body3' || currentBeat === 'b4_point3' || currentBeat === 'b4_craft') && (
           <div
             style={{
               position: 'absolute',
               left: 540,
-              top: 680,
-              transform: 'translate(-50%, -50%)',
-              width: 660,
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              gap: 12,
-              zIndex: 70,
+              top: 210,
+              transform: 'translateX(-50%)',
+              zIndex: 90,
             }}
           >
             <div
               style={{
-                backgroundColor: 'rgba(11, 15, 25, 0.95)',
-                border: `2px solid ${COLORS.goldBright}`,
-                borderRadius: 16,
-                padding: '16px 28px',
+                backgroundColor: 'rgba(7, 10, 15, 0.94)',
+                border: `3px solid ${COLORS.goldBright}`,
+                borderRadius: 18,
+                padding: '12px 28px',
                 display: 'flex',
                 alignItems: 'center',
-                gap: 16,
-                boxShadow: '0 16px 36px rgba(0,0,0,0.95), 0 0 25px rgba(255,229,102,0.4)',
+                gap: 14,
+                boxShadow: '0 20px 45px rgba(0,0,0,0.95), 0 0 30px rgba(255,229,102,0.4)',
+                backdropFilter: 'blur(12px)',
               }}
             >
               <div
                 style={{
                   fontFamily: PIXEL_HEADER_FONT,
-                  fontSize: 18,
+                  fontSize: 20,
                   color: COLORS.goldBright,
                 }}
               >
@@ -436,6 +480,7 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
                   color: '#FFFFFF',
                   letterSpacing: '0.05em',
                   fontWeight: 800,
+                  textTransform: 'uppercase',
                 }}
               >
                 {manifest.list_items?.[2]?.label || beatConfig?.card || 'COLD-STEEP & ZERO SUGAR CRASH'}
@@ -445,7 +490,7 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
         )}
 
         {/* ================================================================== */}
-        {/* COLD CHAIN BEAT (if present in 6-beat legacy structure)             */}
+        {/* COLD CHAIN BEAT (if present in legacy structure)                    */}
         {/* ================================================================== */}
         {currentBeat === 'b5_coldchain' && (
           <div
@@ -481,9 +526,9 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
         )}
 
         {/* ================================================================== */}
-        {/* CTA (FINAL BEAT): FANFARE & FLANKING REAL BOTTLES                  */}
+        {/* CTA (FINAL BEAT): BEAT 8 (OR LEGACY b5_cta / b6_cta)               */}
         {/* ================================================================== */}
-        {(currentBeat === 'b5_cta' || currentBeat === 'b6_cta') && (
+        {(currentBeat === 'b8_cta' || currentBeat === 'b5_cta' || currentBeat === 'b6_cta') && (
           <AbsoluteFill style={{ zIndex: 75 }}>
             {/* Flanking real bottles inside Red Box bounds (x:[192, 896], y:[202, 1236]) */}
             <div
@@ -519,28 +564,30 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
               style={{
                 position: 'absolute',
                 left: 540,
-                top: 660,
-                transform: 'translate(-50%, -50%)',
-                width: 620,
-                backgroundColor: 'rgba(11, 15, 25, 0.95)',
+                top: 210,
+                transform: 'translateX(-50%)',
+                width: 660,
+                backgroundColor: 'rgba(7, 10, 15, 0.94)',
                 border: '3px solid #FFE566',
                 borderRadius: 20,
-                padding: '20px 24px',
+                padding: '16px 28px',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                gap: 12,
+                gap: 8,
                 boxShadow: '0 20px 50px rgba(0,0,0,0.95), 0 0 35px rgba(255,229,102,0.4)',
+                backdropFilter: 'blur(12px)',
               }}
             >
               <div
                 style={{
                   fontFamily: PIXEL_HEADER_FONT,
-                  fontSize: 18,
+                  fontSize: 20,
                   color: '#FFE566',
                   textAlign: 'center',
-                  lineHeight: 1.4,
+                  lineHeight: 1.35,
                   textShadow: antiArtifactShadow,
+                  textTransform: 'uppercase',
                 }}
               >
                 {beatConfig?.card || 'MINUMAN ANTI TUMPAH DI LAPTOP'}
@@ -551,7 +598,9 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
                   fontSize: 14,
                   color: '#FFFFFF',
                   textAlign: 'center',
-                  letterSpacing: '0.06em',
+                  letterSpacing: '0.08em',
+                  fontWeight: 800,
+                  textTransform: 'uppercase',
                 }}
               >
                 KLIK LINK DI BIO SEKARANG
@@ -561,87 +610,131 @@ export const FrameworkReel: React.FC<FrameworkReelProps> = ({ manifest: propMani
         )}
 
         {/* ================================================================== */}
-        {/* UPPER RED BOX: WRITTEN HOOK & TOP CARD HUD                         */}
-        {/* Strictly within x:[192, 896], y:[202, 1236]                        */}
+        {/* TOP VISUAL HOOK: BEAT 1 (HOOK)                                     */}
+        {/* Bold, eye-catching, high-contrast banner at top safe zone          */}
         {/* ================================================================== */}
-        <div
-          style={{
-            position: 'absolute',
-            top: 230,
-            left: 540,
-            transform: 'translateX(-50%)',
-            width: 680,
-            textAlign: 'center',
-            zIndex: 90,
-          }}
-        >
-          {/* Frame 0 Written Hook (<= 6 words, 1 accent word) */}
+        {currentBeat === 'b1_hook' && (
           <div
             style={{
-              fontFamily: PIXEL_HEADER_FONT,
-              fontSize: 26,
-              color: '#FFFFFF',
-              lineHeight: 1.4,
-              letterSpacing: '0.03em',
-              textShadow: antiArtifactShadow,
+              position: 'absolute',
+              top: 210,
+              left: 540,
+              transform: 'translateX(-50%)',
+              width: 780,
+              backgroundColor: 'rgba(7, 10, 15, 0.94)',
+              border: '3.5px solid #FFE566',
+              borderRadius: 20,
+              padding: '14px 28px',
+              textAlign: 'center',
+              boxShadow:
+                '0 20px 50px rgba(0,0,0,0.95), 0 0 35px rgba(255, 229, 102, 0.5), inset 0 0 15px rgba(255, 229, 102, 0.15)',
+              backdropFilter: 'blur(12px)',
+              zIndex: 90,
             }}
           >
-            {manifest.written_hook?.pre}{' '}
-            <span style={{ color: COLORS.goldBright }}>{manifest.written_hook?.accent}</span>{' '}
-            {manifest.written_hook?.post}
-          </div>
-
-          {/* Current Beat HUD Card Tag */}
-          {beatConfig?.card && (
             <div
               style={{
-                display: 'inline-block',
-                marginTop: 10,
-                backgroundColor: 'rgba(7, 10, 15, 0.9)',
-                border: '1.5px solid rgba(255, 255, 255, 0.3)',
-                padding: '4px 14px',
-                borderRadius: 9999,
-                fontFamily: PIXEL_SUB_FONT,
-                fontSize: 11,
-                color: '#5CE1E6',
-                letterSpacing: '0.08em',
+                fontFamily: PIXEL_HEADER_FONT,
+                fontSize: 30,
+                fontWeight: 900,
+                color: '#FFFFFF',
+                lineHeight: 1.3,
+                letterSpacing: '0.04em',
                 textTransform: 'uppercase',
+                textShadow: antiArtifactShadow,
               }}
             >
-              {beatConfig.card}
+              {manifest.written_hook?.pre}{' '}
+              <span style={{ color: COLORS.goldBright, textShadow: '0 0 20px rgba(255,229,102,0.8)' }}>
+                {manifest.written_hook?.accent}
+              </span>{' '}
+              {manifest.written_hook?.post}
             </div>
-          )}
-        </div>
+          </div>
+        )}
 
         {/* ================================================================== */}
-        {/* LOWER RED BOX: DYNAMIC EYE-TRACKING CAPTION STREAM                 */}
-        {/* Suppressed until frame 40 (~1.33s), max width 680px, anchored 62% */}
+        {/* TOP VISUAL HOOK: BEAT 2 (LEAD)                                     */}
+        {/* High-impact visual hook for the lead, zero meta labels              */}
+        {/* ================================================================== */}
+        {currentBeat === 'b2_lead' && (
+          <div
+            style={{
+              position: 'absolute',
+              top: 210,
+              left: 540,
+              transform: 'translateX(-50%)',
+              width: 760,
+              backgroundColor: 'rgba(7, 10, 15, 0.94)',
+              border: '3.5px solid #FF2E63',
+              borderRadius: 20,
+              padding: '14px 28px',
+              textAlign: 'center',
+              boxShadow:
+                '0 20px 50px rgba(0,0,0,0.95), 0 0 35px rgba(255, 46, 99, 0.5), inset 0 0 15px rgba(255, 46, 99, 0.15)',
+              backdropFilter: 'blur(12px)',
+              zIndex: 90,
+            }}
+          >
+            <div
+              style={{
+                fontFamily: PIXEL_HEADER_FONT,
+                fontSize: 26,
+                fontWeight: 900,
+                color: '#FFFFFF',
+                lineHeight: 1.3,
+                letterSpacing: '0.04em',
+                textTransform: 'uppercase',
+                textShadow: antiArtifactShadow,
+              }}
+            >
+              {beatConfig?.card || 'KENAPA INI BAHAYA BUAT LAPTOP LO'}
+            </div>
+          </div>
+        )}
+
+        {/* ================================================================== */}
+        {/* DYNAMIC EYE-TRACKING CAPTION STREAM                                */}
+        {/* Anchored at top: 680 across all beats as requested                 */}
         {/* ================================================================== */}
         {showSubtitles && activeChunk && (
           <div
             style={{
               position: 'absolute',
-              top: 1000,
+              top: 680,
               left: 540,
               transform: 'translateX(-50%)',
-              width: 660,
+              maxWidth: 760,
               textAlign: 'center',
               zIndex: 95,
             }}
           >
-            <span
+            <div
               style={{
-                fontFamily: PIXEL_HEADER_FONT,
-                fontSize: 26,
-                color: activeChunk.highlight ? COLORS.goldBright : '#FFFFFF',
-                letterSpacing: '0.04em',
-                lineHeight: 1.35,
-                textTransform: 'uppercase',
-                textShadow: antiArtifactShadow,
+                display: 'inline-block',
+                backgroundColor: 'rgba(7, 10, 15, 0.88)',
+                border: '2px solid rgba(255, 255, 255, 0.2)',
+                borderRadius: 14,
+                padding: '8px 24px',
+                boxShadow: '0 12px 30px rgba(0,0,0,0.95)',
+                backdropFilter: 'blur(8px)',
               }}
             >
-              {activeChunk.text}
-            </span>
+              <span
+                style={{
+                  fontFamily: PIXEL_HEADER_FONT,
+                  fontSize: 26,
+                  fontWeight: 900,
+                  color: activeChunk.highlight ? COLORS.goldBright : '#FFFFFF',
+                  letterSpacing: '0.04em',
+                  lineHeight: 1.3,
+                  textTransform: 'uppercase',
+                  textShadow: antiArtifactShadow,
+                }}
+              >
+                {activeChunk.text}
+              </span>
+            </div>
           </div>
         )}
       </div>
