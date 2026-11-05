@@ -708,7 +708,21 @@ async function main() {
             templateIdx = (lastBlueprintIdx + 1) % PRODUCTION_SLOT_BLUEPRINTS.length;
           }
         } else {
-          templateIdx = entries.length % PRODUCTION_SLOT_BLUEPRINTS.length;
+          // Strictly alternate format based on the last recorded entry in the ledger
+          const lastEntry = entries.length > 0 ? entries[entries.length - 1] : null;
+          const targetFormat = opts.type !== 'auto'
+            ? opts.type
+            : (lastEntry && (lastEntry.format || lastEntry.type) === 'reel' ? 'carousel' : 'reel');
+
+          let foundIdx = -1;
+          for (let offset = 0; offset < PRODUCTION_SLOT_BLUEPRINTS.length; offset++) {
+            const candidateIdx = (entries.length + offset) % PRODUCTION_SLOT_BLUEPRINTS.length;
+            if (PRODUCTION_SLOT_BLUEPRINTS[candidateIdx].format === targetFormat) {
+              foundIdx = candidateIdx;
+              break;
+            }
+          }
+          templateIdx = foundIdx !== -1 ? foundIdx : (entries.length % PRODUCTION_SLOT_BLUEPRINTS.length);
         }
       } catch (e) {
         console.warn(`[Ledger] Warning: Error analyzing ledger entries for next slot:`, e.message);
@@ -760,11 +774,10 @@ async function main() {
       if (opts.config) {
         reelConfig = JSON.parse(fs.readFileSync(path.resolve(opts.config), 'utf-8'));
       } else {
-        const writerRes = await writeReel({
-          sku: template.sku,
-          category: template.hook_category,
-          pillar: template.pillar,
-        });
+        const writerOpts = process.argv.includes('--template')
+          ? { sku: template.sku, category: template.hook_category, pillar: template.pillar }
+          : {};
+        const writerRes = await writeReel(writerOpts);
         reelConfig = writerRes.cfg;
       }
 
