@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "lastUpdated": "2026-11-05T04:09:07.172Z",
+  "lastUpdated": "2026-11-05T07:16:34.223Z",
   "entries": [
     {
       "id": "reel_01_founder_story",
@@ -666,6 +666,20 @@
       "caption": "Matcha murni gak bikin tenggorokan gatel atau jantung deg-degan. Cold crafted fresh batch minggu ini. Crafted solo by caleb766h1 drinklira matcha",
       "status": "published_live",
       "buffer_post_id": "6aec00af660b2991f14eeab8"
+    },
+    {
+      "id": "fw_matcha_classic_polarizing_comparison_1793851335136_1793862994223",
+      "timestamp": "2026-11-05T07:16:34.223Z",
+      "createdAt": "2026-11-05T07:16:34.223Z",
+      "format": "reel",
+      "sku": "Matcha Oatside",
+      "pillar": "Cold Chain & Saturday COD Loop",
+      "hook_category": "Educational",
+      "topic": "Debunking the burnt matcha myth with first-harvest umami and zero sugar crash",
+      "verbal_hook": "[frustrated] Matcha kafe yang lo minum mahal-mahal itu sebenarnya pahit karena daunnya gosong pas dipanggang",
+      "written_hook": "MATCHA KAFE LO PALSU KALAU PAHIT",
+      "caption": "Matcha murni gak bikin tenggorokan gatel atau jantung deg-degan. Cold crafted fresh batch minggu ini. Crafted solo by caleb766h1 drinklira matcha",
+      "status": "published_live"
     }
   ]
 }

@@ -15,44 +15,44 @@
     "post": "KALAU PAHIT"
   },
   "audioMaster": "assets/generated_reels/fw_matcha_classic_polarizing_comparison_1793851335136_master.mp3",
-  "totalFrames": 816,
-  "totalDurationSec": 27.2,
+  "totalFrames": 814,
+  "totalDurationSec": 27.12,
   "beatFrames": {
     "b1_hook": 0,
     "b2_agitation": 166,
-    "b3_proof": 348,
-    "b4_craft": 488,
-    "b5_coldchain": 595,
-    "b6_cta": 664
+    "b3_proof": 345,
+    "b4_craft": 485,
+    "b5_coldchain": 590,
+    "b6_cta": 663
   },
   "listFrames": {
     "item_1": 166,
-    "item_2": 348,
-    "item_3": 488
+    "item_2": 345,
+    "item_3": 485
   },
   "captions": [
     {
       "text": "ITU SEBENARNYA",
       "highlight": false,
-      "startSec": 1.6,
-      "endSec": 2.44,
-      "fromFrame": 48,
-      "toFrame": 73
+      "startSec": 1.76,
+      "endSec": 2.56,
+      "fromFrame": 52,
+      "toFrame": 76
     },
     {
       "text": "PAHIT KARENA",
       "highlight": false,
-      "startSec": 2.44,
-      "endSec": 3.48,
-      "fromFrame": 73,
-      "toFrame": 104
+      "startSec": 2.56,
+      "endSec": 3.44,
+      "fromFrame": 76,
+      "toFrame": 103
     },
     {
       "text": "DAUNNYA GOSONG",
       "highlight": false,
-      "startSec": 3.48,
+      "startSec": 3.44,
       "endSec": 4.32,
-      "fromFrame": 104,
+      "fromFrame": 103,
       "toFrame": 129
     },
     {
@@ -99,217 +99,217 @@
       "text": "ALAMI YANG",
       "highlight": false,
       "startSec": 8.8,
-      "endSec": 9.64,
+      "endSec": 9.6,
       "fromFrame": 264,
-      "toFrame": 289
+      "toFrame": 288
     },
     {
       "text": "JAUH DARI",
       "highlight": false,
-      "startSec": 9.64,
-      "endSec": 10.24,
-      "fromFrame": 289,
-      "toFrame": 307
+      "startSec": 9.6,
+      "endSec": 10.16,
+      "fromFrame": 288,
+      "toFrame": 304
     },
     {
       "text": "KESAN GETIR",
       "highlight": false,
-      "startSec": 10.24,
-      "endSec": 11.314,
-      "fromFrame": 307,
-      "toFrame": 339
+      "startSec": 10.16,
+      "endSec": 11.109,
+      "fromFrame": 304,
+      "toFrame": 333
     },
     {
       "text": "KITA PAKAI",
       "highlight": false,
-      "startSec": 11.314,
-      "endSec": 11.6,
-      "fromFrame": 339,
-      "toFrame": 348
+      "startSec": 11.109,
+      "endSec": 11.52,
+      "fromFrame": 333,
+      "toFrame": 345
     },
     {
       "text": "TEKNIK MICRO-WHISKING",
       "highlight": false,
-      "startSec": 11.6,
-      "endSec": 12.92,
-      "fromFrame": 348,
-      "toFrame": 387
+      "startSec": 11.52,
+      "endSec": 12.64,
+      "fromFrame": 345,
+      "toFrame": 379
     },
     {
       "text": "BUAT LARUTIN",
       "highlight": false,
-      "startSec": 12.92,
-      "endSec": 13.44,
-      "fromFrame": 387,
-      "toFrame": 403
+      "startSec": 12.64,
+      "endSec": 13.24,
+      "fromFrame": 379,
+      "toFrame": 397
     },
     {
       "text": "BUBUK TEH",
       "highlight": false,
-      "startSec": 13.44,
-      "endSec": 14.08,
-      "fromFrame": 403,
-      "toFrame": 422
+      "startSec": 13.24,
+      "endSec": 13.96,
+      "fromFrame": 397,
+      "toFrame": 418
     },
     {
       "text": "TANPA SISA",
       "highlight": false,
-      "startSec": 14.08,
-      "endSec": 14.72,
-      "fromFrame": 422,
-      "toFrame": 441
+      "startSec": 13.96,
+      "endSec": 14.56,
+      "fromFrame": 418,
+      "toFrame": 436
     },
     {
       "text": "GUMPALAN DI",
       "highlight": false,
-      "startSec": 14.72,
-      "endSec": 15.2,
-      "fromFrame": 441,
-      "toFrame": 456
+      "startSec": 14.56,
+      "endSec": 15.12,
+      "fromFrame": 436,
+      "toFrame": 453
     },
     {
       "text": "DASAR BOTOL",
       "highlight": false,
-      "startSec": 15.2,
-      "endSec": 16.267,
-      "fromFrame": 456,
-      "toFrame": 488
+      "startSec": 15.12,
+      "endSec": 16.194,
+      "fromFrame": 453,
+      "toFrame": 485
     },
     {
       "text": "DIBUAT PAKAI",
       "highlight": false,
-      "startSec": 16.267,
-      "endSec": 16.8,
-      "fromFrame": 488,
-      "toFrame": 504
+      "startSec": 16.194,
+      "endSec": 16.72,
+      "fromFrame": 485,
+      "toFrame": 501
     },
     {
       "text": "SERATUS PERSEN",
       "highlight": false,
-      "startSec": 16.8,
-      "endSec": 17.52,
-      "fromFrame": 504,
-      "toFrame": 525
+      "startSec": 16.72,
+      "endSec": 17.44,
+      "fromFrame": 501,
+      "toFrame": 523
     },
     {
       "text": "STEVIA MURNI",
       "highlight": true,
-      "startSec": 17.52,
-      "endSec": 18.24,
-      "fromFrame": 525,
-      "toFrame": 547
+      "startSec": 17.44,
+      "endSec": 18.12,
+      "fromFrame": 523,
+      "toFrame": 543
     },
     {
       "text": "MURNI TANPA",
       "highlight": false,
-      "startSec": 18.24,
-      "endSec": 19.12,
-      "fromFrame": 547,
-      "toFrame": 573
+      "startSec": 18.12,
+      "endSec": 18.96,
+      "fromFrame": 543,
+      "toFrame": 568
     },
     {
       "text": "GULA PASIR",
       "highlight": false,
-      "startSec": 19.12,
-      "endSec": 19.84,
-      "fromFrame": 573,
-      "toFrame": 595
+      "startSec": 18.96,
+      "endSec": 19.68,
+      "fromFrame": 568,
+      "toFrame": 590
     },
     {
       "text": "BIAR GAK",
       "highlight": false,
-      "startSec": 19.84,
-      "endSec": 20.24,
-      "fromFrame": 595,
-      "toFrame": 607
+      "startSec": 19.68,
+      "endSec": 20.08,
+      "fromFrame": 590,
+      "toFrame": 602
     },
     {
       "text": "ADA DRAMA",
       "highlight": false,
-      "startSec": 20.24,
-      "endSec": 20.8,
-      "fromFrame": 607,
-      "toFrame": 624
+      "startSec": 20.08,
+      "endSec": 20.64,
+      "fromFrame": 602,
+      "toFrame": 619
     },
     {
       "text": "LEMAS JAM",
       "highlight": false,
-      "startSec": 20.8,
-      "endSec": 21.32,
-      "fromFrame": 624,
-      "toFrame": 639
+      "startSec": 20.64,
+      "endSec": 21.16,
+      "fromFrame": 619,
+      "toFrame": 634
     },
     {
       "text": "DUA SIANG",
       "highlight": false,
-      "startSec": 21.32,
-      "endSec": 22.149,
-      "fromFrame": 639,
-      "toFrame": 664
+      "startSec": 21.16,
+      "endSec": 22.114,
+      "fromFrame": 634,
+      "toFrame": 663
     },
     {
       "text": "BIAR PUNYA",
       "highlight": false,
-      "startSec": 22.149,
-      "endSec": 22.56,
-      "fromFrame": 664,
-      "toFrame": 676
+      "startSec": 22.114,
+      "endSec": 22.48,
+      "fromFrame": 663,
+      "toFrame": 674
     },
     {
       "text": "MINUMAN YANG",
       "highlight": false,
-      "startSec": 22.56,
-      "endSec": 23,
-      "fromFrame": 676,
-      "toFrame": 690
+      "startSec": 22.48,
+      "endSec": 22.84,
+      "fromFrame": 674,
+      "toFrame": 685
     },
     {
       "text": "GAK BAKAL",
       "highlight": false,
-      "startSec": 23,
-      "endSec": 23.48,
-      "fromFrame": 690,
-      "toFrame": 704
+      "startSec": 22.84,
+      "endSec": 23.32,
+      "fromFrame": 685,
+      "toFrame": 699
     },
     {
       "text": "TUMPAH DI",
       "highlight": false,
-      "startSec": 23.48,
-      "endSec": 23.96,
-      "fromFrame": 704,
-      "toFrame": 718
+      "startSec": 23.32,
+      "endSec": 23.84,
+      "fromFrame": 699,
+      "toFrame": 715
     },
     {
       "text": "LAPTOP LO",
       "highlight": false,
-      "startSec": 23.96,
-      "endSec": 24.8,
-      "fromFrame": 718,
-      "toFrame": 744
+      "startSec": 23.84,
+      "endSec": 24.64,
+      "fromFrame": 715,
+      "toFrame": 739
     },
     {
       "text": "KLIK LINK",
       "highlight": false,
-      "startSec": 24.8,
-      "endSec": 25.16,
-      "fromFrame": 744,
-      "toFrame": 754
+      "startSec": 24.64,
+      "endSec": 25,
+      "fromFrame": 739,
+      "toFrame": 750
     },
     {
       "text": "DI BIO",
       "highlight": false,
-      "startSec": 25.16,
-      "endSec": 25.44,
-      "fromFrame": 754,
-      "toFrame": 763
+      "startSec": 25,
+      "endSec": 25.32,
+      "fromFrame": 750,
+      "toFrame": 759
     },
     {
       "text": "SEKARANG",
       "highlight": false,
-      "startSec": 25.44,
-      "endSec": 26,
-      "fromFrame": 763,
-      "toFrame": 780
+      "startSec": 25.32,
+      "endSec": 25.92,
+      "fromFrame": 759,
+      "toFrame": 778
     }
   ],
   "beats": [
@@ -389,20 +389,20 @@
     },
     {
       "file": "whoosh.mp3",
-      "delayMs": 11600,
+      "delayMs": 11520,
       "volume": 0.8
     },
     {
       "file": "eightbit_pop.wav",
-      "delayMs": 16267,
+      "delayMs": 16194,
       "volume": 0.85
     },
     {
       "file": "eightbit_portal_shimmer.wav",
-      "delayMs": 19840,
+      "delayMs": 19680,
       "volume": 0.8
     }
   ],
   "caption": "Matcha murni gak bikin tenggorokan gatel atau jantung deg-degan. Cold crafted fresh batch minggu ini. Crafted solo by caleb766h1 drinklira matcha",
-  "createdAt": "2026-11-05T04:04:25.194Z"
+  "createdAt": "2026-11-05T07:14:16.162Z"
 }
