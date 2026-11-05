@@ -94,6 +94,10 @@ jobs:
           CALEB_VOICE_ID: ${{ secrets.CALEB_VOICE_ID || 'WVwVlhKdnZoCuTIoxjYr' }}
           CALEB_SECRET: ${{ secrets.CALEB }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          KILO_API_KEY: ${{ secrets.KILO_API_KEY }}
         run: |
           # If CALEB_SECRET contains a multi-line .env format, parse its keys safely
           if printf '%s' "$CALEB_SECRET" | grep -q '='; then
@@ -112,6 +116,10 @@ jobs:
           export ELEVENLABS_API_KEY="$(printf '%s' "$ELEVENLABS_API_KEY" | tr -d '\r\n')"
           export CALEB_VOICE_ID="$(printf '%s' "$CALEB_VOICE_ID" | tr -d '\r\n')"
           export GEMINI_API_KEY="$(printf '%s' "$GEMINI_API_KEY" | tr -d '\r\n')"
+          export GROQ_API_KEY="$(printf '%s' "$GROQ_API_KEY" | tr -d '\r\n')"
+          export OPENROUTER_API_KEY="$(printf '%s' "$OPENROUTER_API_KEY" | tr -d '\r\n')"
+          export MISTRAL_API_KEY="$(printf '%s' "$MISTRAL_API_KEY" | tr -d '\r\n')"
+          export KILO_API_KEY="$(printf '%s' "$KILO_API_KEY" | tr -d '\r\n')"
 
           # Enforce canonical voice ID if CALEB_VOICE_ID is invalid, contains =, or is too long
           if [ -z "$CALEB_VOICE_ID" ] || printf '%s' "$CALEB_VOICE_ID" | grep -q '=' || [ ${#CALEB_VOICE_ID} -gt 30 ]; then

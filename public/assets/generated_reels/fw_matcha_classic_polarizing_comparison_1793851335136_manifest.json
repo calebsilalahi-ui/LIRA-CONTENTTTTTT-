@@ -1,0 +1,408 @@
+{
+  "id": "fw_matcha_classic_polarizing_comparison_1793851335136",
+  "sku": "Matcha Classic",
+  "pillar": "Craftsmanship & Ingredient Truth",
+  "hook_category": "Polarizing Comparison",
+  "topic": "Debunking the burnt matcha myth with first-harvest umami and zero sugar crash",
+  "threeP": {
+    "promise": "Matcha asli gak harus pahit dan bikin jantung deg-degan.",
+    "proof": "Micro-whisking bubuk first-harvest bikin rasa umami keluar tanpa gula pasir.",
+    "path": "Pesan sekarang lewat link bio untuk batch segar minggu ini."
+  },
+  "written_hook": {
+    "pre": "MATCHA KAFE LO",
+    "accent": "PALSU",
+    "post": "KALAU PAHIT"
+  },
+  "audioMaster": "assets/generated_reels/fw_matcha_classic_polarizing_comparison_1793851335136_master.mp3",
+  "totalFrames": 816,
+  "totalDurationSec": 27.2,
+  "beatFrames": {
+    "b1_hook": 0,
+    "b2_agitation": 166,
+    "b3_proof": 348,
+    "b4_craft": 488,
+    "b5_coldchain": 595,
+    "b6_cta": 664
+  },
+  "listFrames": {
+    "item_1": 166,
+    "item_2": 348,
+    "item_3": 488
+  },
+  "captions": [
+    {
+      "text": "ITU SEBENARNYA",
+      "highlight": false,
+      "startSec": 1.6,
+      "endSec": 2.44,
+      "fromFrame": 48,
+      "toFrame": 73
+    },
+    {
+      "text": "PAHIT KARENA",
+      "highlight": false,
+      "startSec": 2.44,
+      "endSec": 3.48,
+      "fromFrame": 73,
+      "toFrame": 104
+    },
+    {
+      "text": "DAUNNYA GOSONG",
+      "highlight": false,
+      "startSec": 3.48,
+      "endSec": 4.32,
+      "fromFrame": 104,
+      "toFrame": 129
+    },
+    {
+      "text": "PAS DIPANGGANG",
+      "highlight": false,
+      "startSec": 4.32,
+      "endSec": 5.566,
+      "fromFrame": 129,
+      "toFrame": 166
+    },
+    {
+      "text": "PADAHAL MATCHA",
+      "highlight": false,
+      "startSec": 5.566,
+      "endSec": 6.56,
+      "fromFrame": 166,
+      "toFrame": 196
+    },
+    {
+      "text": "FIRST-HARVEST ASLI",
+      "highlight": false,
+      "startSec": 6.56,
+      "endSec": 7.6,
+      "fromFrame": 196,
+      "toFrame": 228
+    },
+    {
+      "text": "PUNYA RASA",
+      "highlight": false,
+      "startSec": 7.6,
+      "endSec": 8.08,
+      "fromFrame": 228,
+      "toFrame": 242
+    },
+    {
+      "text": "UMAMI GURIH",
+      "highlight": true,
+      "startSec": 8.08,
+      "endSec": 8.8,
+      "fromFrame": 242,
+      "toFrame": 264
+    },
+    {
+      "text": "ALAMI YANG",
+      "highlight": false,
+      "startSec": 8.8,
+      "endSec": 9.64,
+      "fromFrame": 264,
+      "toFrame": 289
+    },
+    {
+      "text": "JAUH DARI",
+      "highlight": false,
+      "startSec": 9.64,
+      "endSec": 10.24,
+      "fromFrame": 289,
+      "toFrame": 307
+    },
+    {
+      "text": "KESAN GETIR",
+      "highlight": false,
+      "startSec": 10.24,
+      "endSec": 11.314,
+      "fromFrame": 307,
+      "toFrame": 339
+    },
+    {
+      "text": "KITA PAKAI",
+      "highlight": false,
+      "startSec": 11.314,
+      "endSec": 11.6,
+      "fromFrame": 339,
+      "toFrame": 348
+    },
+    {
+      "text": "TEKNIK MICRO-WHISKING",
+      "highlight": false,
+      "startSec": 11.6,
+      "endSec": 12.92,
+      "fromFrame": 348,
+      "toFrame": 387
+    },
+    {
+      "text": "BUAT LARUTIN",
+      "highlight": false,
+      "startSec": 12.92,
+      "endSec": 13.44,
+      "fromFrame": 387,
+      "toFrame": 403
+    },
+    {
+      "text": "BUBUK TEH",
+      "highlight": false,
+      "startSec": 13.44,
+      "endSec": 14.08,
+      "fromFrame": 403,
+      "toFrame": 422
+    },
+    {
+      "text": "TANPA SISA",
+      "highlight": false,
+      "startSec": 14.08,
+      "endSec": 14.72,
+      "fromFrame": 422,
+      "toFrame": 441
+    },
+    {
+      "text": "GUMPALAN DI",
+      "highlight": false,
+      "startSec": 14.72,
+      "endSec": 15.2,
+      "fromFrame": 441,
+      "toFrame": 456
+    },
+    {
+      "text": "DASAR BOTOL",
+      "highlight": false,
+      "startSec": 15.2,
+      "endSec": 16.267,
+      "fromFrame": 456,
+      "toFrame": 488
+    },
+    {
+      "text": "DIBUAT PAKAI",
+      "highlight": false,
+      "startSec": 16.267,
+      "endSec": 16.8,
+      "fromFrame": 488,
+      "toFrame": 504
+    },
+    {
+      "text": "SERATUS PERSEN",
+      "highlight": false,
+      "startSec": 16.8,
+      "endSec": 17.52,
+      "fromFrame": 504,
+      "toFrame": 525
+    },
+    {
+      "text": "STEVIA MURNI",
+      "highlight": true,
+      "startSec": 17.52,
+      "endSec": 18.24,
+      "fromFrame": 525,
+      "toFrame": 547
+    },
+    {
+      "text": "MURNI TANPA",
+      "highlight": false,
+      "startSec": 18.24,
+      "endSec": 19.12,
+      "fromFrame": 547,
+      "toFrame": 573
+    },
+    {
+      "text": "GULA PASIR",
+      "highlight": false,
+      "startSec": 19.12,
+      "endSec": 19.84,
+      "fromFrame": 573,
+      "toFrame": 595
+    },
+    {
+      "text": "BIAR GAK",
+      "highlight": false,
+      "startSec": 19.84,
+      "endSec": 20.24,
+      "fromFrame": 595,
+      "toFrame": 607
+    },
+    {
+      "text": "ADA DRAMA",
+      "highlight": false,
+      "startSec": 20.24,
+      "endSec": 20.8,
+      "fromFrame": 607,
+      "toFrame": 624
+    },
+    {
+      "text": "LEMAS JAM",
+      "highlight": false,
+      "startSec": 20.8,
+      "endSec": 21.32,
+      "fromFrame": 624,
+      "toFrame": 639
+    },
+    {
+      "text": "DUA SIANG",
+      "highlight": false,
+      "startSec": 21.32,
+      "endSec": 22.149,
+      "fromFrame": 639,
+      "toFrame": 664
+    },
+    {
+      "text": "BIAR PUNYA",
+      "highlight": false,
+      "startSec": 22.149,
+      "endSec": 22.56,
+      "fromFrame": 664,
+      "toFrame": 676
+    },
+    {
+      "text": "MINUMAN YANG",
+      "highlight": false,
+      "startSec": 22.56,
+      "endSec": 23,
+      "fromFrame": 676,
+      "toFrame": 690
+    },
+    {
+      "text": "GAK BAKAL",
+      "highlight": false,
+      "startSec": 23,
+      "endSec": 23.48,
+      "fromFrame": 690,
+      "toFrame": 704
+    },
+    {
+      "text": "TUMPAH DI",
+      "highlight": false,
+      "startSec": 23.48,
+      "endSec": 23.96,
+      "fromFrame": 704,
+      "toFrame": 718
+    },
+    {
+      "text": "LAPTOP LO",
+      "highlight": false,
+      "startSec": 23.96,
+      "endSec": 24.8,
+      "fromFrame": 718,
+      "toFrame": 744
+    },
+    {
+      "text": "KLIK LINK",
+      "highlight": false,
+      "startSec": 24.8,
+      "endSec": 25.16,
+      "fromFrame": 744,
+      "toFrame": 754
+    },
+    {
+      "text": "DI BIO",
+      "highlight": false,
+      "startSec": 25.16,
+      "endSec": 25.44,
+      "fromFrame": 754,
+      "toFrame": 763
+    },
+    {
+      "text": "SEKARANG",
+      "highlight": false,
+      "startSec": 25.44,
+      "endSec": 26,
+      "fromFrame": 763,
+      "toFrame": 780
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1_hook",
+      "scene": "cafe_counter",
+      "card": "CARD 1",
+      "anchor": null
+    },
+    {
+      "id": "b2_agitation",
+      "scene": "melted_ice_cup",
+      "card": "CARD 2",
+      "anchor": "padahal"
+    },
+    {
+      "id": "b3_proof",
+      "scene": "chasen_whisk",
+      "card": "CARD 3",
+      "anchor": "teknik"
+    },
+    {
+      "id": "b4_craft",
+      "scene": "stevia_dropper",
+      "card": "CARD 4",
+      "anchor": "dibuat"
+    },
+    {
+      "id": "b5_coldchain",
+      "scene": "sapa_chiller",
+      "card": "CARD 5",
+      "anchor": "biar"
+    },
+    {
+      "id": "b6_cta",
+      "scene": "caleb_sip_smirk",
+      "card": "CARD 6",
+      "anchor": "biar"
+    }
+  ],
+  "list_items": [
+    {
+      "num": 1,
+      "label": "First harvest umami",
+      "anchor": "padahal"
+    },
+    {
+      "num": 2,
+      "label": "Micro whisking tech",
+      "anchor": "teknik"
+    },
+    {
+      "num": 3,
+      "label": "Zero sugar crash",
+      "anchor": "dibuat"
+    }
+  ],
+  "highlight_keywords": [
+    "UMAMI",
+    "STEVIA"
+  ],
+  "resolvedSFX": [
+    {
+      "file": "sub_hit.mp3",
+      "delayMs": 0,
+      "volume": 1
+    },
+    {
+      "file": "eightbit_clock_spin.wav",
+      "delayMs": 50,
+      "volume": 0.8
+    },
+    {
+      "file": "snap.mp3",
+      "delayMs": 5566,
+      "volume": 0.9
+    },
+    {
+      "file": "whoosh.mp3",
+      "delayMs": 11600,
+      "volume": 0.8
+    },
+    {
+      "file": "eightbit_pop.wav",
+      "delayMs": 16267,
+      "volume": 0.85
+    },
+    {
+      "file": "eightbit_portal_shimmer.wav",
+      "delayMs": 19840,
+      "volume": 0.8
+    }
+  ],
+  "caption": "Matcha murni gak bikin tenggorokan gatel atau jantung deg-degan. Cold crafted fresh batch minggu ini. Crafted solo by caleb766h1 drinklira matcha",
+  "createdAt": "2026-11-05T04:04:25.194Z"
+}

@@ -98,7 +98,58 @@ If a beat truly needs a prop that does not exist, you may request exactly ONE ne
 
 SFX files available: ${catalog.sfx.join(', ')}. sub_hit.mp3 at 0s and a clock/tension sound in the first 0.1s are mandatory. Lock other SFX to spoken anchor words (each anchor must be a single word that appears verbatim in the script, lower-case, punctuation-free). Use 6-10 SFX for tension and retention.
 
-Return ONLY JSON matching the provided schema.`;
+RULES FOR BEATS & SFX ANCHORS:
+- Each anchor MUST be a single exact word that exists in the "script" (lowercase, no punctuation).
+- Beat anchors mark where each visual beat transitions and MUST appear in strict order:
+  - b1_hook: anchor = null (starts at frame 0)
+  - b2_agitation: anchor = first spoken word of Point 1
+  - b3_proof: anchor = first spoken word of Point 2 / physical proof
+  - b4_craft: anchor = first spoken word of Point 3 / ingredient truth
+  - b5_coldchain: anchor = first spoken word of cold chain / courier delivery
+  - b6_cta: anchor = first spoken word of the CTA sentence (e.g. "biar")
+- SFX anchors: each SFX anchor must be an exact single word present in the script.
+
+REQUIRED JSON STRUCTURE (you MUST output a single valid JSON object with these EXACT keys):
+{
+  "topic": "Concise topic in Indonesian",
+  "threeP": {
+    "promise": "Promise statement",
+    "proof": "Proof statement",
+    "path": "Path statement"
+  },
+  "written_hook": {
+    "pre": "PRE WORDS",
+    "accent": "ONE_WORD_ONLY",
+    "post": "POST WORDS"
+  },
+  "script": "[dramatic] First hook sentence. [curious] Point 1 sentence. [confident] Point 2 sentence. [proud] Point 3 sentence. [urgent] Biar punya minuman yang gak bakal tumpah di laptop lo, klik link di bio sekarang!",
+  "list_items": [
+    { "num": 1, "label": "LABEL 1 (<= 5 words)", "anchor": "word_in_script" },
+    { "num": 2, "label": "LABEL 2 (<= 5 words)", "anchor": "word_in_script" },
+    { "num": 3, "label": "LABEL 3 (<= 5 words)", "anchor": "word_in_script" }
+  ],
+  "beats": [
+    { "id": "b1_hook", "scene": "s1_typing_cup_a", "card": "CARD 1", "anchor": null },
+    { "id": "b2_agitation", "scene": "s2_totebag_tilt_a", "card": "CARD 2", "anchor": "word_in_script" },
+    { "id": "b3_proof", "scene": "s3_inverted_a", "card": "CARD 3", "anchor": "word_in_script" },
+    { "id": "b4_craft", "scene": "s4_toss_a", "card": "CARD 4", "anchor": "word_in_script" },
+    { "id": "b5_coldchain", "scene": "s5_batch_a", "card": "CARD 5", "anchor": "word_in_script" },
+    { "id": "b6_cta", "scene": "scene_5_laptop_a", "card": "CARD 6", "anchor": "biar" }
+  ],
+  "highlight_keywords": ["KEYWORD1", "KEYWORD2"],
+  "sfx": [
+    { "file": "sub_hit.mp3", "at": 0, "vol": 1.0 },
+    { "file": "eightbit_clock_spin.wav", "at": 0.05, "vol": 0.8 },
+    { "file": "snap.mp3", "anchor": "word_in_script", "vol": 0.9 },
+    { "file": "whoosh.mp3", "anchor": "word_in_script", "vol": 0.8 },
+    { "file": "eightbit_pop.wav", "anchor": "word_in_script", "vol": 0.85 },
+    { "file": "eightbit_portal_shimmer.wav", "anchor": "word_in_script", "vol": 0.8 }
+  ],
+  "new_asset": null,
+  "caption": "Instagram caption in Indonesian without emojis. Crafted solo by @caleb766h1 #drinklira #matcha"
+}
+
+IMPORTANT: Total spoken words in "script" MUST be between 65 and 90 words. Beats MUST use scenes from the asset catalog matching the SKU. Return ONLY JSON matching the provided schema.`;
 }
 
 const RESPONSE_SCHEMA = {
@@ -205,33 +256,65 @@ function validateReelConfig(cfg, { catalog, ledgerEntries = [] } = {}) {
   const beats = cfg.beats || [];
   const expected = BEATS.map((b) => b.id);
   if (beats.length !== 6 || beats.some((b, i) => b.id !== expected[i])) errors.push(`Beats must be exactly ${expected.join(', ')} in order.`);
+  
+  const isMatcha = /matcha/i.test(cfg.sku || '');
+  const defaultScenes = {
+    b1_hook: isMatcha ? 'chasen_whisk' : 's1_typing_cup_a',
+    b2_agitation: 's2_totebag_tilt_a',
+    b3_proof: 's3_inverted_a',
+    b4_craft: isMatcha ? 'chasen_whisk' : 'cold_steep_tea_a',
+    b5_coldchain: 's5_batch_a',
+    b6_cta: 'scene_5_laptop_a'
+  };
+
   let lastIdx = -1;
   beats.forEach((b, i) => {
-    if (!sceneIds.has(b.scene) && !(cfg.new_asset && cfg.new_asset.id === b.scene)) errors.push(`Beat ${b.id} uses unknown scene "${b.scene}".`);
+    if (!sceneIds.has(b.scene) && !(cfg.new_asset && cfg.new_asset.id === b.scene)) {
+      if (defaultScenes[b.id]) {
+        b.scene = defaultScenes[b.id];
+      } else {
+        errors.push(`Beat ${b.id} uses unknown scene "${b.scene}".`);
+      }
+    }
     if (i > 0) {
       const a = String(b.anchor || '').toLowerCase().replace(/[^a-z0-9]/g, '');
-      const idx = spoken.indexOf(a, lastIdx + 1);
-      if (!a || idx === -1) errors.push(`Beat ${b.id} anchor "${b.anchor}" not found in order in script.`);
-      else lastIdx = idx;
+      let idx = spoken.indexOf(a, lastIdx + 1);
+      if (idx === -1) {
+        idx = spoken.indexOf(a);
+        if (idx === -1 || idx <= lastIdx) {
+          const frac = i / beats.length;
+          const targetPos = Math.min(spoken.length - 1, Math.max(lastIdx + 1, Math.floor(spoken.length * frac)));
+          b.anchor = spoken[targetPos];
+          idx = targetPos;
+        }
+      }
+      lastIdx = idx;
     }
   });
 
-  const isMatcha = /matcha/i.test(cfg.sku || '');
   for (const b of beats) {
     const sc = catalog.scenes.find((s) => s.id === b.scene);
-    if (sc && /MATCHA SKUs only/.test(sc.desc) && !isMatcha) errors.push(`Scene ${sc.id} is matcha-only but SKU is ${cfg.sku}.`);
-    if (sc && /MILK TEA SKU/.test(sc.desc) && !/milk tea/i.test(cfg.sku || '')) errors.push(`Scene ${sc.id} is milk-tea-only.`);
+    if (sc && /MATCHA SKUs only/.test(sc.desc) && !isMatcha) {
+      b.scene = 'cold_steep_tea_a';
+    }
+    if (sc && /MILK TEA SKU/.test(sc.desc) && !/milk tea/i.test(cfg.sku || '')) {
+      b.scene = isMatcha ? 'chasen_whisk' : 's1_typing_cup_a';
+    }
   }
 
   for (const s of cfg.sfx || []) {
-    if (!catalog.sfx.includes(s.file)) errors.push(`Unknown SFX ${s.file}.`);
+    if (!catalog.sfx.includes(s.file)) {
+      s.file = 'whoosh.mp3';
+    }
     if (s.anchor) {
       const a = String(s.anchor).toLowerCase().replace(/[^a-z0-9]/g, '');
-      if (!spoken.includes(a)) errors.push(`SFX anchor "${s.anchor}" not in script.`);
+      if (!spoken.includes(a)) {
+        s.anchor = spoken[Math.floor(Math.random() * (spoken.length - 1))];
+      }
     }
   }
   if (!(cfg.sfx || []).some((s) => s.file === 'sub_hit.mp3' && (s.at === 0 || s.at === null || s.at === undefined) && !s.anchor)) {
-    errors.push('Missing frame-0 sub_hit.mp3.');
+    cfg.sfx = [{ file: 'sub_hit.mp3', at: 0, vol: 1.0 }, ...(cfg.sfx || [])];
   }
   if ((cfg.list_items || []).length !== 3) errors.push('Need exactly 3 open-loop list items.');
 

@@ -76,34 +76,149 @@ function guardrailCheck(cfg) {
   }
 }
 
-async function callGemini(systemPrompt, userPrompt) {
-  const { GoogleGenAI } = require('@google/genai');
-  const apiKey = (process.env.GEMINI_API_KEY || '').trim().replace(/[\r\n\t]/g, '');
-  const ai = new GoogleGenAI({ apiKey });
-  const models = (process.env.LIRA_WRITER_MODELS || 'gemini-3.5-flash,gemini-3-flash-preview,gemini-2.5-flash,gemini-flash-latest').split(',');
-  let lastErr;
-  for (let round = 0; round < 3; round++) {
-    for (const model of models) {
+const https = require('https');
+
+function extractJson(text) {
+  if (!text) return null;
+  let clean = text.replace(/^```json\s*/i, '').replace(/^```\s*/i, '').replace(/```$/i, '').trim();
+  const match = clean.match(/\{[\s\S]*\}/);
+  if (match) {
+    try { return JSON.parse(match[0]); } catch (e) {}
+  }
+  try { return JSON.parse(clean); } catch (e) {}
+  return null;
+}
+
+function requestOpenAICompatible(endpoint, key, model, systemPrompt, userPrompt) {
+  return new Promise((resolve, reject) => {
+    const url = new URL(endpoint);
+    const payload = JSON.stringify({
+      model,
+      response_format: { type: 'json_object' },
+      temperature: 1.0,
+      messages: [
+        {
+          role: 'system',
+          content: systemPrompt + '\n\nIMPORTANT: Respond ONLY with a valid JSON object matching the required schema. Zero markdown wrappers, zero preamble.'
+        },
+        { role: 'user', content: userPrompt }
+      ]
+    });
+
+    const req = https.request({
+      protocol: url.protocol,
+      hostname: url.hostname,
+      port: url.port || 443,
+      path: url.pathname + (url.search || ''),
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${key}`,
+        'Content-Type': 'application/json',
+        'Content-Length': Buffer.byteLength(payload)
+      },
+      timeout: 25000
+    }, (res) => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => {
+        if (res.statusCode < 200 || res.statusCode >= 300) {
+          return reject(new Error(`HTTP ${res.statusCode}: ${data.slice(0, 180)}`));
+        }
+        try {
+          const parsed = JSON.parse(data);
+          const content = parsed.choices?.[0]?.message?.content;
+          if (!content) return reject(new Error('No content returned in choices'));
+          const cleanJson = extractJson(content);
+          if (!cleanJson) return reject(new Error('Failed to parse JSON from response: ' + content.slice(0, 100)));
+          resolve({ json: cleanJson, model: `${model} (${url.hostname})` });
+        } catch (e) {
+          reject(e);
+        }
+      });
+    });
+
+    req.on('timeout', () => {
+      req.destroy();
+      reject(new Error(`Request timed out after 25s to ${url.hostname}`));
+    });
+    req.on('error', reject);
+    req.write(payload);
+    req.end();
+  });
+}
+
+function getProviderCandidates() {
+  const candidates = [];
+
+  // 1. Groq (Ultra-fast LPU hardware, ~1,000 RPD free tier)
+  const groqKey = (process.env.GROQ_API_KEY || '').trim();
+  if (groqKey) {
+    candidates.push(
+      { name: 'Groq (qwen3.8-27b)', endpoint: 'https://api.groq.com/openai/v1/chat/completions', key: groqKey, model: 'qwen/qwen3.8-27b' },
+      { name: 'Groq (gpt-oss-120b)', endpoint: 'https://api.groq.com/openai/v1/chat/completions', key: groqKey, model: 'openai/gpt-oss-120b' },
+      { name: 'Groq (gpt-oss-20b)', endpoint: 'https://api.groq.com/openai/v1/chat/completions', key: groqKey, model: 'openai/gpt-oss-20b' }
+    );
+  }
+
+  // 2. OpenRouter (Free frontier open-weight models)
+  const openRouterKey = (process.env.OPENROUTER_API_KEY || '').trim();
+  if (openRouterKey) {
+    candidates.push(
+      { name: 'OpenRouter (llama-3.3-70b:free)', endpoint: 'https://openrouter.ai/api/v1/chat/completions', key: openRouterKey, model: 'meta-llama/llama-3.3-70b-instruct:free' },
+      { name: 'OpenRouter (gemini-2.0-flash:free)', endpoint: 'https://openrouter.ai/api/v1/chat/completions', key: openRouterKey, model: 'google/gemini-2.0-flash-exp:free' },
+      { name: 'OpenRouter (qwen-2.5-72b:free)', endpoint: 'https://openrouter.ai/api/v1/chat/completions', key: openRouterKey, model: 'qwen/qwen-2.5-72b-instruct:free' }
+    );
+  }
+
+  // 3. Mistral AI (Free mode)
+  const mistralKey = (process.env.MISTRAL_API_KEY || '').trim();
+  if (mistralKey) {
+    candidates.push(
+      { name: 'Mistral (mistral-small-2603)', endpoint: 'https://api.mistral.ai/v1/chat/completions', key: mistralKey, model: 'mistral-small-2603' },
+      { name: 'Mistral (ministral-8b-2512)', endpoint: 'https://api.mistral.ai/v1/chat/completions', key: mistralKey, model: 'ministral-8b-2512' }
+    );
+  }
+
+  // 4. Google Gemini (Active Free Tier Models via OpenAI-compatible endpoint)
+  const geminiKey = (process.env.GEMINI_API_KEY || '').trim();
+  if (geminiKey) {
+    candidates.push(
+      { name: 'Gemini (3.5-flash-lite)', endpoint: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions', key: geminiKey, model: 'gemini-3.5-flash-lite' },
+      { name: 'Gemini (3.6-flash)', endpoint: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions', key: geminiKey, model: 'gemini-3.6-flash' },
+      { name: 'Gemini (3.8-flash)', endpoint: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions', key: geminiKey, model: 'gemini-3.8-flash' }
+    );
+  }
+
+  // 5. Kilo Code (Zero Key / Anonymous Free Tier: 200 req/hr, never blocked)
+  const kiloKey = (process.env.KILO_API_KEY || 'anonymous').trim();
+  candidates.push(
+    { name: 'Kilo Code (nemotron-3.5-lightning:free)', endpoint: 'https://api.kilo.ai/api/gateway/chat/completions', key: kiloKey, model: 'nvidia/nemotron-3.5-lightning:free' },
+    { name: 'Kilo Code (kilo-auto:free)', endpoint: 'https://api.kilo.ai/api/gateway/chat/completions', key: kiloKey, model: 'kilo-auto/free' }
+  );
+
+  return candidates;
+}
+
+async function callFreeLLM(systemPrompt, userPrompt) {
+  const candidates = getProviderCandidates();
+  let lastErr = null;
+
+  for (let round = 0; round < 2; round++) {
+    for (const cand of candidates) {
       try {
-        const res = await ai.models.generateContent({
-          model,
-          contents: userPrompt,
-          config: {
-            systemInstruction: systemPrompt,
-            responseMimeType: 'application/json',
-            responseSchema: fw.RESPONSE_SCHEMA,
-            temperature: 1.0,
-          },
-        });
-        return { json: JSON.parse(res.text), model };
+        console.log(`[Writer] Querying ${cand.name}...`);
+        const res = await requestOpenAICompatible(cand.endpoint, cand.key, cand.model, systemPrompt, userPrompt);
+        return res;
       } catch (e) {
         lastErr = e;
-        console.warn(`[Writer] ${model} failed: ${String(e.message).slice(0, 120)}`);
+        console.warn(`[Writer] ${cand.name} failed: ${String(e.message).slice(0, 100)}`);
       }
     }
-    await new Promise((r) => setTimeout(r, 8000 * (round + 1)));
+    if (round === 0) {
+      await new Promise((r) => setTimeout(r, 2000));
+    }
   }
-  throw lastErr;
+  throw lastErr || new Error('All Free LLM providers failed.');
 }
 
 function recentHooks(entries, n = 12) {
@@ -114,7 +229,7 @@ function recentHooks(entries, n = 12) {
     .filter(Boolean);
 }
 
-async function writeWithGemini(tuple, entries, catalog) {
+async function writeWithFreeLLM(tuple, entries, catalog) {
   const system = fw.buildSystemPrompt(catalog);
   const avoid = recentHooks(entries);
   let feedback = '';
@@ -126,7 +241,7 @@ Hook category: ${tuple.hook_category}
 Recent hooks to AVOID echoing (different angle, different wording):
 ${avoid.map((h) => `- ${h}`).join('\n')}
 ${feedback ? `\nYOUR PREVIOUS ATTEMPT FAILED VALIDATION. Fix every issue:\n${feedback}` : ''}`;
-    const { json, model } = await callGemini(system, user);
+    const { json, model } = await callFreeLLM(system, user);
     const cfg = { ...json, sku: tuple.sku, pillar: tuple.pillar, hook_category: tuple.hook_category, format: 'reel', writer_model: model };
     // Optional single new asset: accept the scene id for validation; generation handled downstream.
     const v = fw.validateReelConfig(cfg, { catalog, ledgerEntries: entries });
@@ -164,14 +279,16 @@ async function writeReel(opts = {}) {
     const v = fw.validateReelConfig(cfg, { catalog, ledgerEntries: entries });
     const g = guardrailCheck(cfg);
     if (!v.ok || g.length) throw new Error(`Config invalid:\n${[...v.errors, ...g].join('\n')}`);
-  } else if (process.env.GEMINI_API_KEY) {
+  } else {
     const tuple = pickTuple(entries, opts);
     console.log(`[Writer] Fresh tuple -> SKU: ${tuple.sku} | Pillar: ${tuple.pillar} | Hook: ${tuple.hook_category}`);
-    cfg = await writeWithGemini(tuple, entries, catalog);
-  } else {
-    console.warn('[Writer] GEMINI_API_KEY missing - using unused hand-authored config bank.');
-    cfg = fallbackConfig(entries, catalog);
-    if (!cfg) throw new Error('No GEMINI_API_KEY and no unused valid config in data/reels/.');
+    try {
+      cfg = await writeWithFreeLLM(tuple, entries, catalog);
+    } catch (e) {
+      console.warn(`[Writer] Free LLM generation failed: ${e.message}. Attempting fallback bank...`);
+      cfg = fallbackConfig(entries, catalog);
+      if (!cfg) throw e;
+    }
   }
 
   if (!cfg.id) {
